@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
+}
+
+h1 {
+  margin: 40px auto 0 auto;
+  font-family: "Sacramento", cursive;
+  font-size: 5.625rem;
+  color: #8675a9;
+  line-height: 1;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  color: #8675a9;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #8675a9;
+}
+
+.top-container {
+  background: rgb(246, 233, 233);
+  background: linear-gradient(
+    180deg,
+    rgba(246, 233, 233, 1) 0%,
+    rgba(131, 13, 212, 0.4248074229691877) 100%
+  );
+  position: relative;
+  padding-top: 200px;
+}
+
+.profile {
+  padding: 50px;
+  margin: 10px;
+}
+
+.bottom-cloud {
+  position: relative;
+  bottom: 450px;
+  left: 300px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 400px;
+  top: 150px;
+}
+
+.city {
+  position: relative;
+  top: 7px;
+  right: 60px;
+}
+
+
+
+.coding {
+  width: 150px;
+}
+
+.vngame {
+  width: 150px;
+}
+
+.footer-link {
+  color: #8675a9;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.coding {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.vngame {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: gray;
+  border-width: 7px;
+  width: 10%;
+}
+
+
+
+
+.btn {
+  background: rgb(150, 77, 193);
+  background: linear-gradient(
+    180deg,
+    rgba(150, 77, 193, 1) 0%,
+    rgba(103, 22, 158, 0.861782212885154) 100%
+  );
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 25px 2px;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background: rgb(246, 233, 233);
+  background: linear-gradient(
+    180deg,
+    rgba(246, 233, 233, 1) 0%,
+    rgba(131, 13, 212, 0.861782212885154) 100%
+  );
+  color: white;
+}
+
+.bottom-container {
+  background: rgb(246, 233, 233);
+  background: linear-gradient(
+    180deg,
+    rgba(246, 233, 233, 1) 0%,
+    rgba(131, 13, 212, 0.4248074229691877) 100%
+  );
+  padding: 50px;
+}
+
+.footer-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: #8675a9;
+  display: inline-block;
+  width: 100px;
+}
