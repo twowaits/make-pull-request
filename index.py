@@ -32,3 +32,15 @@ elif perDetail.age>=65:
     print(perDetail.roll_no, perDetail.name, perDetail.age, '->ELDERLY<-', sep='    ')
 else:
     print('Invalid Credential!')
+    
+    
+print("Test pull request..")
+name1= input("Please Enter your full name: ")
+age=int(input("Enter your age : "))
+user_id=input("Enter your email id :")
+gender=input("Enter your gender : ")
+print("Your details are as follows : ")
+print(f"Your name is : {name1}")
+print(f"Your age is : {age}")
+print(f"Your user id is  : {user_id}")
+print(f"Your gender is  : {gender}")
