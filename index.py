@@ -1,3 +1,4 @@
+# print("helloworld") this is not required
 fullName =input("enter your fullName:- ")
 fatherName = input("enter your fatherName:- ")
 date = int(input("enter your birthDate:- "))
