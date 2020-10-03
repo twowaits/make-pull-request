@@ -1,0 +1,15 @@
+{
+  "name": "travel-log",
+  "version": "1.0.0",
+  "description": "This is a simple app, which converts your location and date details into description about your trip",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Aditya Mathur",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.0",
+    "prompt-sync": "^4.2.0"
+  }
+}
