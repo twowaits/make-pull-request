@@ -16,4 +16,4 @@ You can look at the issues [here](https://github.com/twowaits/make-pull-request/
 
 - Make sure you take from latest code and don't edit any other file. Save your file by name Date.(language extension) like 3rdOct.java, 3rdOct.py, 7thOct.js
 
-If you wish to stay updated, join our Open Source Community on whatsapp [here](https://chat.whatsapp.com/DXASl5sWnskK74njx1KXvr)
+If you wish to stay updated, join our Open Source Community Channel on Telegram [here](https://t.me/joinchat/AAAAAFbbJqzUyF18Okx94A)
