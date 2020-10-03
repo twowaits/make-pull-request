@@ -12,7 +12,7 @@ You can look at the issues [here](https://github.com/twowaits/make-pull-request/
 
 - We will assign it to the person we find most fit among all the students who have requested.
 
-- Person have time till 4PM to submit, if fails to do so we will assign to someone else.
+- Person have time till 8 PM to submit, if fails to do so we will assign to someone else.
 
 - Make sure you take from latest code and don't edit any other file. Save your file by name Date.(language extension) like 3rdOct.java, 3rdOct.py, 7thOct.js
 
