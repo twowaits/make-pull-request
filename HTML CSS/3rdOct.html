@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,20 +15,20 @@
             *{
                 box-sizing: border-box;
                 margin: auto;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-family: 'Sans-serif';
                 font-size: 20px;
-                background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAsHCBEIBxEKCQ0MBQUFEg8GBQUFDxYMDQgPGxcdHRsXGhkgJTMpICIvIxkaKj4rLzU3Ojs6HihBRkA4RjM5OjcBDAwMBQUFFAYGFDchGiE3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIALEBHAMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAABAAIH/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDmJSBFQgilAUKUBFEFEkBwHEgkYQZWHCDKOEGQ2yAVNAIFKMogEMKBkNCgAQABQEgwDEoQSihBGIgjAQSaEQKxEAiQCw4sAYsKBlYVQDLQoBY0yAoaoUZRooBKoACACSAwwQgmgQSUMApGIKNMmAUjARRBJIEkQCIwECgZDWCgBSgYRAJmtBQClAARQANAEhoERDAUMRgGIFBpREEUQSRBIoBiwoAsKABoABTUDNFaABmmigFUqDKIqgoaAAEASCBUSAwiNQA2yYgYYIQMKigIowEUgSKAIgAGgDNRooChqigzUkDCIACkVQVKoADQBIIKFIC1GYQMMEMQMaEMAxKICQQJBBJIEkgAIAA0AhTRQZorQBlVUAKK1WaohSAAIAkEFCIYBjUZhgGNMwxAxploCokBIIEhAUEBSAIEUAKRQVFNZoBIUADRQTNNCiBAAEASzGoBQhAwggYoDEGoQgaIMBQggSyQKCAhIEEAVSQCg1kFUmQVFSAAiqIEAAQCIMAqKEFDAQaigSDULJgNQswg0hpBHQgKCAoagSSBBUAhqFAsqgECKoKlRQVBoADTQCIIGEECkgJgUAkRINpmNASyga1DUDSGgGgEBC0AQkAtFQA0GgACFEFVQCQoBKoFEIQJBArQQJCBpQICQkG0wQa1ay0CWpAtQ1aB1MoGmVoBJCqEIAkgCCQIIAgkCKQFRIDCkChSBFIEUkFDAlCokgokgSSBRJAFUgCSUCSAKJAgkACQJJA//9k=");
+                background-image: url("https://img.freepik.com/free-vector/dark-low-poly-background_1048-7971.jpg?size=626&ext=jpg");
                 background-attachment: fixed;
                 background-repeat: no-repeat;
                 background-size: cover;
-                color: white;
+                color: rgb(204, 51, 255);
             }
 
             h1{
                 text-align: center;
-                color: rgb(36, 160, 231);
-                text-shadow: 1px 1px #fff;
-                text-decoration: underline;
+                color: crimsson red;
+                text-shadow: 2px 2px 8px #FF0000;;
+                text-decoration: underline dotted white ;
             }
 
             table{
@@ -44,17 +45,19 @@
             }
 
             .butn{
-                z-index: 1;
-                padding: 10px 30px;
+                z-index: 2;
+                padding: 10px 30px ;
                 width: 200px;
-                border: 1px solid white;
+                border:5px solid orange;
+                color: white;
+                
             }
 
-            .butn:hover , .full:hover{
-                box-shadow: 0 0 10px 2px rgb(36, 160, 231);
+            .butn:hover, .full:hover{
+                box-shadow: 2px 3px white;
                 transition: 0.5s;
-                color: rgb(36, 160, 231);
-                text-shadow: 0 0 10px 2px rgb(36, 160, 231);
+                text-shadow: 0 0 3px #FF0000;
+                color: white;
             }
             
         </style>
@@ -67,15 +70,15 @@
                         <tr>
                             <td>
                                 <label class="full" for=name>Full Name:</label><br>
-                                <input class="full" type="text" name="name" placeholder="John dow" required><br><br>
+                                <input class="full" type="text" name="name" placeholder="ruso" required><br><br>
                             </td>
                             <td>
                                 <label class="full" for=contact>Number:</label><br>
-                                <input class="full" type="text" name="number" placeholder="9223871245" required><br><br>
+                                <input class="full" type="text" name="number" placeholder="7212893476" required><br><br>
                             </td>
                             <td>
                                 <label class="full" for=college>College Name:</label><br>
-                                <input class="full" type="text" name="colllege" placeholder="IIT Bombay" required><br><br> 
+                                <input class="full" type="text" name="college" placeholder="NIET " required><br><br> 
                             </td>
                         </tr>
                     </table>
@@ -83,7 +86,7 @@
                         <tr>
                             <td>
                                 <label class="full" for=mail>E-Mail Id:</label><br>
-                                <input class="full" style="width: 100%" type="text" name="e-mail" placeholder="abc@gmail.com" required><br><br>
+                                <input class="full" style="width: 100%" type="text" name="e-mail" placeholder="example@gmail.com" required><br><br>
                             </td>
                             <td>
                                 <label class="full" for=branch>Branch/Year:</label><br>
@@ -150,3 +153,4 @@
            </div>
         </body>
 </html>
+
