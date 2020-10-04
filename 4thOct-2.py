@@ -1,6 +1,4 @@
-inputs = input().split()
-rows = int(inputs[0])
-total = int(inputs[1])
+rows, total = map(int, input().split())
 
 for i in range(1, rows+1):
    factor = (rows - 1) *2
