@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID Tracker</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    h3 {
+        padding: 12px;
+        letter-spacing: 1px;
+    }
+
+    hr {
+        background-color: #343633;
+        height: 1px;
+        outline-width: 0;
+        opacity: 50%;
+    }
+
+    select {
+        border-radius: 25px;
+        padding: 8px;
+        margin: 12px 0 10px 12px;
+        color: blue;
+        background-color: #EAF2F8;
+        border: 1px solid #D4E6F1;
+    }
+
+    p, h2{
+        margin: 0 0 2px 12px;
+    }
+
+    .highlighted {
+        color: gray;
+    }
+
+    .col {
+        float: left;
+        width: 20vw;
+        height: 65px;
+        padding-left: 12px;
+        margin-top: 15px;
+        border-right: 1px solid #3436332f;
+    }
+
+    table {
+        margin-left: 12px;
+        width: 99%;
+        border-collapse: collapse;
+    }
+
+    tr {
+        border-bottom: 1px solid #34363336;
+    }
+
+    th {
+        text-align: left;
+        color: #6e726a;
+        padding: 10px;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    span {
+        text-decoration: underline;
+    }
+
+    footer {
+        color: #6e726a;
+        padding: 12px;
+        text-align: center;
+        word-spacing: 5px;
+    }
+
+    .show {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .arrow {
+        border: solid #6e726a;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+    }
+
+    .down {
+        transform: rotate(45deg);
+    }
+
+</style>
+
+<body>
+    <h3>Cases</h3> <hr>
+    <select name="total" id="total">
+        <option value="total">Total</option>
+    </select>
+    <select name="country" id="country">
+        <option value="india"><img src="https://www.flaticon.com/svg/static/icons/svg/3014/3014003.svg" height="20px"> India</option>
+    </select>
+
+    <div class="row">
+        <div class="col">
+            <p>Cases</p>
+            <h2>6.55M</h2>
+            <p class="highlighted">+79,476</p>
+        </div>
+        <div class="col">
+            <p>Recovered</p>
+            <h2>5.51M</h2>
+        </div>
+        <div class="col">
+            <p>Deaths</p>
+            <h2>102K</h2>
+            <p class="highlighted">+1,069</p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <table>
+        <tr>
+            <th>Location</th>
+            <th>Cases</th>
+            <th>Recovered</th>
+            <th>Deaths</th>
+        </tr>
+        <tr>
+            <td>Maharashtra</td>
+            <td>1.42M</td>
+            <td>1.12M</td>
+            <td>37,480</td>
+        </tr>
+        <tr>
+            <td>Andhra Pradesh</td>
+            <td>707K</td>
+            <td>644K</td>
+            <td>5,900</td>
+        </tr>
+        <tr>
+            <td>Karnataka</td>
+            <td>621K</td>
+            <td>500K</td>
+            <td>9,119</td>
+        </tr>
+        <tr>
+            <td>Tamil Nadu</td>
+            <td>609K</td>
+            <td>553K</td>
+            <td>9,653</td>
+        </tr>
+        <tr>
+            <td>Uttar Pradesg</td>
+            <td>407K</td>
+            <td>352K</td>
+            <td>5,917</td>
+        </tr>
+    </table>
+
+    <footer>
+        <p>'+' shows new cases reported yesterday &bull; Updated less than 50 mins ago &bull; Source: <span>Wikipedia</span> &bull; <span>About this data</span>
+        </p>
+    </footer>
+    <hr>
+
+    <p class="show"><i class="arrow down"></i></p>
+
+</body>
+</html>
