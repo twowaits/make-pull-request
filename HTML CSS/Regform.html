@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Regform.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registration Form</h1>
+      <form>
+        <div class="upper">
+          <input type="text" class="name wrap" placeholder="Name" />
+          <input type="number" class="number wrap" placeholder="Phone" />
+          <input type="text" class="clg-name wrap" placeholder="College name" />
+          <input type="email" class="email nowrap" placeholder="E-mail" />
+          <input type="text" class="branch nowrap" placeholder="Branch/Year" />
+        </div>
+        <div class="lower">
+          <p class="text">
+            Do you have any prior experience with a similar program? If yes, how
+            was your performance and what was your most important learning from
+            the same?
+          </p>
+          <textarea class="text" cols="70" rows="1"></textarea>
+          <p class="text">How do you plan to help TwoWaits?</p>
+          <textarea class="text" cols="70" rows="1"></textarea>
+          <p class="text">
+            Since when you are using Twowaits or aware about it that there is
+            such app?
+          </p>
+          <div class="radio">
+            <div class="radio-btn">
+              <input type="radio" id="sizeSmall" value="small" />
+              <label for="sizeSmall">Just now</label>
+            </div>
+            <div class="radio-btn">
+              <input type="radio" id="sizeMed" value="medium" />
+              <label for="sizeMed">more than 6 months</label>
+            </div>
+            <div class="radio-btn">
+              <input type="radio" id="sizeLarge" value="large" />
+              <label for="sizeLarge">6 months - 1 year</label>
+            </div>
+            <div class="radio-btn">
+              <input type="radio" id="sizeLarge" value="large" />
+              <label for="sizeLarge">more than 1 year</label>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  /* background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAsHCBEIBxEKCQ0MBQUFEg8GBQUFDxYMDQgPGxcdHRsXGhkgJTMpICIvIxkaKj4rLzU3Ojs6HihBRkA4RjM5OjcBDAwMBQUFFAYGFDchGiE3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIALEBHAMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAABAAIH/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDmJSBFQgilAUKUBFEFEkBwHEgkYQZWHCDKOEGQ2yAVNAIFKMogEMKBkNCgAQABQEgwDEoQSihBGIgjAQSaEQKxEAiQCw4sAYsKBlYVQDLQoBY0yAoaoUZRooBKoACACSAwwQgmgQSUMApGIKNMmAUjARRBJIEkQCIwECgZDWCgBSgYRAJmtBQClAARQANAEhoERDAUMRgGIFBpREEUQSRBIoBiwoAsKABoABTUDNFaABmmigFUqDKIqgoaAAEASCBUSAwiNQA2yYgYYIQMKigIowEUgSKAIgAGgDNRooChqigzUkDCIACkVQVKoADQBIIKFIC1GYQMMEMQMaEMAxKICQQJBBJIEkgAIAA0AhTRQZorQBlVUAKK1WaohSAAIAkEFCIYBjUZhgGNMwxAxploCokBIIEhAUEBSAIEUAKRQVFNZoBIUADRQTNNCiBAAEASzGoBQhAwggYoDEGoQgaIMBQggSyQKCAhIEEAVSQCg1kFUmQVFSAAiqIEAAQCIMAqKEFDAQaigSDULJgNQswg0hpBHQgKCAoagSSBBUAhqFAsqgECKoKlRQVBoADTQCIIGEECkgJgUAkRINpmNASyga1DUDSGgGgEBC0AQkAtFQA0GgACFEFVQCQoBKoFEIQJBArQQJCBpQICQkG0wQa1ay0CWpAtQ1aB1MoGmVoBJCqEIAkgCCQIIAgkCKQFRIDCkChSBFIEUkFDAlCokgokgSSBRJAFUgCSUCSAKJAgkACQJJA//9k=");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover; */
+  color: white;
+  background-color: rgb(32, 33, 48);
+}
+body {
+  background-color: rgb(32, 33, 48);
+}
+
+h1 {
+  text-align: center;
+  color: rgb(36, 160, 231);
+  text-shadow: 1px 1px #fff;
+  text-decoration: underline;
+}
+
+table {
+  width: 90%;
+}
+
+.full {
+  width: 80%;
+}
+
+td {
+  padding: 15px;
+  text-align: center;
+}
+
+.butn {
+  z-index: 1;
+  padding: 10px 30px;
+  width: 200px;
+  border: 1px solid white;
+}
+
+.butn:hover,
+.full:hover {
+  box-shadow: 0 0 10px 2px rgb(36, 160, 231);
+  transition: 0.5s;
+  color: rgb(36, 160, 231);
+  text-shadow: 0 0 10px 2px rgb(36, 160, 231);
+}
+

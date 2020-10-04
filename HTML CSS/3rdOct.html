@@ -11,55 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: auto;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        font-size: 20px;
-        background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAsHCBEIBxEKCQ0MBQUFEg8GBQUFDxYMDQgPGxcdHRsXGhkgJTMpICIvIxkaKj4rLzU3Ojs6HihBRkA4RjM5OjcBDAwMBQUFFAYGFDchGiE3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIALEBHAMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAABAAIH/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDmJSBFQgilAUKUBFEFEkBwHEgkYQZWHCDKOEGQ2yAVNAIFKMogEMKBkNCgAQABQEgwDEoQSihBGIgjAQSaEQKxEAiQCw4sAYsKBlYVQDLQoBY0yAoaoUZRooBKoACACSAwwQgmgQSUMApGIKNMmAUjARRBJIEkQCIwECgZDWCgBSgYRAJmtBQClAARQANAEhoERDAUMRgGIFBpREEUQSRBIoBiwoAsKABoABTUDNFaABmmigFUqDKIqgoaAAEASCBUSAwiNQA2yYgYYIQMKigIowEUgSKAIgAGgDNRooChqigzUkDCIACkVQVKoADQBIIKFIC1GYQMMEMQMaEMAxKICQQJBBJIEkgAIAA0AhTRQZorQBlVUAKK1WaohSAAIAkEFCIYBjUZhgGNMwxAxploCokBIIEhAUEBSAIEUAKRQVFNZoBIUADRQTNNCiBAAEASzGoBQhAwggYoDEGoQgaIMBQggSyQKCAhIEEAVSQCg1kFUmQVFSAAiqIEAAQCIMAqKEFDAQaigSDULJgNQswg0hpBHQgKCAoagSSBBUAhqFAsqgECKoKlRQVBoADTQCIIGEECkgJgUAkRINpmNASyga1DUDSGgGgEBC0AQkAtFQA0GgACFEFVQCQoBKoFEIQJBArQQJCBpQICQkG0wQa1ay0CWpAtQ1aB1MoGmVoBJCqEIAkgCCQIIAgkCKQFRIDCkChSBFIEUkFDAlCokgokgSSBRJAFUgCSUCSAKJAgkACQJJA//9k=");
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: white;
-      }
-     
-      h1 {
-        text-align: center;
-        color: rgb(36, 160, 231);
-        text-shadow: 1px 1px #fff;
-        text-decoration: underline;
-      }
-
-      table {
-        width: 90%;
-      }
-
-      .full {
-        width: 80%;
-      }
-
-      td {
-        padding: 15px;
-        text-align: center;
-      }
-
-      .butn {
-        z-index: 1;
-        padding: 10px 30px;
-        width: 200px;
-        border: 1px solid white;
-      }
-
-      .butn:hover,
-      .full:hover {
-        box-shadow: 0 0 10px 2px rgb(36, 160, 231);
-        transition: 0.5s;
-        color: rgb(36, 160, 231);
-        text-shadow: 0 0 10px 2px rgb(36, 160, 231);
-      }
-    </style>
+    <link rel="stylesheet" href="3rdOct.css" />
   </head>
   <body>
     <div class="container">
@@ -146,7 +98,7 @@
             </td>
           </tr>
         </table>
-        <table>
+        <table >
           <tr colspan="2">
             <td>
               <label class="full" for="question"
@@ -156,25 +108,25 @@
             </td>
           </tr>
           <tr>
-            <td>
+            <td class="radio">
               <input type="radio" name="question" value="Just Now" required />
               <label for="Just Now">Just Now</label>
             </td>
           </tr>
           <tr>
-            <td>
+            <td class="radio"> 
               <input type="radio" name="question" value="more than 6 months" />
               <label for="more than 6 months">more than 6 months</label>
             </td>
           </tr>
           <tr>
-            <td>
+            <td class="radio">
               <input type="radio" name="question" value="6 months - 1 year" />
               <label for="6 months - 1 year">6 months - 1 year</label>
             </td>
           </tr>
           <tr>
-            <td>
+            <td class="radio">
               <input type="radio" name="question" value="more than 1 year" />
               <label for="more than 1 year">more than 1 year</label>
             </td>
