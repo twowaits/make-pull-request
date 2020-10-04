@@ -8,7 +8,7 @@ You can look at the issues [here](https://github.com/twowaits/make-pull-request/
 
 ## Hacktoberfest 2020 Special
 
-- We will be posting a problem daily at 10 AM related to all languages like HTML, Python, JavaScript, JAVA, C++, Android, etc till 30th Oct.
+- We will be posting a problem daily at 11 AM related to all languages like HTML, Python, JavaScript, JAVA, C++, Android, etc till 30th Oct.
 
 - We will assign it to the person we find most fit among all the students who have requested.
 
