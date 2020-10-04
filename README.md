@@ -38,6 +38,7 @@ This Repository cotains of following programming languages
 ## Steps to setup this Repository Locally
 
   1. Fork this repository to your account.
+
 ![PicsArt_10-04-08 04 45](https://user-images.githubusercontent.com/64744084/95018364-e7d2df00-067c-11eb-9989-5ed586adb11b.jpg)
 
   2. Go to Git Bash and Clone the forked repository using :
@@ -76,4 +77,4 @@ This Repository cotains of following programming languages
 
  7. That's it. You have opened a PR. Wait for it to get merged.
 
-##Thank You for your Amazing Contribution!!
+## Thank You for your Amazing Contribution!!
