@@ -54,7 +54,6 @@ int main() {
 
 
         //printing answer
-
         if(r==1){
 
             //special case when row is 1
