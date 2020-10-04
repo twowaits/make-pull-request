@@ -1,0 +1,17 @@
+{
+  "name": "4thotc",
+  "version": "1.0.0",
+  "description": "Hacktoberfest Task - 4th Oct",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "keywords": [
+    "hacktoberfest"
+  ],
+  "author": "DjDeveloperr",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
