@@ -1,7 +1,7 @@
 ![Issues](https://img.shields.io/github/issues/twowaits/make-pull-request)
 ![Stars GitHub](https://img.shields.io/github/stars/twowaits/make-pull-request)
 ![Forks](https://img.shields.io/github/forks/twowaits/make-pull-request)
-[![project chat](https://img.sheilds.io/badge/telegram-join_chat-brightgreen.svg?logo=telegram)](https://t.me/joinchat/AAAAAFbbJqzUyF18Okx94A)
+[![project chat](https://img.shields.io/badge/telegram-join--chat-brightgreen)](https://t.me/joinchat/AAAAAFbbJqzUyF18Okx94A)
 
 ## Make-pull-request
 It's an initiative by Twowaits Technologies to help create more awareness about Open Source and help introduce many more students to the benefits of FOSS. We will organize lots of events, this is our humble step.
@@ -38,21 +38,20 @@ This Repository cotains of following programming languages
 ## Steps to setup this Repository Locally
 
   1. Fork this repository to your account.
-![PicsArt_10-04-07 47 28](https://user-images.githubusercontent.com/64744084/95018055-a5a89e00-067a-11eb-8472-3950ed9861f5.png)
-
+![PicsArt_10-04-08 04 45](https://user-images.githubusercontent.com/64744084/95018364-e7d2df00-067c-11eb-9989-5ed586adb11b.jpg)
 
   2. Go to Git Bash and Clone the forked repository using :
        
        a. Clone the repository
-       ```bash
+```bash
    git clone https://github.com/your_username/make-pull-request
-       ```
+```
 ![PicsArt_10-04-07 46 13](https://user-images.githubusercontent.com/64744084/95018081-e3a5c200-067a-11eb-8a51-acde725b0345.png)
 
  3. Go to make-pull-request folder on your PC through Git Bash and create new branch 
-      ```bash 
+```bash 
    git checkout -b [your-branch-name]
-      ```
+```
  4. Open the folder in your favourite code editor and adding your changes or modifications.
  
 ## Creating a PR 
@@ -76,3 +75,5 @@ This Repository cotains of following programming languages
  6. Type a proper description and give the PR an appropriate title. Finally, Open a pull request by clicking the Create pull request button.
 
  7. That's it. You have opened a PR. Wait for it to get merged.
+
+##Thank You for your Amazing Contribution!!
