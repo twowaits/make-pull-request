@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        button {
+            border: none;
+            cursor: pointer;
+            outline: none;
+            background-color: white;
+        }
+
+        .head--text {
+            font-size: 16px;
+            padding: 20px 0px 20px 2px;
+            border-bottom: 0.5px solid rgb(212, 212, 212);
+        }
+
+        .label--layout {
+            padding: 20px 0px 20px 2px;
+        }
+
+        .label--button {
+            border-radius: 50px;
+            padding: 10px;
+            background-color: #c9e0ff;
+            color: #1967D2;
+            border: none;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .info--layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 0px 0px 20px 2px;
+        }
+
+        .info--content {
+            padding: 0px 0px 20px 2px;
+        }
+
+        .light-gray-text {
+            color: rgb(141, 141, 141);
+        }
+
+        .info--heading--text {
+            font-size: 12px;
+        }
+
+        .border-left {
+            border-left: rgb(206, 206, 206) solid 1px;
+        }
+
+        .table--layout {
+            padding: 0px 0px 20px 2px;
+        }
+
+        #table td,
+        #table th {
+            border-bottom: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        #table th {
+            color: #70757a;
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+        .main-layout {
+            width: 50vw;
+            border: solid gray 1px;
+            border-radius: 10px;
+            padding: 10px;
+            overflow: auto;
+            margin: 25px 0px 0px 25px;
+        }
+
+        .text--below-table {
+            color: #9e9e9e;
+            font-size: 15px;
+            padding-top: 15px;
+        }
+
+        .button-layout-below-table {
+            padding: 20px 0px 10px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top: solid rgb(201, 201, 201) 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-layout">
+        <h1 class="head--text">Cases</h1>
+        <section class="label--layout">
+            <div>
+                <button class="label--button">Total <i class="fas fa-caret-down"></i></button>
+                <button class="label--button">India <i class="fas fa-caret-down"></i></button>
+            </div>
+        </section>
+        <section class="info--layout">
+            <div class="info--content">
+                <span class="info--heading--text">Cases </span>
+                <h2>6.55M</h2>
+                <span class="light-gray-text">+75,789</span>
+            </div>
+            <div class="info--content border-left">
+                <span class="info--heading--text">Recovered</span>
+                <h2>6.55M</h2>
+                <span class="light-gray-text">+75,789</span>
+            </div>
+            <div class="info--content border-left">
+                <span class="info--heading--text">Deaths</span>
+                <h2>6.55M</h2>
+                <span class="light-gray-text">+75,789</span>
+            </div>
+
+        </section>
+        <section class="table--layout">
+            <table style="width:100%" id="table">
+                <tr>
+                    <th style="width: 45%;">Location</th>
+                    <th style="width: 18%;">Cases <i class="fas fa-caret-down"></i></th>
+                    <th style="width: 18%;">Recovered</th>
+                    <th style="width: 18%;">Deaths</th>
+                </tr>
+                <tr>
+                    <td>India</td>
+                    <td>1000</td>
+                    <td>500</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>United State</td>
+                    <td>1000</td>
+                    <td>500</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>United State</td>
+                    <td>1000</td>
+                    <td>500</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>United State</td>
+                    <td>1000</td>
+                    <td>500</td>
+                    <td>10</td>
+                </tr>
+            </table>
+            <p class="text--below-table">'+' shows new cases reported yesterday · Updated less than 1 hour
+                ago·Sources: <a href="#">Wikipedia</a> and The New
+                York Times.·About this data</p>
+
+        </section>
+        <div class="button-layout-below-table">
+            <button><span><i class="fas fa-caret-down"></i></span></button>
+        </div>
+    </div>
+
+</body>
+
+</html>
