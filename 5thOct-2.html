@@ -40,6 +40,9 @@
         a {
             text-decoration: none;
             cursor: pointer;
+            color: #057dbe;
+            font-weight: bold;
+            font-size: medium;
         }
 
         .profile__cover>img {
@@ -67,7 +70,7 @@
             position: relative;
             overflow: hidden;
             border-radius: 50%;
-            border:4px solid white;
+            border: 4px solid white;
             box-shadow: 1px 1px 4px 0px rgb(158, 158, 160);
             top: -45px;
             margin-left: 15px;
@@ -76,8 +79,8 @@
         .profile-pic {
             display: inline;
             margin: 0 auto;
-            margin-left: -25%; 
-        
+            margin-left: -25%;
+
         }
 
         .profile__tabs>button {
@@ -92,15 +95,70 @@
             outline: none;
 
         }
-       
-        .add__profile{
-            color:white;
-            background-color:  #057dbe;
+
+        .add__profile {
+            color: white;
+            background-color: #057dbe;
             border: 1px solid white !important;
         }
-        .more_btn{
+
+        .more_btn {
             margin-right: 30px !important;
             width: 77px;
+        }
+
+        /*profile - body*/
+        .profile__body {
+            background-color: white;
+            display: flex;
+
+        }
+
+        .profileBody__left {
+            width: 70%;
+           
+        }
+        h2{
+            font-weight: normal !important;
+        }
+
+        .fa.fa-volume-up {
+            margin: 3px 0px 0px 10px;
+            padding: 2px;
+            color: transparent;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #057dbe;
+        }
+
+        .details {
+            margin: 3rem;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            text-align: left;
+            width: 75%;
+        }
+        .connection{
+            display: flex;
+        }
+        .circle{
+            font-size: 0.2px;
+           margin: 7px;
+            color:#057dbe ;
+        }
+       .profileBody__right{
+           width: 30%;
+       }
+        .right__data{
+            display:flex;
+            padding: 14px;
+    align-items: center;
+        }
+        .right__data>img{
+            width: 40px;
+        }
+        h4{
+            margin-left:15px;
         }
     </style>
 
@@ -121,16 +179,39 @@
             </div>
 
             <div class="profile__tabs">
-                <button class="add__profile">Add Profile Section <i class="fa fa-caret-down" aria-hidden="true"></i> </button>
+                <button class="add__profile">Add Profile Section <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </button>
                 <button class="more_btn">More...</button>
-                <i class="fa fa-pencil-square edit__icon" aria-hidden="true"></i>
+                <a><i class="fa fa-pencil-square edit__icon" aria-hidden="true"></i></a>
             </div>
 
         </div>
         <div class="profile__body">
-           
-            <div class="profileBody__left"></div>
-            <div class="profileBody__right"></div>
+            <div class="profileBody__left">
+                <div class="details">
+                    <h2>Ayushi Keshri <i class="fa fa-volume-up" aria-hidden="true"></i></h2>
+                    <p>
+                        Building a digital leaerning platform to enable learning, the missing part of Indian education
+                        system
+                    </p><br />
+                    <p>Gautam Buddha Nagar, Uttar Pradesh, India</p>
+                    <div class="connection">
+                        <a>500+ connections</a>
+                        <i class="fa fa-circle circle" aria-hidden="true"></i>
+                        <a>Contact info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profileBody__right">
+                <div class="right__data">
+                    <img src="https://media-exp1.licdn.com/dms/image/C510BAQEHqel3x83gsg/company-logo_100_100/0?e=1609977600&v=beta&t=LITHpdf4dOlqtQzt4UiL8LiRy0hBOy4iAGuZYWdkPm8">
+                    <h4>TwoWaits</h4>
+                </div>
+                <div class="right__data">
+                    <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQGOT720GCURDQ/company-logo_100_100/0?e=1609977600&v=beta&t=02DUZdEy_a042MKwpy_KjgxE3rHAwjw8k5JZQv2JK4Y">
+                    <h4>Harcourt Butler Technical University</h4>
+                </div>
+            </div>
 
         </div>
     </div>
