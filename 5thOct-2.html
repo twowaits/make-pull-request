@@ -26,6 +26,9 @@
         .profile__cover {
             max-height: 35%;
             overflow: hidden;
+            display: flex;
+            flex-direction: row-reverse;
+            position: relative;
         }
 
         .edit__icon {
@@ -43,6 +46,12 @@
             color: #057dbe;
             font-weight: bold;
             font-size: medium;
+        }
+
+        .edit__topLink {
+            position: absolute;
+            top: 35px;
+            margin-right: 85px;
         }
 
         .profile__cover>img {
@@ -114,7 +123,8 @@
             flex-direction: column;
 
         }
-        .profile__content{
+
+        .profile__content {
             display: flex;
             flex-direction: row;
         }
@@ -128,7 +138,7 @@
             font-weight: normal !important;
         }
 
-        .fa.fa-volume-up {
+        .fa.fa-volume-down {
             margin: 3px 0px 0px 10px;
             padding: 2px;
             color: transparent;
@@ -175,7 +185,7 @@
 
         /*Footer*/
         .footer {
-            border: 2px dashed rgb(54, 53, 53);
+            border: 2px dashed rgb(112, 107, 107);
             height: 5vh;
             padding: 20px;
             margin: 10px;
@@ -199,7 +209,7 @@
 <body>
     <div class="profile">
         <div class="profile__cover">
-            <a><i class="fa fa-pencil-square edit__icon" aria-hidden="true"></i>
+            <a href="#" class="edit__topLink"><i class="fa fa-pencil-square edit__icon" aria-hidden="true"></i>
             </a>
             <img src="https://images.unsplash.com/photo-1593643946890-b5b85ade6451?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1080&q=80"
                 alt="cover Image" />
@@ -214,7 +224,7 @@
                 <button class="add__profile">Add Profile Section <i class="fa fa-caret-down" aria-hidden="true"></i>
                 </button>
                 <button class="more_btn">More...</button>
-                <a><i class="fa fa-pencil-square edit__icon" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-pencil-square edit__icon" aria-hidden="true"></i></a>
             </div>
 
         </div>
@@ -222,7 +232,7 @@
             <div class="profile__content">
                 <div class="profileBody__left">
                     <div class="details">
-                        <h2>Ayushi Keshri <i class="fa fa-volume-up" aria-hidden="true"></i></h2>
+                        <h2>Ayushi Keshri <i class="fa fa-volume-down" aria-hidden="true"></i></h2>
                         <p>
                             Building a digital leaerning platform to enable learning, the missing part of Indian
                             education
@@ -230,9 +240,9 @@
                         </p><br />
                         <p>Gautam Buddha Nagar, Uttar Pradesh, India</p>
                         <div class="connection">
-                            <a>500+ connections</a>
+                            <a href="#">500+ connections</a>
                             <i class="fa fa-circle circle" aria-hidden="true"></i>
-                            <a>Contact info</a>
+                            <a href="#">Contact info</a>
                         </div>
                     </div>
                 </div>
@@ -253,12 +263,12 @@
             <div class="footer">
                 <div class="footer__row">
                     <span>
-                    <strong>Show recruiters you're open to work --</strong> you control who sees
-                    this
-                     </span>
+                        <strong>Show recruiters you're open to work -</strong> you control who sees
+                        this
+                    </span>
                     <i class="fa fa-times" aria-hidden="true"></i>
                 </div>
-                <a>Get Started</a>
+                <a href="#">Get Started</a>
             </div>
 
         </div>
