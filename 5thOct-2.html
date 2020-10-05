@@ -111,14 +111,20 @@
         .profile__body {
             background-color: white;
             display: flex;
+            flex-direction: column;
 
+        }
+        .profile__content{
+            display: flex;
+            flex-direction: row;
         }
 
         .profileBody__left {
             width: 70%;
-           
+
         }
-        h2{
+
+        h2 {
             font-weight: normal !important;
         }
 
@@ -138,27 +144,53 @@
             text-align: left;
             width: 75%;
         }
-        .connection{
+
+        .connection {
             display: flex;
         }
-        .circle{
+
+        .circle {
             font-size: 0.2px;
-           margin: 7px;
-            color:#057dbe ;
+            margin: 7px;
+            color: #057dbe;
         }
-       .profileBody__right{
-           width: 30%;
-       }
-        .right__data{
-            display:flex;
+
+        .profileBody__right {
+            width: 30%;
+        }
+
+        .right__data {
+            display: flex;
             padding: 14px;
-    align-items: center;
+            align-items: center;
         }
-        .right__data>img{
+
+        .right__data>img {
             width: 40px;
         }
-        h4{
-            margin-left:15px;
+
+        h4 {
+            margin-left: 15px;
+        }
+
+        /*Footer*/
+        .footer {
+            border: 2px dashed rgb(54, 53, 53);
+            height: 5vh;
+            padding: 20px;
+            margin: 10px;
+            background: white;
+            width: 80%;
+            margin: 0 auto;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            font-size: 14px;
+
+        }
+
+        .footer__row {
+            display: flex;
+            justify-content: space-between;
         }
     </style>
 
@@ -187,33 +219,50 @@
 
         </div>
         <div class="profile__body">
-            <div class="profileBody__left">
-                <div class="details">
-                    <h2>Ayushi Keshri <i class="fa fa-volume-up" aria-hidden="true"></i></h2>
-                    <p>
-                        Building a digital leaerning platform to enable learning, the missing part of Indian education
-                        system
-                    </p><br />
-                    <p>Gautam Buddha Nagar, Uttar Pradesh, India</p>
-                    <div class="connection">
-                        <a>500+ connections</a>
-                        <i class="fa fa-circle circle" aria-hidden="true"></i>
-                        <a>Contact info</a>
+            <div class="profile__content">
+                <div class="profileBody__left">
+                    <div class="details">
+                        <h2>Ayushi Keshri <i class="fa fa-volume-up" aria-hidden="true"></i></h2>
+                        <p>
+                            Building a digital leaerning platform to enable learning, the missing part of Indian
+                            education
+                            system
+                        </p><br />
+                        <p>Gautam Buddha Nagar, Uttar Pradesh, India</p>
+                        <div class="connection">
+                            <a>500+ connections</a>
+                            <i class="fa fa-circle circle" aria-hidden="true"></i>
+                            <a>Contact info</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profileBody__right">
+                    <div class="right__data">
+                        <img
+                            src="https://media-exp1.licdn.com/dms/image/C510BAQEHqel3x83gsg/company-logo_100_100/0?e=1609977600&v=beta&t=LITHpdf4dOlqtQzt4UiL8LiRy0hBOy4iAGuZYWdkPm8">
+                        <h4>TwoWaits</h4>
+                    </div>
+                    <div class="right__data">
+                        <img
+                            src="https://media-exp1.licdn.com/dms/image/C4E0BAQGOT720GCURDQ/company-logo_100_100/0?e=1609977600&v=beta&t=02DUZdEy_a042MKwpy_KjgxE3rHAwjw8k5JZQv2JK4Y">
+                        <h4>Harcourt Butler Technical University</h4>
                     </div>
                 </div>
             </div>
-            <div class="profileBody__right">
-                <div class="right__data">
-                    <img src="https://media-exp1.licdn.com/dms/image/C510BAQEHqel3x83gsg/company-logo_100_100/0?e=1609977600&v=beta&t=LITHpdf4dOlqtQzt4UiL8LiRy0hBOy4iAGuZYWdkPm8">
-                    <h4>TwoWaits</h4>
+            <div class="footer">
+                <div class="footer__row">
+                    <span>
+                    <strong>Show recruiters you're open to work --</strong> you control who sees
+                    this
+                     </span>
+                    <i class="fa fa-times" aria-hidden="true"></i>
                 </div>
-                <div class="right__data">
-                    <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQGOT720GCURDQ/company-logo_100_100/0?e=1609977600&v=beta&t=02DUZdEy_a042MKwpy_KjgxE3rHAwjw8k5JZQv2JK4Y">
-                    <h4>Harcourt Butler Technical University</h4>
-                </div>
+                <a>Get Started</a>
             </div>
 
         </div>
+
     </div>
 
 </body>
