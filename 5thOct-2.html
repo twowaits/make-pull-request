@@ -24,9 +24,7 @@
         }
 
         .profile__cover {
-
             max-height: 35%;
-            background-color: aquamarine;
             overflow: hidden;
         }
 
@@ -36,7 +34,7 @@
             font-size: 42px;
             clip-path: circle(43%);
             background: #057dbe;
-            margin: 0 auto;
+            margin: 3px auto;
         }
 
         a {
@@ -60,7 +58,7 @@
             align-items: center;
             justify-content: space-between;
             padding: 1rem 4rem 0rem 1rem;
-
+            background-color: white;
         }
 
         .image-cropper {
@@ -71,6 +69,8 @@
             border-radius: 50%;
             border:4px solid white;
             box-shadow: 1px 1px 4px 0px rgb(158, 158, 160);
+            top: -45px;
+            margin-left: 15px;
         }
 
         .profile-pic {
@@ -83,9 +83,24 @@
         .profile__tabs>button {
             cursor: pointer;
             padding: 10px;
-            margin: 2px;
+            margin: 5px;
             border: 1px solid black;
+            text-align: center;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 300;
+            outline: none;
 
+        }
+       
+        .add__profile{
+            color:white;
+            background-color:  #057dbe;
+            border: 1px solid white !important;
+        }
+        .more_btn{
+            margin-right: 30px !important;
+            width: 77px;
         }
     </style>
 
@@ -99,20 +114,21 @@
             <img src="https://images.unsplash.com/photo-1593643946890-b5b85ade6451?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1080&q=80"
                 alt="cover Image" />
         </div>
-        <div class="profile__body">
-            <div class="profile__pic">
-                <div class="image-cropper">
-                    <img src="https://images.unsplash.com/photo-1601579133742-d5ff08f94d64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=60"
-                        alt="avatar" class="profile-pic">
-                </div>
-
-                <div class="profile__tabs">
-                    <button>Add Profile Section</button>
-                    <button>More...</button>
-                    <a><i class="fa fa-pencil-square edit__icon" aria-hidden="true"></i></a>
-                </div>
-
+        <div class="profile__pic">
+            <div class="image-cropper">
+                <img src="https://images.unsplash.com/photo-1601579133742-d5ff08f94d64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=60"
+                    alt="avatar" class="profile-pic">
             </div>
+
+            <div class="profile__tabs">
+                <button class="add__profile">Add Profile Section <i class="fa fa-caret-down" aria-hidden="true"></i> </button>
+                <button class="more_btn">More...</button>
+                <i class="fa fa-pencil-square edit__icon" aria-hidden="true"></i>
+            </div>
+
+        </div>
+        <div class="profile__body">
+           
             <div class="profileBody__left"></div>
             <div class="profileBody__right"></div>
 
