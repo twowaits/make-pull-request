@@ -12,8 +12,11 @@ You can look at the issues [here](https://github.com/twowaits/make-pull-request/
 
 ## Learn how to particpate in Hacktoberfest 2020, Step by Step guide prepared by Twowaits.
 
+How to register, some important rules to follw, which repos to contribute and other details in a 13 mins quick video.
+
 [![](https://img.youtube.com/vi/saqCrCPQNkY/0.jpg)](https://www.youtube.com/watch?v=saqCrCPQNkY)
 
+If above link doesn't works watch [here]((https://www.youtube.com/watch?v=saqCrCPQNkY)).
 
 ## Hacktoberfest 2020 Special
 
