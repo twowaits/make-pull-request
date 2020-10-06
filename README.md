@@ -16,7 +16,7 @@ How to register, some important rules to follw, which repos to contribute and ot
 
 [![](https://img.youtube.com/vi/saqCrCPQNkY/0.jpg)](https://www.youtube.com/watch?v=saqCrCPQNkY)
 
-If above link doesn't works watch [here]((https://www.youtube.com/watch?v=saqCrCPQNkY)).
+If above link doesn't works watch [here](https://www.youtube.com/watch?v=saqCrCPQNkY).
 
 ## Hacktoberfest 2020 Special
 
