@@ -10,6 +10,11 @@ Lots of students struggle in creating their first PR. They try somewhat and leav
 
 You can look at the issues [here](https://github.com/twowaits/make-pull-request/issues) and choose which one you would like to work on! 
 
+## Learn how to particpate in Hacktoberfest 2020, Step by Step guide prepared by Twowaits.
+
+[![](https://img.youtube.com/vi/saqCrCPQNkY/0.jpg)](https://www.youtube.com/watch?v=saqCrCPQNkY)
+
+
 ## Hacktoberfest 2020 Special
 
 - We will be posting a problem daily at 11 AM related to all languages like HTML, Python, JavaScript, JAVA, C++, Android, etc till 30th Oct.
