@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <style>
+        body{
+            align-items: center;
+            padding-left: 16rem;
+            padding-right: 16rem;
+            padding-top: 4rem;
+        }
+        .pad{
+            padding: 15px;
+        }
+        .border{
+            border-bottom: 1px solid grey;
+        }
+        .border-left{
+            border-left: black;
+            border-left: grey solid 1px;
+            padding-left: 10px;
+            opacity: 0.75;
+        }
+        .container{
+            border-style: solid;
+            border-width: thin;
+            border-radius: 7px;
+            border-collapse: collapse;
+            border-color: grey;
+        }
+        .info-container{
+            display: flex;
+          /* flex-wrap: wrap; */
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        table, tr,td {
+        border-bottom: 1px solid grey;
+        border-collapse: collapse;
+        padding-top: 3px;
+        padding-bottom: 3px;
+}
+.button {
+    background-color: aliceblue;
+    border-radius: 20px;
+    height: 2rem;
+    width: 6rem;
+    border-width: 0.5px;
+    border-color: cadetblue;
+    color: blue;
+    font-size: 16px;
+}
+.button :hover {
+    background-color: #33CCFF;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header pad border">
+            <span style="font-size: 24px;font-weight: 400;">Cases<span>
+        </div>
+        <div class="btn-container pad">
+            <button class="button" >Total 
+                <i class="fas fa-caret-down"></i>
+                </button>
+            <button class="button">
+                <img width ="16px" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"/>
+                <span>India</span>
+                <i class="fas fa-caret-down"></i>
+
+            </button>
+        </div>
+        <div class="info-container pad">
+            <div class="info ">
+                <small >Cases</small><br />
+                <h2>6.55M</h2>
+                <h4 style="color: grey;">+79,476</h4>
+            </div>
+            <div class="info border-left">
+                <small>Recovered</small>
+                <h2>5.51M</h2>
+                <h4 style="color: grey;">+79,476</h4>
+            </div>
+            <div class="info border-left">
+                <small>Deaths</small><br/>
+                <h2>102K</h2>
+                <h4 style="color: grey;">+1,069</h4>
+            </div>
+        </div>    
+            <div class="table-container pad">
+                <table class="table border border" style="width:100%">
+                    <tr style="text-align: left;color: grey;">
+                        <td>Location</td>
+                        <td>Cases</td>
+                        <td>Recovered</td>
+                        <td>Deaths</td>
+                    </tr>
+
+                    <tr class="border">
+                        <td class="border" >Maharashtra</td>
+                        <td class="border">1.42M</td>
+                        <td>1.12M</td>
+                        <td>37,480</td>
+                    </tr>
+
+                    <tr class="border">
+                        <td>Andhra Pradesh</td>
+                        <td>707K</td>
+                        <td>644K</td>
+                        <td>5,900</td>
+                    </tr>
+
+                    <tr>
+                        <td>Karnataka</td>
+                        <td>Cases</td>
+                        <td>621K</td>
+                        <td>9,119</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tamil Nadu</td>
+                        <td>609K</td>
+                        <td>553K</td>
+                        <td>9,653</td>
+                    </tr>
+                    <tr>
+                        <td>Uttar Pradesh</td>
+                        <td>407K</td>
+                        <td>352K</td>
+                        <td>5,917</td>
+                    </tr>
+                </table>
+                <div style="text-align: center;color: grey;">
+                    <div class="border" style="width: 100%!important;">
+                       <span> '+' shows new cases reported yesterday · Updated less than 50 min
+                        ago· Sources: <a style="color: darkgrey;" href="#">Wikipedia</a> · 
+                        <a style="color: darkgrey;" href="#">About this data</a>
+                        </span>
+                    </div>
+                    <span style="padding-bottom: 10px;padding-top: 10px;">
+                            ᐯ
+                    </span>
+                <div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

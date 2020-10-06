@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile</title>
+        <style>
+            :root{
+                --base-color: #0073b1;
+                --base-color-trans: #0073b111;
+            }
+            a{
+                color: var(--base-color);
+            }
+            body{
+                background: #eee;
+            }
+            *{
+                margin:0;
+                padding:0;
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .card{
+                margin: 4rem auto;
+                max-width: 1024px;
+                border: #ddd 1px solid;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                background: #fff;
+            }
+            .cover{
+                height: 10%;
+                overflow: hidden;
+                max-height: 256px;
+            }
+            .content{
+                padding: 0 2rem 2rem 2rem;
+                display: grid;
+                column-gap: 2rem;
+                grid-template-columns: 2fr 1fr;
+            }
+            .heading{
+                grid-column: span 2;
+                position: relative;
+            }
+            .footer{
+                grid-column: span 2;
+            }
+            img{
+                box-sizing: border-box;
+                object-fit: cover;
+            }
+            .profile-pic{
+                position: absolute;
+                bottom: 0px;
+                border-radius: 100px;
+                height: 200px;
+                width: 200px;
+                border: 3px solid #fff;
+                overflow: hidden;
+            }
+            .actions{
+                padding: 1rem 0;
+                text-align: right;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            .btn{
+                outline: none;
+                border-radius: 3px;
+                padding: 0.5em 0.8em;
+                font-size: 0.9em;
+                cursor: pointer;
+                margin: 0.3em;
+            }
+            .btn--blue{
+                background: var(--base-color);
+                color: #fff;
+            }
+            .btn--blue::after{
+                content: " ▾";
+            }
+            .btn--trans{
+                border: 1px solid #888;
+                color: #555;
+            }
+            .btn--trans::after{
+                content: "...";
+            }
+            .edit__btn{
+                height: auto;
+                font-size: 1.5em;
+                padding: 0.3em;
+                border-radius: 50%;
+                margin: 0.3em;
+                background: #fff;
+            }
+            .edit__btn:hover{
+                background: var(--base-color-trans);
+            }
+            .icon{
+                width: 1em;
+            }
+            .icon--edit{
+                content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' data-supported-dps='24x24' fill='currentColor' width='24' height='24' focusable='false' style='fill:%230073b1;'%3E%3Cpath d='M21.71 5L19 2.29a1 1 0 00-.71-.29 1 1 0 00-.7.29L4 15.85 2 22l6.15-2L21.71 6.45a1 1 0 00.29-.74 1 1 0 00-.29-.71zM6.87 18.64l-1.5-1.5L15.92 6.57l1.5 1.5zM18.09 7.41l-1.5-1.5 1.67-1.67 1.5 1.5z'%3E%3C/path%3E%3C/svg%3E");
+            }
+            .cover__btn{
+                position: absolute;
+                font-size: 1.2rem;
+                margin: 1rem;
+                right: 0;
+            }
+            .cover__btn:hover{
+                background: #fffd;
+            }
+            .about{
+                padding-top: 0.5rem;
+                font-size: 1.1rem;
+            }
+            .icon--speaker{
+                content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' data-supported-dps='24x24' fill='currentColor' width='24' height='24' focusable='false' style='fill:%230073b1;'%3E%3Cpath d='M4 8a1 1 0 00-1 1v6a1 1 0 001 1h4.25L15 21V3L8.25 8H4zm9-1.15v10.3L8.7 14H5v-4h3.7zM24 12a10 10 0 01-2.93 7.07l-1.24-1.24a8.24 8.24 0 000-11.66l1.24-1.24A10 10 0 0124 12zm-4 0a6 6 0 01-1.76 4.24L17 15a4.24 4.24 0 000-6l1.24-1.24A6 6 0 0120 12z'%3E%3C/path%3E%3C/svg%3E");
+            }
+            .address{
+                color: #333;
+                padding: 0.3rem 0;
+            }
+            .about__footer a{
+                color: var(--base-color);
+            }
+            .about__footer a:first-child::after{
+                content: "    . ";
+                color: gray;
+            }
+            .experience{
+                display: flex;
+                flex-direction: column;
+            }
+            .exp__element{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-bottom: 0.5rem;
+            }
+            .exp__element img{
+                width: 2rem;
+            }
+            .exp__element h4{
+                padding-left: 0.5rem;
+            }
+            .footer{
+                margin-top: 1rem;
+                padding: 1rem;
+                border: #ccc dashed 2px;
+            }
+            h2{
+                font-weight: 200;
+                font-size: 1.8rem;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="card">
+            <div class="cover">
+                <a href="#" class="cover__btn edit__btn icon icon--edit"></a>
+                <img src="https://images.unsplash.com/photo-1593643946890-b5b85ade6451?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1080&q=80">
+            </div>
+            <div class="content">
+                <div class="heading">
+                    <div class="profile-pic">
+                        <img src="https://images.unsplash.com/photo-1601579133742-d5ff08f94d64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=60">
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="btn btn--blue">Add Profile section</a>
+                        <a href="#" class="btn btn--trans">More</a>
+                        <a href="#" class="edit__btn icon icon--edit"></a>
+                    </div>
+                </div>
+                <div class="about">
+                    <h2>Full Name <span class="icon icon--speaker"></span></h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum reprehenderit tempore officiis
+                        nobis modi voluptatum mollitia aliquid consectetur consequuntur, maiores deleniti eum doloribus
+                        eius hic eligendi quam minus nihil quae!
+                    </p>
+                    <div class="address">Theodosia, Missouri(MO), 65761</div>
+                    <div class="about__footer">
+                        <a href="#">500+ connections</a>
+                        <a href="#">Contact info</a>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="exp__element">
+                        <img src="https://media-exp1.licdn.com/dms/image/C510BAQEHqel3x83gsg/company-logo_100_100/0?e=1609977600&v=beta&t=LITHpdf4dOlqtQzt4UiL8LiRy0hBOy4iAGuZYWdkPm8">
+                        <h4>TwoWaits</h4>
+                    </div>
+                    <div class="exp__element">
+                        <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQGOT720GCURDQ/company-logo_100_100/0?e=1609977600&v=beta&t=02DUZdEy_a042MKwpy_KjgxE3rHAwjw8k5JZQv2JK4Y">
+                        <h4>Harcourt Butler Technical University</h4>
+                    </div>
+                </div>
+                <div class="footer">
+                    <strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</strong> - you control who sees this
+                    <br><a href="#">Get started</a>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

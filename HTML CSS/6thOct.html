@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn - Tathastu</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+    <style>
+        :root{
+            --base-color: #154854;
+            --text-gray: #515457;
+            --base-color2: #cceff6;
+            --background: #f4f5f7;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Lato;
+            text-decoration: none;
+        }
+        a{
+            color: inherit;
+        }
+        nav{
+            display: flex;
+            color: #fff;
+            background: var(--base-color);
+            padding: 1rem 2.5rem;
+        }
+        .brand{
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            font-weight: 900;
+            padding-right:1.5rem;
+        }
+        .nav__content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            font-size: 1rem;
+            color: #fffa;
+        }
+        .nav__elements{
+            text-transform: uppercase;
+        }
+        .nav__link{
+            padding: 1rem;
+        }
+        .nav__link:hover, .active{
+            font-weight: 900;
+            color: #fff;
+            transition: 0.3s all;
+        }
+        .far{
+            font-size: 1.2rem;
+        }
+        .profile::after{
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-left: .255em;
+            vertical-align: .255em;
+            content: "";
+            border-top: .3em solid;
+            border-right: .3em solid transparent;
+            border-bottom: 0;
+            border-left: .3em solid transparent;
+            font-size: 1.2rem;
+        }
+        body{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            background: var(--background);
+            column-gap: 1rem;
+        }
+        nav{
+            grid-column: span 3;
+        }
+        .card{
+            background: #fff;
+            border-radius: 0.5rem;
+            padding: 1rem;
+        }
+        .card--dropdown{
+            background: #ededed;
+            position: relative;
+        }
+        .card__heading{
+            font-size: 1.1rem;
+        }
+        .card--dropdown .card__heading{
+            padding-right: 1rem;
+        }
+        .card--dropdown .about, .card--dropdown .card__action{
+            display: none;
+        }
+        .card--dropdown:hover .about, .card--dropdown:hover .card__action, .card--active .about, .card--active .card__action{
+            display: block;
+        }
+        .card--dropdown::after{
+            content: "⌄";
+            position: absolute;
+            top: -0.5rem;
+            font-size: 2rem;
+            font-weight: 900;
+            right: 1rem;
+        }
+        .card--active, .card--dropdown:hover{
+            background: var(--base-color2);
+        }
+        .profile-pic{
+            width: 4rem;
+            border-radius: 50%;
+            margin: 0 1rem;
+        }
+        .left-aside, .right-aside, .section, .projects{
+            display: grid;
+            row-gap: 0.6rem;
+            grid-template-rows: min-content;
+            align-content: start;
+        }
+        .left-aside, .right-aside{
+            grid-template-columns: 1fr;
+            padding: 1rem; 
+        }
+        article{
+            padding: 1rem;
+        }
+        .section, .projects{
+            grid-template-columns: 1fr 1fr;
+            column-gap: 0.6rem;
+        }
+        .section .heading, .projects .heading{
+            grid-column: span 2;
+        }
+        .heading{
+            color: var(--base-color);   
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+        .about{
+            color: var(--text-gray);
+            font-size: 0.8rem;
+            padding: 1rem 0;
+        }
+        .card__action{
+            font-size: 0.8rem;
+            color: var(--base-color);
+        }
+        .card__img{
+            object-fit: cover;
+            width: 100%;
+        }
+        .projects{
+            margin-top: 1rem;
+        }
+        .number::before{
+            content:"#";
+        }
+        .card--leaderboard{
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center ;
+        }
+        .points{
+            color: var(--text-gray);
+            font-size: 1rem;
+        }
+        .points:after{
+            content: " points";
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" class="brand">Tathastu</a>
+        <div class="nav__content">
+            <div class="nav__elements">
+                <a href="#" class="nav__link">Discuss</a>
+                <a href="#" class="nav__link active">Learn</a>
+                <a href="#" class="nav__link">Compete</a>
+                <a href="#" class="nav__link">Work</a>
+            </div>
+            <div class="nav__actions">
+                <a href="#" class="notification nav__link"><i class="far fa-bell" aria-hidden="true"></i></span></a>
+                <a href="#" class="profile nav__link"><i class="far fa-user" aria-hidden="true"></i> Name </a>
+            </div>
+        </div>
+    </nav>
+    <div class = "left-aside">
+        <h3 class="heading">Joined Courses</h3>
+        <div class="card card--dropdown card--active">
+            <a href="#" class="card__heading">Machine Learning and Data Science</a>
+            <p class="about">Machine Learning and Data Science</p>
+            <a href="#" class="card__action">Leave Course</a>
+        </div>
+        <div class="card card--dropdown">
+            <a href="#" class="card__heading">DSA Series</a>
+            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <a href="#" class="card__action">Leave Course</a>
+        </div>
+        <div class="card card--dropdown">
+            <a href="#" class="card__heading">Python</a>
+            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <a href="#" class="card__action">Leave Course</a>
+        </div>
+        <div class="card card--dropdown">
+            <a href="#" class="card__heading">Professional Skills</a>
+            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <a href="#" class="card__action">Leave Course</a>
+        </div>
+        <div class="card card--dropdown">
+            <a href="#" class="card__heading">Insights Webinars</a>
+            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <a href="#" class="card__action">Leave Course</a>
+        </div>
+
+        <div class="card card--dropdown">
+            <a href="#" class="card__heading">Django Framework</a>
+            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <a href="#" class="card__action">Leave Course</a>
+        </div>
+        <div class="card card--dropdown">
+            <a href="#" class="card__heading">Competitive Programming</a>
+            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <a href="#" class="card__action">Leave Course</a>
+        </div>
+    </div>
+    <article>
+        <div class="section">
+            <h3 class="heading">Sections</h3>
+            <a href="#" class="card card__heading">Installation</a>
+            <a href="#" class="card card__heading">Getting Started</a>
+            <a href="#" class="card card__heading">Data Visualization</a>
+            <a href="#" class="card card__heading">Exploratory Data Analysis</a>
+            <a href="#" class="card card__heading">Data Preprocessing</a>
+            <a href="#" class="card card__heading">Live Session</a>
+        </div>
+        <div class="projects">
+            <h3 class="heading">Projects</h3>
+            <a href="#" class="card">
+                <img src="#" class="card__img">
+                <h3 href="#" class="card__heading">Titanic Dataset</h3>
+                <p class="about">Predict Survivable of Passenger</p>
+            </a>
+            <a href="#" class="card">
+                <img src="#" class="card__img">
+                <h3 href="#" class="card__heading">Chatbot using Google DialogFlow</h3>
+                <p class="about">Make Google ChatBot</p>
+            </a>
+            <a href="#" class="card">
+                <img src="#" class="card__img">
+                <h3 href="#" class="card__heading">Lorem ipsum dolor sit</h3>
+                <p class="about">Lorem ipsum dolor sit amet.</p>
+            </a>
+        </div>
+    </article>
+    <div class="right-aside">
+        <h3 class="heading">Leaderboard</h3>
+        <div class="card card--leaderboard">
+            <div class="number">1</div>
+            <img class="profile-pic" src="http://www.twowaits.in/images/dp/1001.png">
+            <div class="info">
+                <div class="name">Full Name</div>
+                <div class="points">73</div>
+            </div>
+        </div>
+        <div class="card card--leaderboard">
+            <div class="number">2</div>
+            <img class="profile-pic" src="http://www.twowaits.in/images/dp/1001.png">
+            <div class="info">
+                <div class="name">Full Name</div>
+                <div class="points">73</div>
+            </div>
+        </div>
+        <div class="card card--leaderboard">
+            <div class="number">3</div>
+            <img class="profile-pic" src="http://www.twowaits.in/images/dp/1001.png">
+            <div class="info">
+                <div class="name">Full Name</div>
+                <div class="points">73</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
