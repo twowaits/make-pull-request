@@ -1,11 +1,14 @@
 function checkprime(numbur) {
+    if(numbur == 0 || numbur == 1) {
+        return true;
+    } 
     for(let i = 2; i < (numbur/2); i++) {
         if(numbur % i == 0) {
-            return false;
+            return true;
             break;
         }
     }
-    return true;
+    return false;
 }
 function spfibon(numinput) {
     if(numinput == 1) {
@@ -22,17 +25,22 @@ function spfibon(numinput) {
     let fibnum;
     let arr = [];
     for(let i = 0; i < numinput; i++) {
-        fibnum = num1 + num2;
-        
-        if(!checkprime(fibnum)) {
-            fibnum = 0;
+        if(i == 0) {
+            fibnum = 1;
         }
-        if(fibnum % 5 == 0) {
-            fibnum = 0;
+        else {
+            fibnum = num1 + num2;
+            num1 = num2;
+            num2 = fibnum;
+            if(!checkprime(fibnum)) {
+                fibnum = 0;
+            }
+            if(fibnum % 5 == 0) {
+                fibnum = 0;
+            }
         }
         arr.push(fibnum);
-        num1 = num2;
-        num2 = fibnum;
+        
     }
     return arr;
 }
