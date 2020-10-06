@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Profile-Clone</title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .profile {
+            height: 90vh;
+            max-width: 70vw;
+            margin: 3rem auto;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            padding: 1px;
+            background: rgb(152, 153, 153);
+        }
+
+        .profile__cover {
+            max-height: 35%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row-reverse;
+            position: relative;
+        }
+
+        .edit__icon {
+            position: absolute;
+            color: white;
+            font-size: 42px;
+            clip-path: circle(43%);
+            background: #057dbe;
+            margin: 3px auto;
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            color: #057dbe;
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        .edit__topLink {
+            position: absolute;
+            top: 35px;
+            margin-right: 85px;
+        }
+
+        .profile__cover>img {
+            object-fit: cover;
+        }
+
+        .profile__body {
+            flex-grow: 1;
+            background-color: white;
+        }
+
+        /*profile pic div*/
+        .profile__pic {
+            display: flex;
+            max-height: 10%;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 4rem 0rem 1rem;
+            background-color: white;
+        }
+
+        .image-cropper {
+            width: 10rem;
+            height: 11rem;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 1px 1px 4px 0px rgb(158, 158, 160);
+            top: -45px;
+            margin-left: 15px;
+        }
+
+        .profile-pic {
+            display: inline;
+            margin: 0 auto;
+            margin-left: -25%;
+
+        }
+
+        .profile__tabs>button {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 300;
+            outline: none;
+
+        }
+
+        .add__profile {
+            color: white;
+            background-color: #057dbe;
+            border: 1px solid white !important;
+        }
+
+        .more_btn {
+            margin-right: 30px !important;
+            width: 77px;
+        }
+
+        /*profile - body*/
+        .profile__body {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .profile__content {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .profileBody__left {
+            width: 70%;
+
+        }
+
+        h2 {
+            font-weight: normal !important;
+        }
+
+        .fa.fa-volume-down {
+            margin: 3px 0px 0px 10px;
+            padding: 2px;
+            color: transparent;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #057dbe;
+        }
+
+        .details {
+            margin: 3rem;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            text-align: left;
+            width: 75%;
+        }
+
+        .connection {
+            display: flex;
+        }
+
+        .circle {
+            font-size: 0.2px;
+            margin: 7px;
+            color: #057dbe;
+        }
+
+        .profileBody__right {
+            width: 30%;
+        }
+
+        .right__data {
+            display: flex;
+            padding: 14px;
+            align-items: center;
+        }
+
+        .right__data>img {
+            width: 40px;
+        }
+
+        h4 {
+            margin-left: 15px;
+        }
+
+        /*Footer*/
+        .footer {
+            border: 2px dashed rgb(112, 107, 107);
+            height: 5vh;
+            padding: 20px;
+            margin: 10px;
+            background: white;
+            width: 80%;
+            margin: 0 auto;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            font-size: 14px;
+
+        }
+
+        .footer__row {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="profile">
+        <div class="profile__cover">
+            <a href="#" class="edit__topLink"><i class="fa fa-pencil-square edit__icon" aria-hidden="true"></i>
+            </a>
+            <img src="https://images.unsplash.com/photo-1593643946890-b5b85ade6451?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1080&q=80"
+                alt="cover Image" />
+        </div>
+        <div class="profile__pic">
+            <div class="image-cropper">
+                <img src="https://images.unsplash.com/photo-1601579133742-d5ff08f94d64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=60"
+                    alt="avatar" class="profile-pic">
+            </div>
+
+            <div class="profile__tabs">
+                <button class="add__profile">Add Profile Section <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </button>
+                <button class="more_btn">More...</button>
+                <a href="#"><i class="fa fa-pencil-square edit__icon" aria-hidden="true"></i></a>
+            </div>
+
+        </div>
+        <div class="profile__body">
+            <div class="profile__content">
+                <div class="profileBody__left">
+                    <div class="details">
+                        <h2>Ayushi Keshri <i class="fa fa-volume-down" aria-hidden="true"></i></h2>
+                        <p>
+                            Building a digital leaerning platform to enable learning, the missing part of Indian
+                            education
+                            system
+                        </p><br />
+                        <p>Gautam Buddha Nagar, Uttar Pradesh, India</p>
+                        <div class="connection">
+                            <a href="#">500+ connections</a>
+                            <i class="fa fa-circle circle" aria-hidden="true"></i>
+                            <a href="#">Contact info</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profileBody__right">
+                    <div class="right__data">
+                        <img
+                            src="https://media-exp1.licdn.com/dms/image/C510BAQEHqel3x83gsg/company-logo_100_100/0?e=1609977600&v=beta&t=LITHpdf4dOlqtQzt4UiL8LiRy0hBOy4iAGuZYWdkPm8">
+                        <h4>TwoWaits</h4>
+                    </div>
+                    <div class="right__data">
+                        <img
+                            src="https://media-exp1.licdn.com/dms/image/C4E0BAQGOT720GCURDQ/company-logo_100_100/0?e=1609977600&v=beta&t=02DUZdEy_a042MKwpy_KjgxE3rHAwjw8k5JZQv2JK4Y">
+                        <h4>Harcourt Butler Technical University</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer__row">
+                    <span>
+                        <strong>Show recruiters you're open to work -</strong> you control who sees
+                        this
+                    </span>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <a href="#">Get Started</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
