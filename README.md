@@ -12,7 +12,7 @@ You can look at the issues [here](https://github.com/twowaits/make-pull-request/
 
 ## How to particpate in Hacktoberfest 2020
 
-How to register, some important rules to follw, which repos to contribute and other details in a 13 mins quick video on our Youtube Channel.
+How to register, some important rules to follow, which repos to contribute and other details in a 13 mins quick video on our Youtube Channel.
 
 [![](https://img.youtube.com/vi/saqCrCPQNkY/0.jpg)](https://www.youtube.com/watch?v=saqCrCPQNkY)
 
