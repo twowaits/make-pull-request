@@ -1,6 +1,6 @@
 def main():
-    54321
     table={0:'and',1:'tens', 2:'hundreds', 3:'thousands',4:None, 5:'lacs', 6:None, 7:'crores',8:None}
+    table2={0:'and',1:'ten', 2:'hundred', 3:'thousand',4:None, 5:'lac', 6:None, 7:'crore',8:None}
     n=input()
     num=[each for each in n]
     string=[]
@@ -12,9 +12,13 @@ def main():
             continue
 
         if(table[shift-x]==None):
-            string.append(num[x])
-            string.append(num[x+1])
-            string.append(table[shift-x-1])
+            temp=''.join(num[x:x+2])
+            string.append(temp)
+            # string.append(num[x+1])
+            if(num[x]=='1'):
+                string.append(table2[shift-x-1])
+            else:
+                string.append(table[shift-x-1])
 
         elif(x!=0 and table[shift-x+1]==None):
             
@@ -22,7 +26,11 @@ def main():
 
         else:
             string.append(num[x])
-            string.append(table[shift-x])
+            if(num[x]=='1'):
+                string.append(table2[shift-x])
+            else: 
+                string.append(table[shift-x])
+
     string=' '.join(string)
     print(string)
 main()
