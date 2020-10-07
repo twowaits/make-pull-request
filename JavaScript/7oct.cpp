@@ -1,10 +1,7 @@
 #include<iostream>
 using namespace std;
 const string A[] = { "", "1 ", "2 ", "3 ", "4 ", "5 ",
-				"6 ", "7 ", "8 ", "9 ", "10 ", "11 ",
-				"Twelve ", "Thirteen ", "Fourteen ", "Fifteen ",
-				"Sixteen ", "Seventeen ", "Eighteen ", "Nineteen " };
-
+				"6 ", "7 ", "8 ", "9 ", "10 " };
 const string B[] = { "", "", "2", "3", "4", "5",
 				"6", "7", "8", "9" };
 string digit(unsigned long long int n, string left)
@@ -12,8 +9,6 @@ string digit(unsigned long long int n, string left)
 if (n == 0) {
 		return "0";
 	}
-
-	// split n if it is more than 19
 	if (n > 19) {
 		return B[n / 10] + A[n % 10] + left;
 	}
@@ -23,7 +18,6 @@ if (n == 0) {
 }
 string notowords(unsigned long long int n)
 {
-	
 	string res;
 	res = digit((n % 10), "");
 	if (n > 100 && n % 100) {
@@ -37,7 +31,6 @@ string notowords(unsigned long long int n)
 	res = digit((n / 1000000000) % 100, "Billion, ") + res;
 	return res;
 }
-
 int main()
 {
     unsigned long long n;
