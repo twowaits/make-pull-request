@@ -1,0 +1,49 @@
+package SpiralPattern;
+import java.lang.*;
+import java.util.*;
+public class Spiral {
+
+    public static void main(String[] args) {
+        
+        System.out.println("JAVA SPIRAL PATTERN");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the terms : ");
+        int n = sc.nextInt();
+        
+        int [][] M = new int[n][n];
+        
+        int i =1;
+        int minR=0, minC=0, maxR = n-1, maxC=n-1; 
+        while(i <= n*n) {
+            
+            for(int j=minC; j<=maxC; j++)
+            {
+                M[minR][j] = i++;
+            }
+            for(int j = minR+1; j<=maxR; j++) 
+            {
+                M[j][maxC] = i++;
+        }
+            for(int j = maxC-1; j>=minC; j--)
+            {
+                M[maxR][j] = i++;
+            }
+             for(int j = maxR-1; j>= minR+1; j--)
+             {
+                 M[j][minC] = i++;
+             }
+              minC++;
+              minR++;
+              maxR--;
+              maxC--;
+        }       
+          for(int j=0; j< n; j++)
+          {
+              for(int k=0; k<n; k++)
+                  System.out.print(M[j][k] +"\t");
+              System.out.println();
+          }
+    }
+     
+    
+}

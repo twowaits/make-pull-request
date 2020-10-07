@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+		/>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<title>4th Oct</title>
+	</head>
+	<style>
+		.main_container {
+			width: 80%;
+			margin: 10px auto;
+			border: 1px solid #999;
+			border-radius: 10px;
+		}
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.main_container .header {
+			padding: 15px;
+			border-bottom: 1px solid #999;
+		}
+		.menu {
+			padding: 10px 15px;
+		}
+		.menu > div {
+			margin: 0 10px;
+		}
+		.menu_item {
+			background-color: rgba(46, 116, 255, 0.1);
+		}
+		.menu_item:nth-last-child() {
+			padding: 10px 10px;
+		}
+		.country_flag img {
+			height: 20px;
+			width: 30px;
+		}
+		.summary {
+			width: 45%;
+			margin-left: 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: stretch;
+		}
+		.summary .one__section:nth-child(n + 2) {
+			padding: 0 10px;
+			border-left: 1px rgb(189, 189, 189) solid;
+		}
+		.summary .one__section {
+			align-self: stretch;
+			display: flex;
+			flex-direction: column;
+		}
+		.summary .cases {
+			border: none;
+		}
+		.summary .change__status {
+			color: #999;
+		}
+
+		.table {
+			border-top: hidden;
+			margin: 20px auto;
+			width: 95%;
+			border: none;
+		}
+		.table .location {
+			width: 60%;
+		}
+		.table .type {
+			width: 10%;
+		}
+		.head__table {
+			border: none;
+		}
+		.table tr th {
+			font-weight: 400;
+		}
+		.table tr {
+			border-bottom: 1px solid rgb(218, 214, 214);
+		}
+		.table tr td {
+			font-size: 17px;
+			font-weight: 600;
+		}
+		.text__underTable {
+			width: 95%;
+			margin: auto;
+			padding-bottom: 20px;
+			text-align: center;
+			border-bottom: 1px solid rgb(211, 211, 211);
+		}
+		.caret__button > button {
+			background: transparent;
+			border: none;
+			padding: 30px 0;
+			outline: none;
+			width: 100%;
+			margin: auto;
+		}
+	</style>
+	<body>
+		<div class="main_container">
+			<h3 class="header">Cases</h3>
+			<div class="menu">
+				<div class="btn-group btn-group-inline">
+					<button
+						class="btn dropdown-toggle btn-outline-primary rounded-pill menu_item"
+						data-toggle="dropdown"
+					>
+						first
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu btn-block">
+						<li><a href="#">Reason 1</a></li>
+						<li><a href="#">Reason 2</a></li>
+						<li><a href="#">Reason 3</a></li>
+					</ul>
+				</div>
+
+				<div class="btn-group btn-group-inline">
+					<button
+						class="btn btn-outline-primary dropdown-toggle rounded-pill country_flag menu_item"
+						data-toggle="dropdown"
+					>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
+							alt="img"
+						/>
+						India
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu btn-block">
+						<li><a href="#">Reason 5</a></li>
+						<li><a href="#">Reason 6</a></li>
+						<li><a href="#">Reason 7</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="summary">
+				<div class="one__section cases">
+					<small class="section__topic">Cases</small>
+					<h2 class="active_number">6.25M</h2>
+					<p class="change__status">+80000</p>
+				</div>
+				<div class="one__section recovered">
+					<small class="section__topic">Recovered</small>
+					<h2 class="active_number">5.51M</h2>
+					<!-- <p class="change__status">Dummy</p> -->
+				</div>
+				<div class="one__section deaths">
+					<small class="section__topic">Deaths</small>
+					<h2 class="active_number">102K</h2>
+					<p class="change__status">+1025</p>
+				</div>
+			</div>
+			<table class="table table-borderless border-top-0">
+				<tr class="head__table">
+					<th class="location">location</th>
+					<th class="type">Cases</th>
+					<th class="type">Recovered</th>
+					<th class="type">Deaths</th>
+				</tr>
+
+				<tr class="mx-5">
+					<td>Maharashtra</td>
+					<td>100</td>
+					<td>1000</td>
+					<td>1000</td>
+				</tr>
+				<tr class="mx-5">
+					<td>Andhra Pradesh</td>
+					<td>100</td>
+					<td>1000</td>
+					<td>1000</td>
+				</tr>
+				<tr class="mx-5">
+					<td>Karnataka</td>
+					<td>100</td>
+					<td>1000</td>
+					<td>1000</td>
+				</tr>
+				<tr class="mx-5">
+					<td>Tamil Nadu</td>
+					<td>100</td>
+					<td>1000</td>
+					<td>1000</td>
+				</tr>
+				<tr class="mx-5">
+					<td>Maharashtra</td>
+					<td>100</td>
+					<td>1000</td>
+					<td>1000</td>
+				</tr>
+				<tr class="mx-5">
+					<td>Maharashtra</td>
+					<td>100</td>
+					<td>1000</td>
+					<td>1000</td>
+				</tr>
+			</table>
+			<p class="text__underTable">
+				'+' shows new cases reported yesterday · Updated less than 1
+				hour ago·Sources: <a href="#">Wikipedia</a> and The New York
+				Times.·About this data
+			</p>
+			<div class="caret__button">
+				<button>
+					<span><i class="fas fa-caret-down"></i></span>
+				</button>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tathastu</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+   
+    <body>
+        <nav>
+            <a href="#" class="company">Tathastu</a>
+            <div class="nav__content">
+                <div class="nav__elements">
+                    <a href="#" class="nav__link">Discuss</a>
+                    <a href="#" class="nav__link active">Learn</a>
+                    <a href="#" class="nav__link">Compete</a>
+                    <a href="#" class="nav__link">Work</a>
+                </div>
+                <div class="nav__actions">
+                    <a href="#" class="notification nav__link"><i class="far fa-bell" aria-hidden="true"></i></span></a>
+                    <a href="#" class="profile nav__link"><i class="far fa-user" aria-hidden="true"></i> Name </a>
+                </div>
+            </div>
+        </nav>
+        <div class = "left_part">
+            <h3 class="heading">Joined Courses</h3>
+            <div class="column column_dropdown column_active">
+                <a href="#" class="column__heading">Machine Learning and Data Science</a>
+                <p class="about">Machine Learning and Data Science</p>
+                <a href="#" class="column__action">Leave Course</a>
+            </div>
+            <div class="column column_dropdown">
+                <a href="#" class="column__heading">DSA Series</a>
+                <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <a href="#" class="column__action">Leave Course</a>
+            </div>
+            <div class="column column_dropdown">
+                <a href="#" class="column__heading">Python</a>
+                <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <a href="#" class="column__action">Leave Course</a>
+            </div>
+            <div class="column column_dropdown">
+                <a href="#" class="column__heading">Professional Skills</a>
+                <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <a href="#" class="column__action">Leave Course</a>
+            </div>
+            <div class="column column_dropdown">
+                <a href="#" class="column__heading">Insights Webinars</a>
+                <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <a href="#" class="column__action">Leave Course</a>
+            </div>
+    
+            <div class="column column_dropdown">
+                <a href="#" class="column__heading">Django Framework</a>
+                <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <a href="#" class="column__action">Leave Course</a>
+            </div>
+            <div class="column column_dropdown">
+                <a href="#" class="column__heading">Competitive Programming</a>
+                <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <a href="#" class="column__action">Leave Course</a>
+            </div>
+        </div>
+        <article>
+            <div class="section">
+                <h3 class="heading">Sections</h3>
+                <a href="#" class="column column-heading">Installation</a>
+                <a href="#" class="column card-heading">Getting Started</a>
+                <a href="#" class="column column-heading">Data Visualization</a>
+                <a href="#" class="column column-heading">Exploratory Data Analysis</a>
+                <a href="#" class="column column-heading">Data Preprocessing</a>
+                <a href="#" class="column column-heading">Live Session</a>
+            </div>
+            <div class="projects">
+                <h3 class="heading">Projects</h3>
+                <a href="#" class="column">
+                    <img src="#" class="column-img">
+                    <h3 href="#" class="column-heading">Titanic Dataset</h3>
+                    <p class="about">Predict Survivable of Passenger</p>
+                </a>
+                <a href="#" class="column">
+                    <img src="#" class="column-img">
+                    <h3 href="#" class="column-heading">Chatbot using Google DialogFlow</h3>
+                    <p class="about">Make Google ChatBot</p>
+                </a>
+                <a href="#" class="column">
+                    <img src="#" class="column-img">
+                    <h3 href="#" class="column-heading">Lorem ipsum dolor sit</h3>
+                    <p class="about">Lorem ipsum dolor sit amet.</p>
+                </a>
+            </div>
+        </article>
+      
+    </body>
+   
+   <style>
+      
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Lato;
+            text-decoration: none;
+        }
+        a{
+            color: inherit;
+        }
+        nav{
+            display: flex;
+            color: #fff;
+            background-color: #154854;
+            padding: 1rem 2.5rem;
+        }
+        .company{
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            font-weight: 900;
+            padding-right:1.5rem;
+        }
+        .nav__content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            font-size: 1rem;
+            color: #fffa;
+        }
+        .nav__elements{
+            text-transform: uppercase;
+        }
+        .nav__link{
+            padding: 1rem;
+        }
+        .nav__link:hover, .active{
+            font-weight: 900;
+            color: #fff;
+            transition: 0.3s all;
+        }
+        .far{
+            font-size: 1.2rem;
+        }
+        .profile::after{
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-left: .255em;
+            vertical-align: .255em;
+            content: "";
+            border-top: .3em solid;
+            border-right: .3em solid transparent;
+            border-bottom: 0;
+            border-left: .3em solid transparent;
+            font-size: 1.2rem;
+        }
+        body{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            background-color: #f4f5f7;
+            column-gap: 1rem;
+        }
+        nav{
+            grid-column: span 3;
+        }
+        .column{
+            background: #fff;
+            border-radius: 0.5rem;
+            padding: 1rem;
+        }
+        .column_dropdown{
+            background: #ededed;
+            position: relative;
+        }
+        .column-heading{
+            font-size: 1.1rem;
+        }
+        .column_dropdown .column-heading{
+            padding-right: 1rem;
+        }
+        .column_dropdown .about, .column_dropdown .column_action{
+            display: none;
+        }
+        .column_dropdown:hover .about, .column_dropdown:hover .card__action, .column_active .about, .column_active .column__action{
+            display: block;
+        }
+        .column_dropdown::after{
+            content: "⌄";
+            position: absolute;
+            top: -0.5rem;
+            font-size: 2rem;
+            font-weight: 900;
+            right: 1rem;
+        }
+        .column_active, .column_dropdown:hover{
+            background-color: #cceff6;
+        }
+        .profile-pic{
+            width: 4rem;
+            border-radius: 50%;
+            margin: 0 1rem;
+        }
+        .left_part,  .section, .projects{
+            display: grid;
+            row-gap: 0.6rem;
+            grid-template-rows: min-content;
+            align-content: start;
+        }
+        .left_part{
+            grid-template-columns: 1fr;
+            padding: 1rem; 
+        }
+        article{
+            padding: 1rem;
+        }
+        .section, .projects{
+            grid-template-columns: 1fr 1fr;
+            column-gap: 0.6rem;
+        }
+        .section .heading, .projects .heading{
+            grid-column: span 2;
+        }
+        .heading{
+            color: #154854; 
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+        .about{
+            color:  #515457;
+            font-size: 0.8rem;
+            padding: 1rem 0;
+        }
+        .column__action{
+            font-size: 0.8rem;
+            color: #154854;
+        }
+        .column-img{
+            object-fit: cover;
+            width: 100%;
+        }
+        .projects{
+            margin-top: 1rem;
+        }
+       
+       
+    </style>
+</head>
+
+</html>
