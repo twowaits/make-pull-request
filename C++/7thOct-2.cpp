@@ -8,9 +8,13 @@ string inwords(long n){
         res+=to_string(n/10000000)+" crores ";
         n=n%10000000;
     }    
+    
     if(n/100000){
-    res+=to_string(n/100000)+" lacs ";
-    n=n%100000;
+        if((n/100000)/10)
+        res+=to_string(n/100000)+" lacs ";
+        else
+        res+=to_string(n/100000)+" lac ";
+        n=n%100000;
         
     }
     if(n/1000){
