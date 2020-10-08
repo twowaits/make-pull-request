@@ -1,67 +1,76 @@
-//<<<<<<< master removed to resolve conflicts
-#include <iostream> 
-using namespace std; 
-
-int main() 
-{ 
-    int n ;
-    cin>>n; 
-  
-   int i, j, k = 0; 
-    for (i = 1; i <= n-1; i++) 
-    { 
-        
-        for (j = i; j < n; j++) { 
-            cout << " "; 
-        } 
-        
-        while (k != (2 * i - 1)) { 
-            if (k == 0 || k == 2 * i - 2) 
-                cout << "*"; 
-            else
-                cout << " "; 
-            k++; 
-            ; 
-        } 
-        k = 0; 
-        cout << endl; 
-    } 
-   
-    for (i = 0; i <= n-1; i++) { 
-        cout << "* "; 
-    } 
-} 
-=======
-
-#include <iostream>
-
+#include<bits/stdc++.h>
 using namespace std;
-
-void hollowPyramid(int n){
-    
-    for(int i=1;i<=n;i++){
-        
-        for(int j=1;j<=n-i;j++)
-        cout<<" ";
-        
-        if(i==1 || i==n){
-            for(int j=1;j<=i;j++)
-            cout<<"* ";
-        }
-        else{
-            cout<<"*";
-            for(int j=1;j<=2*i-3;j++)
-            cout<<" ";
-            cout<<"*";
-        }
-        cout<<endl;
+// function for cheaking leap year
+void leap(int n)
+{
+    if(n%400==0)
+    {
+        cout<<n<<" is a leap year";
+    }
+    else if (n%100==0)
+    {
+        cout<<"It is not a leap year";
+    }
+    else if (n%4==0)
+    {
+        cout<<n<<" is a leap year";   
+    }
+    else
+    {
+        cout<<"It is not a leap year";
     }
 }
-int main()
+// function for checking prime number
+bool isPrime(int n) 
+{ 
+    // Corner case 
+    if (n <= 1) 
+        return false; 
+  
+    // Check from 2 to n-1 
+    for (int i = 2; i*i < n; i++) 
+        if (n % i == 0) 
+            return false; 
+  
+    return true; 
+} 
+// function for cheacking prime number between ranges by sieve of eranthoses
+void SieveOfEratosthenes(int n) 
+{  
+    bool prime[n+1]; 
+    memset(prime, true, sizeof(prime)); 
+  
+    for (int p=2; p*p<=n; p++) 
+    { 
+        if (prime[p] == true) 
+        { 
+            for (int i=p*p; i<=n; i += p) 
+                prime[i] = false; 
+        } 
+    } 
+    for (int p=2; p<=n; p++) 
+       if (prime[p]) 
+          cout << p << " "; 
+} 
+// function to check number is positive or negative
+void check_sign(int n)
 {
-    int x;
-    cin>>x;
-    hollowPyramid(x);
-    return 0;
+    if(n>0)
+    isPrime(n)?cout<<n<<" is a prime number":cout<<n<<" is not a prime number";
+    else
+    {
+        cout<<"Enter the valid number\n";
+    }
 }
-//>>>>>>> master removed to resolve conflicts
+int main() 
+{
+    system("cls");
+    int n,i;
+    // cout<<"Enter an year\n";
+    cout<<"Enter a number\n";
+    cin>>n;
+    leap(n);    
+    check_sign(n);
+    check_sign(n);
+    SieveOfEratosthenes(n);
+}
