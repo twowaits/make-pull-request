@@ -9,15 +9,15 @@ public class Main {
 
                     System.out.println("Enter the number of rows: ");
 
-                    int n = sc.nextInt();
+                    int x = sc.nextInt();
                     int k=2;
-                    for (int i = 1; i <= n+1; i++) {
-                        for (int j = 1; j <2*n; j++) {
-                           if((i+j==n+1)||(j-i==n-1))
+                    for (int row = 1; row <= x+1; row++) {
+                        for (int column = 1; column <2*x; column++) {
+                           if((row+column==x+1)||(column-row==x-1))
                            {
                                System.out.print("*");
                            }
-                           else if((i==n)&&(j!=k))
+                           else if((row==x)&&(column!=k))
                            {
                                System.out.print("*");
                                k=k+2;
