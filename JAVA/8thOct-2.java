@@ -13,7 +13,7 @@ public class star {
               System.out.print("*");}
 
             
-            else {  System.out.print(" ");          }
+            else {  System.out.print(" ");         }
             
         }
         x=x+1;
