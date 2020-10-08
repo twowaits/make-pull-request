@@ -1,19 +1,22 @@
-def PrintPattern(n):
-    for i in range(n-1):
-        for j in range(n-i):
-            print(' ', end='') 
-        for j in range(2*i+1):
-            if j==0 or j==2*i or i==n-1:
-                print('*',end='')
-            else:
-                print(' ', end='')
-        print()
-    print(' ',end='')
-    for i in range(2*n-1):
-            if i%2==0:
-                print('*',end='')
-            else:
-                print(' ', end='')
-    print() 
-n=int(input())
-PrintPattern(n)
+#include <iostream>
+#include<cmath>
+using namespace std;
+int main(){
+    int i,j,k,n;
+    cin>>n;
+    for(i=0;i<n;i++){
+        for(j=0;j<2*n;j++){
+            if(i+j==(n-1) || abs(i-j)==n-1){
+                cout<<"*";
+            }
+            else if(i==n-1 && j%2==0){
+                cout<<"*";
+            }
+            else{
+                cout<<" ";
+            }
+        }
+        cout<<"\n";
+    }
+    return 0;
+}
