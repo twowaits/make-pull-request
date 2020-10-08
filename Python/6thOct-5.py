@@ -1,38 +1,32 @@
-def isPrime(num):
- if(num==1):
-  return 1
- else:
-     for i in range(2, num): 
-       if (num % i) == 0: 
-         return 1
-         break
-     else:
-       return 2
 
-nterms = int(input("How many terms? "))
-n1, n2 = 0, 1
-count = 0
-
-if nterms <= 0:
-   print("Please enter a positive integer")
-elif nterms == 1:
-   print("Fibonacci sequence upto",nterms,":")
-   print(n1)
+def fibo(num):
+l=[1]
+a = 0
+b = 1
+if num <= 0:
+print("Enter a non-negative Integer!")
+elif num == 1:
+print(b) 
 else:
-   print("Fibonacci sequence:")
-   while count < nterms:
-       nth = n1 + n2
-       x=isPrime(n2)
-       
-       if (n2%5) == 0:
-         print(0)
-         
-       elif x == 2:
-         print(0)
-         
-       else:
-         print(n2)
-       # update values
-       n1 = n2
-       n2 = nth
-       count += 1
+for i in range(1,num):
+t = a + b
+a = b
+b = t
+if b%5==0 or isPrime(b):
+l.append(0)
+else:
+l.append(b)
+print(l) 
+
+def isPrime(no):  
+        if no > 1:
+           for i in range(2,no):
+               if (no % i) == 0:
+                   return False
+           else:
+               return True
+        else:
+           return False
+
+fibonacci(int(input("Enter Number Of terms: ")))
+

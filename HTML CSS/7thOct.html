@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hinduism - Wikipedia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+      }
+
+      a {
+        text-decoration: none;
+        color: #0645ad;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        background-image: linear-gradient(#fff 2rem, #f6f6f6 5rem);
+        background-repeat: no-repeat;
+        background-color: #f6f6f6;
+        display: grid;
+        grid-template-columns: 10.4rem 1fr;
+        font-size: 0.9rem;
+        color: #202122;
+      }
+
+      aside {
+        padding: 0 1rem;
+      }
+
+      .aside-link {
+        font-size: 0.8rem;
+        display: block;
+        padding: 0.1rem 0;
+      }
+
+      aside div {
+        margin-top: 1rem;
+      }
+
+      .aside-heading {
+        font-size: 0.8rem;
+        font-weight: normal;
+        position: relative;
+        color: #54595d;
+        padding: 0.1rem 0;
+        margin: 0.4rem 0;
+      }
+
+      .aside-heading::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background: linear-gradient(to right, #ffff, #54595d55, #ffff);
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        align-items: flex-end;
+      }
+
+      nav::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: #a7d7f9;
+        bottom: 0;
+        z-index: 1;
+      }
+
+      .nav-head,
+      .nav-tail {
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .nav__link {
+        padding: 0.4rem 0.5rem;
+        background: linear-gradient(to bottom, rgba(167, 215, 249, 0) 0, #a7d7f955 100%);
+        font-size: 0.8rem;
+        position: relative;
+      }
+
+      .active {
+        background: #fff;
+        z-index: 100;
+        color: black;
+      }
+
+      .active:hover {
+        text-decoration: none;
+      }
+
+      .nav__link::after,
+      .nav__link:first-child::before {
+        content: "";
+        background: linear-gradient(#ffff, #a7d7f9);
+        width: 1px;
+        position: absolute;
+        height: 100%;
+        top: 0;
+      }
+
+      .nav__link::after {
+        right: 0;
+      }
+
+      .nav__link:first-child::before {
+        left: 0;
+      }
+
+      section {
+        border: 1px solid #a7d7f9;
+        border-top: 0;
+        border-right: 0;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background: #fff;
+        min-height: 80vh;
+      }
+
+      input {
+        background: transparent;
+        box-sizing: border-box;
+        padding: 0.4rem;
+        font-size: 0.8rem;
+        border: none;
+      }
+
+      .search-box {
+        border: 1px solid #888;
+        border-radius: 0.1rem;
+        margin: 0.1rem 0.5rem;
+      }
+
+      .search-box button {
+        outline: none;
+        border: none;
+        font-size: 0.8rem;
+        background: transparent;
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+      }
+
+      header {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 0.5rem;
+      }
+
+      header>* {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+      }
+
+      .text-muted {
+        font-size: 0.8rem;
+        color: #444;
+      }
+
+      .heading {
+        font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+        font-weight: normal;
+        border: 1px solid #888;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        margin-bottom: 0.5rem;
+      }
+
+      .main-heading,
+      .article-heading {
+        grid-column: span 2;
+      }
+
+      .article-heading .heading {
+        font-size: 1.4rem;
+      }
+
+      .main-heading .heading {
+        font-size: 1.8rem;
+        position: relative;
+      }
+
+      .main-heading .heading::after {
+        content: url("//upload.wikimedia.org/wikipedia/en/thumb/1/1b/Semi-protection-shackle.svg/20px-Semi-protection-shackle.svg.png");
+        position: absolute;
+        right: 0;
+      }
+
+      .side-content {
+        background: #f6f6f6;
+        border: 1px solid #888;
+        padding: 0.4rem 0;
+        text-align: center;
+        font-size: 0.8rem;
+        float: right;
+        width: 16rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .side-content>* {
+        display: block;
+        margin: 0.3rem 0;
+        padding: 0.2rem 0;
+      }
+
+      .side-content-img {
+        display: block;
+        margin: 0.2rem auto;
+      }
+
+      .orange-bg {
+        background: #ffc569;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      .show {
+        position: relative;
+      }
+
+      .show::after {
+        content: "[show]";
+        font-weight: normal;
+        position: absolute;
+        right: 0.2rem;
+      }
+
+      .side-content-box {
+        border: 1px solid #888;
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+      }
+
+      p {
+        padding-bottom: 0.8rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <aside>
+      <img src="https://en.wikipedia.org/static/images/project-logos/enwiki.png">
+      <div>
+        <a href="#" class="aside-link">Main page</a>
+        <a href="#" class="aside-link">Contents</a>
+        <a href="#" class="aside-link">Current events</a>
+        <a href="#" class="aside-link">Random article</a>
+        <a href="#" class="aside-link">About Wikipedia</a>
+        <a href="#" class="aside-link">Contact us</a>
+        <a href="#" class="aside-link">Donate</a>
+      </div>
+      <div>
+        <h1 class="aside-heading">
+          Contribute
+        </h1>
+        <a href="#" class="aside-link">Help</a>
+        <a href="#" class="aside-link">Learn to edit</a>
+        <a href="#" class="aside-link">Community portal</a>
+        <a href="#" class="aside-link">Recent changes</a>
+        <a href="#" class="aside-link">Upload file</a>
+      </div>
+
+      <div>
+        <h1 class="aside-heading">
+          Tools
+        </h1>
+        <a href="#" class="aside-link">What links here</a>
+        <a href="#" class="aside-link">Related changes</a>
+        <a href="#" class="aside-link">Special pages</a>
+        <a href="#" class="aside-link">Permanent link</a>
+        <a href="#" class="aside-link">Page information</a>
+        <a href="#" class="aside-link">Cite this page</a>
+        <a href="#" class="aside-link">Wikidata item</a>
+      </div>
+
+      <div>
+        <h1 class="aside-heading">
+          Print/export
+        </h1>
+
+        <a href="#" class="aside-link">Download as PDF</a>
+        <a href="#" class="aside-link">Printable version</a>
+      </div>
+
+      <div>
+        <h1 class="aside-heading">
+          In other projects
+        </h1>
+
+        <a href="#" class="aside-link">Wikimedia Commons</a>
+        <a href="#" class="aside-link">Wikibooks</a>
+        <a href="#" class="aside-link">Wikinews</a>
+        <a href="#" class="aside-link">Wikiquote</a>
+        <a href="#" class="aside-link">Wikivoyage</a>
+      </div>
+
+      <div>
+        <h1 class="aside-heading">
+          Languages
+        </h1>
+        <a href="#" class="aside-link">বাংলা</a>
+        <a href="#" class="aside-link">ગુજરાતી</a>
+        <a href="#" class="aside-link">हिन्दी</a>
+        <a href="#" class="aside-link">ಕನ್ನಡ</a>
+        <a href="#" class="aside-link">മലയാളം</a>
+        <a href="#" class="aside-link">मराठी</a>
+        <a href="#" class="aside-link">தமிழ்</a>
+        <a href="#" class="aside-link">తెలుగు</a>
+        <a href="#" class="aside-link">اردو</a>
+      </div>
+    </aside>
+    <main>
+      <header>
+        <div class="text-muted"><i class="fa fa-user"></i> Not logged in</div>
+        <a href="#">Talk</a>
+        <a href="#">Contributions</a>
+        <a href="#">Create account</a>
+        <a href="#">Log in</a>
+      </header>
+      <nav>
+        <div class="nav-head">
+          <a href="#" class="nav__link active">Article</a>
+          <a href="#" class="nav__link">Talk</a>
+        </div>
+        <div class="nav-tail">
+          <a href="#" class="nav__link active">Read</a>
+          <a href="#" class="nav__link">View source</a>
+          <a href="#" class="nav__link">View history</a>
+          <div class="search-box">
+            <input type="text" placeholder="Search Wikipedia">
+            <button><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+      </nav>
+      <section>
+        <article>
+          <div class="main-heading">
+            <h1 class="heading">Hinduism</h1>
+            <p class="text-muted">From Wikipedia, the free encyclopedia</p>
+          </div>
+          <div class="side-content">
+            <div class="text-muted">
+              Part of a <a href="#">series</a> on
+            </div>
+            <h2 class="orange-bg">
+              Hinduism
+            </h2>
+            <img class="side-content-img"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/1_Om.svg/100px-1_Om.svg.png">
+            <div>
+              <a href="#" class="bold">Hindus</a> .
+              <a href="#" class="bold">History</a>
+            </div>
+            <a href="#" class="show bold orange-bg">Origins</a>
+            <a href="#" class="show bold orange-bg">Main traditions</a>
+            <a href="#" class="show bold orange-bg">Deities</a>
+            <a href="#" class="show bold orange-bg">Concepts</a>
+            <div class="show bold orange-bg">Practices</div>
+            <a href="#" class="show bold orange-bg">Philosophical schools</a>
+            <a href="#" class="show bold orange-bg">Gurus, saints, philosophers</a>
+            <a href="#" class="show bold orange-bg">Texts</a>
+            <div class="show bold orange-bg">Society</div>
+            <a href="#" class="show bold orange-bg">Other topics</a>
+            <div class="side-content-box">
+              <a href="#" class="bold">
+                Glossary of Hinduism terms
+              </a><br>
+              <a href="#" class="bold">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/1_Om.svg/100px-1_Om.svg.png"
+                  width="15" height="15">
+                Hinduism portal
+                <img
+                  src="//upload.wikimedia.org/wikipedia/commons/thumb/6/63/HinduSwastika.svg/15px-HinduSwastika.svg.png"
+                  width="15" height="15">
+              </a></div>
+            <div class="side-content-box"><a href=#>V</a>.<a href=#>T</a>.<a href=#>E</a></div>
+          </div>
+          <div class="text">
+            <p><b>Hinduism</b> is an <a href="/wiki/Indian_religion">Indian religion</a> and <i><a
+                  href="/wiki/Dharma">dharma</a></i>, or way of life.<sup id="cite_ref-definition_1-0"
+                class="reference"><a href="#cite_note-definition-1">[note 1]</a></sup><sup id="cite_ref-dharma_2-0"
+                class="reference"><a href="#cite_note-dharma-2">[note
+                  2]</a></sup>
+              It is the <a href="/wiki/Major_religious_groups" title="Major religious groups">world's
+                third-largest religion</a> with over 1.25&nbsp;billion followers, or 15–16% of the
+              global
+              population, known as <a href="/wiki/Hindus" title="Hindus">Hindus</a>.<sup
+                id="cite_ref-pewforum_Hinduism_3-0" class="reference"><a href="#cite_note-pewforum_Hinduism-3">[web
+                  1]</a></sup><sup id="cite_ref-gordonconwell.edu_4-0" class="reference"><a
+                  href="#cite_note-gordonconwell.edu-4">[web 2]</a></sup> The word <i><a href="/wiki/Hindu"
+                  class="mw-redirect" title="Hindu">Hindu</a></i> is an <a href="/wiki/Exonym" class="mw-redirect"
+                title="Exonym">exonym</a>,<sup id="cite_ref-FOOTNOTESiemensRoodt2009546_5-0" class="reference"><a
+                  href="#cite_note-FOOTNOTESiemensRoodt2009546-5">[1]</a></sup><sup id="cite_ref-FOOTNOTELeaf201436_6-0"
+                class="reference"><a href="#cite_note-FOOTNOTELeaf201436-6">[2]</a></sup> and while Hinduism has been
+              called
+              the oldest religion in the world,<sup id="cite_ref-oldest_religion_7-0" class="reference"><a
+                  href="#cite_note-oldest_religion-7">[note 3]</a></sup> many practitioners refer to
+              their
+              religion as <i><a href="/wiki/San%C4%81tan%C4%AB" title="Sanātanī">Sanātana Dharma</a></i>
+              (<a href="/wiki/Sanskrit_language" class="mw-redirect" title="Sanskrit language">Sanskrit</a>:
+              <span lang="sa"><b>सनातन धर्म</b></span>: <i title="Sanskrit-language romanization" lang="sa-Latn">"the
+                Eternal Way"</i>), which refers to the idea that its origins lie
+              beyond
+              human history, as revealed in the <a href="/wiki/Hindu_texts" title="Hindu texts">Hindu
+                texts</a>.<sup id="cite_ref-FOOTNOTEKnott19983,_5_8-0" class="reference"><a
+                  href="#cite_note-FOOTNOTEKnott19983,_5-8">[3]</a></sup><sup
+                id="cite_ref-FOOTNOTEHatcher20154–5,_69–71,_150–152_9-0" class="reference"><a
+                  href="#cite_note-FOOTNOTEHatcher20154–5,_69–71,_150–152-9">[4]</a></sup><sup
+                id="cite_ref-FOOTNOTEBowker2000_10-0" class="reference"><a
+                  href="#cite_note-FOOTNOTEBowker2000-10">[5]</a></sup><sup id="cite_ref-FOOTNOTEHarvey2001xiii_11-0"
+                class="reference"><a href="#cite_note-FOOTNOTEHarvey2001xiii-11">[6]</a></sup><sup
+                id="cite_ref-Knott_sanatana_dharma_12-0" class="reference"><a
+                  href="#cite_note-Knott_sanatana_dharma-12">[note 4]</a></sup> Another, though less
+              fitting,<sup id="cite_ref-FOOTNOTESmith1998_13-0" class="reference"><a
+                  href="#cite_note-FOOTNOTESmith1998-13">[7]</a></sup> self-designation is <i>Vaidika
+                dharma</i>,<sup id="cite_ref-FOOTNOTESharmaSharma20041–2_14-0" class="reference"><a
+                  href="#cite_note-FOOTNOTESharmaSharma20041–2-14">[8]</a></sup><sup
+                id="cite_ref-FOOTNOTEKlostermaier20142_15-0" class="reference"><a
+                  href="#cite_note-FOOTNOTEKlostermaier20142-15">[9]</a></sup><sup
+                id="cite_ref-FOOTNOTEKlostermaier2007b7_16-0" class="reference"><a
+                  href="#cite_note-FOOTNOTEKlostermaier2007b7-16">[10]</a></sup><sup
+                id="cite_ref-FOOTNOTESharma198595,_context:_94–98_17-0" class="reference"><a
+                  href="#cite_note-FOOTNOTESharma198595,_context:_94–98-17">[11]</a></sup> the 'dharma
+              related to the Vedas.'<sup id="cite_ref-MW_Vaidika_dharma_18-0" class="reference"><a
+                  href="#cite_note-MW_Vaidika_dharma-18">[web 3]</a></sup>
+            </p>
+            <p>Hinduism includes a range of <a href="/wiki/Hindu_philosophy" title="Hindu philosophy">philosophies</a>,
+              and is linked by shared concepts,
+              recognisable
+              rituals, <a href="/wiki/Hindu_cosmology" title="Hindu cosmology">cosmology</a>, <a
+                href="/wiki/Hindu_pilgrimage_sites" title="Hindu pilgrimage sites">pilgrimage to sacred
+                sites</a> and <a href="/wiki/Hindu_texts" title="Hindu texts">shared textual
+                resources</a>
+              that discuss theology, <a href="/wiki/Hindu_philosophy" title="Hindu philosophy">philosophy</a>,
+              <a href="/wiki/Hindu_mythology" title="Hindu mythology">mythology</a>, <a href="/wiki/Vedas"
+                title="Vedas">Vedic</a> <a href="/wiki/Yajna" title="Yajna">yajna</a>, <a href="/wiki/Yoga"
+                title="Yoga">Yoga</a>, <a href="/wiki/%C4%80gama_(Hinduism)" class="mw-redirect"
+                title="Āgama (Hinduism)">agamic</a> <a href="/wiki/Ritual" title="Ritual">rituals</a>, and
+              <a href="/wiki/Hindu_temple" title="Hindu temple">temple building</a>, among other
+              topics.<sup id="cite_ref-FOOTNOTEMichaels2004_19-0" class="reference"><a
+                  href="#cite_note-FOOTNOTEMichaels2004-19">[12]</a></sup> Hinduism prescribes the
+              eternal
+              duties, such as honesty, refraining from injuring living beings (<i><a href="/wiki/Ahi%E1%B9%83s%C4%81"
+                  class="mw-redirect" title="Ahiṃsā">Ahiṃsā</a></i>),
+              patience, forbearance, self-restraint, virtue, and compassion, among others.<sup
+                id="cite_ref-EB-sanatana_dharma_20-0" class="reference"><a href="#cite_note-EB-sanatana_dharma-20">[web
+                  4]</a></sup><sup id="cite_ref-21" class="reference"><a href="#cite_note-21">[13]</a></sup> Prominent
+              themes in Hindu
+              beliefs
+              include the four <a href="/wiki/Puru%E1%B9%A3%C4%81rtha" title="Puruṣārtha">Puruṣārthas</a>,
+              the
+              proper goals or aims of human life; namely, <a href="/wiki/Dharma" title="Dharma">Dharma</a>
+              (ethics/duties), <a href="/wiki/Artha" title="Artha">Artha</a> (prosperity/work), <a href="/wiki/Kama"
+                title="Kama">Kama</a> (desires/passions) and <a href="/wiki/Moksha" title="Moksha">Moksha</a>
+              (liberation/freedom from the cycle of death and <a href="/wiki/Reincarnation"
+                title="Reincarnation">rebirth</a>/salvation),<sup id="cite_ref-Bilimoria_2007_p._103_22-0"
+                class="reference"><a href="#cite_note-Bilimoria_2007_p._103-22">[14]</a></sup><sup
+                id="cite_ref-FOOTNOTEFlood199711_23-0" class="reference"><a
+                  href="#cite_note-FOOTNOTEFlood199711-23">[15]</a></sup> as well as <a href="/wiki/Karma"
+                title="Karma">karma</a> (action, intent and consequences) and <a href="/wiki/Sa%E1%B9%83s%C4%81ra"
+                title="Saṃsāra">Saṃsāra</a> (cycle of death and
+              rebirth).<sup id="cite_ref-FOOTNOTEKlostermaier200746–52,_76–77_24-0" class="reference"><a
+                  href="#cite_note-FOOTNOTEKlostermaier200746–52,_76–77-24">[16]</a></sup><sup
+                id="cite_ref-FOOTNOTEBrodd2003_25-0" class="reference"><a
+                  href="#cite_note-FOOTNOTEBrodd2003-25">[17]</a></sup>
+            </p>
+            <p>Hindu practices include rituals such as <a href="/wiki/Puja_(Hinduism)" title="Puja (Hinduism)">pujā</a>
+              (worship) and recitations, <a href="/wiki/Japa" title="Japa">japa</a>, meditation (<a
+                href="/wiki/Dhyana_in_Hinduism" class="mw-redirect" title="Dhyana in Hinduism">dhyāna</a>),
+              family-oriented <a href="/wiki/Sanskara_(rite_of_passage)" title="Sanskara (rite of passage)">rites of
+                passage</a>, annual festivals, and occasional pilgrimages. Along with the practice of
+              various <a href="/wiki/Yoga" title="Yoga">Yogas</a>, some Hindus leave their social world
+              and
+              material possessions and engage in lifelong <a href="/wiki/Sannyasa" title="Sannyasa">Sannyasa</a>
+              (monasticism) in order to achieve Moksha.<sup id="cite_ref-ellinger70_26-0" class="reference"><a
+                  href="#cite_note-ellinger70-26">[18]</a></sup>
+            </p>
+            <p>Hindu texts are classified into <a href="/wiki/%C5%9Aruti" title="Śruti">Śruti</a> ("heard")
+              and
+              <a href="/wiki/Smriti" title="Smriti">Smṛti</a> ("remembered"), the major scriptures of
+              which
+              are the <i><a href="/wiki/Vedas" title="Vedas">Vedas</a></i>, the <i><a href="/wiki/Upanishads"
+                  title="Upanishads">Upanishads</a></i>, the <i><a href="/wiki/Puranas" title="Puranas">Purānas</a></i>,
+              the <i><a href="/wiki/Mahabharata" title="Mahabharata">Mahābhārata</a></i>, the <i><a
+                  href="/wiki/Ramayana" title="Ramayana">Rāmāyana</a></i>, and the <i><a
+                  href="/wiki/%C4%80gama_(Hinduism)" class="mw-redirect" title="Āgama (Hinduism)">Āgamas</a></i>.<sup
+                id="cite_ref-27" class="reference"><a href="#cite_note-27">[19]</a></sup><sup
+                id="cite_ref-FOOTNOTEKlostermaier200746–52,_76–77_24-1" class="reference"><a
+                  href="#cite_note-FOOTNOTEKlostermaier200746–52,_76–77-24">[16]</a></sup> There are
+              six
+              <a href="/wiki/%C4%80stika_and_n%C4%81stika" title="Āstika and nāstika">āstika</a> schools
+              of <a href="/wiki/Hindu_philosophy" title="Hindu philosophy">Hindu philosophy</a>, who
+              recognise
+              the authority of the Vedas, namely <a href="/wiki/Samkhya" title="Samkhya">Sānkhya</a>, <a
+                href="/wiki/Yoga_(philosophy)" title="Yoga (philosophy)">Yoga</a>, <a href="/wiki/Nyaya"
+                title="Nyaya">Nyāya</a>, <a href="/wiki/Vaisheshika" title="Vaisheshika">Vaisheshika</a>, <a
+                href="/wiki/M%C4%ABm%C4%81%E1%B9%83s%C4%81" title="Mīmāṃsā">Mimāmsā</a> and <a href="/wiki/Vedanta"
+                title="Vedanta">Vedānta</a>.<sup id="cite_ref-Matthew_Clarke_2011_28_28-0" class="reference"><a
+                  href="#cite_note-Matthew_Clarke_2011_28-28">[20]</a></sup><sup id="cite_ref-29" class="reference"><a
+                  href="#cite_note-29">[21]</a></sup><sup id="cite_ref-andrewoverview_30-0" class="reference"><a
+                  href="#cite_note-andrewoverview-30">[22]</a></sup>
+            </p>
+            <p>While the <a href="/wiki/Puranic_chronology" title="Puranic chronology">Puranic
+                chronology</a>
+              presents a geneaology of thousands of years, starting with the Vedic <i>rishis</i>, scholars
+              regard Hinduism as a fusion<sup id="cite_ref-Lockard-fusion_31-0" class="reference"><a
+                  href="#cite_note-Lockard-fusion-31">[note 5]</a></sup> or synthesis<sup
+                id="cite_ref-FOOTNOTESamuel2008193_32-0" class="reference"><a
+                  href="#cite_note-FOOTNOTESamuel2008193-32">[23]</a></sup><sup id="cite_ref-Hiltebeitel-synthesis_33-0"
+                class="reference"><a href="#cite_note-Hiltebeitel-synthesis-33">[note 6]</a></sup> of <a
+                href="/wiki/Historical_Vedic_religion#Brahmanism" title="Historical Vedic religion">Brahmanical
+                orthopraxy</a><sup id="cite_ref-Brahmanism_34-0" class="reference"><a
+                  href="#cite_note-Brahmanism-34">[note
+                  7]</a></sup> with various Indian cultures,<sup id="cite_ref-various_cultures_35-0"
+                class="reference"><a href="#cite_note-various_cultures-35">[24]</a></sup><sup id="cite_ref-fusion_36-0"
+                class="reference"><a href="#cite_note-fusion-36">[note
+                  8]</a></sup> having diverse roots<sup id="cite_ref-FOOTNOTENarayanan200911_37-0" class="reference"><a
+                  href="#cite_note-FOOTNOTENarayanan200911-37">[25]</a></sup><sup id="cite_ref-roots_38-0"
+                class="reference"><a href="#cite_note-roots-38">[note
+                  9]</a></sup>
+              and no specific founder.<sup id="cite_ref-FOOTNOTEFowler19971,_7_39-0" class="reference"><a
+                  href="#cite_note-FOOTNOTEFowler19971,_7-39">[26]</a></sup> This <a href="/wiki/Hindu_synthesis"
+                class="mw-redirect" title="Hindu synthesis">Hindu
+                synthesis</a>
+              emerged after the Vedic period, between ca. 500<sup id="cite_ref-FOOTNOTEHiltebeitel200712_40-0"
+                class="reference"><a href="#cite_note-FOOTNOTEHiltebeitel200712-40">[27]</a></sup>–200<sup
+                id="cite_ref-FOOTNOTELarson2009_41-0" class="reference"><a
+                  href="#cite_note-FOOTNOTELarson2009-41">[28]</a></sup> BCE and c. 300 CE,<sup
+                id="cite_ref-FOOTNOTEHiltebeitel200712_40-1" class="reference"><a
+                  href="#cite_note-FOOTNOTEHiltebeitel200712-40">[27]</a></sup> in the period of the
+              <a href="/wiki/Second_Urbanisation" class="mw-redirect" title="Second Urbanisation">Second
+                Urbanisation</a> and the early <a
+                href="/wiki/History_of_Hinduism#Hindu_synthesis_and_Classical_Hinduism_(c._200_BCE_–_1200_CE)"
+                title="History of Hinduism">classical period of Hinduism</a>, when the <a
+                href="/wiki/Indian_epic_poetry" title="Indian epic poetry">Epics</a> and the first <a
+                href="/wiki/Puranas" title="Puranas">Purānas</a> were composed.<sup
+                id="cite_ref-FOOTNOTEHiltebeitel200712_40-2" class="reference"><a
+                  href="#cite_note-FOOTNOTEHiltebeitel200712-40">[27]</a></sup><sup
+                id="cite_ref-FOOTNOTELarson2009_41-1" class="reference"><a
+                  href="#cite_note-FOOTNOTELarson2009-41">[28]</a></sup> It flourished in the <a
+                href="/wiki/Medieval_India" title="Medieval India">medieval period</a>, with the <a
+                href="/wiki/Decline_of_Buddhism_in_the_Indian_subcontinent"
+                title="Decline of Buddhism in the Indian subcontinent">decline of Buddhism in
+                India</a>.<sup id="cite_ref-FOOTNOTELarson1995109&amp;ndash;111_42-0" class="reference"><a
+                  href="#cite_note-FOOTNOTELarson1995109&amp;ndash;111-42">[29]</a></sup>
+            </p>
+            <p>Currently, the four largest <a href="/wiki/Hindu_denominations"
+                title="Hindu denominations">denominations</a> of Hinduism are the <a href="/wiki/Vaishnavism"
+                title="Vaishnavism">Vaishnavism</a>, <a href="/wiki/Shaivism" title="Shaivism">Shaivism</a>, <a
+                href="/wiki/Shaktism" title="Shaktism">Shaktism</a>
+              and <a href="/wiki/Smarta_Tradition" class="mw-redirect" title="Smarta Tradition">Smartism</a>.<sup
+                id="cite_ref-FOOTNOTELipner2009377,_398_43-0" class="reference"><a
+                  href="#cite_note-FOOTNOTELipner2009377,_398-43">[30]</a></sup>
+              Sources of authority and
+              eternal truths in the Hindu texts play an important role, but there is also a strong Hindu
+              tradition of questioning authority in order to deepen the understanding of these truths and
+              to
+              further develop the tradition.<sup id="cite_ref-frazierintrop2_44-0" class="reference"><a
+                  href="#cite_note-frazierintrop2-44">[31]</a></sup> Hinduism is the most widely
+              professed
+              faith in <a href="/wiki/Religion_in_India" title="Religion in India">India</a>, <a
+                href="/wiki/Religion_in_Nepal" title="Religion in Nepal">Nepal</a> and <a
+                href="/wiki/Religion_in_Mauritius" title="Religion in Mauritius">Mauritius</a>.
+              Significant
+              numbers of Hindu communities are found in <a href="/wiki/Southeast_Asia" title="Southeast Asia">Southeast
+                Asia</a> including in <a href="/wiki/Bali" title="Bali">Bali</a>, <a href="/wiki/Indonesia"
+                title="Indonesia">Indonesia</a>,<sup id="cite_ref-45" class="reference"><a
+                  href="#cite_note-45">[32]</a></sup> the <a href="/wiki/Caribbean" title="Caribbean">Caribbean</a>, <a
+                href="/wiki/North_America" title="North America">North America</a>, <a href="/wiki/Europe"
+                title="Europe">Europe</a>,
+              <a href="/wiki/Oceania" title="Oceania">Oceania</a>, <a href="/wiki/Africa" title="Africa">Africa</a>, and
+              <a href="/wiki/Hinduism_by_country" title="Hinduism by country">other regions</a>.<sup id="cite_ref-46"
+                class="reference"><a href="#cite_note-46">[33]</a></sup><sup id="cite_ref-47" class="reference"><a
+                  href="#cite_note-47">[34]</a></sup>
+            </p>
+          </div>
+          <div style="margin-bottom: 6rem;"></div>
+        </article>
+        <article>
+          <div class="article-heading">
+            <h1 class="heading">Etymology</h1>
+            <p class="text-muted"><em>Further information: <a href="/wiki/Hindu" class="mw-redirect"
+                  title="Hindu">Hindu</a></em></p>
+          </div>
+          <div class="side-content">
+            <img class="side-content-img" style="object-fit: cover;width: 95%;"
+              src="//upload.wikimedia.org/wikipedia/commons/thumb/0/07/Bratan_Bali_Indonesia_Balinese-family-after-Puja-01.jpg/220px-Bratan_Bali_Indonesia_Balinese-family-after-Puja-01.jpg" />
+            <div>
+              A <a href="/wiki/Balinese_people" title="Balinese people">Balinese</a> <a href="/wiki/Bali_Hinduism"
+                class="mw-redirect" title="Bali Hinduism">Hindu</a> family
+              after
+              <a href="/wiki/Puja_(Hinduism)" title="Puja (Hinduism)">puja</a> at <a href="/wiki/Pura_Ulun_Danu_Bratan"
+                title="Pura Ulun Danu Bratan">Bratan temple</a>
+              in <a href="/wiki/Bali" title="Bali">Bali</a>, <a href="/wiki/Indonesia" title="Indonesia">Indonesia</a>.
+            </div>
+          </div>
+          <p>The word <i>Hindū</i> is derived from <a href="/wiki/Indo-Aryan_languages"
+              title="Indo-Aryan languages">Indo-Aryan</a><sup id="cite_ref-FOOTNOTEFlood20083_48-0" class="reference"><a
+                href="#cite_note-FOOTNOTEFlood20083-48">&#91;35&#93;</a></sup>/<a href="/wiki/Sanskrit"
+              title="Sanskrit">Sanskrit</a><sup id="cite_ref-FOOTNOTEFlood19966_49-0" class="reference"><a
+                href="#cite_note-FOOTNOTEFlood19966-49">&#91;36&#93;</a></sup> root <i>Sindhu</i>.<sup
+              id="cite_ref-FOOTNOTEFlood19966_49-1" class="reference"><a
+                href="#cite_note-FOOTNOTEFlood19966-49">&#91;36&#93;</a></sup><sup
+              id="cite_ref-FOOTNOTEParpola2015Chapter_1_50-0" class="reference"><a
+                href="#cite_note-FOOTNOTEParpola2015Chapter_1-50">&#91;37&#93;</a></sup> The <a
+              href="/wiki/Proto-Iranian_language" title="Proto-Iranian language">Proto-Iranian</a> sound
+            change <i>*s</i> &gt; <i>h</i> occurred between 850 and 600 BCE, according to <a href="/wiki/Asko_Parpola"
+              title="Asko Parpola">Asko Parpola</a>.<sup id="cite_ref-51" class="reference"><a
+                href="#cite_note-51">&#91;38&#93;</a></sup>
+          </p>
+          <p>The use of the English term "Hinduism" to describe a collection of practices and beliefs is a
+            fairly recent construction: it was first used by <a href="/wiki/Raja_Ram_Mohun_Roy" class="mw-redirect"
+              title="Raja Ram Mohun Roy">Raja Ram Mohun Roy</a> in 1816–17.<sup id="cite_ref-US433_52-0"
+              class="reference"><a href="#cite_note-US433-52">&#91;39&#93;</a></sup> The term "Hinduism" was coined in
+            around 1830 by those Indians who opposed British colonialism, and who wanted to distinguish
+            themselves from other religious groups.<sup id="cite_ref-Doniger5_53-0" class="reference"><a
+                href="#cite_note-Doniger5-53">&#91;40&#93;</a></sup><sup id="cite_ref-AskoParpola_54-0"
+              class="reference"><a href="#cite_note-AskoParpola-54">&#91;41&#93;</a></sup><sup id="cite_ref-US433_52-1"
+              class="reference"><a href="#cite_note-US433-52">&#91;39&#93;</a></sup> Before the British began to
+            categorise
+            communities strictly by religion, Indians generally did not define themselves exclusively
+            through their religious beliefs; instead identities were largely segmented on the basis of
+            locality, language, <a href="/wiki/Varna_(Hinduism)" title="Varna (Hinduism)">varna</a>, <a
+              href="/wiki/J%C4%81ti" title="Jāti">jāti</a>, occupation and sect.<sup id="cite_ref-Doniger3_55-0"
+              class="reference"><a href="#cite_note-Doniger3-55">&#91;42&#93;</a></sup>
+          </p>
+          <p>The word "Hindu" is much older, and it is believed that it was used as the name for the <a
+              href="/wiki/Indus_River" title="Indus River">Indus River</a> in the northwestern part of the
+            <a href="/wiki/Indian_subcontinent" title="Indian subcontinent">Indian subcontinent</a>.<sup
+              id="cite_ref-US433_52-2" class="reference"><a href="#cite_note-US433-52">&#91;39&#93;</a></sup><sup
+              id="cite_ref-FOOTNOTEFlood19966_49-2" class="reference"><a
+                href="#cite_note-FOOTNOTEFlood19966-49">&#91;36&#93;</a></sup><sup id="cite_ref-56" class="reference"><a
+                href="#cite_note-56">&#91;note 10&#93;</a></sup> According to <a href="/wiki/Gavin_Flood"
+              title="Gavin Flood">Gavin Flood</a>, "The actual term <i>Hindu</i>
+            first occurs as a <a href="/wiki/Persian_language" title="Persian language">Persian</a>
+            geographical term for the people who lived beyond the river Indus (Sanskrit:
+            <i>Sindhu</i>)",<sup id="cite_ref-FOOTNOTEFlood19966_49-3" class="reference"><a
+                href="#cite_note-FOOTNOTEFlood19966-49">&#91;36&#93;</a></sup> more specifically in the
+            6th-century BCE inscription of <a href="/wiki/Darius_I" class="mw-redirect" title="Darius I">Darius I</a>
+            (550–486 BCE).<sup id="cite_ref-FOOTNOTESharma2002_57-0" class="reference"><a
+                href="#cite_note-FOOTNOTESharma2002-57">&#91;43&#93;</a></sup> The term
+            <i>Hindu</i> in these ancient records is a geographical term and did not refer to a
+            religion.<sup id="cite_ref-FOOTNOTEFlood19966_49-4" class="reference"><a
+                href="#cite_note-FOOTNOTEFlood19966-49">&#91;36&#93;</a></sup> Among the earliest known
+            records of 'Hindu' with connotations of religion may be in the 7th-century CE Chinese text
+            <i>Record of the Western Regions</i> by <a href="/wiki/Xuanzang" title="Xuanzang">Xuanzang</a>,<sup
+              id="cite_ref-FOOTNOTESharma2002_57-1" class="reference"><a
+                href="#cite_note-FOOTNOTESharma2002-57">&#91;43&#93;</a></sup> and
+            14th-century Persian text <i>Futuhu's-salatin</i> by 'Abd al-Malik <a href="/wiki/Isami_(historian)"
+              class="mw-redirect" title="Isami (historian)">Isami</a>.<sup id="cite_ref-Hindu_term_58-0"
+              class="reference"><a href="#cite_note-Hindu_term-58">&#91;note
+                11&#93;</a></sup>
+          </p>
+          <p>Thapar states that the word <i>Hindu</i> is found as <i>heptahindu</i> in <a href="/wiki/Avesta"
+              title="Avesta">Avesta</a> – equivalent to Rigvedic <i>sapta sindhu</i>, while <i>hndstn</i>
+            (pronounced <i>Hindustan</i>) is found in a <a href="/wiki/Sasanian_Empire"
+              title="Sasanian Empire">Sasanian</a> inscription from the 3rd century CE, both of which
+            refer to parts of northwestern South Asia.<sup id="cite_ref-59" class="reference"><a
+                href="#cite_note-59">&#91;44&#93;</a></sup> The Arabic term <i>al-Hind</i> referred to
+            the people who live across the River Indus.<sup id="cite_ref-FOOTNOTEThapar199377_60-0" class="reference"><a
+                href="#cite_note-FOOTNOTEThapar199377-60">&#91;45&#93;</a></sup> This
+            Arabic term was itself taken from the pre-Islamic Persian term <i>Hindū</i>, which refers to all
+            Indians. By the 13th century, <i><a href="/wiki/Hindustan" title="Hindustan">Hindustan</a></i>
+            emerged as a popular alternative <a href="/wiki/Names_of_India" class="mw-redirect"
+              title="Names of India">name of India</a>, meaning the "land of Hindus".<sup
+              id="cite_ref-FOOTNOTEThompson_Platts1884_61-0" class="reference"><a
+                href="#cite_note-FOOTNOTEThompson_Platts1884-61">&#91;46&#93;</a></sup><sup id="cite_ref-62"
+              class="reference"><a href="#cite_note-62">&#91;note 12&#93;</a></sup>
+          </p>
+          <p>The term <i>Hindu</i> was later used occasionally in some Sanskrit texts such as the later <i><a
+                href="/wiki/Rajatarangini" title="Rajatarangini">Rajataranginis</a></i> of Kashmir
+            (Hinduka, c. 1450) and some 16th- to 18th-century <a href="/wiki/Bengali_language"
+              title="Bengali language">Bengali</a> <a href="/wiki/Gaudiya_Vaishnavism"
+              title="Gaudiya Vaishnavism">Gaudiya Vaishnava</a> texts including <i><a
+                href="/wiki/Chaitanya_Charitamrita" title="Chaitanya Charitamrita">Chaitanya
+                Charitamrita</a></i> and <i><a href="/wiki/Chaitanya_Bhagavata" title="Chaitanya Bhagavata">Chaitanya
+                Bhagavata</a></i>. These texts used it to
+            distinguish Hindus from Muslims who are called <a href="/wiki/Yona#Later_meanings" title="Yona">Yavanas</a>
+            (foreigners) or <a href="/wiki/Mleccha" title="Mleccha">Mlecchas</a> (barbarians), with the 16th-century
+            <i>Chaitanya
+              Charitamrita</i> text and the 17th-century <i>Bhakta Mala</i> text using the phrase
+            "<i>Hindu dharma</i>".<sup id="cite_ref-63" class="reference"><a href="#cite_note-63">&#91;47&#93;</a></sup>
+            It was only towards the end of the 18th
+            century that European merchants and colonists began to refer to the followers of Indian
+            religions collectively as <i>Hindus</i>.
+          </p>
+          <p>The term <i>Hinduism</i>, then spelled <i>Hindooism</i>, was introduced into the English language
+            in the 18th century to denote the religious, philosophical, and cultural traditions native to
+            India.<sup id="cite_ref-Sweetman2003_64-0" class="reference"><a
+                href="#cite_note-Sweetman2003-64">&#91;48&#93;</a></sup>
+          </p>
+        </article>
+        <article>
+          <div class="article-heading">
+            <h1 class="heading">Definitions</h1>
+          </div>
+          <p>Hinduism includes a diversity of ideas on <a href="/wiki/Spirituality#Hinduism"
+              title="Spirituality">spirituality</a> and traditions, but has no ecclesiastical order, no
+            unquestionable religious authorities, no governing body, no prophet(s) nor any binding holy
+            book; Hindus can choose to be <a href="/wiki/Polytheism" title="Polytheism">polytheistic</a>, <a
+              href="/wiki/Pantheism" title="Pantheism">pantheistic</a>, <a href="/wiki/Panentheism"
+              title="Panentheism">panentheistic</a>, <a href="/wiki/Pandeism" title="Pandeism">pandeistic</a>,
+            <a href="/wiki/Henotheism" title="Henotheism">henotheistic</a>, <a href="/wiki/Monotheism"
+              title="Monotheism">monotheistic</a>, <a href="/wiki/Monism" title="Monism">monistic</a>, <a
+              href="/wiki/Agnosticism" title="Agnosticism">agnostic</a>, <a href="/wiki/Atheism"
+              title="Atheism">atheistic</a> or <a href="/wiki/Humanism" title="Humanism">humanist</a>.<sup
+              id="cite_ref-65" class="reference"><a href="#cite_note-65">&#91;49&#93;</a></sup><sup id="cite_ref-66"
+              class="reference"><a href="#cite_note-66">&#91;50&#93;</a></sup><sup id="cite_ref-67" class="reference"><a
+                href="#cite_note-67">&#91;51&#93;</a></sup> According
+            to Doniger, "ideas about all the major issues of faith and lifestyle - vegetarianism,
+            nonviolence, belief in rebirth, even caste - are subjects of debate, not <a href="/wiki/Dogma"
+              title="Dogma">dogma</a>."<sup id="cite_ref-FOOTNOTEDoniger20143_68-0" class="reference"><a
+                href="#cite_note-FOOTNOTEDoniger20143-68">&#91;52&#93;</a></sup>
+          </p>
+          <p>Because of the wide range of traditions and ideas covered by the term Hinduism, arriving at a
+            comprehensive definition is difficult.<sup id="cite_ref-FOOTNOTEFlood19966_49-5" class="reference"><a
+                href="#cite_note-FOOTNOTEFlood19966-49">&#91;36&#93;</a></sup> The
+            religion "defies our desire to define and categorize it".<sup id="cite_ref-FOOTNOTEKnott1998117_69-0"
+              class="reference"><a href="#cite_note-FOOTNOTEKnott1998117-69">&#91;53&#93;</a></sup> Hinduism has been
+            variously defined as a religion, a religious tradition, a set of religious beliefs, and "a way
+            of life".<sup id="cite_ref-FOOTNOTESharma200312-13_70-0" class="reference"><a
+                href="#cite_note-FOOTNOTESharma200312-13-70">&#91;54&#93;</a></sup><sup id="cite_ref-definition_1-1"
+              class="reference"><a href="#cite_note-definition-1">&#91;note
+                1&#93;</a></sup> From a Western lexical standpoint, Hinduism like other faiths is
+            appropriately referred to as a religion. In India, the term <i>dharma</i> is preferred, which is
+            broader than the Western term <i>religion</i>.
+          </p>
+          <p>The study of India and its cultures and religions, and the definition of "Hinduism", has been
+            shaped by the interests of colonialism and by Western notions of religion.<sup
+              id="cite_ref-FOOTNOTESweetman2004_71-0" class="reference"><a
+                href="#cite_note-FOOTNOTESweetman2004-71">&#91;55&#93;</a></sup><sup id="cite_ref-FOOTNOTEKing1999_72-0"
+              class="reference"><a href="#cite_note-FOOTNOTEKing1999-72">&#91;56&#93;</a></sup> Since the 1990s, those
+            influences and its outcomes have been the topic of debate among scholars of Hinduism,<sup
+              id="cite_ref-FOOTNOTESweetman2004_71-1" class="reference"><a
+                href="#cite_note-FOOTNOTESweetman2004-71">&#91;55&#93;</a></sup><sup id="cite_ref-73"
+              class="reference"><a href="#cite_note-73">&#91;note 13&#93;</a></sup> and have also been
+            taken over by critics of the Western view on India.<sup id="cite_ref-FOOTNOTENussbaum2009_74-0"
+              class="reference"><a href="#cite_note-FOOTNOTENussbaum2009-74">&#91;57&#93;</a></sup><sup id="cite_ref-75"
+              class="reference"><a href="#cite_note-75">&#91;note 14&#93;</a></sup>
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+
+</html>
