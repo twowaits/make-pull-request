@@ -6,8 +6,7 @@ import java.util.Scanner;
  */
 public class Main {
 
-    public static void main(String[] args) {
-        
+    public static void main(String[] args) {        
         Scanner sc = new Scanner (System.in);
         
         int rows;
@@ -19,8 +18,7 @@ public class Main {
 
     } 
     
-    public static void hollowPyramid(int rows){
-        
+    public static void hollowPyramid(int rows){        
         int row = 1;
         int i;
         int spaceAhead = rows - 1;
@@ -45,8 +43,7 @@ public class Main {
 
         for (i = 1; i <= row; i++) {
           System.out.print("* ");
-        }
-        
+        }        
     }
     
 }
