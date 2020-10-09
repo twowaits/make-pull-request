@@ -6,3 +6,15 @@ while(i <= num1 and i <= num2):
     gcd = i
   i = i + 1
 print("GCD is", gcd)
+
+#gcd of factorials of two number
+
+import math 
+  
+def gcdOfFactorial(m, n) : 
+    return math.factorial(min(m, n)) 
+  
+# Driver code 
+m = 5
+n = 9
+print(gcdOfFactorial(m, n))
