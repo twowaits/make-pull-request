@@ -8,10 +8,11 @@ class funct{
         Scanner sc=new Scanner(System.in);
         int x=sc.nextInt();
         int y=sc.nextInt();
+        int a=x,b=y;
         x=fact(x);
         y=fact(y);
       
-        System.out.println("'The GCD of Factorial of "+x+" and "+y+" is ="+gcd(x,y));
+        System.out.println("The GCD of Factorial of "+a+" and "+b+" is ="+gcd(x,y));
     }
     public static int fact(int a)
     {
