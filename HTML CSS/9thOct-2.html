@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Google</title>
+    <link rel="icon" href="https://img.icons8.com/color/452/google-logo.png" type="image/gif" sizes="16x16">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+</head>
+<style>
+    .header {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .tabs {
+        list-style-type: none;
+        width: fit-content;
+    }
+
+    .tabs li {
+        display: inline-block;
+        margin-right:5px;
+    }
+
+    .google #google_logo {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        clear: both;
+        padding-top: 112px;
+        padding-bottom: 20px;
+    }
+
+    .search {
+        width: auto;
+        max-width: 584px;
+        margin: auto;
+        padding-top: 6px;
+
+
+    }
+
+    .searchbar {
+        width: 82%;
+        background-color: transparent;
+        border: none;
+        margin-left: 30px;
+        margin-top: 2px;
+        padding: 0;
+        color: rgba(0, 0, 0, .87);
+        word-wrap: break-word;
+        outline: none;
+
+        -webkit-tap-highlight-color: transparent;
+
+        height: 34px;
+        font-size: 16px;
+
+
+    }
+
+    input:focus {
+        border: 1px;
+
+    }
+
+    .inp {
+        background: #fff;
+        display: flex;
+        border: 1px solid #dfe1e5;
+        box-shadow: none;
+        border-radius: 24px;
+        z-index: 3;
+        height: 44px;
+        margin: 0 auto;
+        /* width: 482px; */
+        width: auto;
+    }
+
+    .iblpc {
+        display: flex;
+        align-items: center;
+        padding-right: 13px;
+        margin-top: -5px;
+    }
+
+    .inp i {
+        font-size: 15px;
+        color: #949494;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+
+    .HPVvwb {
+        height: 24px;
+        width: 24px;
+        margin-top: 10px;
+        vertical-align: middle;
+    }
+
+    .sbutton {
+        padding-top: 18px;
+        top: 53px;
+        z-index: 0;
+        height: 70px;
+
+    }
+
+    .sbutton input {
+        background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+        background-color: #f2f2f2;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        color: #5F6368;
+        font-family: arial, sans-serif;
+        font-size: 14px;
+        margin: 11px 4px;
+        padding: 0 16px;
+        line-height: 27px;
+        height: 36px;
+        min-width: 54px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .sbutton input[type="submit"]:hover {
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+        background-color: #f8f8f8;
+        border: 1px solid #c6c6c6;
+        color: #222;
+    }
+
+    #lang {
+
+        width: fit-content;
+        margin: auto;
+        margin-top: 15px;
+    }
+    .EvHmz {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+.f6F9Be {
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    line-height: 40px;
+    min-width: 980px;
+    min-width: 400px;
+}
+.fbar
+{
+    margin-left: -27px;
+    font-size: 14px; 
+}
+.b2hzT {
+    border-bottom: 1px solid #e4e4e4;
+}
+.b0KoTc {
+    color: rgba(0,0,0,.54);
+    padding-left: 27px;
+    margin-left: 30px;
+    text-align: left;
+
+}
+.fsr
+{
+    float: right !important;
+    margin-right: 30px !important;
+}
+#fsl {
+    margin-left: 30px;
+    float: left;
+}
+#ftby>div, #footer a {
+    display: inline-block;
+}
+#footer a {
+    color: #5f6368;
+    margin: 2px 10px 0;
+}
+.fbar a, #fsettl {
+    text-decoration: none;
+    white-space: nowrap;
+    color: rgba(0,0,0,.54);
+}
+.Fx4vi {
+    padding-left: 27px;
+    margin: 0 !important;
+}
+.userimg
+{
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: #dfe1e5;
+    background-image: url('https://lh3.googleusercontent.com/ogw/ADGmqu-rjzLTXhMlgJCUFs73ZCWls6hNZ1xcaaSKQyMB=s32-c-mo');
+}
+
+</style>
+
+<body>
+    <div class="header">
+        <div class="tabcont" style="float:right; display: grid; grid-auto-flow: column;">
+            <ul class="tabs">
+                <li><a href="https://mail.google.com/mail/u/0/" style="color:black">Gmail</a></li>
+                <li><a href="https://www.google.co.in/imghp?hl=en&tab=wi&authuser=0&ogbl" style="color:black">Images</a></li>
+                <li>
+                    <img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_apps_48px-512.png" alt="" width="25px;">
+                </li>
+    
+            </ul>
+            <div class="userimg" style="margin-left:5px; margin-top:-5px">
+    
+            </div>
+        </div>
+        
+    </div>
+    <div class="mid">
+
+        <div class="google">
+            <a href="#" id="google_logo"><img
+                    src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                    alt=" photo google-logo_zpspkcztsjo.png" /></a>
+        </div>
+        <br>
+        <div class="search">
+            <div class="inp">
+                <i class="fa fa-search"></i>
+                <input type="text" class="searchbar">
+                <svg class="HPVvwb" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"
+                        fill="#4285f4"></path>
+                    <path d="m11 18.08h2v3.92h-2z" fill="#34a853"></path>
+                    <path d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"
+                        fill="#f4b400"></path>
+                    <path
+                        d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z"
+                        fill="#ea4335"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="sbutton tfB0Bf">
+            <center>
+                <input class="gNO89b" value="Google Search" aria-label="Google Search" name="btnK" type="submit">
+                <input class="RNmpXc" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI"
+                    type="submit">
+            </center>
+        </div>
+
+        <div id="lang">Google offered in: <a
+                href="https://www.google.com/setprefs?sig=0_3S0yoLxf-RxZRvRq3i2T_76VMtI%3D&amp;hl=hi&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiygbqM_KbsAhX1yzgGHfxeBWUQ2ZgBCA8">हिन्दी</a>
+            <a
+                href="https://www.google.com/setprefs?sig=0_3S0yoLxf-RxZRvRq3i2T_76VMtI%3D&amp;hl=bn&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiygbqM_KbsAhX1yzgGHfxeBWUQ2ZgBCBA">বাংলা</a>
+            <a
+                href="https://www.google.com/setprefs?sig=0_3S0yoLxf-RxZRvRq3i2T_76VMtI%3D&amp;hl=te&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiygbqM_KbsAhX1yzgGHfxeBWUQ2ZgBCBE">తెలుగు</a>
+            <a
+                href="https://www.google.com/setprefs?sig=0_3S0yoLxf-RxZRvRq3i2T_76VMtI%3D&amp;hl=mr&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiygbqM_KbsAhX1yzgGHfxeBWUQ2ZgBCBI">मराठी</a>
+            <a
+                href="https://www.google.com/setprefs?sig=0_3S0yoLxf-RxZRvRq3i2T_76VMtI%3D&amp;hl=ta&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiygbqM_KbsAhX1yzgGHfxeBWUQ2ZgBCBM">தமிழ்</a>
+            <a
+                href="https://www.google.com/setprefs?sig=0_3S0yoLxf-RxZRvRq3i2T_76VMtI%3D&amp;hl=gu&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiygbqM_KbsAhX1yzgGHfxeBWUQ2ZgBCBQ">ગુજરાતી</a>
+            <a
+                href="https://www.google.com/setprefs?sig=0_3S0yoLxf-RxZRvRq3i2T_76VMtI%3D&amp;hl=kn&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiygbqM_KbsAhX1yzgGHfxeBWUQ2ZgBCBU">ಕನ್ನಡ</a>
+            <a
+                href="https://www.google.com/setprefs?sig=0_3S0yoLxf-RxZRvRq3i2T_76VMtI%3D&amp;hl=ml&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiygbqM_KbsAhX1yzgGHfxeBWUQ2ZgBCBY">മലയാളം</a>
+            <a
+                href="https://www.google.com/setprefs?sig=0_3S0yoLxf-RxZRvRq3i2T_76VMtI%3D&amp;hl=pa&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiygbqM_KbsAhX1yzgGHfxeBWUQ2ZgBCBc">ਪੰਜਾਬੀ</a>
+        </div>
+    </div>
+    <div class="EvHmz f6F9Be hRvfYe" id="fbar">
+        <div class="fbar">
+            <div class="b2hzT">
+                <div class="b0KoTc"><span class="Q8LRLc">India</span></div>
+            </div><span id="fsr" style="float: right !important;
+            margin-right: 30px !important;"><a class="Fx4vi" href="https://policies.google.com/privacy?hl=en-IN&amp;fg=1"
+                    ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://policies.google.com/privacy%3Fhl%3Den-IN%26fg%3D1&amp;ved=0ahUKEwiygbqM_KbsAhX1yzgGHfxeBWUQ8awCCBo">Privacy</a><a
+                    class="Fx4vi" href="https://policies.google.com/terms?hl=en-IN&amp;fg=1"
+                    ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://policies.google.com/terms%3Fhl%3Den-IN%26fg%3D1&amp;ved=0ahUKEwiygbqM_KbsAhX1yzgGHfxeBWUQ8qwCCBs">Terms</a><span
+                    style="display:inline-block;position:relative"><a class="Fx4vi"
+                        href="https://www.google.com/preferences?hl=en" id="fsettl" aria-controls="fsett"
+                        aria-expanded="false" aria-haspopup="true" role="button" jsaction="foot.cst"
+                        ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://www.google.com/preferences%3Fhl%3Den&amp;ved=0ahUKEwiygbqM_KbsAhX1yzgGHfxeBWUQzq0CCBw">Settings</a><span
+                        id="fsett" aria-labelledby="fsettl" role="menu" style="display:none"><a
+                            href="https://www.google.com/preferences?hl=en-IN&amp;fg=1" role="menuitem">Search
+                            settings</a><a href="/advanced_search?hl=en-IN&amp;fg=1" role="menuitem">Advanced
+                            search</a><a
+                            href="https://myactivity.google.com/privacyadvisor/search?utm_source=googlemenu&amp;fg=1"
+                            role="menuitem">Your data in Search</a><a
+                            href="https://myactivity.google.com/product/search?utm_source=google&amp;hl=en-IN&amp;fg=1"
+                            role="menuitem">Search activity</a><a
+                            href="https://support.google.com/websearch/?p=ws_results_help&amp;hl=en-IN&amp;fg=1"
+                            role="menuitem">Search help</a><a href="#" data-bucket="websearch" role="menuitem"
+                            id="dk2qOd" target="_blank" jsaction="gf.sf"
+                            data-ved="0ahUKEwiygbqM_KbsAhX1yzgGHfxeBWUQLggd">Send feedback</a></span></span></span><span
+                id="fsl"><a class="Fx4vi"
+                    href="https://www.google.com/intl/en_in/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpafooter&amp;fg=1"
+                    ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://www.google.com/intl/en_in/ads/%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&amp;ved=0ahUKEwiygbqM_KbsAhX1yzgGHfxeBWUQkdQCCB4">Advertising</a><a
+                    class="Fx4vi"
+                    href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpbfooter&amp;fg=1"
+                    ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://www.google.com/services/%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&amp;ved=0ahUKEwiygbqM_KbsAhX1yzgGHfxeBWUQktQCCB8">Business</a><a
+                    class="Fx4vi"
+                    href="https://about.google/?utm_source=google-IN&amp;utm_medium=referral&amp;utm_campaign=hp-footer&amp;fg=1"
+                    ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://about.google/%3Futm_source%3Dgoogle-IN%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&amp;ved=0ahUKEwiygbqM_KbsAhX1yzgGHfxeBWUQkNQCCCA">About</a><a
+                    class="Fx4vi" href="https://google.com/search/howsearchworks/?fg=1"> How Search works </a></span>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
