@@ -1,0 +1,51 @@
+body {
+    background-color: $light-theme;
+}
+
+.food {
+    // border: 1px solid red;
+    padding-top: 50px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.card-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.divider {
+    // background-color: ;
+    border-top: 2px solid #c9c9c9;
+    margin-left: 30px;
+}
+
+.orders {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 50px 30px 0px 40px;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 0;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
