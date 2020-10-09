@@ -1,37 +1,22 @@
 //pr from akshatrb
-
-#include<iostream>
-using namespace std;
-
-int gcd(int, int);
-
-int main(){
-    int x, y;
-
-    cout<<"Enter two numbers:";
-    cin>>x>>y;
-
-    cout<<"GCD("<< x <<", "<< y <<") = "<< gcd(x, y);
-    return 0;
-}
-
-int gcd(int x, int y){
-    int a, b, r;
-
-    if(x > y){
-        a = x;
-        b = y;
-    }
-    else{
-        a = y;
-        b = x;
-    }
-
-    while(b != 0){
-        r = a % b;
-        a = b;
-        b = r;
-    }
-
-    return a;
-}
+#include <stdio.h>
+#include <bits/stdc++.h> 
+using namespace std; 
+  
+int factorial(int x) { 
+    if (x <= 1) return 1; 
+    int res = 2; 
+    for (int i = 3; i <= x; i++) res = res * i; 
+    return res; 
+} 
+  
+int gcdOfFact(int m, int n) { 
+    return factorial(min(m, n)); 
+} 
+  
+int main() { 
+    int m,n;
+    cin >>m>>n;
+    cout << gcdOfFact(m, n); 
+    return 0; 
+} 
