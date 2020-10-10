@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="https://cipherschools.com/favicon.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap" rel="stylesheet">
+        <title>Machine Learning Course</title>
+        <style>
+            :root {
+                --base-color: #f59d2a;
+                --background-color: #2c3d4f;
+                --base-color2: #222831;
+                --text-gray: #9199a2;
+            }
+
+            * {
+                padding: 0;
+                margin: 0;
+                font-family: 'Mulish', sans-serif;
+                text-decoration: none;
+
+            }
+
+            html,
+            body {
+                width: 100%;
+            }
+
+            body {
+                background: var(--background-color);
+                color: #fff;
+            }
+
+            header {
+                display: block;
+                text-align: center;
+                color: #000;
+                padding: 0.7rem;
+                background-color: #b7bea9;
+                font-size: 1rem;
+            }
+
+            .btn {
+                border-radius: 0.5rem;
+                padding: 0.5em;
+                outline: none;
+                background: #fff;
+                cursor: pointer;
+                border: none;
+                margin: 0.5rem;
+                white-space: nowrap;
+                transition: 0.3s all;
+            }
+
+            .btn--white {
+                font-weight: 700;
+                color: #000;
+                padding: 0.4rem 0.8rem;
+            }
+
+            .content-section {
+                max-width: 1110px;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                margin: auto;
+            }
+
+            nav {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            .brand {
+                width: 146px;
+                padding-top: 0.2rem;
+            }
+
+            .nav-container {
+                display: flex;
+                width: 663px;
+                position: absolute;
+                right: 0;
+                top: 2.6rem;
+                background-color: var(--base-color2);
+                color: var(--base-color);
+                border-bottom-left-radius: 26px;
+                box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.5);
+                justify-content: space-evenly;
+            }
+
+            .nav-element {
+                padding: 0 1rem;
+            }
+
+            .nav-link {
+                display: inline-block;
+                color: inherit;
+                padding: 1.1rem 0;
+                position: relative;
+            }
+
+            .nav-link::after {
+                content: "";
+                background: var(--base-color);
+                height: 3px;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transform-origin: left;
+                transform: scaleX(0%);
+                transition: 0.3s transform;
+            }
+
+            .nav-link:hover::after {
+                transform: scaleX(100%);
+            }
+
+            a {
+                color: inherit;
+            }
+
+            .secondary-nav {
+                display: flex;
+                justify-content: flex-start;
+                color: var(--base-color);
+                align-items: center;
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            .secondary-nav a {
+                padding-right: 2.5rem;
+                position: relative;
+            }
+
+            .secondary-nav a::after {
+                position: absolute;
+                right: 0.5rem;
+                content: url("https://cipherschools.com/static/media/breadcrumb_right_arrow.835f1d48.svg");
+            }
+
+            .secondary-nav a:last-child::after {
+                display: none;
+            }
+
+            .active {
+                color: #fff;
+            }
+
+            h1 {
+                font-size: 3.5rem;
+                font-weight: normal;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                font-weight: normal;
+            }
+
+            p {
+                margin-bottom: 0.5rem;
+            }
+
+            .flex {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .mg-top {
+                margin-top: 0.5rem;
+            }
+
+            .offer-card {
+                width: 360px;
+                background-color: var(--base-color2);
+                border-radius: 0.5rem;
+                position: relative;
+                padding: 1.2rem 80px 1.2rem 100px;
+                display: flex;
+                text-align: center;
+                justify-content: space-between;
+            }
+
+            .offer-card .offer-img {
+                position: absolute;
+                top: -5px;
+                width: 100px;
+                left: -8px;
+            }
+
+            .offer-card-discount {
+                position: absolute;
+                top: 1.8rem;
+                left: -0.8rem;
+                font-size: 10px;
+                transform: rotate(-45deg);
+            }
+
+            .offer-card-left {
+                width: 15rem;
+                margin-right: 10px;
+            }
+
+            .btn--outline {
+                border: 3px solid var(--base-color);
+                background: transparent;
+                color: #fff;
+            }
+
+            .btn--outline:hover {
+                border-color: #ee7738;
+            }
+
+            .btn--phone {
+                padding: 0.5rem 0.6rem;
+                font-size: 0.8rem;
+                margin-left: 0;
+                margin-right: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .phone-icon {
+                width: 15px;
+            }
+
+            .text-muted {
+                color: var(--text-gray);
+            }
+
+            .text-orange {
+                color: var(--base-color);
+            }
+
+            .text-size-m {
+                font-size: 1.5rem;
+            }
+
+            .text-size-l {
+                font-size: 2rem;
+
+            }
+
+            .offer-card-right {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .btn--main {
+                background: var(--base-color);
+                color: var(--base-color2);
+            }
+
+            .btn-l {
+                text-transform: uppercase;
+                font-weight: 700;
+                width: 100%;
+            }
+
+            .btn-l:hover {
+                background: var(--base-color);
+                box-shadow: 0 0 1rem var(--base-color);
+                color: var(--base-color2);
+            }
+
+            .btn--padding-l {
+                padding: 1rem 2rem;
+            }
+
+            iframe {
+                border: 3px solid var(--base-color2);
+                position: relative;
+                z-index: 1;
+                border-radius: 0.5rem;
+                width: 540px;
+                height: 265px;
+            }
+
+            .video-container {
+                margin: 2rem;
+                position: relative;
+            }
+
+            .video-container::before {
+                position: absolute;
+                content: "";
+                height: 2rem;
+                width: 100%;
+                background: var(--base-color2);
+                top: -1.8rem;
+                border-radius: 0.5rem 0.5rem 0 0;
+                z-index: 0;
+            }
+
+            .video-container::after {
+                content: "Watch a demo class in action";
+                position: absolute;
+                top: -1.5rem;
+                font-weight: 700;
+                right: 0.5rem;
+                white-space: nowrap;
+            }
+
+            .bg-white {
+                background: #eeeeee;
+                padding: 3rem 0;
+            }
+
+            .card {
+                border-radius: 0.5rem;
+                background-color: var(--background-color);
+                padding: 0.8rem 0.6rem;
+            }
+
+            .card--outline {
+                border: 3px solid var(--base-color);
+                position: relative;
+            }
+
+            .card--shadow {
+                box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+            }
+
+            .sub-card {
+                background: var(--base-color2);
+                border-radius: 0.5rem;
+                padding: 0.5rem;
+            }
+
+            main {
+                padding-bottom: 1rem;
+            }
+
+            .heading {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+
+            .project-container {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 0.8rem 0;
+                white-space: nowrap;
+            }
+
+            .project-container img {
+                width: 80px;
+                padding-right: 0.8rem;
+            }
+
+            .perks-container {
+                text-align: center;
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            .perks-container img {
+                width: 45px;
+                margin: 1rem;
+            }
+
+            .overlay--cards {
+                display: flex;
+            }
+
+            .card--behind {
+                border-left: 0;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                position: relative;
+                padding-left: 1rem;
+            }
+
+            .card--behind::before {
+                content: "";
+                height: 100%;
+                border: inherit;
+                border-left: 0;
+                border-right: 0;
+                position: absolute;
+                width: 2rem;
+                top: -3px;
+                left: -2rem;
+                background-color: var(--background-color);
+                border-top-left-radius: 0.5rem;
+                border-bottom-left-radius: 0.5rem;
+            }
+
+            .perks {
+                display: flex;
+                height: calc(100% - 2rem);
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            footer {
+                text-align: center;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 2rem;
+            }
+
+            footer>* {
+                align-self: center;
+            }
+
+            h2 {
+                grid-column: span 3;
+            }
+
+            .white-link {
+                color: #fff;
+                font-size: 1rem;
+                display: block;
+                font-size: 1.2rem;
+            }
+
+            .white-link:hover {
+                color: var(--base-color);
+            }
+
+            .mentor {
+                margin-top: 4rem;
+            }
+
+            .profile-pic {
+                width: 140px;
+                height: 140px;
+                border-radius: 50%;
+                overflow: hidden;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-self: center;
+                justify-self: center;
+            }
+
+            .img-cover {
+                position: absolute;
+                width: 140px;
+                top: 0;
+                left: 0;
+            }
+
+            .pic-frame {
+                z-index: 100;
+                width: 126px;
+                height: 126px;
+                border-radius: 63px;
+                overflow: hidden;
+            }
+
+            .text-container {
+                display: grid;
+                grid-template-columns: 110px 1fr;
+                column-gap: 1rem;
+            }
+
+            .first-mentor {
+                display: grid;
+                grid-template-columns: 190px 1fr;
+                column-gap: 1rem;
+                color: #222;
+            }
+
+            .mentor {
+                display: grid;
+                grid-template-columns: 1fr 475px;
+                column-gap: 3rem;
+                grid-template-rows: min-content;
+            }
+
+            .overflow--pic {
+                position: absolute;
+                left: 50%;
+                top: -70px;
+                transform: translateX(-50%);
+            }
+
+            .card--mentor {
+                padding-top: 70px;
+                text-align: center;
+                margin-top: 80px;
+            }
+
+            .card--feedback {
+                padding-bottom: 7rem;
+            }
+
+            .syllabus {
+                padding: 2rem 0;
+            }
+
+            .syllabus .sub-card {
+                padding: 1rem;
+                margin: 1rem;
+            }
+
+            .card--dropdown h3 {
+                font-weight: 700;
+            }
+
+            .card--dropdown p {
+                color: #cfd2d7;
+            }
+
+            .card--dropdown {
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+                z-index: 1;
+                position: relative;
+                margin: 0.5rem 0;
+            }
+
+            .card--dropdown::after {
+                content: "^";
+                transform: rotate(180deg);
+                transition: 0.3s all;
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: var(--base-color);
+            }
+
+            .card--dropdown:hover::after {
+                transform: rotate(0deg);
+            }
+
+            .hidden {
+                display: none;
+            }
+
+            .card--dropdown:hover .hidden,
+            .card--dropdown:hover hr {
+                display: block;
+            }
+
+            .card--dropdown:hover {
+                border: 3px solid var(--base-color);
+            }
+
+            footer h3 {
+                color: #cfd2d7;
+            }
+
+            hr {
+                border: 3px solid var(--base-color);
+                border-radius: 0.5rem;
+                border-top: 0;
+                margin-bottom: 0.5rem;
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            30% + 10% additional off site-wide till Oct 15th <a class="btn btn--white" href="#">Enroll now</a>
+        </header>
+        <div class="content-section">
+            <nav>
+                <a href="#">
+                    <img class="brand"
+                        src="https://storage.googleapis.com/cipherschools-storage.appspot.com/images/logo/navbar_logo@3x.png">
+                </a>
+                <div class="nav-container">
+                    <span class="nav-element">
+                        <a href="#" class="nav-link">Courses</a>
+                    </span>
+                    <span class="nav-element">
+                        <a href="#" class="nav-link">Upcoming Events</a>
+                    </span>
+                    <span class="nav-element">
+                        <a href="#" class="nav-link">Blogs</a>
+                    </span>
+                    <span class="nav-element">
+                        <a href="#" class="nav-link">Sign Up</a> | <a href="#" class="nav-link">Sign In</a>
+                    </span>
+                </div>
+            </nav>
+            <div class="secondary-nav">
+                <a href="#">Home</a>
+                <a href="#">Courses</a>
+                <a href="#" class="active">Machine Learning</a>
+            </div>
+            <main>
+                <h1 class="heading">Machine Learning</h1>
+                <div class="flex mg-top">
+                    <div class="offer-card">
+                        <img class="offer-img" src="https://cipherschools.com/static/media/discount-strip.f81e00f0.svg">
+                        <span class="offer-card-discount"> 30% off till Oct 15th</span>
+                        <div class="offer-card-left">
+                            <a class="btn btn--outline btn--phone" href="#">
+                                <img class="phone-icon"
+                                    src="https://cipherschools.com/static/media/about_us_call.2900788b.svg">&nbsp; 98765
+                                43210
+                            </a>
+                            <div class="text-muted">Next upcoming batch</div>
+                            <div class="text-orange text-size-m">15th Oct</div>
+                            <div class="mg-top text-muted" style="text-decoration: line-through;">Rs 9999</div>
+                            <div class="text-orange text-size-l">Rs 6999</div>
+                        </div>
+                        <div class="offer-card-right">
+                            <button class="btn btn--main btn-l btn--padding-l">Talk to our team</button>
+                            <button class="btn btn--outline btn-l btn--padding-l">Enroll Now</button>
+                        </div>
+                    </div>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/WlQxOmNjGEI?autoplay=1&amp;mute=1&amp;playsinline=1"
+                            autoplay="off" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture muted"
+                            allowfullscreen="" class="sc-AxhCb eSwYtm">
+                        </iframe>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="bg-white">
+            <div class="content-section">
+                <div class="overlay--cards">
+                    <div style="z-index: 3;" class="card card--outline card--shadow">
+                        <div class="heading">
+                            <h2>Course Content</h2>
+                            <a href="#" class="text-orange" style="font-weight: 800;font-size: 1.2rem;">View Full
+                                syllabus</a>
+                        </div>
+                        <p class="mg-top" style="line-height: 1.6rem;margin-bottom:0.8rem;color:#cfd2d7;">Artificial
+                            Intelligence is a
+                            field of study
+                            which enable computers to think.
+                            Machine Learning
+                            and Deep Learning helps us in achieving this. In order to understand the complete end to end
+                            life cycle of an AI project, one should be able to explore the data, make inferences from
+                            the data, perform feature engineering and build models, evaluate those models and deploy the
+                            complete project as a software</p>
+                        <div class=" sub-card">
+                            <h4>
+                                Skills focus:
+                            </h4>
+                            <p style="color:#cfd2d7;">
+                                Mathematical Essentials, Exploratory Data Analysis, Machine Learning and Deep Learning
+                                etc
+                            </p>
+                            <h4>
+                                Language focus:
+                            </h4>
+                            <div style="text-align:center;display: inline-block;">
+                                <img style="margin:1rem 0;"
+                                    src="https://cipherschools.com/static/media/python.5569e7cc.svg">
+                                <br>
+                                Python
+                            </div>
+                        </div>
+                    </div>
+                    <div style="z-index: 2;" class="card card--outline card--shadow card--behind">
+                        <h2 class="heading">Projects</h2>
+                        <div class="project-container">
+                            <img
+                                src="https://storage.googleapis.com/cipherschools-storage.appspot.com/images/project/objectDetection.gif">
+                            <h5>Object Detection</h5>
+                        </div>
+                        <div class="project-container">
+                            <img
+                                src="https://storage.googleapis.com/cipherschools-storage.appspot.com/images/project/textDetection.gif">
+                            <h5>Text Detection</h5>
+                        </div>
+                        <div class="project-container">
+                            <img
+                                src="https://storage.googleapis.com/cipherschools-storage.appspot.com/images/project/textRecognition.gif">
+                            <h5>Text Recognition</h5>
+                        </div>
+                        <div class="project-container">
+                            <img
+                                src="https://storage.googleapis.com/cipherschools-storage.appspot.com/images/project/coloringImages.gif">
+                            <h5>Coloring Images</h5>
+                        </div>
+                    </div>
+
+                    <div style="z-index: 1;" class="card card--outline card--shadow card--behind">
+                        <h2 class="heading">Perks</h2>
+                        <div class="perks">
+                            <div class="perks-container">
+                                <img height="45px"
+                                    src="https://storage.googleapis.com/cipherschools-storage.appspot.com/icons/perks/perks_time_icon@3x.png">
+                                <div>
+                                    <div>More than</div>
+                                    <div class="text-orange text-size-l">65</div>
+                                    <div>hours of coaching</div>
+                                </div>
+                            </div>
+                            <div class="perks-container">
+                                <img height="45px"
+                                    src="https://storage.googleapis.com/cipherschools-storage.appspot.com/icons/perks/perks_247_support@3x.png">
+                                <div>
+                                    <div>Get</div>
+                                    <div class="text-orange text-size-l">24/7</div>
+                                    <div>doubt resolution</div>
+                                </div>
+                            </div>
+                            <div class="perks-container">
+                                <img height="55px"
+                                    src="https://storage.googleapis.com/cipherschools-storage.appspot.com/icons/perks/perks_Certificate@3x.png">
+                                <div>
+                                    <div>Lifetime</div>
+                                    <div class="text-orange text-size-l">Certificate</div>
+                                    <div>for skills</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mentor">
+                    <h3 style="font-weight: 700;color: #000;font-size: 2rem;grid-column: span 2;">
+                        Meet Your Mentors
+                    </h3>
+                    <div class="first-mentor">
+
+                        <div class="profile-pic">
+                            <img class="img-cover"
+                                src="https://cipherschools.com/static/media/profile_hover.19f98123.svg">
+                            <div class="pic-frame">
+                                <img class="pic"
+                                    src="https://images.unsplash.com/photo-1602133750534-c90e7ca4fb6c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=125&q=60">
+                            </div>
+                        </div>
+                        <div>
+                            <h2 style="font-weight: normal;">Lorem Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate incidunt dicta
+                                voluptates
+                                reiciendis asperiores ullam, impedit ab animi exercitationem reprehenderit perspiciatis
+                                ducimus
+                                atque minima veniam. Perferendis, nulla. Rerum, sequi accusamus.
+                                Odit cumque laborum asperiores ex placeat fugit iure aliquid aperiam quibusdam
+                                aspernatur?
+                                Veritatis, aliquid itaque. Qui voluptatem esse aut? Rem non quos ea quae magnam soluta
+                                facere
+                                vero provident dolore!
+                            </p>
+                            <div class="text-container">
+                                <h4>Technologies:</h4>
+                                <p>Python, Data Analytics, Data
+                                    Science, R Programming, Machine Learning, Deep Learning, Image Processing, Computer
+                                    Vision,
+                                    Java, GCP, Git</p>
+                                <h4>Expertise:</h4>
+                                <p>AI research and Software Development</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 style="color: #000">
+                            Other mentorship you receive:
+                        </h4>
+                        <div class="card card--outline card--mentor">
+                            <div class="overflow--pic">
+                                <div class="profile-pic">
+                                    <img class="img-cover"
+                                        src="https://cipherschools.com/static/media/profile_hover.19f98123.svg">
+                                    <div class="pic-frame">
+                                        <img class="pic"
+                                            src="https://images.unsplash.com/photo-1602133750534-c90e7ca4fb6c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=125&q=60">
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>Lorem Ipsum Dolor</h3>
+                            <img
+                                src="https://storage.googleapis.com/cipherschools-storage.appspot.com/images/coach/amazon.png">
+                            <p style="font-size: 0.8rem; color: #cfd2d7;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Doloremque ex molestiae vero perspiciatis? Itaque, est modi voluptates excepturi
+                                molestiae dignissimos.</p>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <img class="offer-img" src="https://cipherschools.com/static/media/discount-strip.f81e00f0.svg">
+                        <span class="offer-card-discount"> 30% off till Oct 15th</span>
+                        <div class="offer-card-left">
+                            <a class="btn btn--outline btn--phone" href="#">
+                                <img class="phone-icon"
+                                    src="https://cipherschools.com/static/media/about_us_call.2900788b.svg">&nbsp; 98765
+                                43210
+                            </a>
+                            <div class="text-muted">Next upcoming batch</div>
+                            <div class="text-orange text-size-m">15th Oct</div>
+                            <div class="mg-top text-muted" style="text-decoration: line-through;">Rs 9999</div>
+                            <div class="text-orange text-size-l">Rs 6999</div>
+                        </div>
+                        <div class="offer-card-right">
+                            <button class="btn btn--main btn-l btn--padding-l">Talk to our team</button>
+                            <button class="btn btn--outline btn-l btn--padding-l">Enroll Now</button>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 style="color: #000">
+                            Students Feedback:
+                        </h4>
+                        <div class="card card--outline card--feedback">
+                            <h3>Lorem Ipsum</h3>
+                            <p style="color:#cfd2d7;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odit
+                                officiis saepe.
+                                Aliquid, beatae necessitatibus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="syllabus content-section">
+            <h2 style="text-align: center;">Syllabus</h2>
+
+            <div class="sub-card">
+                <div class="card card--dropdown">
+                    <h3>Programming Language for AI</h3>
+                    <p>
+                        1. GIT (Version Control, Collaboration)<br>
+                        2. Python Programming (Setting up the environment, Data types and data structures, Decision
+                        Statements –
+                        if else, Conditional Statements – while and for loop, Functions and Modules)
+                    </p>
+                    <hr>
+                    <p class="hidden">
+                        a) Get comfortable with Github. You’ll most likely be storing all of your code in Github. Once
+                        you are working, you’ll be using Git anyway to coordinate with other developers, so might as
+                        well start
+                        now.<br>
+                        b) Python is one of the most popular programming languages used by developers today. Guido Van
+                        Rossum created it in 1989 and ever since it’s been one of the most liked programming languages
+                        along
+                        with C++ and Java.<br>
+                        c) Python along with packages like NumPy, scikit-learn, pandas, and matplotlib form the basis to
+                        start your AI project.
+                    </p>
+                </div>
+                <div class="card card--dropdown">
+                    <h3>
+                        Mathematical Essentials
+                    </h3>
+                    <p>
+                        1. Linear Algebra (Matrices and Vector Algebra, Dot Product, Projection)
+                        2. Statistics (Mean, Median, Mode, Variance, Standard Deviation and Correlation, Percentiles)
+                        3. Probability (Axioms of Probability, Conditional Probability, Random Variables)
+
+                    </p>
+                    <hr>
+                    <p class="hidden">
+                        a) Statistics is a collection of tools that you can use to get answers to important questions
+                        about
+                        the
+                        data
+                        b) Probability is the study of uncertainty. It deals with predicting the likelihood of future
+                        events.
+                        Probability is undeniably a pillar of the field of machine learning. Why so? Machine learning is
+                        about
+                        developing predictive models from uncertain data and perform predictions on future unseen data
+                        c) Last but not least. Linear Algebra — Daily bread and butter for Machine Learning. Without
+                        this
+                        you
+                        can’t develop machine learning methods. It allows us to operate in higher dimensional space
+                    </p>
+
+                </div>
+                <div class="card card--dropdown">
+                    <h3>
+                        Exploratory Data Analysis
+                    </h3>
+                    <p>
+                        1. Data Analysis (Numpy and Pandas)
+                        2. Data Visualization (Matplotlib, Seaborn and Plotly)
+                        3. Telling Story about Data (Univariate, Bivariate and Multivariate
+
+                    </p>
+                    <hr>
+                    <p class="hidden">
+                        a) NumPy is used as one of the most powerful numerical processing library in python which
+                        provides
+                        extension package for multi-dimensional array computation.
+                        b) Another useful library is pandas, which can be used to load the data in memory and perform
+                        analytics
+                        on top of it.
+                        c) If data is humongous, we might miss on some of the very insightful patterns. This is where
+                        visualization libraries like Matplotlib, Seaborn and Plotly comes for rescue.
+                    </p>
+
+                </div>
+                <div class="card card--dropdown">
+                    <h3>
+                        Machine Learning and Deep Learning
+                    </h3>
+                    <p>
+                        1. Data Preparation and Feature Transformation (Normalization and Standardization, One Hot
+                        Encoding,
+                        Label Encoders, Stemming, Lemmatization, Bag of Words, TF-IDF)
+                        2. Regression (Linear Regression, SVR, DT Regression)
+                        3. Classification (Logistic Regression, Decision Tree Classifier, Support Vector Machines,
+                        Random
+                        Forest)
+                        4. Clustering (K-Means, Principal Component Analysis)
+                        5. Deep Learning (History, Neural Network, ANN, Perceptron’s and Activation Functions)
+
+                    </p>
+                    <hr>
+                    <p class="hidden">
+                        a) Data preparation (also referred to as “data preprocessing”) is the process of transforming
+                        raw
+                        data
+                        so that data scientists and analysts can run it through machine learning algorithms to uncover
+                        insights
+                        or make predictions.
+                        b) The regression and classification task comes from supervised machine learning. Regression
+                        helps
+                        in
+                        prediction when the target or output variable is a continuous value whereas classification is
+                        used
+                        when
+                        we have a limited set of outcomes.
+                        c) An unsupervised learning technique performs as a way of grouping related items together into
+                        various
+                        clusters. It doesn’t have any output information for the training process.
+                    </p>
+
+                </div>
+                <div class="card card--dropdown">
+                    <h3>
+                        Web App Development and Deployment
+                    </h3>
+                    <p>
+                        1. Web Application Development (Project implementation using some framework)
+                        2. Deployment(Process, prepare, deploy client, deploy server)
+                    </p>
+                    <hr>
+                    <p class="hidden">
+                        a) Throughout the course we will be building several projects. By the end of the course, you
+                        will be
+                        able to understand the end-to-end lifecycle of a ML project. Your skill will also include
+                        deploying
+                        your
+                        projects on the internet.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer class="content-section">
+            <h2>About Us</h2>
+            <div style="text-align: left;line-height: 2rem;">
+                <h3>
+                    Work With Us
+                </h3>
+                <a href="#" class="white-link">Become an Instructor</a>
+                <a href="#" class="white-link">Become a Solution Expert</a>
+                <a href="#" class="white-link">Hire from CipherSchools</a>
+                <a href="#" class="white-link">Refer & Earn</a>
+            </div>
+            <div>
+                <h3>
+                    Email Us
+                </h3>
+                <a href="#" class="white-link">support@something.com</a>
+                <h3 class="mg-top">
+                    Contact Us
+                </h3>
+                <a href="#" class="white-link">98765 43210</a>
+            </div>
+            <div>
+                <h3>
+                    Connect With Us
+                </h3>
+                <img class="brand"
+                    src="https://storage.googleapis.com/cipherschools-storage.appspot.com/images/logo/navbar_logo@3x.png">
+
+                <div class="text-muted" style="font-size: 0.8rem;">
+                    © Copyright Something 2020<br>
+                    Privacy Policy | Terms & Conditions
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>
