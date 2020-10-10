@@ -50,3 +50,7 @@ num1 = 54
 num2 = 24
 
 print("The H.C.F. is", hcf(num1, num2))
+
+//gcd using python 2
+import Math
+Math.gcd(x,y)
