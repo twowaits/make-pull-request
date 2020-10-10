@@ -36,12 +36,12 @@ Complete the 2020 challenge and earn a llimited edition T-shirt.
 
 ## Programming Languages 
 This Repository cotains of following programming languages
-  -  HTML : 46.7%
-  -  Python : 17.3%
-  -  Java : 11.8% 
-  -  C++ : 9.2%
-  - JavaScript : 8.8% 
-  - CSS : 6.2%
+  -  HTML : 58.8%
+  -  Python : 12.0%
+  -  Java : 13.2% 
+  -  C++ : 8.7%
+  - JavaScript : 5.2% 
+  - CSS : 0.7%
 
 ## Steps to setup this Repository Locally
 
