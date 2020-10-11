@@ -16,6 +16,7 @@ class fibi{
             b=c;
             c=a+b;
         }
+        System.out.println();
            
     }
    
