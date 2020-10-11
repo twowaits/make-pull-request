@@ -1,0 +1,10 @@
+n = int(input("Enter number of terms: ")) """inputs number from user"""
+a = 0 """initialization"""
+b = 1
+c = 0
+print("Fibonacci terms: \n")
+for i in range(0,n): """loop through n terms"""
+    print(c,", ",end="")
+    a = b
+    b = c
+    c = a + b
