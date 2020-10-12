@@ -1,36 +1,44 @@
-#include <bits/stdc++.h>
-using namespace std;
-int main()
-{
-	int z=0,o=0,t=0,i;
-	int ar[]={0, 0, 1, 1, 1, 2, 2};
-	int len = sizeof(ar)/sizeof(ar[0]);
-	for(i=0;i<len;i++)
-	{
-		if(ar[i]==0)
-			z++;
-		else if(ar[i]==1)
-			o++;
-		else if(ar[i]==2)
-			t++;
-	}
-	cout<<"{";
-	for(i=0;i<z;i++)
-	{
-	    if(i==z-1)
-	    {
-	        cout<<"0";
-	    }
-	    else
-		    cout<<"0, ";
-	}
-	for(i=0;i<o;i++)
-	{
-		cout<<", 1";
-	}
-	for(i=0;i<(t);i++)
-	{
-		cout<<", 2";
-	}
-	cout<<"}";
-}
+#include <bits/stdc++.h> 
+using namespace std; 
+  
+void sorting(int array[], int arr_size) 
+{ 
+    int lo = 0; 
+    int hi = arr_size - 1; 
+    int mid = 0; 
+  
+    while (mid <= hi) { 
+        switch (array[mid]) { 
+ 
+        case 0: 
+            swap(array[lo++], array[mid++]); 
+            break; 
+  
+        case 1: 
+            mid++; 
+            break; 
+  
+        case 2: 
+            swap(array[mid], array[hi--]); 
+            break; 
+        } 
+    } 
+} 
+  
+void printArr(int arr[], int arr_size) 
+{ 
+    for (int i = 0; i < arr_size; i++) 
+        cout << arr[i] << " "; 
+} 
+  
+int main() 
+{ 
+    int arr[] = { 0, 1, 0, 1, 2, 1, 2 }; 
+    int n = sizeof(arr) / sizeof(arr[0]); 
+  
+    sorting(arr, n); 
+  
+    printArr(arr, n); 
+  
+    return 0; 
+} 
