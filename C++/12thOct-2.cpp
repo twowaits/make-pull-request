@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
 	int z=0,o=0,t=0,i;
-	int ar[]={0, 1, 2, 0, 1, 2};
+	int ar[]={0, 0, 1, 1, 1, 2, 2};
 	int len = sizeof(ar)/sizeof(ar[0]);
 	for(i=0;i<len;i++)
 	{
@@ -17,15 +17,20 @@ int main()
 	cout<<"{";
 	for(i=0;i<z;i++)
 	{
-		cout<<"0, ";
+	    if(i==z-1)
+	    {
+	        cout<<"0";
+	    }
+	    else
+		    cout<<"0, ";
 	}
 	for(i=0;i<o;i++)
 	{
-		cout<<"1, ";
+		cout<<", 1";
 	}
 	for(i=0;i<(t-1);i++)
 	{
-		cout<<"2, ";
+		cout<<", 2";
 	}
-	cout<<"2}";
+	cout<<", 2}";
 }
