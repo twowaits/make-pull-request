@@ -3,10 +3,6 @@
 
 using namespace std; 
 
-void show(int a[]) 
-{ 
-} 
-
 int main() 
 { 
 	int a[100],i=0;
