@@ -8,31 +8,31 @@ import java.io.*;
 class SortArray
 {
     static void sort012(int arr[], int n){
-        int z=0, o=0, t=0, i;
+        int l=0, mid=0, r=n-1;
         
-        for(i=0;i<n;i++){
-            int num = arr[i];
+        while(mid <= r){
+            int num = arr[mid];
+            int temp;
             
-            if(num == 0)
-                z++;
-            else if(num == 1)
-                o++;
-            else    
-                t++;
+            if(num == 0){
+                temp = arr[l];
+                arr[l] = arr[mid];
+                arr[mid] = temp;
+                l++;
+                mid++;
+            }
+            else if(num == 1){
+                mid++;
+            }
+            else{
+                temp = arr[r];
+                arr[r] = arr[mid];
+                arr[mid] = temp;
+                r--;
+            }
         }
         
-        i=0;
-        
-        while(z-- > 0)
-            arr[i++] = 0;
-            
-        while(o-- > 0)
-            arr[i++] = 1;
-            
-        while(t-- > 0)
-            arr[i++] = 2;
-            
-        for(i=0;i<n;i++)
+        for(int i=0;i<n;i++)
             System.out.print(arr[i] + " ");
     }
     
