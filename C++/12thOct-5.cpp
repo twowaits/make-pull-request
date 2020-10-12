@@ -28,9 +28,9 @@ int main()
 	{
 		cout<<", 1";
 	}
-	for(i=0;i<(t-1);i++)
+	for(i=0;i<(t);i++)
 	{
 		cout<<", 2";
 	}
-	cout<<", 2}";
+	cout<<"}";
 }
