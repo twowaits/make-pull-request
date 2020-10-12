@@ -15,4 +15,5 @@ for i in range(len(a)):
         n=a.pop(i)
         a.insert(count_1+count_0,n)
         
-print(a)
+for element in a:
+    print(element,end=' ')
