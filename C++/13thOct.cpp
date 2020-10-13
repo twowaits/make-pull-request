@@ -2,7 +2,8 @@
 #include <iostream>
 using namespace std;
 int main() {
-	const int n = 5;
+	int n;
+	cin>>n;
 	const int dx[] = {0, 1, 0, -1}, dy[] = {1, 0, -1, 0};
 	int x = 0, y = -1, c = 0;
 	vector<vector<int>> m(n, vector<int>(n));
@@ -14,4 +15,5 @@ int main() {
 			cout << v << ' ';
 		cout << endl;
 	}
+	return 0;
 }
