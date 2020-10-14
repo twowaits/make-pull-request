@@ -1,13 +1,19 @@
-#include <bits/stdc++.h> 
-using namespace std; 
-
-int main() 
-{ 
-    string str;
-    getline (cin,str);
-    int n=str.length(); 
-    for(int i = 0;i<n/2;i++) 
-        swap(str[i],str[n-i-1]);
-    cout<<str; 
-    return 0; 
+#include<iostream>
+#include<string.h>
+using namespace std;
+int main ()
+{
+    char str[50], temp;
+    int i, j;
+    cout << "Enter a string : ";
+    gets(str);
+    j = strlen(str) - 1;
+    for (i = 0; i < j; i++,j--)
+    {
+        temp = str[i];
+        str[i] = str[j];
+        str[j] = temp;
+    }
+    cout << "\nReverse string : " << str;
+    return 0;
 }
