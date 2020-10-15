@@ -6,7 +6,11 @@ ll M=1000000007;
 using namespace std;
 int main()
 {
-   
+   IOS;
+   ll T=1;
+   //cin>>T;
+   while(T--)
+   {
    	set<int>s;
    	s.insert(1);
    	s.insert(7);
@@ -20,6 +24,6 @@ int main()
    		mx=max(mx,*next(it)-*it);
    		it=next(it);
 	}
-   	cout<<mx<<endl;
-   
+   	cout<<mx<<"\n";
+   }
 }
