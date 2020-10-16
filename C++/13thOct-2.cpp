@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdio.h>
 using namespace std;
 
 void spiral(int n,int arr[],int mat[10][10])
@@ -38,7 +39,7 @@ int main()
         arr[i]=j;
         j++;
     }
-    spiral(n,arr,mat);
+    spiral(n,arr,mat);//function call
     for(i=0;i<n;i++)
     {
         for(j=0;j<n;j++)
