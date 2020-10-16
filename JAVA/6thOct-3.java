@@ -1,38 +1,24 @@
-
-import java.util.Scanner;
-
-public class Fibo {
-    
-    public static void main(String[] args){
-    
-    int n,a=1,b=1,sum,x=0;
-    
-        Scanner sc = new Scanner(System.in); 
-        System.out.print("Enter the number of terms : ");
-        n= sc.nextInt();
-       
-       if(n==1)
-         System.out.print(" "+a);
-     else if(n==2)
-        System.out.print(a+" "+b);
-    else {
-       System.out.print(" "+a);
-       System.out.print(" "+b);
-     for(int i=3;i<=n;i++){
-        sum=a+b;
-        for(int j=1;j<=sum;j++){
-        
-        if(sum%j==0)
-          x++;
+import java.util.*;
+  import java.io.*;
+  
+  public class Main {
+    static long fact(long n)
+    {
+      if (n==1 || n==0)
+      {
+        return 1;
+      }
+      return (n*fact(n-1));
     }
-       if(x==2 || sum%5==0)
-        System.out.print("0 ");
-      else
-         System.out.print(sum+" ");
-      a=b;
-      b=sum;
-      x=0;
-     }     
+    public static void main(String args[]) throws IOException {
+      
+      //write your code here
+      Scanner sc=new Scanner(System.in);
+      int t=sc.nextInt();
+      while(t-->0)
+      {
+        long n=sc.nextLong();
+        System.out.println(fact(n));
     }
   }
 }
