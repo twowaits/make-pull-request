@@ -14,18 +14,18 @@ class arraysort
         int[][] ar = new int[m][n];
         for(i=0; i<m;i++)
          {            
-            for(j=0; j<n;j++)
+            for(j=0; j<n;j++)//taking input array
             {   System.out.println("Enter elements of array");
                 ar[i][j]=sc.nextInt();
             }
          }
-         arraysort obj = new arraysort();
+         arraysort obj = new arraysort();//creating object of class
          obj.completesort(ar,m);
        
         int start = 0;
         int end = m*n-1;
         int counter =0;
- 
+ //searching for element
         while(start<=end){
             int mid=(start+end)/2;
             int midX=mid/n;
@@ -48,12 +48,12 @@ class arraysort
      
  
     }
-        void rowsort(int mat[][], int p) 
+        void rowsort(int mat[][], int p) //sorting row-wise
     { 
         for (int i = 0; i < p; i++) 
         Arrays.sort(mat[i]); 
     } 
-    void transpose(int mat[][], int k) 
+    void transpose(int mat[][], int k) //taking transpose of matrix
     { 
         for (int i = 0; i < k; i++) 
             for (int j = i + 1; j < k; j++)  
@@ -63,7 +63,7 @@ class arraysort
                 mat[j][i]=temp; 
                 } 
             }
-    void completesort(int mat[][],int l) 
+    void completesort(int mat[][],int l) //sorting row-wise and column-wise in increasing order
     { 
         
        rowsort(mat, l);
