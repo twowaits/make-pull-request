@@ -1,3 +1,5 @@
+#function that takes matix ,its dimension,element to find as parameter.
+#return true if the element is found else return false.
 def matrix(mat,n,x):
     i=0
     j=n-1
@@ -23,4 +25,5 @@ mat=[
     [10,13,14,17,24],
     [18,21,23,26,30]
     ]
-matrix(mat,4,18)
+matrix(mat,4,5)
+
