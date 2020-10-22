@@ -15,7 +15,7 @@ int main()
 	int i=0,j=4,flag=0;
 	while(i<5&&j>=0)
 	{
-		if(a[i][j]>n) i++;
+		if(a[i][j]<n) i++;
 		else if(a[i][j]>n) j--;
 		else { flag=1;break;}
 	}
