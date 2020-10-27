@@ -10,6 +10,14 @@ Lots of students struggle in creating their first PR. They try somewhat and leav
 
 You can look at the issues [here](https://github.com/twowaits/make-pull-request/issues) and choose which one you would like to work on! 
 
+## How to particpate in Hacktoberfest 2020
+
+How to register, some important rules to follow, which repos to contribute and other details in a 13 mins quick video on our Youtube Channel.
+
+[![](https://img.youtube.com/vi/saqCrCPQNkY/0.jpg)](https://www.youtube.com/watch?v=saqCrCPQNkY)
+
+If above link doesn't works watch [here](https://www.youtube.com/watch?v=saqCrCPQNkY).
+
 ## Hacktoberfest 2020 Special
 
 - We will be posting a problem daily at 11 AM related to all languages like HTML, Python, JavaScript, JAVA, C++, Android, etc till 30th Oct.
@@ -28,12 +36,12 @@ Complete the 2020 challenge and earn a llimited edition T-shirt.
 
 ## Programming Languages 
 This Repository cotains of following programming languages
-  -  HTML : 46.7%
-  -  Python : 17.3%
-  -  Java : 11.8% 
-  -  C++ : 9.2%
-  - JavaScript : 8.8% 
-  - CSS : 6.2%
+  -  HTML : 58.8%
+  -  Python : 12.0%
+  -  Java : 13.2% 
+  -  C++ : 8.7%
+  - JavaScript : 5.2% 
+  - CSS : 0.7%
 
 ## Steps to setup this Repository Locally
 

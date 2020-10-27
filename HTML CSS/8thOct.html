@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan Ken Pon!</title>
+    <!-- CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: 700;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+
+        .container {
+            width: 600px;
+            background-color: lightblue;
+            border-radius: 10px;
+            margin: 0 auto 60px auto;
+            position: relative;
+            box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+        }
+
+        .comp-area {
+            width: 100%;
+            height: 250px;
+            background-color: salmon;
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .comp-area .fa-hand-paper {
+            padding: 30px 34px;
+        }
+
+        i.fas {
+            font-size: 60px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 50%;
+            color: salmon;
+            border: 5px solid grey;
+        }
+
+        .rocke {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .player-area {
+            width: 100%;
+            height: 250px;
+            position: relative;
+        }
+
+        .con-area {
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .con-area .fas {
+            color: lightblue;
+            position: relative;
+            cursor: pointer;
+            transition: all .5s;
+        }
+
+        .con-area .fa-hand-paper {
+            padding: 30px 34px;
+        }
+
+        .con-area .fas:hover {
+            box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+        }
+
+        .con-area .fas:active {
+            top: -2px;
+        }
+
+        .result {
+            width: 150px;
+            height: 40px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 50px;
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 30px;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .menus {
+            width: 60px;
+            padding: 10px;
+            background-color: grey;
+            border-radius: 5px;
+            position: absolute;
+            top: 50%;
+            right: -160px;
+            transform: translate(-100%, -50%);
+        }
+
+        #score-comp {
+            width: 100%;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            font-weight: 700;
+            font-size: 50px;
+            color: #fff;
+        }
+
+        .divider {
+            width: 100%;
+            height: 5px;
+            background-color: #fff;
+        }
+
+        #score-player {
+            width: 100%;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            font-weight: 700;
+            font-size: 50px;
+            color: #fff;
+        }
+
+        .menus span {
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            font-size: 40px;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b2e3d96ec6.js" crossorigin="anonymous"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Jan Ken Pon!</h1>
+    <div class="container">
+        <div class="comp-area">
+            <i class="fas fa-hand-rock rocke"></i>
+        </div>
+        <div class="result"></div>
+        <div class="menus">
+            <span class="fas fa-redo-alt" id="repeat"></span>
+            <div class="divider"></div>
+            <div id="score-comp">0</div>
+            <div class="divider"></div>
+            <div id="score-player">0</div>
+            <div class="divider"></div>
+            <span class="fas fa-moon" id="dark"></span>
+            <!-- <span class="fas fa-sun" id="light"></span> -->
+        </div>
+        <div class="player-area">
+            <div class="con-area">
+                <i class="fas fa-hand-rock" id="jan"></i>
+                <i class="fas fa-hand-scissors" id="ken"></i>
+                <i class="fas fa-hand-paper" id="pon"></i>
+            </div>
+        </div>
+    </div>
+    <script>
+        const getComp = () => {
+            const comp = Math.random();
+            if (comp <= 0.34) return 'fa-hand-rock';
+            if (comp >= 0.34 && comp <= 0.67) return 'fa-hand-scissors';
+            return 'fa-hand-paper';
+        }
+
+        const result = (player, comp) => {
+            if (player == comp) return 'draw';
+            if (player == 'fa-hand-rock') return (comp == 'fa-hand-scissors') ? 'win' : 'lose';
+            if (player == 'fa-hand-scissors') return (comp == 'fa-hand-paper') ? 'win' : 'lose';
+            if (player == 'fa-hand-paper') return (comp == 'fa-hand-rock') ? 'win' : 'lose';
+        }
+
+        const repeat = () => {
+            const i = document.querySelector('.rocke');
+            const object = ['fa-hand-rock', 'fa-hand-scissors', 'fa-hand-paper'];
+            let x = 0;
+            const startTime = new Date().getTime();
+            setInterval(() => {
+                if (new Date().getTime() - startTime > 1000) {
+                    clearInterval;
+                    return;
+                }
+                i.setAttribute('class', `fas ${object[x++]} rocke`);
+                if (x == object.length) {
+                    x = 0;
+                }
+            }, 100);
+        }
+
+        const btn = document.querySelectorAll('.con-area i');
+        let win = 1;
+        let lose = 1;
+        btn.forEach((i) => {
+            i.addEventListener('click', () => {
+                const player = i.classList.item(1);
+                const comp = getComp();
+                const resultB = result(player, comp);
+
+                repeat();
+
+                setTimeout(() => {
+                    const compDisp = document.querySelector('.rocke');
+                    compDisp.setAttribute('class', `fas ${comp} rocke`);
+
+                    const resDisp = document.querySelector('.result');
+
+                    resDisp.innerHTML = `${resultB}`;
+                    if (resultB == 'win') {
+                        resDisp.style.color = 'lightblue';
+                        document.getElementById('score-player').innerHTML = win++;
+                    } else if (resultB == 'lose') {
+                        resDisp.style.color = 'salmon';
+                        document.getElementById('score-comp').innerHTML = lose++;
+                    } else {
+                        resDisp.style.color = 'grey';
+                    }
+                }, 1000);
+
+            })
+
+        })
+
+        const btnRepeat = document.getElementById('repeat');
+        btnRepeat.addEventListener('click', () => {
+            window.location.reload();
+        })
+
+        const btnDark = document.getElementById('dark');
+        btnDark.addEventListener('click', () => {
+            document.body.style.backgroundColor = '#182137';
+            document.querySelector('h1').style.color = '#fff';
+        })
+    </script>
+</body>
+
+</html>

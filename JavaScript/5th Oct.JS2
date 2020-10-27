@@ -1,0 +1,75 @@
+/**
+ * Returns a string concatenation of the elements of a matrix (2d array) in "spiral" order.
+ * @param {[[]]} matrix - the 2d array
+ * @param {string} [separator] - optional separator to use between values in string, defaults to ", "
+ * @returns {string}
+ */
+function spiralMatrix(matrix, separator) {
+	if (matrix.length === 0 || matrix[0].length === 0) {
+		return "";
+	}
+
+	var firstRow = 0;
+	var firstColumn = 0;
+	var lastRow = matrix.length - 1;
+	var lastColumn = matrix[0].length - 1;
+
+	return spiralMatrixRecursive(matrix, firstRow, lastRow, firstColumn, lastColumn).join(separator || ", ");
+}
+
+function spiralMatrixRecursive(matrix, topRow, bottomRow, leftColumn, rightColumn) {
+	var result = [];
+
+	if (topRow > bottomRow || leftColumn > rightColumn) {
+		return result;
+	}
+
+	var currentRow;
+	var currentColumn;
+
+	// loop through top row
+	for (currentColumn = leftColumn; currentColumn <= rightColumn; currentColumn++) {
+		result.push(matrix[topRow][currentColumn]);
+	}
+
+	// loop through rest of right column
+	for (currentRow = topRow + 1; currentRow <= bottomRow; currentRow++) {
+		result.push(matrix[currentRow][rightColumn]);
+	}
+
+	if (topRow !== bottomRow) {
+		// loop through rest of bottom row
+		for (currentColumn = rightColumn - 1; currentColumn >= leftColumn; currentColumn--) {
+			result.push(matrix[bottomRow][currentColumn]);
+		}
+	}
+
+	if (leftColumn !== rightColumn) {
+		// loop through rest of left column (stop before top row as already done)
+		for (currentRow = bottomRow - 1; currentRow > topRow; currentRow--) {
+			result.push(matrix[currentRow][leftColumn]);
+		}
+	}
+
+	return result.concat(spiralMatrixRecursive(matrix, topRow + 1, bottomRow - 1, leftColumn + 1, rightColumn - 1));
+}
+
+/**
+ * Generates a matrix (2d array) with the given number of rows and columns,
+ * containing random numbers between 1 and 10.
+ * @param rows - number of rows
+ * @param columns - number of columns
+ * @returns {Array} - the matrix
+ */
+function generateMatrix(rows, columns) {
+	var matrix = [];
+	for (var i = 0; i < rows; i++) {
+		matrix.push([]);
+
+		for (var j = 0; j < columns; j++) {
+			matrix[i][j] = Math.floor((Math.random() * 10) + 1);
+		}
+	}
+
+	return matrix;
+}
