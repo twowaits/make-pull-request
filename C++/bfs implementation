@@ -1,0 +1,46 @@
+#include<iostream>
+#include<algorithm>
+#include<queue>
+using namespace std;
+vector<int>arr[100];
+int vis[100];
+int dis[100];
+
+void bfs(int source)
+{
+    queue<int>q;
+    q.push(source);
+    //cout<<source<<" ";
+    vis[source]=1;
+    dis[source]=0;
+    while(!q.empty())
+    {
+        int curr=q.front();
+        q.pop();
+        for(child:arr[curr])
+        {
+            if(vis[child]==0)
+            {
+                q.push(child);
+                dis[child]=dis[curr]+1;
+                vis[child]=1;
+                cout<<child<<" ";
+            }
+        }
+
+    }
+}
+int main()
+{
+    int n,m;
+    cin>>n>>m;
+    while(m--)
+    {
+        int a,b;
+        cin>>a>>b;
+        arr[a].push_back(b);
+        arr[b].push_back(a);
+    }
+    bfs(1);
+    return 0;
+}
