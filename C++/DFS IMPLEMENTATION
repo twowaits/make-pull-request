@@ -1,0 +1,33 @@
+/** dfs implementation in c++**/
+
+#include<iostream>
+#include<algorithm>
+#include<set>
+using namespace std;
+vector<int>ar[100];
+int vis[100];
+void dfs(int v)
+{
+    cout<<v<<" ";
+    vis[v]=1;
+    for(int child:ar[v])
+    {
+        if(vis[child]==0)
+            dfs(child);
+    }
+}
+int main()
+{
+    int n,m;
+    cin>>n>>m;
+    while(m--)
+    {
+        int a,b;
+        cin>>a>>b;
+        ar[a].push_back(b);
+        ar[b].push_back(a);
+    }
+    dfs(1);
+    return 0;
+}
+
