@@ -5,7 +5,7 @@ Created on Mon Oct  5 23:23:22 2020
 @author: KIIT
 """
 
-
+'''
 # Program make a simple calculator
 
 # This function adds two numbers
@@ -55,3 +55,33 @@ while True:
     else:
         print("Invalid Input") 
  2
+'''
+# This can be simplified to beginners removing the functions and making all at print like this :
+print("Select operation. \n1.Add \n2.Subtract \n3.Multiply \n4.Divide")  # Using \n to put all choices in a single line print
+
+while True:
+    # Take input from the user
+    choice = input("Enter choice(1/2/3/4): ")
+    
+    # Check if choice is one of the four options
+    if choice in ('1', '2', '3', '4'):
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+
+        if choice == '1':
+            print(f'{num1} + {num2} = {num1 + num2}')
+
+        elif choice == '2':
+            print(f'{num1} - {num2} = {num1 - num2}')
+
+        elif choice == '3':
+            print(f'{num1} * {num2} = {num1 * num2}')
+
+        elif choice == '4':
+            if num1 == 0 or num2 == 0:  # This is an important thing too, so the the code don't outcome an error
+                print('Unable to divide by zero')
+            else:
+                print(f'{num1} / {num2} = {num1 / num2}')
+        break
+    else:
+        print("Invalid Input")
