@@ -3,7 +3,7 @@
 ![Forks](https://img.shields.io/github/forks/twowaits/make-pull-request)
 [![project chat](https://img.shields.io/badge/telegram-join--chat-brightgreen)](https://t.me/joinchat/AAAAAFbbJqzUyF18Okx94A)
 
-## Make-pull-request
+## Make-pull-request for 2021
 It's an initiative by Twowaits Technologies to help create more awareness about Open Source and help introduce many more students to the benefits of FOSS. We will organize lots of events, this is our humble step.
 
 Lots of students struggle in creating their first PR. They try somewhat and leave when couldn't. We created this as learning repo on how to create successful pull requests on every possible language like JAVA, Python, JavaScript, Android, C++, HTML, CSS, etc.
