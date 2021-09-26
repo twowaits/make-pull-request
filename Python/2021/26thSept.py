@@ -1,12 +1,12 @@
-def printBinary(n):
+def printBinaryNo(n):
     if n>1:
-        printBinary(n//2)
+        printBinaryNo(n//2)
     print(n%2, end="")
   
 
 if __name__ == "__main__":
-    print("Enter Value")
+    print("Enter Value:3")
     n = int(input())
     for i in range(1, n+1):
-        printBinary(i)
+        printBinaryNo(i)
         print(end=" ")
