@@ -4,7 +4,8 @@
 [![project chat](https://img.shields.io/badge/telegram-join--chat-brightgreen)](https://t.me/joinchat/AAAAAFbbJqzUyF18Okx94A)
 
 ## Make-pull-request for 2021
-It's an initiative by Twowaits Technologies to help create more awareness about Open Source and help introduce many more students to the benefits of FOSS. We will organize lots of events, this is our humble step.
+It's an initiative by Twowaits Technologies to help create more awareness about Open Source and help introduce many more students to the benefits of FOSS. 
+We will organize lots of events, this is our humble step.
 
 Lots of students struggle in creating their first PR. They try somewhat and leave when couldn't. We created this as learning repo on how to create successful pull requests on every possible language like JAVA, Python, JavaScript, Android, C++, HTML, CSS, etc.
 
@@ -35,7 +36,7 @@ Hactoberfest encourages participation in open source community, which grows bigg
 Complete the 2020 challenge and earn a llimited edition T-shirt.
 
 ## Programming Languages 
-This Repository cotains of following programming languages
+This Repository contains of following programming languages :
   -  HTML : 58.8%
   -  Python : 12.0%
   -  Java : 13.2% 
