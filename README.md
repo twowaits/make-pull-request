@@ -32,7 +32,7 @@ If you wish to stay updated, join our Open Source Community Channel on Telegram 
 
 Open sorce is changing the world- one pull request at a time.
 Hactoberfest encourages participation in open source community, which grows bigger every year. 
-Complete the 2020 challenge and earn a llimited edition T-shirt.
+Complete the 2020 challenge and earn a limited edition T-shirt.
 
 ## Programming Languages 
 This Repository cotains of following programming languages
