@@ -30,12 +30,12 @@ If above link doesn't works watch [here](https://www.youtube.com/watch?v=saqCrCP
 
 If you wish to stay updated, join our Open Source Community Channel on Telegram [here](https://t.me/joinchat/AAAAAFbbJqzUyF18Okx94A)
 
-Open sorce is changing the worl- one pull request at a time.
+Open source is changing the world- one pull request at a time.
 Hactoberfest encourages participation in open source community, which grows bigger every year. 
 Complete the 2020 challenge and earn a llimited edition T-shirt.
 
 ## Programming Languages 
-This Repository cotains of following programming languages
+This Repository consists of following programming languages
   -  HTML : 58.8%
   -  Python : 12.0%
   -  Java : 13.2% 
@@ -61,11 +61,11 @@ This Repository cotains of following programming languages
 ```bash 
    git checkout -b [your-branch-name]
 ```
- 4. Open the folder in your favourite code editor and adding your changes or modifications.
+ 4. Open the folder in your favourite code editor and add your changes or modifications.
  
 ## Creating a PR 
  
- 1. After making changes or modification on to your code locally, you need to add these files to staging area.
+ 1. After making changes or modification on to your code locally, you need to add these files to the staging area.
 ```bash
   git add <file-name>
 ```
