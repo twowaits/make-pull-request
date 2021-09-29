@@ -12,11 +12,11 @@ You can look at the issues [here](https://github.com/twowaits/make-pull-request/
 
 ## How to particpate in Hacktoberfest 2021
 
-How to register, some important rules to follow, which repos to contribute and other details in a 13 mins quick video on our Youtube Channel.
+How to register, some important rules to follow, which repos to contribute and other details in a 17 mins quick video on our Youtube Channel.
 
-[![](https://raw.githubusercontent.com/twowaits/make-pull-request/master/Images/Hacktoberfest_2021_YT_Thumbnail.png)](https://www.youtube.com/watch?v=saqCrCPQNkY)
+[![](https://raw.githubusercontent.com/twowaits/make-pull-request/master/Images/Hacktoberfest_2021_YT_Thumbnail.png)](https://youtu.be/GuZpeobFsZw)
 
-If above link doesn't works watch [here](https://www.youtube.com/watch?v=saqCrCPQNkY).
+If above link doesn't works watch [here](https://youtu.be/GuZpeobFsZw).
 
 ## Hacktoberfest 2021 Special
 
@@ -30,7 +30,7 @@ If above link doesn't works watch [here](https://www.youtube.com/watch?v=saqCrCP
 
 - Make sure you take from latest code and don't edit any other file. 
 
-If you wish to stay updated, join our Whatsapp Group [here]()
+If you wish to stay updated, join our Whatsapp Group [here](https://chat.whatsapp.com/GYUeerzPY8nBW7aFnxUI5c)
 
 Open source is changing the world- one pull request at a time.
 Hactoberfest encourages participation in open source community, which grows bigger every year. 
