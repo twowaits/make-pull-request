@@ -29,11 +29,7 @@ int main()
 		cin>>arr[i];
 	}
 	
-	//print input elements
-	cout<<"Unsorted Array elements:"<<endl;
-	for(i=0;i<n;i++)
-		cout<<arr[i]<<"\t";
-	cout<<endl;
+	
 	
 	//sorting - ASCENDING ORDER
 	for(i=0;i<n;i++)
@@ -50,7 +46,6 @@ int main()
 	}
 	
 	//print sorted array elements
-	cout<<"Sorted (Ascending Order) Array elements:"<<endl;
 	for(i=0;i<n;i++)
 		cout<<arr[i]<<" , ";
 	cout<<endl;	
