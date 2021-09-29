@@ -16,7 +16,7 @@ How to register, some important rules to follow, which repos to contribute and o
 
 [![](https://raw.githubusercontent.com/twowaits/make-pull-request/master/Images/Hacktoberfest_2021_YT_Thumbnail.png)](https://youtu.be/GuZpeobFsZw)
 
-If above link doesn't works watch [here](https://youtu.be/GuZpeobFsZw).
+If above link doesn't work watch [here](https://youtu.be/GuZpeobFsZw).
 
 ## Hacktoberfest 2021 Special
 
