@@ -3,12 +3,12 @@
 ![Forks](https://img.shields.io/github/forks/twowaits/make-pull-request)
 [![project chat](https://img.shields.io/badge/telegram-join--chat-brightgreen)](https://t.me/joinchat/AAAAAFbbJqzUyF18Okx94A)
 
-## Make-pull-request for 2021
-It's an initiative by Twowaits Technologies to help create more awareness about Open Source and help introduce many more students to the benefits of FOSS. We will organize lots of events that will proves to be very profitable for the students and encourage them to contribute in open source, this is our humble step.
+## make-pull-request
+It's an initiative by Twowaits Technologies to help create more awareness about Open Source and help introduce many more students to the benefits of FOSS. We will organize lots of events that will prove to be very profitable for the students and encourage them to contribute in open source, this is our humble step.
 
-Lots of students struggle in creating their first PR. They try somewhat and leave when couldn't. We created this as learning repo on how to create successful pull requests on every possible language like JAVA, Python, JavaScript, Android, C++, HTML, CSS, etc.
+Lots of students struggle in creating their first PR. They try somewhat and leave when couldn't. We created this as learning repo on how to create successful pull requests on languages like JAVA, Python, C++, HTML/CSS.
 
-You can look at the issues [here](https://github.com/twowaits/make-pull-request/issues) and choose which one you would like to work on! 
+You can look at the issues [here](https://github.com/twowaits/make-pull-request/issues) and choose which one you would like to work on! Do check the [Contributing.md](https://github.com/twowaits/make-pull-request/blob/master/CONTRIBUTING.md) so that you don't face any troubles.
 
 ## How to particpate in Hacktoberfest 2021
 
@@ -20,15 +20,17 @@ If above link doesn't works watch [here](https://www.youtube.com/watch?v=saqCrCP
 
 ## Hacktoberfest 2021 Special
 
-- We will be posting a problem daily at 11 AM related to all languages like HTML, Python, JavaScript, JAVA, C++, Android, etc till 30th Oct.
+- We will be posting a problem daily at 10 AM related to languages like HTML/CSS, Python, JAVA, C++ till 30th Oct.
 
-- We will assign it to the person we find most fit among all the students who have requested.
+- No need to get issues, you can directly attempt and submit by following instruction written in issue description.
 
-- Person have time till 8 PM to submit, if fails to do so we will assign to someone else.
+- We will review comments, PRs raised at 5 PM and then 10 PM to provide feedback so that you can make necessary changes.
 
-- Make sure you take from latest code and don't edit any other file. Save your file by name Date.(language extension) like 3rdOct.java, 3rdOct.py, 7thOct.js
+- You have time till 10 AM next day to submit, we will not accept any PR post this deadline.
 
-If you wish to stay updated, join our Open Source Community Channel on Telegram [here](https://t.me/joinchat/AAAAAFbbJqzUyF18Okx94A)
+- Make sure you take from latest code and don't edit any other file. 
+
+If you wish to stay updated, join our Whatsapp Group [here]()
 
 Open source is changing the world- one pull request at a time.
 Hactoberfest encourages participation in open source community, which grows bigger every year. 
@@ -57,11 +59,7 @@ This Repository consists of following programming languages
 ```
 ![PicsArt_10-04-07 46 13](https://user-images.githubusercontent.com/64744084/95018081-e3a5c200-067a-11eb-8a51-acde725b0345.png)
 
- 3. Go to make-pull-request folder on your PC through Git Bash and create new branch 
-```bash 
-   git checkout -b [your-branch-name]
-```
- 4. Open the folder in your favourite code editor and add your changes or modifications.
+ 3. Open the folder in your favourite code editor and add your changes or modifications.
  
 ## Creating a PR 
  
