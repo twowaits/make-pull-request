@@ -1,7 +1,4 @@
 def rev(s):
-	str=" "
-	for i in s:
-		str=i+str
-	return str
+	return s[::-1]
 s=input("enter")
 print(rev(s))
