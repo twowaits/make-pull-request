@@ -1,6 +1,6 @@
 package java_class;
 import java.util.*;
-public class hello {   
+public class main {   
 	 public static boolean isPrime(int n)
 	    {
 	        // checking Corner case
