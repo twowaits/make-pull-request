@@ -1,54 +1,42 @@
-import java.util.Scanner;
-
- class Fibonaci{
-
-    public static boolean isprime(int t){
-        int flag=0;
-        for(int i=2;i<=Math.sqrt(t);i++){
-
-            if(t%i==0){
-                flag=1;
-            }
-        }
-        if(flag==0)
-        return true;
-        return false;
+import java.util.*;
+class Fibonacci
+{	
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int fib[]=new int[n];
+    int i,a=1,b=1,c,count=0;
+    fib[0]=fib[1]=1;
+    for(i=2;i<n;i++)
+    {
+    	c=a+b;
+      fib[i]=c;
+      a=b;
+      b=c;
     }
-    public static boolean isdivisible(int t){
-
-        if(t%5==0)
-        return true;
-        return false;
-    }
-
- public static void main(String[] args) {
-    
-    Scanner sc=new Scanner(System.in);
-    int n=sc.nextInt();
-    int a[]=new int[n];
-    int b[]=new int[n];
-    a[0]=1;
-    a[1]=1;
-
-    for(int i=2;i<n;i++){
-
-        a[i]=a[i-1]+a[i-2];
-    }
-    b[0]=1;
-    b[1]=1;
-    for(int i=2;i<n;i++){
-
-        if(isprime(a[i])|| isdivisible(a[i])){
-            b[i]=0;
-        }
-        else{
-            b[i]=a[i];
-        }
-    }
-    for(int i=0;i<n;i++){
-        System.out.print(b[i]+" ");
-    }
-
-}
-
+    for(i=2;i<n;i++)
+    {
+    	if(fib[i]%5==0)
+    	{
+    		fib[i]=0;
+    		continue;
+    	}
+    	else
+			{
+				for(int j=2;j<=fib[i];j++)
+   	 	{
+    			if(fib[i]==1)
+    			break;
+    			if(fib[i]%j==0)
+    			count++;
+    		}
+    		if(count==1)
+    		fib[i]=0;
+    		count=0;
+  		}
+  	}
+		for(i=0;i<n;i++)
+		System.out.print(fib[i]+" ");
+	}
 }
