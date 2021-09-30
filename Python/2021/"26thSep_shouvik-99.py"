@@ -1,0 +1,15 @@
+#find the binary of a number without inbuild bin().
+
+#take the input from the user
+n=int(input())
+
+#declare a python list as a stack
+stack=[]
+while n:
+    stack.append(n%2)
+    n//=2
+
+#stack is now holding our answer and we just have to pop and print it out.
+while len(stack):
+    print(stack.pop(),end='')
+print()
