@@ -1,5 +1,6 @@
 #Contribution by Srijan Singh
-# How merge sort is implemented?
+
+# Hacktoberfest 2021
 def merge(arr:list, first:int, mid:int, last:int) -> None:
     temp_arr = [0]*(last - first + 1)
 
