@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/9bb8901042.js" crossorigin="anonymous"></script>
+    <title>mobile v2 perfect</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(80, 80, 218);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        i {
+            margin: 10px 10px;
+            font-size: xx-large;
+            color: #fff;
+        }
+
+        .txt {
+            font-size: large;
+            margin-left: 5px;
+            margin-bottom: 5px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .top {
+            padding: 20px 10px;
+            border-bottom-left-radius: 30px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            height: 102px;
+        }
+
+        .card {
+            border-radius: 20px;
+        }
+
+        .mid {
+            display: flex;
+            align-items: center;
+        }
+
+        .card-img-top {
+            display: flex;
+            color: azure;
+        }
+
+        .box {
+            z-index: -1;
+            position: absolute;
+        }
+
+        .real {
+            left: 20px;
+            top: 20px;
+            position: relative;
+            transform: rotate(20deg);
+        }
+
+        .real2 {
+            left: -15px;
+            top: 600px;
+            position: relative;
+            transform: rotate(5deg);
+        }
+
+        .real3 {
+            right: -1200px;
+            top: 400px;
+            position: relative;
+            transform: rotate(2deg);
+            overflow: hidden;
+        }
+
+        .real1 {
+            right: -797px;
+            top: -60px;
+            position: relative;
+        }
+
+        @media only screen and (max-device-width: 480px) {
+            h1 {
+                font-size: x-large;
+                text-align: center;
+                font-weight: 600;
+            }
+        }
+
+        @media only screen and (max-width: 900px) {
+            h1 {
+                font-size: xx-large;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (max-width: 900px) {
+            .col-md-4 {
+                padding: 20px !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 1411px) {
+      .real3 {
+        position:absolute;
+      } 
+      .real1{
+        position: absolute;
+      }
+      .real{
+        position: absolute;
+      }
+      .real2{
+        position:absolute;
+      }
+    }
+
+        @media only screen and (max-width:1100px) and (min-width: 900px) {
+            .row {
+
+                display: grid;
+                grid-template-columns: repeat(2, 2fr);
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            .col-md-4 {
+                padding: 20px !important;
+            }
+        }
+
+
+        @media only screen and (min-width: 300px) and (max-width:900px) {
+            .row {
+
+                display: grid;
+                grid-template-columns: repeat(2, 2fr);
+            }
+
+            h1{
+                margin-left: 200px;
+                text-align: center;
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="./rec.svg" alt="" class="real" style="width: 80%;">
+    </div>
+    <div class="box">
+        <img src="./rec.svg" alt="" class="real2" style="width: 80%;">
+    </div>
+
+    <div class="container">
+        <div class="col-12 text-lg-center" style="color: azure; font-size: 3rem">
+            <div class="box">
+                <img src="./rec.svg" alt="" class="real1" style="width: 80%;">
+            </div>
+            <h1 class="mt-4" style="font-weight: 700;">Techsnap's Carrer Paths</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-4  p-4">
+                <div class="card" style="width: 18rem">
+                    <div class="top" style="background-color: rgb(0, 217, 255)">
+                        <div class="card-img-top">
+                            <i class="fas fa-fingerprint"></i>
+                            <h5 class="mt-2 ml-2">Cyber Security</h5>
+                        </div>
+                    </div>
+                    <div class="mid">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consecr corporis temporibus
+                                suscipit quae aspernatur
+                            </p>
+                        </div>
+                        <div>
+                            <a href="#" style="background-color: rgb(0, 217, 255);  font-weight:bolder;"
+                                class="btn rounded-circle mr-3">></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-4  p-4">
+                <div class="card" style="width: 18rem">
+                    <div class="top" style="background-color: rgb(0, 255, 21)">
+                        <div class="card-img-top">
+                            <i class="fas fa-cubes"></i>
+                            <h5 class="ml-2">Data mining & analytics</h5>
+                        </div>
+                    </div>
+
+                    <div class="mid">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consecr corporis temporibus
+                                suscipit quae aspernatur
+                            </p>
+                        </div>
+                        <div>
+                            <a href="#" style="background-color: rgb(0, 255, 21);  font-weight:bolder;"
+                                class="btn rounded-circle mr-3">></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./rec.svg" alt="" class="real3" style="width: 80%;">
+            </div>
+
+            <div class="col-12 col-md-4  p-4">
+                <div class="card" style="width: 18rem">
+                    <div class="top" style="background-color: rgb(51, 49, 175)">
+                        <div class="card-img-top">
+                            <i class="fas fa-cloud"></i>
+                            <h5 class="mt-2 ml-2">Cloud Computing</h5>
+                        </div>
+                    </div>
+
+                    <div class="mid">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consecr corporis temporibus
+                                suscipit quae aspernatur
+                            </p>
+                        </div>
+                        <div>
+                            <a href="#" style="background-color: rgb(51, 49, 175); font-weight:bolder;"
+                                class="btn rounded-circle mr-3">></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4  p-4">
+                <div class="card" style="width: 18rem">
+                    <div class="top" style="background-color: rgb(194, 81, 15)">
+                        <div class="card-img-top">
+                            <i class="fas fa-globe"></i>
+                            <h5 class="mt-2 ml-2">Embedded system</h5>
+                        </div>
+                    </div>
+
+                    <div class="mid">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consecr corporis temporibus
+                                suscipit quae aspernatur
+                            </p>
+                        </div>
+                        <div>
+                            <a href="#" style="background-color: rgb(255, 72, 27);  font-weight:bolder;"
+                                class="btn rounded-circle mr-3">></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4  p-4">
+                <div class="card" style="width: 18rem">
+                    <div class="top" style="background-color: rgb(194, 15, 134)">
+                        <div class="card-img-top">
+                            <i class="fas fa-database"></i>
+                            <h5 class="mt-2 ml-2">Database Design</h5>
+                        </div>
+                    </div>
+
+                    <div class="mid">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consecr corporis temporibus
+                                suscipit quae aspernatur
+                            </p>
+                        </div>
+                        <div>
+                            <a href="#" style="background-color: rgb(194, 15, 134); font-weight:bolder;"
+                                class="btn rounded-circle mr-3">></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4  p-4">
+                <div class="card" style="width: 18rem">
+                    <div class="top" style="background-color: rgb(255, 124, 47)">
+                        <div class="card-img-top">
+                            <i class="fas fa-brain"></i>
+                            <h5 class="mt-2 ml-2">All form of AI</h5>
+                        </div>
+                    </div>
+
+                    <div class="mid">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consecr corporis temporibus
+                                suscipit quae aspernatur
+                            </p>
+                        </div>
+                        <div>
+                            <a href="#" class="btn rounded-circle mr-3"
+                                style="background-color: rgb(255, 124, 47);  font-weight:bolder;">></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="" class="text-right" style="color: azure;">
+            <h2>Explore All ></h2>
+        </a>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+</html>
