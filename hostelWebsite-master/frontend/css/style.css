@@ -1,0 +1,51 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Open Sans', sans-serif;
+ }
+ 
+ img {
+     object-fit: cover !important;
+ }
+ 
+ .carousel-item img {
+     width: 100%;
+     height: 93vh;
+ }
+ 
+ .btn-outline-info {
+     color: white;
+     background-color: #0dcaf0;
+     border-color: #0dcaf0;
+ }
+ 
+ .happyname {
+     font-family: 'Sedgwick Ave', cursive;
+ }
+ 
+ .about_image {
+     min-width: 100%;
+     max-height: 280px;
+     /* font-size: 10px; */
+     /* border-radius: 4%; */
+     /* padding-left: 100px; */
+ }
+ /* responsive */
+ /* // X-Small devices (portrait phones, less than 576px) */
+ 
+ @media (max-width: 575.98px) {}
+ /* // Small devices (landscape phones, less than 768px) */
+ 
+ @media (max-width: 767.98px) {}
+ /* // Medium devices (tablets, less than 992px) */
+ 
+ @media (max-width: 991.98px) {}
+ /* // Large devices (desktops, less than 1200px) */
+ 
+ @media (max-width: 1199.98px) {}
+ /* // X-Large devices (large desktops, less than 1400px) */
+ 
+ @media (max-width: 1399.98px) {}
+ /* // XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width */
