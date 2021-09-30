@@ -19,4 +19,5 @@ for i in range(len(output)):
    if output[i]%5==0 or isprime(output[i]):
       output[i]=0
 
-print(output)
+for i in output:
+   print(i,end=' ')
