@@ -5,3 +5,4 @@ def rev(s):
 	return str
 s=input("enter")
 print(rev(s))
+//no erroes
