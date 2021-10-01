@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+    <title>Tathastu</title>
+</head>
+<style>
+    .nav {
+        background-color: black;
+        float: right;
+        border-bottom-left-radius: 26px;
+        box-shadow: -1px 4px 4px rgb(0 0 0 / 50%);
+    }
+
+    .nav ul {
+        display: flex;
+    }
+
+    .nav li {
+        list-style: none;
+        padding: 0 40px;
+    }
+    .nav li:hover{
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    .nav li a {
+        text-decoration: none;
+        color: rgb(245 157 42);
+    }
+
+    .intro {
+        background-color: #154854;
+        width: 100vw;
+        height: 100vh;
+    }
+    .row{
+        width: 100vw;
+    }
+
+    .left {
+        margin-left: 8rem;
+        margin-top:4rem;
+        margin-bottom: 2rem;
+        color: white;
+    }
+    h1 {
+        font-size: 4rem;
+        font-weight: 700;
+    }
+    .right{
+        margin-top:4rem;
+        
+        color: white;
+    }
+
+/* ========================================Facts========================== */
+.facts{
+    background: #222831 0 0 no-repeat padding-box;
+     border-radius: 10px;
+     height: 11rem;
+     display: flex;
+     align-items: center;
+}
+.home-facts{
+    width: 350px;
+}
+
+@media only screen and (max-width: 1080px){
+    .nav{
+        width: auto;
+        height: auto;
+    }
+.nav ul{
+    flex-direction: column;
+}
+
+}
+</style>
+
+<body>
+    <nav>
+        <div class="nav col-12 col-md-6">
+            <ul>
+                <li><a href="http://tathastu.twowaits.in/#courses">Courses</a></li>
+                <li><a href="https://www.youtube.com/c/twowaits">Youtube Channel</a></li>
+                <li><a href="https://medium.com/twowaits">Medium Blog</a></li>
+                <li><a href="http://www.twowaits.in/login.php">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="intro">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="left col">
+                    <h1>Tathastu</h1>
+                    <h2 style="margin-top: 10px;">To all your dreams for your career.</h2>
+                    <p style="margin-top: 10px; opacity: 0.8; font-size: 22px;">Pick a course relevant to your skillset and ambition.</p>
+                    <p style="margin-top: 10px; opacity: 0.4; font-size: 18px;">CP, DSA, Python all courses you will ever need.</p>
+                    <br>
+                    <br>
+                    <h3>Those too at ridiculously low prices!</h3>
+                </div>
+                <div class="right text-center col">
+                    <img class="" src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon.png" height="250">
+                    <p style="margin-top: 10px; font-style: italic; font-size: 30px;"><span style="opacity: 0.6;">enabled
+                        by</span> Twowaits</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container text-center facts">
+            <div class="home-facts">
+                <h2 class="font-weight-bold text-light">500+</h2>
+                <h6 class="text-light">Students Empowered</h6>
+            </div>
+            <div class="home-facts">
+                <h2 class="font-weight-bold text-light">15+</h2>
+                <h6 class="text-light">Unique Courses</h6>
+            </div>
+            <div class="home-facts" style="margin-bottom: 0px;">
+                <h2 class="font-weight-bold text-light">50+</h2>
+                <h6 class="text-light">Colleges Impacted</h6>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
