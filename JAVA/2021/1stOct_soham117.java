@@ -1,24 +1,30 @@
-// Implementing Finbacci series using Loops
-// To run this program rename the file name to Fibonacci.java
-import java.util.Scanner;
-public class Fibonacci
-  public static void main(String[] args) {
-    Scanner in = new Scanner(System.in);
- 
-    int n,a=0, b=1, c=0;
- 
-    System.out.println("Enter the value of n");
-    n = in.nextInt();
- 
-    //Output the first and second element
-    System.out.print(a+" "+b+" ");
- 
-    for(int i=3; i<=n; i++){
-      //Always update c first, second a and last b
-      c = a+b;
-      a = b;
-      b = c;
-      System.out.print(c+" ");
+import java.util.*;
+
+public class sgaurav37533 {
+    public static void main(String arg[]) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int a = 1, b = 1, c = 0;
+        for (int i = 1; i <= n; i++) {
+            if (prime(a) && (a % 5 != 0))
+                System.out.print(a + " ");
+            else
+                System.out.print(0 + " ");
+            c = a + b;
+            a = b;
+            b = c;
+        }
     }
-  }
+
+    public static boolean prime(int a) {
+        if (a == 1)
+            return true;
+        else if (a == 2 || a == 3)
+            return false;
+        for (int i = 2; i < a / 2; i++) {
+            if (a % i == 0)
+                return true;
+        }
+        return false;
+    }
 }
