@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+      }
+      body {
+        background-color: #154854;
+      }
+      .header {
+        background-color: #222831;
+        display: flex;
+        padding: 20px;
+        width: 50%;
+        transform: translateX(90%);
+        box-shadow: 1px 1px 2px 2px #222831;
+        border-bottom-left-radius: 18px;
+        justify-content: space-evenly;
+      }
+      .header > h3 > a {
+        text-decoration: none;
+        color: rgb(245, 157, 42);
+        transition: border 100ms linear;
+        font-weight: normal;
+      }
+      .header > h3 > a:hover {
+        border-bottom: 1px solid rgb(245, 157, 42);
+      }
+      .main_content {
+        width: 80%;
+        margin: auto;
+        padding: 10px;
+        color: white;
+      }
+      .banner {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .banner_logo > img {
+        height: 300px;
+        width: 300px;
+      }
+      .banner_text {
+        padding-right: 30px;
+      }
+      .banner_text > h1 {
+        padding: 50px 0px;
+        padding-bottom: 38px;
+        font-size: 4rem;
+      }
+      .banner_text > h2 {
+        padding-bottom: 10px;
+        font-size: 2rem;
+        font-family: "Mulish", sans-serif;
+        font-weight: normal;
+      }
+      .banner_text > h3 {
+        padding-bottom: 10px;
+        font-size: 1.7rem;
+        font-weight: normal;
+      }
+      .banner_text > h4 {
+        padding-bottom: 10px;
+        font-size: 1.3rem;
+        color: gray;
+        opacity: 0.7;
+        font-weight: 300;
+      }
+      .banner_logo {
+        text-align: center;
+      }
+      .low_price {
+        padding-top: 40px;
+        font-size: 1.5rem;
+      }
+
+      .banner_logo span {
+        font-style: italic;
+        color: gray;
+        opacity: 0.8;
+        font-size: 2rem;
+      }
+      .banner_logo h3 {
+        font-size: 2rem;
+      }
+      .content_count {
+        display: flex;
+        background-color: #222831;
+        border-radius: 15px;
+        padding: 65px;
+        margin-top: 60px;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .content_box {
+        text-align: center;
+      }
+      .content_box > h4 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      .content_box > p {
+        font-size: 1rem;
+        font-weight: 250;
+      }
+    </style>
+    <title>TATHASTU</title>
+  </head>
+  <body>
+    <div class="header">
+      <h3><a href="#">Courses</a></h3>
+      <h3><a href="#">Youtube Channel</a></h3>
+      <h3><a href="#">Medium Blog</a></h3>
+      <h3><a href="#">Login</a></h3>
+    </div>
+    <div class="main_content">
+      <div class="banner">
+        <div class="banner_text">
+          <h1>TATHASTU</h1>
+          <h2>To all your dreams for your career.</h2>
+          <h3>pick a course relevant to your skillset and ambition</h3>
+          <h4>CP, DSA, Python all courses you will ever need.</h4>
+          <h3 class="low_price">Those too at ridiculously low prices!</h3>
+        </div>
+        <div class="banner_logo">
+          <img src="./intro_Yuvraj102.png" alt="" />
+          <h3><span>enabled by </span>Twowaits</h3>
+        </div>
+      </div>
+      <div class="content_count">
+        <div class="content_box">
+          <h4>500+</h4>
+          <p>students empowered</p>
+        </div>
+        <div class="content_box">
+          <h4>15+</h4>
+          <p>unique courses</p>
+        </div>
+        <div class="content_box">
+          <h4>50+</h4>
+          <p>colleges impacted</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

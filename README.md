@@ -30,7 +30,7 @@ If above link doesn't work watch [here](https://youtu.be/GuZpeobFsZw).
 
 - Make sure you take from latest code and don't edit any other file. 
 
-If you wish to stay updated, join our Whatsapp Group [here](https://chat.whatsapp.com/GYUeerzPY8nBW7aFnxUI5c)
+If you wish to stay updated, join our Whatsapp Group [here](https://chat.whatsapp.com/H0Hn3m1sgKHKeJdoCSb74A)
 
 Open source is changing the world- one pull request at a time.
 Hactoberfest encourages participation in open source community, which grows bigger every year. 
