@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #fff;
+        font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      body {
+        background-color: #154854;
+      }
+      .nav-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .nav-list {
+        display: flex;
+        background-color: #222831;
+        list-style: none;
+        justify-content: space-around;
+        padding: 20px;
+        padding-right: 30%;
+        border-radius: 5px 0 0 15px;
+      }
+      .nav-list li {
+        color: rgb(245, 157, 42);
+        background-color: inherit;
+      }
+      .wrapper {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        margin: 2rem 10.1rem;
+      }
+      .content {
+        padding: 20px;
+        padding-top: 40px;
+      }
+      .heading{
+          transform: translateX(-20px);
+          width: 400px;
+      }
+      .moto{
+        margin-bottom: .5rem;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 1.2;
+      }
+      .moto-sub{
+          font-size: 22px;
+          font-weight: bolder;
+          color: rgb(209, 209, 209);
+        line-height: 1.7;
+      }
+      .moto-sub-sub{
+          font-size: 18px;
+          font-weight: bolder;
+          color: #9199a2;
+          line-height: 1.7
+      }
+      .extra{
+        font-size: 22px;
+          line-height: 7;
+      }
+      .img{
+          display: grid;
+          place-items: center;
+          padding: 50px 0;
+      }
+      .img img{
+          width: 260px;
+      }
+      .img-moto{
+          font-size: 25px;
+          font-style: italic;
+          color: #9199a2;
+
+      }
+      .info{
+        background-color: #222831;
+          grid-column: 1/3;
+          width: 100%;
+          padding: 40px 0;
+          border-radius: 15px;
+      }
+      .list{
+          width: 100%;
+          display: flex;
+          list-style: none;
+          justify-content: space-around;
+      }
+      .list li{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      .list li .no{
+          font-size: 50px;
+          font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <div></div>
+        <ul class="nav-list">
+          <li>Courses</li>
+          <li>Youtube Channel</li>
+          <li>Medium Blog</li>
+          <li>Login</li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+      <div class="content">
+        <img class="heading" src="http://tathastu.twowaits.in/images/tathastu_logo.png"></img>
+        <h2 class="moto">To all your dreams for your career.</h2>
+        <div class="moto-sub">
+          Pick a course relevant to your skillset and ambition.
+        </div>
+        <div class="moto-sub-sub">
+          CP, DSA, Python all courses you will ever need.
+        </div>
+        <div class="extra">Those too at ridiculously low prices!</div>
+      </div>
+      <div class="img">
+        <img
+          src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon.png"
+          alt="twowaits"
+        />
+        <div class="img-moto">enabled by <span class="x">Twowaits</span></div>
+      </div>
+      <div class="info">
+        <ul class="list">
+          <li class="one">
+            <p class="no">500+</p>
+            <div class="sub">Students Empowered</div>
+          </li>
+          <li class="two">
+            <p class="no">15+</p>
+           
+            <div class="sub">Unique Courses</div>
+          </li>
+          <li class="three">
+            <p class="no">50+</p>
+            
+            <div class="sub">Colleges Impacted</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
