@@ -1,63 +1,44 @@
 #include <iostream>
-
 using namespace std;
+bool isPrime(int n)
+{
+    // Corner case
+    if (n <= 1)
+        return false;
+  
+    // Check from 2 to n-1
+    for (int i = 2; i < n; i++)
+        if (n % i == 0)
+            return false;
+  
+    return true;
+}
 int main() {
+    int n, t1 = 1, t2 = 1, nextTerm = 0;
 
- unsigned long long int k,count=0;
-  cin>>k;
-  unsigned long long int a[k];
-  for( unsigned long long int i=0;i<k;i++){
-    cin>>a[i];
-  }
+    cout << "Enter the number of terms: ";
+    cin >> n;
 
-  unsigned long long int b[1000]={0};
-  for( unsigned long long int i=0;i<k;i++){
-        if(a[i]==a[i+1]){
+    cout << "Fibonacci Series: ";
+
+    for (int i = 1; i <= n; ++i) {
+        
+        if(i == 1) {
+            cout << t1 << ", ";
             continue;
         }
-        else{
-                count++;
-    for( unsigned long long int j=0;j<a[i];j++){
-            b[j]=count;
-
-    }
+        if(i == 2) {
+            cout << t2 << ", ";
+            continue;
         }
-  }
-
- /* for( unsigned long long int i=0;i<a[0];i++){
-    cout<<b[i];
-  }
-  cout<<endl;
-  //second phase*/
-
-  unsigned long long int l;
-  cin>>l;
-  unsigned long long int c[l];
-  for( unsigned long long int i=0;i<l;i++){
-    cin>>c[i];
-
-    count=b[c[i]];
-    for( unsigned long long int j=c[i];j>=0;j--){
-        if(b[j]==b[j-1]||b[j]==0){
-            b[j]=count+1;
-        }
-        else{
-                b[j]=count+1;
-            break;
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
+        if(isPrime(nextTerm)||nextTerm%5==0)
+            cout << "0, ";
+        else {
+        cout << nextTerm << ", ";
         }
     }
-    }
-
- /*   for( unsigned long long int i=0;i<a[0];i++){
-    cout<<b[i];
-  }
-cout<<endl;*/
-for( unsigned long long int i=0;i<l;i++){
-    cout<<b[c[i]]<<endl;
-  }
-
-
-
-
     return 0;
 }
