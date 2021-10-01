@@ -1,5 +1,6 @@
 import java.util.Scanner;  
 
+//class
 class Fibonacci_twist {
 
      // Check for number prime or not and divisible by 5
