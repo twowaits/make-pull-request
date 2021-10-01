@@ -18,12 +18,10 @@ def check_primeno(limit):
     else:
         return False
 
+
 # Printing the Fibonacci Series
 
-
-if limit == 1:
-    print("Fibonacci series  upto", limit, "terms is :", num1)
-else:
+if limit != 1:
     while (ct < limit):
         if not check_primeno(num1) and num1 % 5 != 0:
             print(num1, end=' ')
@@ -33,3 +31,6 @@ else:
         num1 = num2
         num2 = sum
         ct += 1
+
+else:
+    print("Fibonacci series  upto", limit, "is :", num1)
