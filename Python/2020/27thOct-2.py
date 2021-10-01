@@ -2,7 +2,7 @@ def generatePrintBinary(n):
    from Queue import Queue 
    q = Queue() 
       
-   # Enqueue the first binary number 
+   # Enqueue the First Binary Number 
    q.put("1") 
     
    while(n>0): 
