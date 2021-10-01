@@ -1,3 +1,12 @@
+def getFibo(num):
+    fibonacci = [0, 1]
+
+    for i in range(2, num + 1):
+        ele = fibonacci[-1] + fibonacci[-2]
+        fibonacci.append(ele)
+
+    return fibonacci
+
 def is_prime(num):
     if num > 1:
         for i in range(2, num // 2 + 1):
@@ -7,16 +16,6 @@ def is_prime(num):
             return True
     else:
         return False
-
-
-def getFibo(num):
-    fibonacci = [0, 1]
-
-    for i in range(2, num + 1):
-        ele = fibonacci[-1] + fibonacci[-2]
-        fibonacci.append(ele)
-
-    return fibonacci
 
 
 def PRINT(fibonacci):
