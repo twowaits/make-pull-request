@@ -33,7 +33,11 @@ int main()
         {
             cout << next << " ";
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> dbc34c608e9fb55f9472aebe0b6895cb8ec206eb
         first = sec;
         sec = next;
         next = first + sec;
