@@ -1,38 +1,55 @@
-
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
-bool isSquare(int n)
+
+bool isPrime(int n)
 {
-	int sr = sqrt(n);
-	return (sr * sr == n);
+
+	if (n <= 1)
+		return false;
+
+	
+	for (int i = 2; i <= sqrt(n); i++)
+		if (n % i == 0)
+			return false;
+
+	return true;
 }
 
-
-void printPrimeAndFib(int n)
+int fibonacci(int n)
 {
-
-	bool prime[n + 1];
-	memset(prime, true, sizeof(prime));
-	for (int p = 2; p * p <= n; p++) {
-
-		if (prime[p] == true) {
-
-			// Update all multiples of p
-			for (int i = p * 2; i <= n; i += p)
-				prime[i] = false;
-		}
+	int a = 1, b = 1, x, i;
+   
+	if( n == 0)
+		return 0;
+    else if ( n == 1 )
+    {
+        cout << "1 ";
+        return 0;
+    }
+    
+    cout << "1 1 ";
+	for(i = 3; i <= n; i++)
+	{
+        x = a + b;
+        
+        if ( x % 5 != 0 && !isPrime( x ))
+        cout << x << " ";
+        else
+        cout << "0 ";
+        
+        a = b;
+        b = x;
 	}
-
-	for (int i=2; i<=n; i++)
-	if (prime[i] && (isSquare(5 * i * i + 4) > 0 ||
-						isSquare(5 * i * i - 4) > 0))
-				cout << i << " ";
+	return b;
 }
+
 
 int main()
 {
-	int n = 30;
-	printPrimeAndFib(n);
+	int n = 0;
+	cout << " Please enter the value of n : ";
+    cin >> n;
+	fibonacci(n);
 	return 0;
 }
