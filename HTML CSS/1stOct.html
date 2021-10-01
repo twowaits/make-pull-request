@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+		/>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<title>1st Oct</title>
+	</head>
+	<style>
+        #game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+}
+#character{
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    top: 150px; 
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+.animate{
+    animation: jump 300ms linear;
+}
+#block{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    top: 130px; 
+    left: 480px;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0%{left: 500px} 
+    100%{left: -20px}
+}
+</style>
+<body>
+    <div id="game">
+        <div id="character"></div>
+        <div id="block"></div>
+    </div>
+<script >
+    var character = document.getElementById("character");
+document.addEventListener("click",jump);
+function jump(){
+    character.classList.add("animate");
+    setTimeout(removeJump,300); //300ms = length of animation
+};
+function removeJump(){
+    character.classList.remove("animate");
+}
+var block = document.getElementById("block");
+function checkDead(){
+    let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+    let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
+    if(blockLeft<20 && blockLeft>-20 && characterTop>=130){
+        alert("Game over");
+    }
+}
+
+setInterval(checkDead, 10);
+</script>
+</body>
