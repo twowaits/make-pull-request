@@ -16,13 +16,13 @@ def is_prime(num):
 
 n = int(input("enter a number: "))
 sum = 0
-a = 0
+a = 1
 b = 1
 count = 0
 if n == 1:
   print(a)
 else:
-  while(count<=n):
+  while(count<n):
     if not is_prime(a) and a % 5 != 0:
       print(a, end = ' ')
     else:
