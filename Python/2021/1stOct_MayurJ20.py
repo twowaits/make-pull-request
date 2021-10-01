@@ -8,7 +8,7 @@ def fibo(nterms):
      print(n1)
   else:
      while count < nterms:
-         if (n1>1 and isPrime(n1)) or n1%5==0:
+         if isPrime(n1) or n1%5==0:
             print(0)
          else:
             print(n1)
