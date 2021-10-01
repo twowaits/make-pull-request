@@ -1,41 +1,27 @@
 import java.util.Scanner;
-class arrange
+class bubble
 {
     
-    void Sort(int arr[])
+    void bubbleSort(int arr[])
     {
-        int N=arr.length;
-        int l=0,m=0,h=N-1;
-        while(m<=h)
-        {
-            if(arr[m]==0)
-            {
-                int t=arr[l];
-                arr[l]=arr[m];
-                arr[m]=t;
-                l++;
-                m++;
-            }
-            else if(arr[m]==2)
-            {
-                int t=arr[m];
-                arr[m]=arr[h];
-                arr[h]=t;
-                h--;
-                m++;
-            }
-            else
-            {
-                m++;
-            }
+        int n = arr.length;
+        for (int i = 0; i < n-1; i++)
+            for (int j = 0; j < n-i-1; j++)
+                if (arr[j] > arr[j+1])
+                {
+                    // swap temp and arr[i]
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
     }
-}
  
-    void printArray(int A[])
+    /* Prints the array */
+    void printArray(int arr[])
     {
-        int n = A.length;
+        int n = arr.length;
         for (int i=0; i<n; ++i)
-            System.out.print(A[i] + " ");
+            System.out.print(arr[i] + " ");
         System.out.println();
     }
     public static void main()
@@ -49,13 +35,12 @@ class arrange
             System.out.println ("Enter an element :");
             ar[m] = sc.nextInt();
         }
-        arrange obj = new arrange();
-        obj.Sort(ar);
+        bubble obj = new bubble();
+        obj.bubbleSort(ar);
         System.out.println("Sorted array :");
         obj.printArray(ar);
 
     }
 }
-
     
         
