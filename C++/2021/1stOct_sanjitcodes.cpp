@@ -73,7 +73,7 @@ void solve() {
         fib[i] = fib[i-1] + fib[i-2];
     }
     for(int i=1; i<=n; i++){
-        if(isprime[fib[i]]){
+        if(isprime[fib[i]] || fib[i]%5==0){
             fib[i] = 0;
         }
         cout << fib[i] << " ";
