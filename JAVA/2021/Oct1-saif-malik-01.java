@@ -1,8 +1,9 @@
+import java.util.Scanner;
 
 class Oct1-saif-malik-01{
     public static void main(String[] args) {
-   
-      int n = 12;
+      Scanner sc = new Scanner(System.in);
+      int n = sc.nextInt();
       int a = 1 ,b = 1;    
       for(int i=0;i<n;i++){
       if(b%5==0 || isPrime(b) ) System.out.print(0+" ");
