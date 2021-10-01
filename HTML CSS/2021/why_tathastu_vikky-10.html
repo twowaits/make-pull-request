@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+  --base-color: rgb(245, 157, 42);
+  --background-color: #154854;
+  --base-color2: #222831;
+  --text-gray: #9199a2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+}
+
+body {
+  background: var(--background-color);
+  color: #fff;
+}
+
+.bg-white {
+  background: #eeeeee;
+  padding: 2em 0em;
+}
+.row{
+  display: flex;
+}
+
+h2 {
+  grid-column: span 3;
+  color: #494040;
+  font-weight: 600;
+  text-align: center;
+  font-size:2.5rem;
+}
+@media (min-width:991px) {
+  .girl-icon {
+    left: -3%;
+    width: 290px;
+    bottom: -2px
+  }
+  .courses-heading {
+    font: 700 40px/52px;
+    letter-spacing: 0;
+    color: #fff;
+    opacity: 1
+  }
+  .course-card__buttons {
+    flex-direction: row;
+  }
+  .course-card__title {
+    width: 80%
+  }
+  .course-category:hover {
+    border: 3px solid #ee7738;
+    border-radius: 8px;
+  }
+}
+
+.feedback-course {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 450px;
+  padding: 15px 20px 35px;
+  background-color: #154854;
+  border-radius: 25px;
+  position: relative;
+}
+
+.feedback-img img {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+.feedback-more, .feedback-text {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.feedback-name {
+  font-size: 24px;
+  color: #fff;
+}
+
+.feedback-text {
+  margin-top: 10px;
+}
+
+.feedback-profile {
+  font-size: 12px;
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.feedback-profile img {
+  width: 40px;
+  margin-top: 5px;
+  position:absolute;
+  right: 60px;
+  top: 10px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="bg-white container" style="border-radius: 10px;">
+    <h2 class="text-dark text-center font-weight-bold">Student Testimonials</h2>
+
+    <div style="margin-top: 40px; text-align: center;">
+
+            <div class="feedback-course">
+              <div class="row">
+                  <div class="feedback-img col-2" style="margin-right: 15px;">
+                      <img
+                          src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/testimonial_shivangi_tiwari.jpg" />
+                  </div>
+                  <div class="col-6" style="margin-top: 5px;">
+                      <div class="feedback-name">Shivangi Tiwari</div>
+                      <div class="feedback-more">AKGEC, Ghaziabad</div>
+                  </div>
+                  <div class="col-2"><a href="https://www.linkedin.com/in/shivangi-tiwari-85a9861a3">
+                          <div class="feedback-profile"><img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" /></div>
+                      </a></div>
+              </div>
+              <div class="feedback-text">It was a good experience and I enjoyed making all of the projects, guidance and so many study material was provided, thank you for this bootcamp.</div>
+
+          </div>
+
+          <div class="feedback-course">
+            <div class="row">
+                <div class="feedback-img col-2" style="margin-right: 15px;">
+                    <img
+                        src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/testimonial_rajat_gupta.jpg" />
+                </div>
+                <div class="col-6" style="margin-top: 5px;">
+                    <div class="feedback-name">Rajat Gupta</div>
+                    <div class="feedback-more">HBTU, Kanpur</div>
+                </div>
+                <div class="col-2"><a href="https://www.linkedin.com/in/rajat-hbtu/">
+                        <div class="feedback-profile"><img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" /></div>
+                    </a></div>
+            </div>
+            <div class="feedback-text">The course is very useful in learning and understanding the basics as well as intermediate concepts in data science and machine learning. The course is focused on projects based learning which is helpful in learning and understanding.</div>
+
+        </div>
+
+        <div class="feedback-course">
+          <div class="row">
+              <div class="feedback-img col-2" style="margin-right: 15px;">
+                  <img
+                      src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/testimonial_priya_srivastava.png" />
+              </div>
+              <div class="col-6" style="margin-top: 5px;">
+                  <div class="feedback-name">Priya Srivastava</div>
+                  <div class="feedback-more">SRMCEM, Lucknow</div>
+              </div>
+              <div class="col-2"><a href="https://www.linkedin.com/in/priya-srivastava-a4b8851aa">
+                      <div class="feedback-profile"><img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" /></div>
+                  </a></div>
+          </div>
+          <div class="feedback-text">I was drawn towards Machine learning, Artificial intelligence and through this course I learned a lot and explored the field. Also, the instructor explained every topic very well and I am glad that I took this course.</div>
+
+      </div>
+
+      <div class="feedback-course">
+        <div class="row">
+            <div class="feedback-img col-2" style="margin-right: 15px;">
+                <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/testimonial_snehil_s_kumar.jpg" />
+            </div>
+            <div class="col-6" style="margin-top: 5px;">
+                <div class="feedback-name">Snehil S Kumar</div>
+                <div class="feedback-more">BITS Pilani</div>
+            </div>
+            <div class="col-2"><a href="https://www.linkedin.com/in/snehil-s-kumar/">
+                    <div class="feedback-profile"><img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" /></div>
+                </a></div>
+        </div>
+        <div class="feedback-text">The Data Science KickStart course was very intuitive and gave insights from the basic to intermediate machine learning with hand on live project focused on doubt clearing on the go. It was a very enriching experience and I got to learn and apply a lot of thing in the Data Science and Machine Learning.</div>
+
+    </div>
+
+</body>
+</html>
