@@ -29,6 +29,10 @@
 				margin-right: auto;
 			}
 
+			.center {
+				text-align: center;
+			}
+
 			.image_text {
 				position: relative;
 				align-items: center;
@@ -37,8 +41,9 @@
 
 			.box {
 				width: 1000px;
-				height: 200px;
+				height: fit-content;
 				background-color: black;
+				padding: 30px 20px;
 			}
 
 			.navbar {
@@ -70,9 +75,13 @@
 			li a:hover {
 				color: orange;
 			}
+
+			.box_text {
+				color: white;
+			}
 		</style>
 	</head>
-	<body>
+	<body class="home">
 		<!-- Navbar -->
 		<div class="navbar">
 			<nav>
@@ -111,7 +120,26 @@
 				</div>
 
 				<!-- Numbers Box -->
-				<div class="box"></div>
+
+				<div class="box">
+					<div class="container">
+						<div class="row center">
+							<div class="box_text col-lg-4">
+								<h1 class="center">500+</h1>
+								<h3>Students Empowered</h3>
+							</div>
+							<div class="box_text col-lg-4">
+								<h1 class="center">15+</h1>
+								<h3>Unique Courses</h3>
+							</div>
+							<div class="box_text col-lg-4">
+								<h1 class="center">50+</h1>
+								<h3>Colleges Impacted</h3>
+							</div>
+							<div class="col-lg-3"></div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!--  -->
