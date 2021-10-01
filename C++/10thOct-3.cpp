@@ -24,7 +24,7 @@ void reverseString(string &str){
 
 int main() {
     string str;
-    cin >> str;
+    
     reverseString(str);
     cout << str;
 }
