@@ -1,5 +1,6 @@
 //Twisted Fibonacci
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -12,7 +13,7 @@ bool isPrime(int p)
     else if(p==1)
     t=false;
     else
-    for(int i = 2; i < p/2 ; i++)
+    for(int i = 2; i < sqrt(p) ; i++)
     {
         if(p%i==0){
             t = false;
