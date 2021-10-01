@@ -23,6 +23,7 @@ int main()
     cin >> n;
     int a = 1;
     int b = 1;
+    int c;
     for (int i = 0; i < n; i++)
     {
         if (a % 5 == 0)
