@@ -1,32 +1,68 @@
-#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
+bool ifprime(int n);
+bool mul(int n);
 int main()
 {
-    int number ;
-    cin >> number;
+    int n, t1 = 0, t2 = 1, nextTerm = 0;
 
-    int temp = number;
-    int temp1 = number;
-    int sum = 0;
-    int count=0;
+    cout << "Enter the number of terms: ";
+    cin >> n;
 
-   while(temp != 0)
-    {   
-        count++;
-        temp = temp / 10;
-    }
-    while(temp1 != 0)
+    cout << "Fibonacci Series: ";
+
+    for (int i = 1; i <= (n + 1); ++i)
     {
-        int a = temp1 % 10;
-        sum = sum + pow( a, count);
-        temp1 = temp1 / 10;
+
+        if (i == 1)
+        {
+            cout << t1 << ", ";
+            continue;
+        }
+        if (i == 2)
+        {
+            cout << t2 << ", ";
+            continue;
+        }
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
+
+        if (ifprime(nextTerm) || mul(nextTerm))
+            cout << "0"
+                 << ", ";
+        else
+            cout << nextTerm << ", ";
     }
-    cout<< sum;
-    if (sum == number)
-    cout<< " armstrong number";
-
-    else
-    cout<<"not armstrong";
-
     return 0;
+}
+
+bool ifprime(int n)
+{
+    int i;
+    bool isPrime = true;
+    if (n == 0 || n == 1)
+    {
+        isPrime = false;
+    }
+    else
+    {
+        for (i = 2; i <= n / 2; ++i)
+        {
+            if (n % i == 0)
+            {
+                isPrime = false;
+                break;
+            }
+        }
+    }
+    return isPrime;
+}
+
+bool mul(int n)
+{
+    if (n % 5 == 0)
+        return true;
+    else
+        return false;
 }
