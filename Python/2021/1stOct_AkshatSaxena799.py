@@ -15,7 +15,11 @@ def answer(number):
 	print(*n)
 	
 def checkPrime(number):
-	if number==1 or number==2 or number==3:
+	if number==1:
+		return True
+	elif number==2:
+		return True
+	elif number==3:
 		return True
 	for i in range(2,number//2):
 		if number%i==0:
