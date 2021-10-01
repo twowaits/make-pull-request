@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: sans-serif;
+        color: #343a3f;
+        margin: 6vh 0;
+        font-size: 2.5rem;
+      }
+
+      .container {
+        width: 90vw;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 1vw;
+        grid-row-gap: 3vh;
+        margin: 3vh 5vw;
+      }
+
+      .card {
+        width: 44.5vw;
+        height: 100%;
+        background-color: #154855;
+        border-radius: 30px;
+        padding: 1%;
+      }
+
+      .profile-pic {
+        margin-top: 20px;
+        margin-left: 20px;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      .linkedin {
+        background-color: #fff;
+        height: 50px;
+        width: 50px;
+        border-radius: 10%;
+      }
+
+      .inner-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 10vw;
+        align-items: center;
+      }
+
+      h2 {
+        color: #fff;
+        font-family: sans-serif;
+        font-weight: 300;
+        margin: 2vh 0;
+      }
+
+      h3 {
+        color: #fff;
+        font-family: sans-serif;
+        font-weight: 300;
+      }
+
+      p {
+        color: #eee;
+        font-family: sans-serif;
+        font-size: 1.2rem;
+        padding: 2vh;
+        padding-left: 1.5vw;
+        padding-right: 0.5vw;
+      }
+
+      @media screen and (max-width: 750px) {
+        .container {
+          display: flex;
+          flex-direction: column;
+        }
+        .card {
+          width: 90vw;
+          padding-bottom: 2vh;
+        }
+        h1 {
+          font-size: 1.5rem;
+        }
+        h2 {
+          font-size: 1.2rem;
+        }
+        h3 {
+          font-size: 1rem;
+        }
+        P {
+          font-size: 0.8rem;
+        }
+        .profile-pic {
+          height: 60px;
+          width: 60px;
+        }
+        .linkedin {
+          height: 30px;
+          width: 30px;
+        }
+      }
+      @media screen and (max-width: 1050px) {
+        .inner-container {
+          padding-right: 5vw;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Student Testimonials</h1>
+
+    <div class="container">
+      <div class="card">
+        <div class="inner-container">
+          <img
+            class="profile-pic"
+            src="https://media.istockphoto.com/photos/young-woman-portrait-in-the-city-picture-id1009749608?k=20&m=1009749608&s=612x612&w=0&h=3bnVp0Y1625uKkSwnp7Uh2_y_prWbgRBH6a_6jRew3g="
+          />
+          <div>
+            <h2>Shivangi Tiwari</h2>
+            <h3>AKGEC,Ghaziabad</h3>
+          </div>
+          <img
+            class="linkedin"
+            src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+            alt="LinkedIn"
+          />
+        </div>
+        <p>
+          It was a good experience and I enjoyed making all of the projects,
+          guidance and so many study material was provided, thank you for this
+          bootcamp.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="inner-container">
+          <img
+            class="profile-pic"
+            src="https://media.istockphoto.com/photos/portrait-of-handsome-latino-african-man-picture-id1007763808?k=20&m=1007763808&s=612x612&w=0&h=q4qlV-99EK1VHePL1-Xon4gpdpK7kz3631XK4Hgr1ls="
+          />
+          <div>
+            <h2>Rajat Gupta</h2>
+            <h3>HBTU,Kanpur</h3>
+          </div>
+          <img
+            class="linkedin"
+            src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+            alt="LinkedIn"
+          />
+        </div>
+        <p>
+          This course is very useful in learning and understanding the basics as
+          well as intermediate concepts in data science and machine learning.
+          The course is focussed on projects based learning which is helpful in
+          learning and understanding.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="inner-container">
+          <img
+            class="profile-pic"
+            src="https://media.istockphoto.com/photos/portrait-of-a-beautiful-asian-girl-picture-id915669474?k=20&m=915669474&s=612x612&w=0&h=UziafLUnRiQ1mmFJ5GgyQl7ugQ0IsRcDGRVcKpGn1v0="
+          />
+          <div>
+            <h2>Priya Srivastava</h2>
+            <h3>SRMCEM,Lucknow</h3>
+          </div>
+          <img
+            class="linkedin"
+            src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+            alt="LinkedIn"
+          />
+        </div>
+        <p>
+          I was drawn toward machine Learning, Artificial Intelligence and
+          through this course I learned a lot and explored the field. Also, the
+          instructor explained every topic very well and I am glad that I took
+          this course.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="inner-container">
+          <img
+            class="profile-pic"
+            src="https://media.istockphoto.com/photos/portrait-of-sportsman-picture-id1154382780?k=20&m=1154382780&s=612x612&w=0&h=eZ9W44LufWx7LBlCMTo3D4v340DMxA3r_HTDAp2297I="
+          />
+          <div>
+            <h2>Snehil S Kumar</h2>
+            <h3>BITS,Pilani</h3>
+          </div>
+          <img
+            class="linkedin"
+            src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+            alt="LinkedIn"
+          />
+        </div>
+        <p>
+          The Data Science KickStart course was very intuitive and gave insights
+          from the basic to intermediate machine learning with hand on live
+          project focussed on doubt clearing on the go. It was a very enriching
+          experience and I got to learn and apply a lot of thing in the Data
+          Science and Machine Learning.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
