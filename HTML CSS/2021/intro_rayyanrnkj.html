@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        body {
+            background: #154854;
+            overflow-x: hidden;
+            color: #ffffff;
+            font-family: 'Mulish', sans-serif;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header {
+            width: 100%;
+            justify-content: flex-end;
+        }
+
+        .navbar {
+            width: 50%;
+            background: #222831;
+            padding: 1.2em 4em;
+            border-radius: 0.3em 0 0 1.5em;
+        }
+
+        .nav-list {
+            justify-content: flex-start;
+            gap: 2em;
+        }
+
+        .nav-link {
+            color: #f59d2a;
+            text-decoration: none;
+            position: relative;
+            font-size: 1.050rem;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 0;
+            height: 0.2em;
+            background: #f59d2a;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .section {
+            width: 100%;
+            margin-top: 5em;
+            justify-content: space-between;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        .left-section img {
+            width: 26em;
+        }
+
+        .left-section h3 {
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+
+        .group-texts {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.8em;
+            margin-bottom: 3em;
+        }
+
+        .group-texts h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+        }
+
+        .group-texts p:first-of-type {
+            font-size: 1.5rem;
+            font-weight: 700;
+            opacity: 0.8;
+        }
+
+        .group-texts p:last-of-type {
+            font-size: 1.2rem;
+            font-weight: 700;
+            opacity: 0.4;
+        }
+
+        .right-section {
+            flex-direction: column;
+            gap: 0.8em;
+            padding: 0 3em 0 0;
+        }
+
+        .right-section img {
+            width: 17em;
+        }
+
+        .right-section p {
+            font-size: 2rem;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .right-section p span {
+            opacity: 0.6;
+        }
+
+        .section:last-of-type {
+            background: #222831;
+            padding: 2em 8em;
+            border-radius: 0.5em;
+            margin-bottom: 3em;
+        }
+
+        .count {
+            flex-direction: column;
+            gap: 0.4em;
+        }
+
+        .count h2 {
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header flex-container">
+        <nav class="navbar">
+            <ul class="nav-list flex-container">
+                <li class="nav-item"><a href="#" class="nav-link">Courses</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">YouTube Channel</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Medium Blog</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="section flex-container">
+            <div class="left-section">
+                <img src="http://tathastu.twowaits.in/images/tathastu_logo.png" alt="THATHASTU-Img">
+                <div class="group-texts flex-container">
+                    <h1>To all your dreams for your career.</h1>
+                    <p>Pick a course relevant to your skillset and ambition.</p>
+                    <p>CP, DSA, Python all courses you will ever need.</p>
+                </div>
+                <h3>Those too at ridiculously low prices!</h3>
+            </div>
+            <div class="right-section flex-container">
+                <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon.png" alt="IDEA-Img">
+                <p><span>enabled by</span> Twowaits</p>
+            </div>
+        </section>
+        <section class="section flex-container">
+            <div class="students-count count flex-container">
+                <h2>500+</h2>
+                <p>Students Empowered</p>
+            </div>
+            <div class="courses-count count flex-container">
+                <h2>15+</h2>
+                <p>Unique Courses</p>
+            </div>
+            <div class="colleges-count count flex-container">
+                <h2>50+</h2>
+                <p>Colleges Impacted</p>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
