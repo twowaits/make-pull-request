@@ -1,0 +1,142 @@
+#include<iostream>
+#include<stdlib>
+using namespace std;
+# define MAX 10
+
+int Stack_Arr[MAX];
+int top = -1; // initially top is -1.
+
+
+void push(int item) // to push an element
+int pop();
+int peek();
+int isEmpty();
+int isFull();
+void Display();
+
+main()
+
+{
+	int choice,item;
+	while(1)// while condition is true.
+	{
+           cout<<"1. Push an item"<<endl;
+           cout<<"2. Pop an item"<<endl;
+           cout<<"3. Display top item"<<endl;
+           cout<<"4. Display all items"<<endl;
+           cout<<"5. Quit"<<endl;
+           cout<<"6. Enter your choice"<<endl;
+           cin>>choice;
+
+           switch(choice) // now switch will perform on input choice
+           {
+             case 1:
+                cout<< "Enter the item to be pushed"<<endl;
+                cin>>item;
+                push(item);
+                break;
+                
+             case 2:
+                item = pop();
+                cout<<"Popped item is : "<<item<<endl;
+                
+                break;
+
+             case 3:
+                cout<<"Top item of Stack is :"<<peek()<<endl;
+                
+                break;
+
+             case 4:
+                
+                Display();
+                break;
+
+             case 5:
+                exit(1);
+
+             default:
+                cout<<"You have entered a wrong choice"<<endl;
+
+
+           }
+
+
+
+	}
+}
+
+void push(int item)
+{
+	if(isFull)
+	{
+		cout<<"Stack Overflow"<<endl;
+		return ;
+	}
+	top = top+1;
+	Stack_Arr[top] = item;
+
+}
+
+int pop()
+{
+	if(isEmpty)
+	{
+		cout<<"Stack Underflow"<<endl;
+		exit(1);
+	}
+    item = Stack_Arr[top];
+	top = top - 1;
+	return item;
+
+}
+
+int peek()
+{
+	if(isEmpty)
+	{
+		cout<<"Stack Underflow"<<endl;
+		exit(1);
+
+	}
+	return Stack_Arr[top];
+}
+
+int Display()
+{
+	int i;
+	if(isEmpty)
+	{
+		cout<<"Stack is empty"<<endl;
+		return ;
+	}
+    cout<<"Stack elements are:"<<endl;
+	for(i = top; i>= 0; i--)
+	{
+		cout<<Stack_Arr[i];
+
+	}
+	cout<<endl;
+}
+int isEmpty()
+{
+	if(top == -1){
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+
+}
+int isFull ()
+{
+	if (top == MAX - 1)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
