@@ -1,7 +1,9 @@
 #include<bits/stdc++.h>
+//find out the fibonici series of n numbers
 
 using namespace std;
 
+//number is prime or not ---->
 bool isprime(int n)
 {
   if(n<=1)
