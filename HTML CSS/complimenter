@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="lol.jpg" type="image/x-icon">
+     
+    
+    <title>Compliment O Matic 🤯</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1 class="name" contenteditable="true" spellcheck="false" id="name">Enter Name here ...</h1>
+
+
+        <button class="submit" onclick="compliment()">COMPLIMENT</button>
+        <h2 id="compliment"></h2>
+        <audio src="music.mp3" autoplay="true"></audio>
+
+
+    </div>
+
+    <h3 id="credit" class="credit">Made by Afthab</h3>
+    
+    <script>
+    function compliment() {
+  var comp = [
+    "Your smile is contagious.",
+    "You have the best laugh.",
+    "You light up the room",
+    "You have a great sense of humour",
+    "You are like Sunshine on a rainy day",
+    "You bring out the best in other people",
+    "Colors seem brighter when you're around.",
+    "You're a candle in the darkness.",
+    "You're someone's reason to smile",
+    "You're strong.",
+    "You're brave",
+    "You can do it",
+    "You're a great listener",
+    "You're inspiring",
+    "You're so thoughtful",
+    "You're a smart cookie",
+    "Your perspective is refreshing",
+    "You have the best ideas",
+    "Your ability to recall random factoids at just the right times is impressive",
+    "Your creative potential seems limitless",
+    
+    "You should be proud of yourself.",
+    "You are making a difference",
+    "You're a great example to others",
+    "Actions speak louder than words, and yours tell an incredible story",
+    "Our community is better because you're in it",
+    "You are enough",
+    "I appreciate you",
+    "Everything would be better if more people were like you",
+    "When you're not afraid to be yourself, that's when you're incredible",
+    "You're one of a kind",
+    "There's ordinary, and then there's you",
+    "You're really something special",
+  ];
+
+  var name = document.getElementById("name").innerHTML;
+
+  if (name.length === 0) {
+    alert("Enter a name please");
+    const lol = document.getElementById("name")
+    lol.innerHTML = "Enter Name here ..."
+    
+  }
+
+  else if (name === "Enter Name here ...") {
+    alert("Enter your name please");
+  }
+  
+  else {
+    var cpliment = comp[Math.floor(Math.random() * comp.length)];
+    document.getElementById("compliment").innerHTML = name + ", " + cpliment;
+  }
+}
+
+
+var ente = document.getElementById("name");
+ente.addEventListener("keydown", function (e) {
+  if (e.code === "Enter") {
+    compliment(e);
+  }
+});
+
+if ("serviceWorker" in navigator) {
+  
+  navigator.serviceWorker.register("service-worker.js");
+}
+    </script>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+* {
+  font-family: "Poppins";
+}
+
+.wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+}
+.submit {
+  background-image: linear-gradient(
+    to right,
+    #fc6076,
+    #ff9a44,
+    #ef9d43,
+    #e75516
+  );
+  box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+}
+
+.credit {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+</style>
+    
+
+   
+</body>
+
+</htm
