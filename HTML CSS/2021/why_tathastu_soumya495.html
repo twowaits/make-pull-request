@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Tathastu</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --textColor: #343a40;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            max-width: 100vw;
+            min-height: 100vh;
+        }
+
+        .wrapper {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--textColor);
+            padding-top: 3rem;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        .info-container {
+            width: 100%;
+            margin: 3rem 0;
+        }
+
+        .info {
+            padding: 1rem 0;
+            text-align: center;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .info img {
+            width: 100px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--textColor);
+        }
+
+        .info p {
+            margin: 0.5rem;
+            color: var(--textColor);
+        }
+
+        .link {
+            width: 100%;
+            padding: 1.5rem 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        a {
+            text-align: center;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: var(--textColor);
+            position: relative;
+        }
+
+        a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: rgb(245, 157, 42);
+            bottom: -2px;
+            opacity: 0;
+            transform: translateY(-8px);
+            transition: opacity 150ms ease-in, transform 150ms ease-in;
+        }
+
+        a:hover::before {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (min-width: 768px) {
+
+            .info-container {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .info {
+                width: 50%;
+            }
+
+        }
+
+        @media (min-width: 1200px) {
+
+            .info-container {
+                width: 70%;
+                margin: 3rem auto;
+            }
+
+            .info {
+                width: 30%;
+            }
+
+            .info:nth-child(4) {
+                width: 35%;
+                margin: 0 auto;
+                margin-right: 0;
+            }
+
+            .info:nth-child(5) {
+                width: 35%;
+                margin: 0 auto;
+                margin-left: 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h2>Why Students Prefer Us</h2>
+
+        <div class="info-container">
+            <div class="info info-1">
+                <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon_price_tag.png"
+                    alt="icon_price_tag">
+                <h3>Ridiculously Low Pricing</h3>
+                <p>
+                    We charge too low so that every student can afford it
+                </p>
+            </div>
+            <div class="info info-2">
+                <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon_we_care.png" alt="icon_we_care">
+                <h3>We Care</h3>
+                <p>
+                    We push students to learn and guide them if they loose focus
+                </p>
+            </div>
+            <div class="info info-3">
+                <img src="	https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon_mentor_learning.png"
+                    alt="icon_mentor_learning">
+                <h3>Doubts Support</h3>
+                <p>
+                    Stuck in project, our mentors are there to guide you
+                </p>
+            </div>
+            <div class="info info-4">
+                <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon_curated.png" alt="icon_curated">
+                <h3>Curated Content</h3>
+                <p>
+                    Only relevant skills taught, carefully curated content by experts
+                </p>
+            </div>
+            <div class="info info-5">
+                <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon_job.png" alt="icon_job">
+                <h3>Relevant to Career</h3>
+                <p>Skills taught by us will help you land jobs/internships in top companies</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://medium.com/twowaits/our-dream-and-dream-of-billion-indians-the-why-of-twowaits-e45301383d6"
+                target="_blank">Read about our Mission and Vision here!</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
