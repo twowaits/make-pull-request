@@ -1,13 +1,20 @@
-#include <bits/stdc++.h> 
-using namespace std; 
-
-int main() 
-{ 
-    string str;
-    getline (cin,str);
-    int n=str.length(); 
-    for(int i = 0;i<n/2;i++) 
-        swap(str[i],str[n-i-1]);
-    cout<<str; 
-    return 0; 
+#include<iostream.h>
+#include<string.h>
+#include<stdio.h>
+int main() {
+char st[50],tempvar;    // Only for 50 characters length
+int i=0,j=0;
+cout<<"\nEnter the string to reverse:";
+gets(st);
+j=strlen(st)-1;
+while(i<j)
+{
+tempvar=st[i];
+st[i]=st[j];
+st[j]=tempvar;
+i++;
+j--;
+}
+cout<<"\nThe reverse string is:"<<st;
+return(0);
 }

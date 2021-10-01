@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+        :root{
+            --dark-gray :  rgb(26, 25, 25); 
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(29, 48, 65);
+            font-family: 'Montserrat', sans-serif;
+        }
+        .container{
+            padding: 5rem 5rem;
+        }
+
+        .navbar{
+            width: 50%;
+            padding: 0.5rem;
+            background-color: var(--dark-gray);
+            color:rgb(197, 128, 0) ;
+            float: right;
+            border-bottom-left-radius: 30px;
+            box-shadow:-8px 0px 8px  rgb(26, 25, 25);
+            
+            
+        }
+
+        .navbar .link{
+    padding: 0.5rem;
+    color: var(--white);
+    
+}
+
+
+
+        .link{
+            text-decoration: none;
+        }
+
+        .list-inline{
+            list-style: none;
+            display: inline;
+        }
+
+        main{
+            color: white;
+        }
+
+        .main-heading{
+            font-weight: bolder;
+            font-size:3rem;
+           
+        }
+        
+
+        h1{
+            font-size: rem;
+            font-weight: 300;
+        }
+
+        h2{
+            font-weight: 300;
+            padding-top: 2rem;
+            font-size: 1.3rem;
+        }
+        h3{
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: aqua;
+        }
+
+        .text{
+            color: rgba(63, 165, 165, 0.678);
+        }
+
+        .image{
+            position: absolute;
+            top: 25%;
+            right:5%
+        }
+        .image img{
+            width: 250px;
+        }
+        .image p{
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 0;
+            font-style: italic;
+        }
+        .image p span{
+            color: grey;
+        }
+
+        .footer{
+            position: absolute;
+            bottom: 1rem;
+            left: 3%;
+            width: 94%;
+            margin: auto;
+           
+            
+            border-radius: 15px;
+            background-color: var(--dark-gray);
+            color: white;
+            text-align: center;
+        }
+        .inline{
+            display: inline-block;
+            
+        }
+
+        div.inline h1{
+            font-size: 2rem;
+            margin: 0;
+        }
+.footer-ul{
+    display: grid;
+  grid-template-columns: auto auto auto;
+    padding: 1rem 2rem;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar ">
+        <ul class="list-non-bullet nav-elements">
+            <li class="list-inline">
+                <a class="link " href="/">Courses</a>
+            </li>
+            <li class="list-inline">
+                <a class="link" href="/">YouTube Channel</a>
+            </li>
+            <li class="list-inline">
+                <a class="link" href="/">Medium Blog</a>
+            </li>
+            <li class="list-inline">
+                <a class="link" href="/">Login</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <main class="container">
+        <h1 class="main-heading">TATHASTU</h1>
+        <h1 >To all your dreams for tour career.</h1>
+        <h3>Pick a course relevant to your skillset and ambition.</h3>
+        <p class="text">CP, DSA, Python all courses you will ever need.</p>
+        <div class="image">
+            <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon.png" alt="">
+            <p><span>enabled by</span> Twowaits</p>
+        </div>
+        <h2>Those too at ridiculously low prices!</h2>
+
+    </main>
+    <footer class="footer">
+        <ul class="footer-ul">
+            <li class="list-inline">
+               <div class="inline">
+                   <h1>500+</h1>
+                   <small>Students Empowered</small>
+               </div>
+            </li>
+            <li class="list-inline">
+                
+               <div class="inline">
+                <h1 >15+</h1> 
+                <small>Unique Courses</small>
+               </div>
+
+            </li>
+            <li class="list-inline">
+                
+                <div class="inline">
+                    <h1 >50+</h1> 
+               <small> Colleges Impacted</small>
+                </div>
+
+            </li>
+        </ul>
+    </footer>
+</body>
+</html> 
