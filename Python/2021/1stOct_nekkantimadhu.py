@@ -1,6 +1,6 @@
 def FibonacciNumbers(n):
  
-    f1 = 0
+    f1 = 1
     f2 = 1
     if (n < 1):
         return
