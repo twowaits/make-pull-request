@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ssoham117 {
+public class soham117 {
     public static void main(String arg[]) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
