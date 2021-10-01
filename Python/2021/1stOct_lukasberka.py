@@ -1,5 +1,4 @@
 import typing
-from math import sqrt
 
 
 def generate_fib(length: int) -> typing.List:
@@ -18,7 +17,7 @@ def generate_fib(length: int) -> typing.List:
 def is_prime(num: int) -> bool:
     if num == 1:
         return False
-    for i in range(2, int(sqrt(num)) + 1):
+    for i in range(2, num // 2 + 1):
         if num % i == 0:
             return False
     return True
@@ -27,9 +26,9 @@ def is_prime(num: int) -> bool:
 def print_pseudo_fib(fib_sequence: typing.List):
     for i in fib_sequence:
         if i % 5 == 0 or is_prime(i):
-            print(0)
+            print(0, end=" ")
         else:
-            print(i)
+            print(i, end=" ")
 
 
 def main(fib_length: int):
