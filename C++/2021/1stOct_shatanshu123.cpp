@@ -1,25 +1,33 @@
-//Program to find all prime number between a given range without using array
-
 #include <iostream>
 using namespace std;
-int main(int argc, char **argv){
-    int low;
-    cin >> low;
 
-    int high;
-    cin >> high;
+bool check_prime(int n){
+    if (n <= 1)
+        return false;
+    for (int i = 2; i < n; i++)
+        if (n % i == 0)
+            return false;
+    return true;
+}
 
-    for (int num = low; num <= high; num++){
-        int div = 2;
-        while (div * div <= num){
-            if (num % div == 0){
-                break;
-            }
-            div++;
-        }
-
-        if (div * div > num){
-            cout << (num) << endl;
-        }
+int main(){
+   int i, num;
+   int first_term = 0, second_term = 1;
+   int nextTerm = first_term + second_term;
+   cin >> num;
+   cout << second_term << " ";
+   for(i = 3; i <= num+1; ++i) {
+    if(nextTerm % 5 == 0){
+        cout << 0 << " ";
     }
+    else if(check_prime(nextTerm)){
+        cout << 0 << " ";
+    }
+    else{
+        cout << nextTerm << " ";
+    }
+    first_term = second_term;
+    second_term = nextTerm;
+    nextTerm = first_term + second_term;
+  }
 }
