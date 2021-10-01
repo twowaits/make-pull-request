@@ -20,6 +20,20 @@
 			.text-information {
 				color: blue;
 			}
+
+			.image {
+				width: 300px;
+				position: relative;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.image_text {
+				position: relative;
+				align-items: center;
+				text-align: center;
+			}
 		</style>
 	</head>
 	<body>
@@ -46,8 +60,7 @@
 		<div class="container">
 			<div class="row">
 				<!-- Textual Information -->
-				<div class="text-information col-8">
-					Hello
+				<div class="text-information col-lg-8 col-12">
 					<h1>Tathastu</h1>
 					<h3>To all your dreams for your career.</h3>
 					<h4>Pick a course relevant to your skillset and ambition.</h4>
@@ -55,11 +68,13 @@
 				</div>
 
 				<!-- Image -->
-				<div class="image col-4">
+				<div class="col-lg-4 col-12">
 					<img
 						src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon.png"
 						alt=""
+						class="image"
 					/>
+					<h3 class="image_text">enabled by Twowaits</h3>
 				</div>
 			</div>
 		</div>
