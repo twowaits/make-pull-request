@@ -27,8 +27,8 @@ int main() {
 
         //cout << nT << ", ";
         //cout<<ifprime(nextTerm);
-        if(ifprime(nextTerm) || mul(nextTerm)) cout<<"0"<< ", ";
-        else cout << nextTerm << ", ";
+        if(ifprime(nT) || mul(nT)) cout<<"0"<< ", ";
+        else cout << nT << ", ";
 
     }
     return 0;
