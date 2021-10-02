@@ -15,19 +15,22 @@ def numInRow(i, line, start, end):
             break
         else:
             arr.append(ele)
+    # print(arr)
     return sorted(list(set(arr)))
+
 
 def spaceBetween(a, b):
     print(' '*(b-a), end="")
 
+
 def main(line, end):
     for i in range(line):
         spaceBetween(0, i)
-        elements = numInRow(i,line,i,end+1)
+        elements = numInRow(i, line, i+1, end+1)
         for j in range(len(elements)):
             if len(str(elements[j])) > 1:
                 inend = ""
-            else :
+            else:
                 inend = " "
             print(elements[j], end=inend)
             try:
@@ -36,5 +39,8 @@ def main(line, end):
                 pass
         print()
 
+
 if __name__ == "__main__":
     main(7,16)
+    # line, digit = int(input()), int(input())
+    # main(line, digit)
