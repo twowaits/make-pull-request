@@ -2,103 +2,173 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Google Replica</title>
-    <script crossorigin="anonymous" src="https://kit.fontawesome.com/6cdea9e024.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+    <title>Page-2</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Helvetica, sans-serif;
         }
 
-        nav {
-            text-align: right;
+        .videos {
+            display: flex;
+            margin: 20px;
+            padding: 0 20px;
+            align-items: center;
+            border-bottom: 1px solid lightgrey;
         }
 
-        .menu-items {
-            font-size: 13px;
-            color: rgba(0, 0, 0, 0.87);
-            text-decoration: none;
-            position: relative;
-            top: -16px;
-            margin-right: 16px;
-
-
-        }
-
-        .menu-items:hover {
-            text-decoration: underline;
-        }
-
-        #dropdown-menu {
-            top: -10px;
-            position: relative;
-            margin-right: 16px;
-            margin-top: 20px;
+        .videos i {
+            color: darkgray;
+            padding: 0 15px 15px 15px;
+            font-size: 30px;
 
         }
 
-        #profile-pic {
-            width: 48px;
-            height: 48px;
+        .videos p {
+            padding: 0 30px 15px 5px;
+            font-size: 35px;
+            font-weight: 545;
         }
 
-        section {
-            text-align: center;
-            transform: translateY(150px);
+        .section {
+            display: flex;
+            margin: 0 20px;
+            border-bottom: 1px solid lightgrey;
         }
 
-        #search-box {
+
+        .thumbnail {
+            width: 170px;
+            height: 100px;
+            margin: 10px 40px;
+            background-color: cornflowerblue;
+            border-radius: 10%;
+        }
+
+        .thumbnail img {
             width: 100%;
-            color: #222;
-            border: 1px solid #dfe1e5;
-            font-size: 13px;
-            padding: 14px;
-            border-radius: 24px;
-            outline: none;
-            margin-top: 10px;
+            height: 100%;
+            border-radius: 10%;
         }
 
-        #input-wrapper {
+        .details {
+            margin: 10px 20px;
+            padding: 10px 0;
+            overflow: hidden;
+        }
+
+
+        .details a {
+            display: block;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        .details p {
+            margin-top: 22px;
+        }
+
+        .view-button {
+            padding: 10px;
+            margin: 20px 20px;
             position: relative;
-            width: 582px;
-            display: inline-block;
         }
-
-        #input-wrapper > img {
+        .button {
+            background-color: whitesmoke;
             position: absolute;
-            top: 20px;
-            right: 0;
+            right: 20%;
+            left: 30%;
+            top: -18px;
+            z-index: 10;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding: 15px;
+            border: 1px solid lightgrey;
+            border-radius: 24px;
         }
 
-        #search-box:hover {
-            box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.20);
-            border-color: rgba(223, 225, 229, 0);
+        .button i {
+            left: -195px;
+            position: relative;
+            color: darkblue;
+            font-size: 20px;
         }
 
-        #search-box:focus {
-            box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.20);
-            border-color: rgba(223, 225, 229, 0);
+        .button a {
+            display: block;
+            text-decoration: none;
+            font-size: 20px;
+
         }
+
+
     </style>
-
 </head>
 <body>
-<header>
-    <nav>
-        <a class="menu-items" href="#">Gmail</a>
-        <a class="menu-items" href="#">Images</a>
-        <i class="material-icons" id="dropdown-menu">apps</i>
-    </nav>
-</header>
-<section>
-    <img alt="Google" height="120" src="" width="300">
-    <br>
-    <div id="input-wrapper">
-        <input id="search-box" type="text">
-        <img alt="google mic" height="25px" src=""
-             width="20px">
+<div class="videos">
+    <i class="far fa-play-circle"></i>
+    <p>Videos</p>
+    <i class="fas fa-ellipsis-v" style="font-size: 21px"></i>
+</div>
+<div class="section">
+    <div class="thumbnail">
+        <img src="">
     </div>
-</section>
+    <div class="details">
+        <h2><a href="#">How to Get an Internship by Achintya Gautam</a></h2>
+        <p><span style="font-size: 20px">YouTube</span> <span> . </span> <span style="color: grey; font-size: 20px">Twowaits</span>
+        </p>
+        <span style="color: grey; font-size: 20px">3 weeks ago</span>
+    </div>
+</div>
+<div class="section">
+    <div class="thumbnail">
+        <img src="">
+    </div>
+    <div class="details">
+        <h2><a href="#">How to get an Internship by Achintya Gautam</a></h2>
+        <p><span style="font-size: 20px">YouTube</span> <span> . </span> <span style="color: grey; font-size: 20px">Twowaits</span>
+        </p>
+        <span style="color: grey; font-size: 20px">May 15, 2021</span>
+    </div>
+</div>
+<div class="section">
+    <div class="thumbnail">
+        <img src="">
+    </div>
+    <div class="details">
+        <h2><a href="#">Make a pro LikedIn Profile with Achintya Gautam | Get your...</a></h2>
+        <p><span style="font-size: 20px">YouTube</span> <span> . </span> <span style="color: grey; font-size: 20px">Twowaits</span>
+        </p>
+        <span style="color: grey; font-size: 20px">Jun 27, 2021</span>
+    </div>
+</div>
+<div class="section" style="border-bottom: none">
+    <div class="thumbnail">
+        <img src="">
+    </div>
+    <div class="details">
+        <h2><a href="#">Task 2 Discussion with Achintya Gautam | Thathastu Scholar ...</a></h2>
+        <p><span style="font-size: 20px">YouTube</span> <span> . </span> <span style="color: grey; font-size: 20px">Twowaits</span>
+        </p>
+        <span style="color: grey; font-size: 20px">Jul 13, 2021</span>
+    </div>
+</div>
+
+<span style="display: flex; justify-content: flex-end; margin: 0 415px; color: grey">
+    Feedback
+</span>
+<div class="view-button">
+    <hr>
+    <div class="button">
+        <i class="fas fa-arrow-right"></i>
+        <a href="#">View all</a>
+    </div>
+</div>
 </body>
 </html>
