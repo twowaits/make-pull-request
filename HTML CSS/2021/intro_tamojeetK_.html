@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--icon-->
+    <link rel="icon" href="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="tathastustyle.css"> -->
+
+    <title>TathastuLandingPage - TamojeetK</title>
+</head>
+<style>
+     
+  @media only screen and (max-width: 970px) {
+    body, html {
+      width: 100vw;
+      overflow-x: hidden;
+    }
+    
+    .nav-container::before {
+      text-align: center;
+      padding-top: 10px;
+      content: "<";
+      position: absolute;
+      left: -40px;
+      top: 0;
+      background-color: var(--base-color2);
+      width: 40px;
+      height: 40px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+    }
+    .nav-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      width: 70%;
+      z-index: 10;
+      transform: translateX(100%);
+      transition: 0.3s;
+    }
+    
+  }
+
+@media only screen and (min-width: 970px) {
+    .home-left {
+      width: 66.67%;
+    }
+    .home-right {
+      margin-left: 3rem; margin-top: 0.5rem;
+    }
+    .home-facts {
+      width: 350px; display: inline-block; vertical-align: top;
+    }
+  }
+  
+  
+:root {
+    --base-color: rgb(245, 157, 42);
+    --background-color: #154854;
+    --base-color2: #222831;
+    --text-gray: #9199a2;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+  }
+  
+  body {
+    background: var(--background-color);
+    color: #fff;
+  }
+  
+  header {
+    display: block;
+    text-align: center;
+    color: #000;
+    background-color: #b7bea9;
+    font-size: 1rem;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  
+  .nav-container {
+    right: 0;
+    padding: 0 50px;
+    background-color: var(--base-color2);
+    color: var(--base-color);
+    border-bottom-left-radius: 26px;
+    box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .nav-element {
+    padding: 0 1rem;
+  }
+  
+  .nav-link {
+    display: inline-block;
+    color: inherit;
+    padding: 1.1rem 0;
+    position: relative;
+  }
+  
+  .nav-link::after {
+    position: absolute;
+    top: 48px;
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: var(--base-color);
+    transition: width .3s;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+    transition: all ease 0.2s;
+  }
+  
+  .nav-link:hover::after {
+    transform: scaleX(100%);
+  }
+  
+
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--base-color);
+  }
+  
+  a {
+    color: inherit;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    font-weight: normal;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 2rem;
+    margin: 3rem auto;
+  }
+  
+</style>
+
+<body>
+    <!--navigation-->
+    <nav>
+        <div>
+            <a href="#">
+            </a>
+        </div>
+        <!--menu-->
+        <div class="nav-container">
+            <span class="nav-element">
+                <a href="#courses" class="nav-link">Courses</a>
+            </span>
+            <span class="nav-element">
+                <a target="_blank" href="https://www.youtube.com/c/twowaits" class="nav-link">YouTube Channel</a>
+            </span>
+            <span class="nav-element">
+                <a target="_blank" href="#medium" class="nav-link">Medium Blog</a>
+            </span>
+            <span class="nav-element">
+                <a href="#login" class="nav-link">Login</a>
+            </span>
+        </div>
+    </nav>
+
+    <!--main-content-->
+    <div class="container">
+        <div class="row">
+            <div class="home-left font-weight-bold">
+                <!--heading----------->
+                <h1 style="margin-top: 10px; font-family: Montserrat; font-style: bold; font-size: 66px;"> TATHASTU </h1>
+                <!--text-->
+                <h2 style="margin-top: 10px;">To all your dreams for your career.</h2>
+                <p style="margin-top: 10px; opacity: 0.8; font-size: 22px;">Pick a course relevant to your skillset and ambition.</p>
+                <p style="margin-top: 10px; opacity: 0.4; font-size: 18px;">CP, DSA, Python all courses you will ever need.</p>
+
+                <br>
+                <br>
+                <h3>Those too at ridiculously low prices!</h3>
+
+                <br>
+
+            </div>
+            <div class="home-right" style="text-align: center;">
+                <img class="" src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon.png" height="250">
+                <p style="margin-top: 10px; font-style: italic; font-size: 30px;"><span style="opacity: 0.6;">enabled by</span> Twowaits</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center" style="background: #222831 0 0 no-repeat padding-box; border-radius: 10px;">
+        <div class="home-facts">
+            <h2 class="font-weight-bold text-light">500+</h2>
+            <h6 class="text-light">Students Empowered</h6>
+        </div>
+        <div class="home-facts">
+            <h2 class="font-weight-bold text-light">15+</h2>
+            <h6 class="text-light">Unique Courses</h6>
+        </div>
+        <div class="home-facts" style="margin-bottom: 0px;">
+            <h2 class="font-weight-bold text-light">50+</h2>
+            <h6 class="text-light">Colleges Impacted</h6>
+        </div>
+    </div>
+
+</body>
+
+</html>

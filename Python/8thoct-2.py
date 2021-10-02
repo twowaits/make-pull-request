@@ -1,8 +1,13 @@
-n=int(input("enter number of rows:"))
-for row in range(1,n+1):
-    for col in range(1,2*n):
-        if row==n or row+col==n+1 or col-row==n-1:
-          print("*",end="")
+n=int(input(""))
+base=n+n-1
+mid=base//2
+for i in range(1,n):
+    for j in range(0,base):
+        if j==mid-i+1 or j==mid+i-1:
+            print("*",end="")
         else:
-          print(end=" ")
+            print(" ",end="")
     print()
+
+for i in range(0,n):
+    print("* ",end="")
