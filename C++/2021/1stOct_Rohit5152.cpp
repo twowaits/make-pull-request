@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+
 bool check(int n)
 {
 	// Corner case
@@ -31,7 +32,7 @@ int fibonacci(int n)
 	{
         c = a + b;
         //Condition check
-        if ( c % 5 != 0 && !isPrime( c ))
+        if ( c % 5 != 0 && !check( c ))
         cout << c << " ";
         else
         cout << "0 ";
@@ -40,4 +41,11 @@ int fibonacci(int n)
         b = c;
 	}
 	return b;
+}
+int main()
+{
+	int n;
+	cin>>n;
+	fibonacci(n);
+	return 0;
 }
