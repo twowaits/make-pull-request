@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Google Home Page - Sai-Varshith</title>
+  <style type="text/css">
+    * {
+      font-family: arial, sans-serif;
+    }
+
+    body {
+      background-color: black;
+    }
+
+    ul {
+      list-style-type: none;
+      overflow: hidden;
+    }
+
+    li {
+      float: right;
+    }
+
+    li a {
+      color: #fff;
+      display: block;
+      text-align: center;
+      padding: 10px 10px;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    li a:hover {
+      text-decoration: underline;
+    }
+
+    .grid {
+      height: 23px;
+      position: relative;
+      bottom: 4px;
+    }
+
+    .signbutton {
+      background-color: #4885ed;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      padding: 7px 10px;
+      position: relative;
+      bottom: 7px;
+      font-weight: bold;
+    }
+
+    .logo {
+      margin-top: 130px;
+      margin-bottom: 20px;
+    }
+
+    .lg {
+      background-size: 32px 32px;
+      border-radius: 50%;
+      margin-top: -7px;
+    }
+
+    .bar {
+      margin: 0 auto;
+      height: 45px;
+      width: 575px;
+      border-radius: 30px;
+      border: 1px solid #dcdcdc;
+    }
+
+    .bar:hover {
+      box-shadow: 0px 1px 7px 1px #dcdcdc;
+
+    }
+
+    .bar:focus-within {
+      box-shadow: 0px 1px 7px 1px #dcdcdc;
+      outline: none;
+    }
+
+    .searchbar {
+      height: 45px;
+      border: none;
+      width: 500px;
+      font-size: 16px;
+      outline: none;
+      position: relative;
+      background-color: transparent;
+      border: none;
+      margin-left: 30px;
+      margin-top: 2px;
+      padding: 0;
+      color: rgba(0, 0, 0, .87);
+      word-wrap: break-word;
+      outline: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .searchbartext {
+      margin-left: 50px;
+    }
+
+    .scope {
+      margin: auto;
+    }
+
+    .scope {
+      margin-top: 3px;
+      color: #9aa0a6;
+      height: 20px;
+      width: 20px;
+      top: 5px;
+      left: -530px;
+      padding-right: 5px;
+      position: relative;
+    }
+
+    .scope {
+      display: inline-block;
+      fill: currentColor;
+      line-height: 24px;
+      position: relative;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .button {
+      background-color: #f5f5f5;
+      border: none;
+      color: #707070;
+      font-size: 14px;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 4px;
+      outline: none;
+      border: 1px solid #c6c6c6;
+    }
+
+    .button:hover {
+      border: 1px solid #c8c8c8;
+      padding: 9px 19px;
+      color: #808080;
+      background-image: -moz-linear-gradient(top, #f8f8f8, #f1f1f1);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+      border: 1px solid #c6c6c6;
+    }
+
+    .button:focus {
+      border: 1px solid #4885ed;
+      padding: 9px 19px;
+      background-image: -moz-linear-gradient(top, #f8f8f8, #f1f1f1);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+      border: 1px solid #c6c6c6;
+    }
+
+    #lan {
+      color: rgb(180, 180, 180);
+      display: inline-block;
+      line-height: 28px;
+      margin-top: 15px;
+    }
+
+    #lan a {
+      color: #fb82ff;
+      padding: 5px;
+      text-decoration: none;
+    }
+
+    .botm {
+      font-size: 14px;
+      margin-top: -5px;
+      padding-bottom: 10px;
+      bottom: 0;
+      position: relative;
+    }
+
+    .nav {
+      bottom: 0;
+    }
+
+
+    footer {
+      background: #1a1a1a;
+      width: 100%;
+      height: 7%;
+      clear: both;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding-left: 0px;
+      color: #fff;
+    }
+
+    .bottomone {
+      display: inline-block;
+      padding-top: 0;
+      padding-left: 10px;
+    }
+
+    .bottomone li a {
+      color: #666;
+      letter-spacing: 0.2px;
+    }
+
+    .bottomone li {
+      margin-right: 27px;
+      list-style-type: none;
+    }
+
+    .leftone {
+      float: left;
+      line-height: 5px;
+      font-size: 5px;
+    }
+
+    .rightone {
+      float: right;
+      line-height: 5px;
+      font-size: 5px;
+    }
+
+    .b0KoTc {
+      margin-top: 10px;
+      margin-left: 20px;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <header>
+      <ul>
+         
+        <li><a href="#images">Images</a></li>
+        <li><a href="#gmail">Gmail</a></li>
+      </ul>
+    </header>
+    <div class="logo">
+      <img alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    </div>
+    <div class="bar">
+      <input class="searchbar" type="text" title="Search">
+      <div class="scope">
+        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+          </path>
+
+        </svg></div>
+    </div>
+    <div class="buttons">
+      <button class="button" type="button">Google Search</button>
+      <button class="button" type="button">I'm Feeling Lucky</button>
+    </div>
+    <div id="lan" style="font-size: 14px;">
+       Watch Gandhi Jayanthi Celebrations at:
+      <a href="#">YouTube</a>
+      <a href="#">Others</a>
+    </div>
+    <footer class="nav nav-tabs">
+      <div class="botm">
+        <div class="b0KoTc"><span class="Q8LRLc">HacktoberFest</span></div>
+      </div>
+
+      <ul class="bottomone rightone">
+        <li><a target="blank" href="#">Settings</a></li>
+        <li><a target="blank" href="#">Terms</a></li>
+        <li><a target="blank" href="#">Privacy</a></li>
+
+      </ul>
+      <ul class="leftone bottomone">
+        <li><a target="blank" href="#">How Search Works</a></li>
+        <li><a target="blank" href="#">About</a></li>
+        <li><a target="blank" href="#">Business</a></li>
+        <li><a target="blank" href="#">Advertising</a></li>
+      </ul>
+    </footer>
+</body>
+
+</html>
