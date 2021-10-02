@@ -14,7 +14,10 @@ int main()
 	for(int i=1;i<=row;i++){
 		for(int j=1;j<=col;j++){
 			string x = to_string(j);
-			if(j%(2*row-2) == i or ((2*row-j)%(2*row-2) == i%(2*row-2))){
+			int k;
+			if(j < row) k = 0;
+			else k = (j-1-row)/(2*row-2) + 1;
+			if(abs(j-(1+k*(2*row-2)))==i-1){
 				cout << x;
 			}
 			else{
@@ -23,5 +26,4 @@ int main()
 		}
 		cout << endl;
 	}
-    return 0;
 }
