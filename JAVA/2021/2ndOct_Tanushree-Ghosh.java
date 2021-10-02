@@ -32,7 +32,7 @@ class ZigZag {
         if (arr[i][j] != 0)
           System.out.print(arr[i][j]);
         else
-          System.out.print(" ");
+          System.out.print("  ");
       }
       System.out.println();
     }
