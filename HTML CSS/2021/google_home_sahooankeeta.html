@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/976382ac44.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* NAVIGATION */
+      nav {
+        padding: 0 10px;
+      }
+      nav ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 20px 15px 0;
+        font-size: 13px;
+      }
+
+      nav li {
+        list-style-type: none;
+        margin: 0 20px 0 0;
+        text-transform: capitalize;
+      }
+
+      nav li a {
+        text-decoration: none;
+        color: #000000;
+      }
+
+      nav li a:hover {
+        text-decoration: underline;
+      }
+
+      /* --- pushes the elements on the right */
+      .nav-right {
+        margin-left: auto;
+      }
+
+      .profile-image {
+        border-radius: 100%;
+        height: 50px;
+      }
+
+      .box-grid {
+        display: grid;
+        grid-template-columns: 5px 5px 5px;
+        grid-template-rows: 5px 5px 5px;
+        grid-column-gap: 3px;
+        grid-row-gap: 3px;
+        cursor: pointer;
+      }
+
+      .box-item {
+        background: #000000;
+      }
+
+      /* GOOGLE LOGO AND SEARCH */
+      .google-function {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 90px;
+      }
+      form {
+        width: 500px;
+        max-width: 80vw;
+      }
+      .googlelogo {
+        margin-bottom: 20px;
+      }
+
+      .searchbar {
+        border-radius: 50px;
+        border: 1px solid hsl(60, 1%, 30%);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        padding: 0 20px;
+
+        min-width: 100%;
+        height: 45px;
+      }
+      .inputbar {
+        margin: auto;
+        outline: none;
+        padding: 0 20px;
+        border: none;
+        color: #202124;
+        font-size: 16px;
+        flex: 70%;
+        font-weight: 400;
+      }
+
+      .searchbar:hover {
+        box-shadow: 2px 2px 8px #888888;
+      }
+      .logoofsearch {
+        width: 20px;
+        opacity: 50%;
+        cursor: pointer;
+      }
+      .logoofvoicesearch {
+        width: 20px;
+        cursor: pointer;
+      }
+
+      .button-group {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .google-button {
+        padding: 10px 15px;
+        margin-right: 10px;
+        border-radius: 5px;
+        border: 1px solid transparent;
+      }
+
+      .google-button:hover {
+        cursor: pointer;
+        background: #e8e2e2;
+        border: 1px solid #838383;
+      }
+      .behind-scenes a {
+        text-decoration: none;
+        color: blue;
+      }
+      /* FOOTERS */
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        font-size: 14px;
+        padding: 15px 0;
+        color: rgba(0, 0, 0, 0.54);
+      }
+
+      .footer-details {
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px 0 10px 20px;
+      }
+
+      footer li {
+        list-style-type: none;
+        margin: 0 20px 0 0;
+      }
+
+      .footer-details li a {
+        color: rgba(0, 0, 0, 0.54);
+        text-decoration: none;
+      }
+
+      .footer-details li a:hover {
+        text-decoration: underline;
+      }
+
+      @media only screen and (max-width: 650px) {
+        .footer-details {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          grid-template-rows: auto auto;
+          grid-column-gap: 15px;
+          grid-row-gap: 15px;
+          justify-content: center;
+        }
+      }
+
+      @media only screen and (max-width: 520px) {
+        input[type="text"] {
+          width: 350px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">about</a></li>
+        <li><a href="#">store</a></li>
+        <li class="nav-right"><a href="https://mail.google.com">gmail</a></li>
+        <li><a href="#">images</a></li>
+        <li>
+          <div class="box-grid">
+            <div class="box-item">.</div>
+            <div class="box-item"></div>
+            <div class="box-item"></div>
+            <div class="box-item"></div>
+            <div class="box-item"></div>
+            <div class="box-item"></div>
+            <div class="box-item"></div>
+            <div class="box-item"></div>
+            <div class="box-item"></div>
+          </div>
+        </li>
+        <li>
+          <img
+            class="profile-image"
+            src="https://avatars.githubusercontent.com/u/68347808?s=40&v=4"
+            alt="your profile image"
+          />
+        </li>
+      </ul>
+    </nav>
+
+    <div class="google-function">
+      <img
+        class="googlelogo"
+        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+      />
+      <form>
+        <div class="searchbar">
+          <img
+            class="logoofsearch"
+            src="https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png"
+          />
+          <input class="inputbar" />
+          <img
+            class="logoofvoicesearch"
+            src="https://www.clipartkey.com/mpngs/m/27-272205_google-microphone-png-google-search-by-voice-icon.png"
+          />
+        </div>
+
+        <div class="button-group">
+          <button class="google-button" type="submit">Google Search</button>
+          <button class="google-button" type="submit">I'm Feeling Lucky</button>
+        </div>
+      </form>
+      <div class="behind-scenes">
+        go <a href="#">behind-the-scenes</a> of today's Doodle
+      </div>
+    </div>
+
+    <footer>
+      <ul class="footer-details">
+        <li><a href="#">Advertising</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">How Search works</a></li>
+        <li class="nav-right"><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
