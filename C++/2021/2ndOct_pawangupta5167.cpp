@@ -1,37 +1,40 @@
-#include <iostream>
-
+#include <bits/stdc++.h>
 using namespace std;
-
-int isPrime(int n)
-{
-	if(n<=1)
-    return 0;
-
-    for (int i=2;i<n;i++)
-    {
-    	if(n%i==0)
-        return 1;
-	}
-    return 0;
-}
 
 int main()
 {
-	int first=1,second=1,third,n;
-	cout<<"Enter the number of terms:\n";
-	cin>>n;
-	cout<<first<<" "<<second<<" ";
+    int rows,col;
+    cout<<"Enter the no. of rows : ";
+    cin>>rows;
+    cout<<"Enter the no. of columns :";
+    cin>>col;
+    vector<vector<int>>mat(rows,vector<int>(col,0));
 
-	for(int i=2;i<n;i++)
-	{
-		third=first+second;
-		if(third%5==0)
-		cout<<0<<" ";
-		else if(isPrime(third)==0)
-		cout<<0<<" ";
-		else
-		cout<<third<<" ";
-		first=second;
-		second=third;
-	}
-}
+    int i = 0, j = 0;
+    bool up = true; 
+
+    for(int j=1; j<=col; j++)
+    {
+        mat[i][j-1] = j ;
+        if(i==0){     
+           up = false;
+        }
+        if(i==(rows-1)){
+           up = true;
+        }
+        if(up) --i;
+        else  ++i;
+    }
+
+    for (int i=0;i<rows;i++)
+    {
+        for (int j=0;j<col;j++)
+        {
+            if(mat[i][j]!=0)
+                cout << mat[i][j] <<" ";
+            else
+                cout << "  ";
+        }
+        cout<<endl;
+    }
+} 
