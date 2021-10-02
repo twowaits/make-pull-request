@@ -38,3 +38,21 @@ int main() {
     cout<<"rnrathod16"<<endl;
     return 0;
 }
+
+/* Output 
+
+Enter Rows
+7
+Enter Columns
+16
+
+1           13   
+ 2         12 14  
+  3       11   15 
+   4     10     16
+    5   9       
+     6 8        
+      7         
+rnrathod16
+
+*/
