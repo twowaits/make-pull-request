@@ -1,13 +1,17 @@
-import numpy as np
+import numpy as np #using numpy to store the output array of zeroes
 
+
+# Code to take the input of number of rows and number of columns
 rows = int(input("Enter number of rows "))
 cols = int(input("Enter number of columns "))
 arr = np.zeros([7,16],dtype = int)
 
-num = 0
-flag = 0 
-i = 0
-j = 0
+#intialize all variables to zero
+
+num = 0 #to store the value 
+flag = 0 # when flag is set it goes upwards or else it goes downwards
+i = 0 #i is for row
+j = 0 #j is for column 
 
 while j <= cols-1:
     if i<=rows-1 and flag == 0:
@@ -31,6 +35,8 @@ while j <= cols-1:
             i = i - 1
             j = j + 1 
 
+
+# Code to print the output
 for i in range(rows):
     for j in range(cols):
         if(arr[i][j] == 0):
