@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="assets/scss/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets\imgs\identification.png" />
+  <title>Social Cards</title>
+  <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --text-color: #222121;
+  --hover-color: #FFD700;
+  --body-font: 'Inter', 'sans-serif';
+  --normal-font-size: 1.4rem;
+  --smaller-font-size: 0.83rem;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--body-font);
+  color: var(--text-color);
+  background-image: #fff;
+}
+
+h1, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.outer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5rem;
+}
+
+.card {
+  background-color: rgb(22, 50, 83);
+  border-radius: 20px;
+  color: #fff;
+  width: 27rem;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 524px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 18rem;
+    padding: 2rem 2rem;
+  }
+}
+
+@media screen and (max-width: 314px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 14rem;
+    --normal-font-size: 1.3rem;
+    --smaller-font-size: 0.9rem;
+  }
+}
+
+.card__img {
+  width: 9rem;
+  height: 9rem;
+  margin-right: 1.5rem;
+  border-radius:  50%;
+}
+
+@media screen and (max-width: 524px) {
+  .card__img {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    border-radius:  50%;
+  }
+}
+
+.card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 524px) {
+  .card__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 524px) {
+  .card__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.card__name {
+  font-size: var(--normal-font-size);
+  margin-bottom: 0.3rem;
+}
+
+.card__prof {
+  font-size: var(--smaller-font-size);
+}
+
+.card__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1.3rem;
+}
+
+.card__icon-container-t {
+  background-color: var(--text-color);
+  padding: 0.5rem;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
+  margin-right: 1rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.card__icon-container-t:hover {
+  background-color: var(--hover-color);
+}
+
+.card__icon-container-i {
+  background-color: var(--text-color);
+  padding: 0.5rem;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.card__icon-container-i:hover {
+  background-color: var(--hover-color);
+}
+
+.nav {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+  z-index: 1000;
+  width: 100%;
+  color: black;
+  font-weight: 600;
+}
+
+.nav__title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Montserrat', 'Inter';
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .card {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    /* background-color: rgba(255, 255, 255, 0.219); */
+  }
+}
+/*# sourceMappingURL=style.css.map */
+
+
+@media screen and (max-width: 650px) {
+  .nav__title{
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .nav__title{
+    font-size: 30px;
+  }
+  .nav{
+    padding: 1rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="nav">
+    <div class="nav__title">
+      <p>Student Testinomals</p>
+    </div>
+  </div>
+
+  <div class="outer__nav">
+  <div class="card__section">
+
+
+    
+    <div class="card">
+      <img src="https://source.unsplash.com/random/200x200" alt="" class="card__img">
+      <div class="card__content">
+        <div class="card__info">
+          <h2 class="card__name">Akash Joshi</h2>
+          <span class="card__prof">Just an Enthu Programmer</span>
+        </div>
+        <div class="card__icons">
+          <div class="card__icon-container-t">
+            <a href="https://www.instagram.com" target="_blank"><box-icon type='logo' name='instagram' color='white'></box-icon></a>
+          </div>
+          <div class="card__icon-container-t">
+            <a href="https://twitter.com" target="_blank"><box-icon type='logo' name='twitter' color='white'></box-icon></a>
+          </div>
+          <div class="card__icon-container-i">
+            <a href="https://github.com/" target="_blank"><box-icon name='github' type='logo' color='white'></box-icon></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="card">
+      <img src="https://source.unsplash.com/random/200x200" alt="" class="card__img">
+      <div class="card__content">
+        <div class="card__info">
+          <h2 class="card__name">Pratik Patil</h2>
+          <span class="card__prof">New to Programming</span>
+        </div>
+        <div class="card__icons">
+          <div class="card__icon-container-t">
+            <a href="https://www.instagram.com/_pratik11___/" target="_blank"><box-icon type='logo' name='instagram' color='white'></box-icon></a>
+          </div>
+         <div class="card__icon-container-t">
+            <a href="https://twitter.com/" target="_blank"><box-icon type='logo' name='twitter' color='white'></box-icon></a>
+          </div>
+          <div class="card__icon-container-i">
+            <a href="https://github.com/" target="_blank"><box-icon name='github' type='logo' color='white'></box-icon></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="https://source.unsplash.com/random/200x200"
+        alt="" class="card__img">
+      <div class="card__content">
+        <div class="card__info">
+          <h2 class="card__name">Rathod Sachin</h2>
+          <span class="card__prof">Explorer</span>
+        </div>
+        <div class="card__icons">
+          <div class="card__icon-container-t">
+            <a href="https://www.instagram.com//" target="_blank">
+              <box-icon type='logo' name='instagram' color='white'></box-icon>
+            </a>
+          </div>
+          <div class="card__icon-container-t">
+            <a href="https://twitter.com" target="_blank">
+              <box-icon type='logo' name='twitter' color='white'></box-icon>
+            </a>
+          </div>
+          <div class="card__icon-container-i">
+            <a href="https://github.com/125sachin" target="_blank">
+              <box-icon name='github' type='logo' color='white'></box-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+<div class="card">
+    <img src="https://source.unsplash.com/random/200x200" alt="" class="card__img">
+    <div class="card__content">
+      <div class="card__info">
+        <h2 class="card__name">Michelee clear</h2>
+         <!-- Line that describes you-->
+        <span class="card__prof">A girl figuring out stuff</span>
+      </div>
+      <div class="card__icons">
+        <div class="card__icon-container-t">
+          <a href="https://twitter.com/" target="_blank"><box-icon type='logo' name='twitter' color='white'></box-icon></a>
+        </div>
+        <div class="card__icon-container-t">
+          <a href="https://www.instagram.com/" target="_blank"><box-icon name='instagram-alt' type='logo' color='white'></box-icon></a>
+        </div>
+        <div class="card__icon-container-i">
+          <a href="https://www.linkedin.com/" target="_blank"><box-icon name='linkedin' type='logo' color='white'></box-icon></a>
+        </div>
+      </div>
+   </div>
+  </div>
+
+ 
+  </div>
+</div>
+
+
+  <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+
+</body>
+</html>
+
