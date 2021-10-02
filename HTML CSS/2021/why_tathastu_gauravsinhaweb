@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport - gauravsinhaweb" content="width=device-width, initial-scale=1.0">
+    <title>Why Tathastu Page</title>
+    <style>
+        * {
+    font-family: "Mulish", sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 75px 0;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+.container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 40%;
+    height: auto;
+}
+
+.why-us-container {
+    width: 300px;
+    display: inline-block;
+    margin: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+p {
+    color: #343a40;
+    font-weight: lighter;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #343a40;
+    font-weight: 600;
+}
+    </style>
+</head>
+<body>
+    <h1>Why Students Prefer Us</h1>
+
+    <div class="container-1">
+        <div class="why-us-container">
+            <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon_price_tag.png" alt="">
+            <h2>Ridiculously Low Pricing</h2>
+            <p>We charge too low so that every student can afford it</p>
+        </div>
+        <div class="why-us-container">
+            <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon_we_care.png" alt="">
+            <h2>We Care</h2>
+            <p>We push students to learn and guide them if they loose focus</p>
+        </div>
+        <div class="why-us-container">
+            <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon_mentor_learning.png" alt="">
+            <h2>Doubts Support</h2>
+            <p>Stuck in project, our mentors are there to guide you</p>
+        </div>
+        </div>
+        <div class="container-2">
+        <div class="why-us-container">
+            <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon_curated.png" alt="">
+            <h2>Curated Content</h2>
+            <p>Only relevant skills taught, carefully curated content by experts</p>
+        </div>
+        <div class="why-us-container">
+            <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon_job.png" alt="">
+            <h2>Relevant to Career</h2>
+            <p>Skills taught by us will help you land jobs/internships in top companies</p>
+        </div>
+    </div>
+    
+</body>
+</html>
