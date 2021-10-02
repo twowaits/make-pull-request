@@ -36,7 +36,7 @@ int main()
 	return 0;
 }
 /*
-output:-
+TEST 1:-
 Enter Rows: 9
 Enter Columns: 15
 1                
@@ -48,4 +48,14 @@ Enter Columns: 15
       7    11           
        8  10             
         9
+TEST 2:-
+Enter Rows: 7
+Enter Columns: 16
+1            13
+ 2          12 14
+  3        11   15
+   4      10     16
+    5    9       
+     6  8         
+      7  
  */
