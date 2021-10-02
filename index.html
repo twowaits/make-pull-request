@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>sample S1 Part-2</title>
+<style>
+	   *{
+         padding:0;
+         margin:0;
+     }
+    
+     html,body{
+         height:100%;
+         width:100%;
+         background-color: #262626;
+     }
+     .wrapper{
+         height:100%;
+     }
+     .search-area{
+         display:flex;
+         justify-content: center;
+         height: 100%;
+     }
+     .single-search{
+        margin:auto;
+        background-color: #fafafa;
+        border-radius: 30px;
+        padding: 10px;
+        box-shadow: 0 8px 10px rgba(0,0,0,0.3);
+     }
+    .custom-input{
+        border:none;
+        outline: none;
+        width:0;
+        line-height: 40px;
+        transition: width 0.4s linear;
+    }
+    input::placeholder{
+        color: #262626;
+        font-size: 20px;
+    }
+    input{
+        color: #262626;
+        font-size: 20px;
+    }
+    .icon-area{
+        border-radius: 50%;
+        align-items: center;
+        width:40px;
+        height:40px;
+        display: flex;
+        float: right;
+        color: #262626;
+        justify-content: center; 
+        text-decoration: none;
+    } 
+    .single-search:hover > .custom-input{
+        padding: 0 10px;
+        width: 500px;
+        caret-color:#262626;
+        transition: width 0.4s linear;
+    }
+    .single-search:hover > .icon-area{
+        background: white;
+        color: #262626;
+    }
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="search-area">
+          <div class="single-search">
+            <input class="custom-input" type="text" name="" placeholder="Dedicated to Twowaits ...">
+            <a href="#" class="icon-area"><i class="fa fa-search"></i></a>
+          </div>
+      </div>
+    </div>
+</body>
+</html>
