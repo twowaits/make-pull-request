@@ -50,4 +50,5 @@ enter number of column
     5   9     
      6 8
       7
+ 
  */     
