@@ -3,7 +3,7 @@
 ![Forks](https://img.shields.io/github/forks/twowaits/make-pull-request)
 [![project chat](https://img.shields.io/badge/telegram-join--chat-brightgreen)](https://t.me/joinchat/AAAAAFbbJqzUyF18Okx94A)
 
-## make-pull-request
+## make-pull-request This repo is excluded from Hacktoberfest. Kindly use it for learning purposes only!
 It's an initiative by Twowaits Technologies to help create more awareness about Open Source and help introduce many more students to the benefits of FOSS. We will organize lots of events that will prove to be very profitable for the students and encourage them to contribute in open source, this is our humble step.
 
 Lots of students struggle in creating their first PR. They try somewhat and leave when couldn't. We created this as learning repo on how to create successful pull requests on languages like JAVA, Python, C++, HTML/CSS.
@@ -17,24 +17,6 @@ How to register, some important rules to follow, which repos to contribute and o
 [![](https://raw.githubusercontent.com/twowaits/make-pull-request/master/Images/Hacktoberfest_2021_YT_Thumbnail.png)](https://youtu.be/GuZpeobFsZw)
 
 If above link doesn't work watch [here](https://youtu.be/GuZpeobFsZw).
-
-## Hacktoberfest 2021 Special
-
-- We will be posting a problem daily at 10 AM related to languages like HTML/CSS, Python, JAVA, C++ till 30th Oct.
-
-- No need to get issues, you can directly attempt and submit by following instruction written in issue description.
-
-- We will review comments, PRs raised at 5 PM and then 10 PM to provide feedback so that you can make necessary changes.
-
-- You have time till 10 AM next day to submit, we will not accept any PR post this deadline.
-
-- Make sure you take from latest code and don't edit any other file. 
-
-If you wish to stay updated, join our Whatsapp Group [here](https://chat.whatsapp.com/H0Hn3m1sgKHKeJdoCSb74A)
-
-Open source is changing the world- one pull request at a time.
-Hactoberfest encourages participation in open source community, which grows bigger every year. 
-Complete the 2021 challenge and earn a limited edition T-shirt.
 
 ## Programming Languages 
 This Repository consists of following programming languages

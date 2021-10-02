@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Tathastu Intro page</title>
+</head>
+<body>
+    <!--Start Header-->
+    <table id="header" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#f3971b">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                    <tr>
+                        <td>
+                            <font face="arial" color="#000000" size="5">
+                                <span  aria-hidden="true"></span>
+                                <b>Tathastu</b>
+                            </font>
+                        </td>
+                        <td >
+                            &nbsp;
+                        </td>
+                        <td>
+                            <a href="#home"><font face="arial" color="#ffffff" size="4">Home</font></a>
+                        </td>
+                        <td>
+                            <a href="#about"><font face="arial" color="#ffffff" size="4">About</font></a>
+                        </td>
+                        <td>
+                            <a href="#services"><font face="arial" color="#ffffff" size="4">Services</font></a>
+                        </td>
+                        <td>
+                            <a href="#testimonial"><font face="arial" color="#ffffff" size="4">Courses</font></a>
+                        </td>
+                        <td>
+                            <a href="#achievements"><font face="arial" color="#ffffff" size="4">YoutubeChannel</font></a>
+                        </td>
+                        <td>
+                            <a href="#contact"><font face="arial" color="#ffffff" size="4">Contact</font></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+
+
+    </table>
+    <!--End Header-->
+    <!--Start Home-->
+    <table id="home" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#292929">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <h3>
+                                <font face="arial" color="#ffffff" size="6">
+                                     TATHASTU
+                                </font>
+                            </h3>
+                        
+                        <h2>
+                            <font face="arial" color="#f3971b" size="6">
+                                TO ALL YOUR DREAMS FOR YOUR CARRER.
+                           </font>
+                        </h2>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+
+
+    </table>
+    <!--End Home-->
+
+    <!--Start About-->
+    <table id="about" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#292929">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                    <!-- Heading Start-->
+                    <tr>
+                        <td height="180" align="center" valign="middle" colspan="2">
+                                <font face="arial" color="#f3971b" size="6">
+                                     About Tathastu
+                                </font>
+                                <hr width="70" color="#f3971b">
+                        
+                        </td>
+                    </tr>
+                    <!--Heading End-->
+                    <tr>
+                        <td width="40%">
+                            <img src="https://playsposter.com/wp-content/uploads/2020/01/TwoWaits-Enabling-Learning-MOD-APK-2.2.0.png" alt="TATHASTU LOGO"  width="70%">
+                        </td>
+                        <td width="60%">
+                            <font face="arial" color="#ffffff" size="4">
+                                <h2>
+                                    Pick a course relevant to your skillset and ambition.
+                                </h2>
+                                Here,We guide the students about their carrer.And we provide 
+                                a courses for free and paid.We will be interactive with the 
+                                students,because of that we will find their strengths and
+                                weakness,and the we will train them according to them.Educational technology is a term used to describe a wide array of teaching-and-learning–related software and hardware that's increasingly being used in college and university classrooms. ... Educational technology refers to technology that usually helps facilitate collaboration in an active learning environment.
+	
+                            </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+
+
+    </table>
+    <!--End About-->
+
+</body>
+</html>
