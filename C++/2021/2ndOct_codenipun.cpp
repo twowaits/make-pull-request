@@ -3,6 +3,9 @@
 // again in an increasing manner
 // And to store to number we take a string matrix whose all initial values are a space and we replace some space while we proceed according to above logic.
 
+#include<bits/stdc++.h>
+using namespace std;
+
 void printZigZag(int row, int column){
 	int n = 1;
 	string m[row][column];
@@ -12,7 +15,6 @@ void printZigZag(int row, int column){
 		}
 	}	
 	int col = 0;
-  
 	bool topToBottom = true;
 
 	while(col<column){
