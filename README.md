@@ -3,7 +3,7 @@
 ![Forks](https://img.shields.io/github/forks/twowaits/make-pull-request)
 [![project chat](https://img.shields.io/badge/telegram-join--chat-brightgreen)](https://t.me/joinchat/AAAAAFbbJqzUyF18Okx94A)
 
-## make-pull-request This repo is exxcluded from Hacktoberfest. Kindly use it for learning purposes only!
+## make-pull-request This repo is excluded from Hacktoberfest. Kindly use it for learning purposes only!
 It's an initiative by Twowaits Technologies to help create more awareness about Open Source and help introduce many more students to the benefits of FOSS. We will organize lots of events that will prove to be very profitable for the students and encourage them to contribute in open source, this is our humble step.
 
 Lots of students struggle in creating their first PR. They try somewhat and leave when couldn't. We created this as learning repo on how to create successful pull requests on languages like JAVA, Python, C++, HTML/CSS.
