@@ -1,15 +1,15 @@
-let val =prompt("Enter the value");
+function Fibonacci(num){
+	let before = 0;
+	let actual = 1;
+	let next = 1;
 
-let fb1=0;
-
-let fb2=1;
-
-var str="";
-
-for (let index = 0; index < val; index++) {
-    let res=fb1+fb2;
-    str=str+fb2+" ";
-    fb1=fb2;
-    fb2=res;
+	for(let i = 0; i < num; i++){
+		console.log(next)
+		before = actual + next;
+		actual = next
+		next = before
+	}
 }
-console.log(str)
+
+Fibonacci(100);
+
