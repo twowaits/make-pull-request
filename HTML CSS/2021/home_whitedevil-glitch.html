@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+
+    <style>
+        .container {
+            height: 100vh;
+            width: 100%;
+            background-image: url("https://i.imgur.com/BC8rTav.png");
+            background-position: center;
+            background-size: cover;
+            padding-left: 5%;
+            padding-right: 5%;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .navbar {
+            width: 100%;
+            height: 15vh;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            width: 160px;
+            cursor: pointer;
+        }
+        .cart {
+            width: 40px;
+            cursor: pointer;
+        }
+        nav {
+            flex: 1;
+            padding-left: 60px;
+        }
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .content h1{
+            font-size: 60px;
+            font-weight: 100;
+            margin-top: 24px;
+            margin-bottom: 15px;
+            color: #232d60;
+        }
+        .content p{
+            font-size: 20px;
+            color: #6a7199;
+        }
+        .content {
+            margin-left: 10%;
+            margin-top: 10%;
+        }
+        .content .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #87adfe, #ff77cd);
+            border-radius: 6px;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            text-decoration: none;
+            color: #fff;
+            box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+        }
+        .arrow-icons {
+            margin-top: 40px;
+            display: flex;
+        }
+        .arrow-icons img {
+            width: 40px;
+            margin-right: 25px;
+        }
+        .feature-img {
+            height: 90%;
+            position: absolute;
+            bottom: 0;
+            right: 160px;
+        }
+        .social-links {
+             transform: rotate(-90deg);
+             position: absolute;
+             left: -80px;
+             bottom: 180px;
+
+        }
+        .social-links a {
+            text-decoration: none;
+            color: #6a7199;
+            padding-right: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="https://i.imgur.com/4VXype0.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Collections</a></li>
+                    <li><a href="">Categories</a></li>
+                </ul>
+            </nav>
+            <img src="https://imgur.com/G3jfWUx.png" class="cart">
+        </div>
+        <div class="content">
+            <a href="" class="btn">2021 collections</a>
+            <h1>You should always<br> feel pretty</h1>
+            <p>Clothes that are sure to heat up your winter</p>
+
+            <div class="arrow-icons">
+                <img src="https://imgur.com/Yh7COm8.png" alt="">
+                <img src="https://imgur.com/hx0j20A.png" alt="">
+            </div>
+        </div>
+
+        <img src="https://imgur.com/7Z56NQt.png" class="feature-img">
+
+        <div class="social-links">
+            <a href="">FaceBook</a>
+            <a href="">Instagram</a>
+            <a href="">Twitter</a>
+        </div>
+
+
+    </div>    
+</body>
+</html>
