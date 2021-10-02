@@ -34,15 +34,36 @@ public class Hack2 {
                 }
             }
         }
+        int n = 0;
+        int p = 0;
         for (int j = 0; j < arr.length; j++) {
             for (int k = 0; k < arr[j].length; k++) {
                 if(arr[j][k]!=0) {
                     System.out.print(arr[j][k]);
+                    if(j==0||j== arr.length-1){
+                        n++;
+                        while(p<n){
+                            if(arr[j][k]>100&&arr[j][k]<=1000){
+                                System.out.print("  ");
+                                p++;
+                            }else if(arr[j][k]>1000&&arr[j][k]<=10000){
+                                System.out.print("   ");
+                                p++;
+                            } else if(arr[j][k]>10000&&arr[j][k]<=71000){
+                                System.out.print("    ");
+                                p++;
+                            }
+                            else {
+                                System.out.print(" ");
+                                p++;
+                            }
+                        }
+                    }
                 }else{
                     System.out.print(" ");
                 }
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 }
