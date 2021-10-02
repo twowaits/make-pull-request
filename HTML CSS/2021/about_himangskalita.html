@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <style>
+        .button {
+            text-decoration: none;
+            padding: 1rem;
+            background-color: blueviolet;
+            color: white;
+            border-radius: 4px;
+            font-size: 2rem;
+        }
+
+        #main {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        #profile-pic {
+            height: 40vw;
+            width: 40vw;
+            border-radius: 100%;
+            margin: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(49, 226, 43);
+
+        }
+
+        #about-content {
+            width: 70vw;
+            height: auto;
+            margin: 1rem;
+        }
+
+        #heading-div {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        @media (min-width: 768px) {
+            #container {
+                flex-direction: row;
+            }
+
+            #profile-pic {
+                height: 50vh;
+                width: 50vh;
+
+            }
+
+            #about-content {
+                width: 50%;
+
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="heading-div">
+            <h1 style="font-size: 4rem; margin: 0;text-align: center;">About me</h1>
+            <h2 style="color: rgb(49, 226, 43);  margin: 0; font-size: 2rem; text-align: center;">
+                -Know me better-</h2>
+        </div>
+        <div id="container">
+
+            <div id="profile-pic">
+                <img style=" border-radius: 50%;" src="https://avatars.githubusercontent.com/u/51876341?v=4" alt="here will your image">
+            </div>
+            <div id="about-content">
+
+                <div>
+                    <h2 style="font-size: 3rem;">I'm Himangshu Kalita and I'm a front-end <span
+                            style="color: rgb(49, 226, 43);">Web-Developer</span></h2>
+                    <p style="font-size: 2rem;">Hi, I am Himangshu Kalita, studying in B.Tech Engineering in Assam Don Bosco University. I'm a skilled developer and I'm expertise on many fields like: HTML, CSS, C, C++, bootstrap etc.</p>
+                    <a href="#" class="button">Open CV</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
