@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FONT ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 120vh;
+    }
+    .footer_para {
+        font-size: 0.8rem;
+        color: #aaa;
+        font-weight: 600;
+    }
+
+    .down_arrow {
+        color: #666;
+        text-align: center;
+    }
+
+
+    .stats_container {
+        display: flex;
+    }
+    .stats_card {
+        padding: 0.6rem 3.5rem;
+        border-right: 2px solid #eee;
+    }
+</style>
+
+
+
+<body>
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Cases</h5>
+            <div class="dropdown-divider"></div><br>
+            
+            <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button">Total</button>
+                <button class="btn btn-outline-primary dropdown-toggle" type="button">India</button>
+            </div><br><br>
+
+            <div class="stats_container">
+                <div class="stats_card">
+                    <p class="heading">Cases</p>
+                    <h4 class="number">6.55M</h4>
+                    <p class="sub">+79,476</p>
+                </div>
+                <div class="stats_card">
+                    <p class="heading">Recovered</p>
+                    <h4 class="number">5.51M</h4>
+                </div>
+                <div class="stats_card">
+                    <p class="heading">Deaths</p>
+                    <h4 class="number">102K</h4>
+                    <p class="sub">+1,069</p>
+                </div>
+            </div><br><br>
+
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Location</th>
+                    <th scope="col">Cases</th>
+                    <th scope="col">Recovered</th>
+                    <th scope="col">Deaths</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">Maharashtra</td>
+                        <td>1.42M</td>
+                        <td>1.12M</td>
+                        <td>37,480</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Andhra Pradesh</td>
+                        <td>707K</td>
+                        <td>644K</td>
+                        <td>5,900</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Karnataka</td>
+                        <td>621K</td>
+                        <td>500K</td>
+                        <td>9,119</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Tamil Nadu</td>
+                        <td>609K</td>
+                        <td>553K</td>
+                        <td>9,653</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Uttar Pradesh</td>
+                        <td>407K</td>
+                        <td>352K</td>
+                        <td>5,917</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="dropdown-divider"></div><br>
+
+            <p class="footer_para">'+' shows new cases reported yesterday . Updated less than 50 mins ago . Source: Wikipedia . About this data</p>
+            <div class="dropdown-divider"></div><br>
+            
+            <div class="down_arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+
+
+        </div>
+    </div>
+    
+</body>
+
+</html>
