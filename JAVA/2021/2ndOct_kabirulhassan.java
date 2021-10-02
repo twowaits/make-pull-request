@@ -2,11 +2,9 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 class Pattern{
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    static void printPattern(int row,int col)
+    {
         int i,j=0,cf=1; //cf is the flag variable
-        int row = sc.nextInt();
-        int col = sc.nextInt();
         String pattern[][] = new String[row][col];
         for(String[] r: pattern)
             Arrays.fill(r, "  ");
@@ -23,6 +21,12 @@ class Pattern{
                 System.out.print(pattern[i][j]);
             System.out.println();
         }
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int row = sc.nextInt();
+        int col = sc.nextInt();
+        printPattern(row, col);
         sc.close();
     }
 }
