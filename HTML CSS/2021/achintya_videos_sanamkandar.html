@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achintya_videos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap&family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        html{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+        }
+        #icons,
+        .heading{
+            padding: 0 10px;
+            font-size: 2.2rem;
+            color: rgb(94, 94, 94);
+        }
+        .heading{
+            color: #000;
+            font-family: 'Rubik', sans-serif;
+        }
+        .wrapper{
+            border: solid 1px gainsboro;
+            display: flex;
+            padding: 10px;
+        }
+        iframe{
+            border-radius: 6px;
+        }
+        .wrapperDetails{
+            width: 100%;
+            margin: 0 10px;
+            padding: 0 10px;
+            transform: translateY(-18px);
+        }
+        .videoTitle{
+            color: rgb(0, 61, 192);
+            font: 1.4rem/0 'Roboto', sans-serif;
+           
+        }
+        .videoTitle a{
+            text-decoration: none;
+        }
+        .videoChannel{
+            padding: 5px;
+        }
+        .wrapperDetails p{
+            margin: 0;
+            font-size: 16px;
+            line-height: 20px;
+            color: rgb(124, 124, 124);
+        }
+        .wrapperDetails p span{
+            color: #000;
+        }
+       
+        .footContainer{
+            margin-top: 10px;
+        }
+        .btnView{
+            position: relative;
+            top: 32px;
+            left: 28%;
+           
+            font-family: "Roboto";
+            font-size: 18px;
+            padding: 12px 10px;
+            width: 40%;
+            border: rgb(196, 196, 196) 1px solid;
+            background-color: #fff;
+            border-radius: 30px;
+            color: rgb(0, 61, 192);
+            
+        }
+        .btnView span{
+            float: left;
+            font-size: 25px;
+            width: 10%;
+        }
+        .feedback{
+            float: right;
+            color:  rgb(136, 136, 136);
+            font-family: "Roboto";
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span id="icons" class="material-icons">smart_display</span>
+        <h2 class="heading">Videos</h2>
+        <span id="icons" class="material-icons">more_vert</span>
+    </div>
+
+    <div class="wrapper">
+        <iframe width="200" height="110" src="https://www.youtube.com/embed/dZ_KyIPCL1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="wrapperDetails">
+            <h4 class="videoTitle"><a href="https://www.youtube.com/watch?v=dZ_KyIPCL1w">How to Get An Internship by Achintya Gaumat</a></h4>
+            <div class="videoChannel">
+                <p><span>YouTube</span> . Twowaits <br> 3 week ago </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrapper">
+        <iframe width="200" height="110" src="https://www.youtube.com/embed/1t3-06Bc_TE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="wrapperDetails">
+            <h4 class="videoTitle"><a href="https://www.youtube.com/embed/1t3-06Bc_TE">How to Get An Internship by Achintya Gaumat | GL Bajaj</a></h4>
+            <div class="videoChannel">
+                <p><span>YouTube</span> . Twowaits <br> May 15, 2021 </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrapper">
+        <iframe width="200" height="110" src="https://www.youtube.com/embed/rtQIdx5vwNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="wrapperDetails">
+            <h4 class="videoTitle"><a href="https://www.youtube.com/embed/rtQIdx5vwNE">Make a Pro LinkedIn Profile with Achintya Gaumat | Get your Linkedin Profile Reviewed</a></h4>
+            <div class="videoChannel">
+                <p><span>YouTube</span> . Twowaits <br> Jun 27, 2021 </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrapper">
+        <iframe width="200" height="110" src="https://www.youtube.com/embed/PEQ9iBy_4gU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="wrapperDetails">
+            <h4 class="videoTitle"><a href="https://www.youtube.com/embed/PEQ9iBy_4gU">Task 4 Discussion with Achintya Gaumat | Tathastu Scholar Program</a></h4>
+            <div class="videoChannel">
+                <p><span>YouTube</span> . Twowaits <br> Jul 13, 2021 </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footContainer">
+        <span class="feedback">Feedback</span>
+        <button class="btnView"> 
+            <span class="material-icons">east</span>
+            View all</button>
+        <hr>
+    </div>
+</body>
+</html>
