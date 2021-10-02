@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+
+
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+    <style>
+        * {
+            font-family: 'Arial', sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main {
+            background: white;
+            padding: 1rem 8rem;
+        }
+
+        .heading-div {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 10px 1px;
+            color: rgb(85, 84, 84);
+            border-bottom: 1px solid rgba(204, 195, 195, 0.63);
+            padding: 10px 0px;
+        }
+
+        .divs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1px 10px;
+        }
+
+        .heading-div .divs:nth-child(1) i {
+            font-size: 0.5rem;
+            height: 100%;
+            width: 100%;
+            padding: 6px;
+            border-radius: 3px;
+            border: 2px solid rgb(85, 84, 84);
+
+        }
+
+        .divs h1 {
+            margin-right: 15px;
+            color: rgb(46, 45, 45)
+        }
+
+
+        .video-div {
+            max-width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px 0px;
+            border-bottom: 1px solid rgba(204, 195, 195, 0.63);
+
+        }
+
+
+        .video-container {
+            margin-right: 40px;
+        }
+
+        .video-container iframe {
+            border-radius: 7px;
+            width: 100%;
+            height: 100%;
+            border:none;
+        }
+
+
+
+
+        .text-title {
+            color: #00278e;
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .text-description {
+            color: rgb(82, 81, 81);
+            font-size: 1.1rem;
+
+        }
+
+        .text-description p:nth-child(1) {
+            margin-bottom: 10px;
+        }
+
+        .text-description p span {
+            color: rgb(0, 0, 0);
+        }
+        .view{
+            margin: 30px 0px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+
+        .view-all {
+            padding: 1px 15px;
+            width: 350px;
+            height: 45px;
+            border:1px solid rgba(204, 195, 195, 0.63);
+            border-radius: 30px;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            color:#00278e;
+            font-size: 1.4rem;
+            position: absolute;
+            top: 150%;
+            background-color: white;
+        
+        }
+        .feedback{
+            margin-top: 30px;
+            padding-bottom: 40px;
+            display: flex;
+            justify-content:flex-end;
+            align-items: center;
+            color: rgb(46, 45, 45);
+            border-bottom: 1px solid rgba(204, 195, 195, 0.63);
+            position: relative;
+
+        }
+    </style>
+
+
+
+
+    <div class="main">
+        <div class="heading-div">
+            <div class="divs"><i class="fas fa-play"></i></div>
+            <div class="divs">
+                <h1>Videos</h1>
+            </div>
+            <div class="divs"><i class="fas fa-ellipsis-v"></i></div>
+
+
+        </div>
+
+        <div class="video-div">
+            <div class="video-container">
+                    <iframe width="390" height="315"
+            src="https://www.youtube.com/embed/watch?v=jI04zypQB0E">
+            </iframe>
+            </div>
+            <div class="text-container">
+                <h3 class="text-title">
+                    How to get an Intership by Achintya Gaumat
+                </h3>
+                <div class="text-description">
+                    <p><span>Youtube</span> • Twowaits</p>
+                    <p class="date">3 weeks ago</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="video-div">
+            <div class="video-container">
+
+                    <iframe width="390" height="315"
+            src="https://www.youtube.com/embed/watch?v=jI04zypQB0E">
+            </iframe>
+            </div>
+            <div class="text-container">
+                <h3 class="text-title">
+                    How to get an intership by Achintya Gaumat
+                </h3>
+                <div class="text-description">
+                    <p><span>Youtube</span> • Twowaits</p>
+                    <p class="date">May 15, 2021</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="video-div">
+            <div class="video-container">
+
+                    <iframe width="390" height="315"
+            src="https://www.youtube.com/embed/watch?v=rtQIdx5vwNE">
+            </iframe>
+            </div>
+            <div class="text-container">
+                <h3 class="text-title">
+                    Make a Pro Linkedin Profile with Achintya Gaumat | Get your ...
+                </h3>
+                <div class="text-description">
+                    <p><span>Youtube</span> • Twowaits</p>
+                    <p class="date">Jun 27, 2021</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="video-div">
+            <div class="video-container">
+                    <iframe width="390" height="315"
+            src="https://www.youtube.com/embed/watch?v=CGf2lACTJjg">
+            </iframe>
+            </div>
+            <div class="text-container">
+                <h3 class="text-title">
+                    Task 2 Discussion with Achintya Gaumat |Tathastu Scholar ...
+                </h3>
+                <div class="text-description">
+                    <p><span>Youtube</span> • Twowaits</p>
+                    <p class="date">Jun 21, 2021</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="feedback">
+            <p>Feedback</p>
+        </div>
+        <div class="view">
+            <div class="view-all">
+                <i class="fas fa-arrow-right"></i> 
+                 <p>View All</p>  
+                 <p></p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
