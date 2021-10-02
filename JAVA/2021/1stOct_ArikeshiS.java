@@ -1,28 +1,22 @@
-import java.util.*;
-class fibo
+import java.util.Scanner;
+
+public class FibonacciSeries
 {
-    public static void main(String args[])
+    public static void main(String[] args)
     {
+        
+        int n;
         Scanner sc = new Scanner(System.in);
-        int n, sum, a = 1, b = 1, flag;
+        System.out.print("Enter number of series=");
         n = sc.nextInt();
-        System.out.print(a+" "+b);
-        for (int i = 2; i < n; i++) {
-            flag = 0;
-            sum = a+b;
-            if (sum%5==0) System.out.print("0 ");
-            else {
-                for (int j = 2; j < sum/2; j++) {
-                    if (sum % j == 0) {
-                        System.out.print(sum+" ");
-                        flag = 1;
-                        break;
-                    }
-                }
-                if (flag == 0) System.out.print("0 ");
-            }
+        int a = 0,
+        b = 1, c;
+        for (int i = 1; i <= n; i++)
+        {
+            System.out.println(a);
+            c = a + b;
             a = b;
-            b = sum;
+            b = c;
         }
     }
 }
