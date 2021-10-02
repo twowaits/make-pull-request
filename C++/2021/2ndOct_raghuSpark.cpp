@@ -36,3 +36,5 @@ int main()
     }
     return 0;
 }
+// TIME COMPLEXITY: O(rows * columns)
+// SPACE COMPLEXITY: O(1)
