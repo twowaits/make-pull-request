@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Replica</title>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/6cdea9e024.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            text-align: right;
+        }
+
+        .menu-items {
+            font-size: 13px;
+            color: rgba(0, 0, 0, 0.87);
+            text-decoration: none;
+            position: relative;
+            top: -16px;
+            margin-right: 16px;
+
+
+        }
+
+        .menu-items:hover {
+            text-decoration: underline;
+        }
+
+        #dropdown-menu {
+            top: -10px;
+            position: relative;
+            margin-right: 16px;
+            margin-top: 20px;
+
+        }
+
+        #profile-pic {
+            width: 48px;
+            height: 48px;
+        }
+
+        section {
+            text-align: center;
+            transform: translateY(150px);
+        }
+
+        #search-box {
+            width: 100%;
+            color: #222;
+            border: 1px solid #dfe1e5;
+            font-size: 13px;
+            padding: 14px;
+            border-radius: 24px;
+            outline: none;
+            margin-top: 10px;
+        }
+
+        #input-wrapper {
+            position: relative;
+            width: 582px;
+            display: inline-block;
+        }
+
+        #input-wrapper > img {
+            position: absolute;
+            top: 20px;
+            right: 0;
+        }
+
+        #search-box:hover {
+            box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.20);
+            border-color: rgba(223, 225, 229, 0);
+        }
+
+        #search-box:focus {
+            box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.20);
+            border-color: rgba(223, 225, 229, 0);
+        }
+    </style>
+
+</head>
+<body>
+<header>
+    <nav>
+        <a class="menu-items" href="#">Gmail</a>
+        <a class="menu-items" href="#">Images</a>
+        <i class="material-icons" id="dropdown-menu">apps</i>
+    </nav>
+</header>
+<section>
+    <img alt="Google" height="120" src="" width="300">
+    <br>
+    <div id="input-wrapper">
+        <input id="search-box" type="text">
+        <img alt="google mic" height="25px" src=""
+             width="20px">
+    </div>
+</section>
+</body>
+</html>
