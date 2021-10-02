@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+ <nav >
+     <div id="logo">Brand</div>
+     <label class="menu" onclick="expand()" for="menu"><i class="fa fa-bars" style="font-size:36px; cursor: pointer;"></i>
+     </label>
+     <ul id="navbarul" style="left: -950px;">
+         <li ><a  class="active" href="#">HOME</a></li>         
+         <li><a href="#">ABOUT</a></li>         
+         <li><a href="#">SERVICES</a></li>         
+         <li><a href="#">GALLERY</a></li>         
+         <li><a href="#">LOGIN</a></li>         
+
+     </ul>
+ </nav>   
+ <div class="slidere">
+     <div class="figureimg">
+        <img src="image/1.jpg" alt="" class="sl-images">
+        <img src="image/2.jpg" alt="" class="sl-images">
+        <img src="image/3.jpg" alt="" class="sl-images">
+        <img src="image/4.jpg" alt="" class="sl-images">   
+     </div>
+      </div>
+</body>
+<footer class="footer">All Rights reserved under GNU @ 2021</footer>
+
+<script type="text/javascript">
+function expand() {
+    var el =document.getElementById('navbarul');
+    var elvl=el.style.left
+    if (elvl=='-950px') {
+        el.setAttribute('style','left:0px')
+    }else{
+        el.setAttribute('style','left:-950px')
+    }
+};
+</script>
+</html>
