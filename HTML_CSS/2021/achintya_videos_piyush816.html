@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>achintya videos</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 22%;
+        padding: 1rem 2rem;
+      }
+
+      .container {
+        padding: 1rem 5rem;
+      }
+
+      .card {
+        border-top: 1px solid lightgray;
+        padding: 1rem 0;
+        margin: 0 2rem;
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        grid-column-gap: 1rem;
+      }
+      .card .left {
+        width: 10rem;
+        position: relative;
+      }
+
+      .card-img {
+        border-radius: 5px;
+        user-select: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .play-btn {
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .card-duration {
+        padding: 0.2rem 0.6rem;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        border-radius: 50px;
+        position: absolute;
+        bottom: 10px;
+        font-size: 14px;
+        left: 5px;
+      }
+
+      .dull {
+        color: #7f8c8d;
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      a {
+        text-decoration: none;
+        color: #1a0dab;
+      }
+
+      .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .btn-view-all {
+        padding: 0.8rem 0.6rem;
+        background-color: #fff;
+        color: #1a0dab;
+        border: 1px solid lightgray;
+        border-radius: 50px;
+        width: 22rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin: 2rem auto;
+        font-size: 17px;
+        top: 0;
+        left: 0%;
+        transform: translate(0%,-50%);
+        cursor: pointer;
+       
+      }
+      .forward-btn {
+        position: absolute;
+        left: 1.5rem;
+      }
+
+      .bottom{
+        height: 1px;
+        background-color: lightgray;
+        margin: 2rem auto;
+      }
+
+
+      .material-icons.md-36 { font-size: 36px; 
+    opacity: 0.9;}
+      
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <span class="material-icons"> slideshow </span>
+        <h2 class="title">Videos</h2>
+        <span class="material-icons"> more_vert </span>
+      </div>
+      <main>
+        <div class="card">
+          <div class="left">
+            <img
+              class="card-img"
+              src="https://i.ytimg.com/vi/dZ_KyIPCL1w/mqdefault.jpg?sqp=-oaymwEECHwQRg&rs=AMzJL3kFbMPrC3PZpMG10NQpkpW9p-OzBA"
+              alt="card-img"
+            />
+
+            <span class="material-icons md-36 play-btn"> play_circle_filled </span>
+            <span class="card-duration">21.50</span>
+          </div>
+
+          <div class="right">
+            <h3 style="font-size: 20px">
+              <a href="#">How to Get An Intership by Achintya Gaumat</a>
+            </h3>
+            <div class="info">
+              <span style="font-size: 18px; font-weight: 500">Youtube</span>.
+              <span class="dull">Twowaits</span>
+              <div class="dull" style="margin-top: 0.5rem">3 weeks ago</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="left">
+            <img
+              class="card-img"
+              src="https://i.ytimg.com/vi/AEvvUmvp56M/mqdefault.jpg?sqp=-oaymwEECHwQRg&rs=AMzJL3n1uh0OfdQ38tgJSe64TK1F6_-3sw"
+              alt="card-img"
+            />
+
+            <span class="material-icons md-36 play-btn"> play_circle_filled </span>
+            <span class="card-duration">20.25</span>
+          </div>
+
+          <div class="right">
+            <h3 style="font-size: 20px">
+              <a href="#">Task 1 Discussion with Achintya Gaumat | Tathastu Scholar ...</a>
+            </h3>
+            <div class="info">
+              <span style="font-size: 18px; font-weight: 500">Youtube</span>.
+              <span class="dull">Twowaits</span>
+              <div class="dull" style="margin-top: 0.5rem">May 15,2021</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="left">
+            <img
+              class="card-img"
+              src="https://i.ytimg.com/vi/yVBMd7O3YjA/mqdefault.jpg?sqp=-oaymwEECHwQRg&rs=AMzJL3nf8w675Y6u_ty2Nve6GK_kJvRXBQ"
+              alt="card-img"
+            />
+
+            <span class="material-icons md-36 play-btn"> play_circle_filled </span>
+            <span class="card-duration">21.50</span>
+          </div>
+
+          <div class="right">
+            <h3 style="font-size: 20px">
+              <a href="#">Q&A Session for Hactoberfest 2021 with Achintya Gaumat</a>
+            </h3>
+            <div class="info">
+              <span style="font-size: 18px; font-weight: 500">Youtube</span>.
+              <span class="dull">Twowaits</span>
+              <div class="dull" style="margin-top: 0.5rem">Jun 27,2021</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="left">
+            <img
+              class="card-img"
+              src="https://i.ytimg.com/vi/dZ_KyIPCL1w/mqdefault.jpg?sqp=-oaymwEECHwQRg&rs=AMzJL3kFbMPrC3PZpMG10NQpkpW9p-OzBA"
+              alt="card-img"
+            />
+
+            <span class="material-icons md-36 play-btn"> play_circle_filled </span>
+            <span class="card-duration">21.50</span>
+          </div>
+
+          <div class="right">
+            <h3 style="font-size: 20px">
+              <a href="#">How to Get An Intership by Achintya Gaumat</a>
+            </h3>
+            <div class="info">
+              <span style="font-size: 18px; font-weight: 500">Youtube</span>.
+              <span class="dull">Twowaits</span>
+              <div class="dull" style="margin-top: 0.5rem">Jul 13,2021</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dull" style="right:80px; bottom: -20px; position: absolute;">
+            Feedback
+        </div>
+
+       <div class="bottom">
+            <div class="btn-view-all">
+                <span class="material-icons forward-btn"> arrow_forward </span>
+                <span>View all</span>
+            </div>
+       </div>
+      
+  
+    </div>
+  </body>
+</html>
