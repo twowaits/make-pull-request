@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tathastu by Twowaits</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            height: 100vh;
+            background-color: #154854;
+        }
+
+        .menu-cont {
+            display: flex;
+            justify-content: end;
+        }
+
+        .menu-cont nav {
+            width: 50%;
+            height: 70px;
+            display: flex;
+            background-color: #222831;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            color: #e5942a;
+            border-radius: 10px;
+        }
+
+        .menu-cont nav li {
+            list-style: none;
+            padding: 25px 29px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* center conatiner */
+        .center-cont {
+            width: 80%;
+            background-color: #154854;
+            display: flex;
+            /* justify-content: center;
+            align-items: center; */
+            margin: 50px auto;
+
+        }
+
+        .left-panel {
+            /* height: 512px; */
+            width: 700px;
+            background-color: #154854;
+        }
+
+        .left-panel-p1 {
+            font-size: 25px;
+            color: #eaeeef;
+            font-family: 'Mulish', sans-serif;
+            font-size: 42px;
+            margin-left: 30px;
+        }
+
+        .left-panel-p2 {
+            font-size: 5px;
+            color: #eaeeef;
+            margin-top: 10px;
+            opacity: 0.8;
+            font-size: 22px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            margin-left: 32px;
+        }
+
+        .left-panel-p3 {
+            margin-top: 10px;
+            opacity: 0.4;
+            font-size: 18px;
+            color: white;
+            margin-left: 32px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bolder;
+        }
+
+        .left-panel-h3 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            margin-left: 32px;
+            margin-top: 35px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .left-panel img {
+            text-align: center;
+            width: 430px;
+        }
+
+        /* right panle */
+        .right-panel {
+            background-color: #154854;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .right-panel img {
+            height: 300px;
+            width: 300px;
+        }
+
+        /* center-long-div */
+        .center-long-div {
+            width: 70%;
+            background-color: #222831;
+            display: flex;
+            margin: 82px auto;
+            justify-content: space-around;
+            border-radius: 20px;
+        }
+
+        .first-div {
+            height: 145px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .first-div .first-h2 {
+            color: #f8f9fa;
+            font-size: 30px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .first-div .first-h6 {
+            font-size: 18px;
+            color: #f8f9fa;
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        .middle-div {
+            height: 145px;
+            width: 200px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .middle-div .middle-h2 {
+            color: #f8f9fa;
+            font-size: 30px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .middle-div .middle-h6 {
+            color: #f8f9fa;
+            font-size: 18px;
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        .third-div {
+            height: 145px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .third-div .third-h2 {
+            font-size: 30px;
+            color: #f8f9fa;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .third-div .third-h6 {
+            font-size: 18px;
+            color: #f8f9fa;
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        .text-under-picture {
+            font-size: 29px;
+            font-family: 'Mulish', sans-serif;
+            font-weight: bold;
+            color: #a1b5ba;
+        }
+
+        .Two-waits-text {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="menu-cont">
+            <nav>
+                <li>Courses</li>
+                <li>Youtube Channel</li>
+                <li>Medium Blogs</li>
+                <li>Login</li>
+            </nav>
+        </div>
+
+        <div class="center-cont">
+
+            <div class="left-panel">
+                <div class="logo-img">
+                    <img src="http://tathastu.twowaits.in/images/tathastu_logo.png" alt="">
+                </div>
+                <p class="left-panel-p1">To all your dreams for your career.</p>
+                <p class="left-panel-p2">Pick a course relevant to your skillset and ambition.</p>
+                <p class="left-panel-p3">CP, DSA, Python all courses you will ever need.</p>
+                <h3 class="left-panel-h3">Those too at ridiculously low prices!</h3>
+            </div>
+
+            <div class="right-panel">
+                <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon.png" alt="">
+                <p class="text-under-picture"><span><em>enabled by</em></span> <span
+                        class="Two-waits-text"><em>Twowaits</em></span></p>
+            </div>
+
+        </div>
+
+
+        <div class="center-long-div">
+            <div class="first-div">
+                <h2 class="first-h2">500+</h2>
+                <h6 class="first-h6">Students Empowered</h6>
+            </div>
+            <div class="middle-div">
+                <h2 class="middle-h2">15+</h2>
+                <h6 class="middle-h6">Unique Courses</h6>
+            </div>
+            <div class="third-div">
+                <h2 class="third-h2">50+</h2>
+                <h6 class="third-h6">Colleges Impacted</h6>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
