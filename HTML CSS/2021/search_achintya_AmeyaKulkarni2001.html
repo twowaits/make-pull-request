@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="icon" href="https://maxcdn.icons8.com/Share/icon/Logos/google_logo1600.png">
+</head>
+<style>
+    
+    @font-face {
+        font-family: 'Product Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+    }
+
+    body {
+        margin: 0;
+        font-family: arial, sans-serif;
+        font-size: 0.9em;   /* em means relative to the font size of the element. This says 0.9 times the size of the current font. */
+    }
+
+    a {
+        margin: 5px 5px;
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    nav {
+        display: flex;  /* By default, the flex-direction is set to row. */
+        justify-content: space-between; /* Used to align the flex items. */
+    }
+
+    #menu-left {
+        display: flex;
+        justify-content: flex-start;    /* flex-start is the default, aligns items at the beginning of the container. */
+        padding-left: 20px; /* There is a default padding of about 40px from the user agent stylesheet. */
+        align-items: center;
+    }
+
+    #menu-right {
+        display: flex;
+        justify-content: flex-end;  /* Aligns the flex items at the end of the container. */
+        margin-right: 20px;
+        align-items: center;
+    }
+
+
+    ul > a, ul > img {
+        padding: 0 8px;
+    }
+    #my-profile{
+        height: 2rem;
+        border-radius: 50%;
+    }
+    #my-apps{
+        height: 2rem;
+    }
+
+    #my-apps:hover, #my-profile:hover {
+        border-radius: 200px;
+        box-shadow: 0 0 10px gainsboro;
+    }
+
+    section {
+        display: flex;
+        align-items: center;    /* Note that because the flex direction is column we want to use align items instead of justify content. */
+        flex-direction: column;
+        margin-top: 5vh;   /* % is relative to the parent value. So if outer div is width: 200px and inner div has width 50% inner will be 100px. vh is relative to browser window (viewport) */
+    }
+
+    h1 {
+        font-family: Product Sans;
+        font-size: 5.5em;
+    }
+
+    #my-input-container {
+        display: flex;
+        flex-direction: row;    /* The default but specifying anyway. */
+        justify-content: space-between;    /* Make it so everything is centered vertically.*/
+        width: 600px;
+        height: 38px;
+        border: 1px solid gainsboro;
+        border-radius: 20px;
+    }
+
+    #my-input-container:hover {
+        box-shadow: 0 0 10px gainsboro;
+    }
+
+    #my-input-container > input {
+        flex-grow: 8;   /* Make the input wider than the images. */
+        border: none;
+        outline: none;  /* When clicking on the input it gets a black highlight. */
+    }
+    #glass{
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    #mic{
+        margin-top: 0.5rem;
+        margin-right: 0.5rem;
+        width: 1.2rem;
+        height: 1.5rem;
+    }
+
+    img:hover {
+        cursor: pointer;
+    }
+
+    #my-buttons-container {
+        display: flex;
+        flex-direction: row;    /* The default but specifying anyway. */
+        padding-top: 53px;
+    }
+
+    button {
+        background-color: #f8f9fa;
+        border-radius: 5px;
+        border: none;
+        min-width: 54px;
+        height: 36px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    button:hover {
+        cursor: pointer;
+        box-shadow: 0 0 10px gainsboro;
+        
+    }
+
+    footer {
+        background-color: #F2F2F2;
+        position: fixed;    /* Element is positioned relative to the viewport, in the same place even if page is scrolled. You then position with top, right, bottom, and left properties.*/
+        width: 100vw;
+        bottom: 0;  /* Affects the vertical position of the element. */
+    }
+
+    #footer-left {
+        display: flex;
+        justify-content: flex-start;    /* flex-start is the default, aligns items at the beginning of the container. */
+        padding-left: 20px; /* There is a default padding of about 40px from the user agent stylesheet. */
+        align-items: center;
+    }
+
+    #footer-right {
+        display: flex;
+        justify-content: flex-end;  /* Aligns the flex items at the end of the container. */
+        margin-right: 20px;
+        align-items: center;
+    }
+
+    /* Start the responsiveness of the screen. */
+
+    @media (max-width: 630px) {
+
+        #footer-nav {
+            flex-direction: column;
+        }
+
+        #footer-left {
+            justify-content: center;
+        }
+
+        #footer-right {
+            justify-content: center;
+        }
+
+        #my-input-container {
+            width: 95vw;
+        }
+
+
+    }
+
+    @media (max-height: 522px) {
+
+        body {
+            overflow-x: hidden;
+        }
+        section {
+            margin-bottom: 20px;
+
+        }
+        footer {
+            position: relative;
+        }
+    }
+
+    @media (max-height: 570px) and (max-width: 630px) {
+
+        body {
+            overflow-x: hidden;
+        }
+        section {
+            margin-bottom: 13px;
+
+        }
+        footer {
+            position: relative;
+        }
+        
+    }
+
+</style>
+
+<body>
+
+    <header>
+        <nav>
+            <ul id="menu-left">
+                <a href="#">About</a>
+                <a href="#">Store</a>
+            </ul>
+            <ul id="menu-right">
+                <a href="#">Gmail</a>
+                <a href="#">Images</a>
+                <img id="my-apps" src="https://img.icons8.com/ios-glyphs/50/000000/circled-menu.png" alt="google-apps">
+                <img id="my-profile" src="https://media-exp1.licdn.com/dms/image/C4D03AQFutIu-GsiNew/profile-displayphoto-shrink_400_400/0/1625385226619?e=1638403200&v=beta&t=Muv5ogufxnbUoS8XzhGjb-5npNpLLOmpJLuvaAUy1tM" alt="me">
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>
+            <span style="color: #4285F4;">G</span><span style="color: #DB4437;">o</span><span style="color: #F4B400;">o</span><span style="color: #4285F4">g</span><span style="color: #0F9D58;">l</span><span style="color: #DB4437;">e</span>
+        </h1>
+        <div id="my-input-container">
+            <img id="glass" src="https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_960_720.png" alt="glass">
+            <input type="text">
+            <img id="mic"  src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F-lINg3E20_4Y%2FVebwdAy_MaI%2FAAAAAAAAFJU%2F8Jg2H-3-_cc%2Fs1600%2FMicrophone.png&f=1&nofb=1" alt="mic">
+        </div>
+        <div id="my-buttons-container">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+    </section>
+
+    <footer>
+        <nav id="footer-nav">
+            <ul id="footer-left">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+            </ul>
+            <ul id="footer-right">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </ul>
+        </nav>
+    </footer>
+    
+</body>
+</html>
