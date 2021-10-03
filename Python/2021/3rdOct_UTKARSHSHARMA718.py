@@ -1,4 +1,4 @@
-#Taking input from the user
+#Taking input from the user like :- 7 16
 num,list1=list(map(int,input().split()))
 
 #Printing the pattern
