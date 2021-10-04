@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+      }
+      header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 15px;
+      }
+      .choose_img {
+        height: 30px;
+        width: 30px;
+        background-color: brown;
+      }
+      .profile_img {
+        height: 30px;
+        width: 30px;
+        background-color: yellow;
+        border-radius: 15px;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+        margin: 0px 10px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      img {
+        margin: 0px 10px;
+      }
+      input {
+        padding: 10px;
+        outline: none;
+        color: gray;
+        border: 1px solid lightgrey;
+        border-radius: 25px;
+        font-size: 20px;
+        width: 50%;
+      }
+      input:focus {
+        outline: auto;
+      }
+      .main {
+        display: grid;
+        place-items: center;
+      }
+      .google-img {
+        padding: 20px;
+      }
+      .btns {
+        padding: 20px;
+      }
+      button {
+        padding: 5px;
+        color: gray;
+        border: none;
+      }
+      .country {
+        background-color: lightgray;
+        margin: 0;
+        padding: 5px;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+      }
+      h2 {
+        font-weight: 200;
+      }
+    </style>
+    <title>Google</title>
+  </head>
+  <body>
+    <header>
+      <a href="#">Gmail</a>
+      <a href="#">Images</a>
+      <img class="choose_img" src="./more.jpg" alt="" />
+      <img class="profile_img" src="" alt="" />
+    </header>
+    <div class="main">
+      <img class="google-img" src="./google_home_Yuvraj102.png" alt="" />
+      <input type="text" placeholder="Search" />
+      <div class="btns">
+        <button>Google Search</button>
+        <button>I'm feeling lucky</button>
+      </div>
+      <div class="languages">
+        <p>
+          Google offered in: <a href="#">Hindi</a> <a href="#">English</a>
+          <a href="#">Marathi</a>
+        </p>
+      </div>
+    </div>
+    <footer>
+      <div class="country">
+        <h2>India</h2>
+      </div>
+    </footer>
+  </body>
+</html>
