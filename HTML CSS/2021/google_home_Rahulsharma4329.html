@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/000000/google-logo.png" type="image/x-icon">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .nav {
+            color: rgba(54, 54, 54, 0.774);
+            /* display: flex; */
+            flex-direction: row;
+            align-items: center;
+            margin: 0.5em 0.5em;
+            padding: 1em 0em;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        ul {
+            display: inline;
+            text-decoration: none;
+            padding: 1em;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .circle {
+            display: inline;
+        }
+
+        .icon {
+            background: url("https://img.icons8.com/material-rounded/24/000000/circled-menu.png");
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+        }
+
+        .icon:hover{
+        }
+
+        .iconopro {
+            background: url('https://img.icons8.com/fluency-systems-filled/48/000000/user-male-circle.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            padding: 10px 40px;
+        }
+
+        .space {
+            padding: 6em;
+        }
+
+        .placeholder {
+            display: flex;
+            justify-content: center;
+            height: 6em;
+
+        }
+        .dis{
+            display: block;
+        }
+        form{
+            width: 40em;
+            margin: auto;
+        }
+        input[type=text]{
+            box-sizing: border-box;
+            border-radius: 30px;
+            border: 1px solid rgb(211, 211, 211);
+            padding: 13px 50px;
+            font-size: large;
+            outline: none;
+            width: 100%;
+            margin: 30px auto;
+            margin-bottom: 0px;
+            background: url('https://img.icons8.com/material-outlined/24/000000/search--v1.png');
+            background-repeat: no-repeat;
+            background-position: 13px 12px;
+            background-size: 23px;
+        }
+        input[type=text]:hover{
+            box-shadow: 1px 1px 10px 0.5px rgba(0, 0, 0, 0.151);
+            border: none;
+        }
+        .buttons{
+            display: flex;
+            width: 100%;
+            margin: auto;
+            justify-content: center;
+        }
+        button{
+            margin: 0px 20px;
+            border: none;
+            padding: 10px;
+            background-color: #f8f9fa;
+            color: rgb(49, 49, 49);
+            border-radius: 4px;
+        }
+        button:hover{
+            border: 0.1px solid rgba(128, 128, 128, 0.253);
+            box-shadow: 1px 1px 10px 0.5px rgba(0, 0, 0, 0.151);
+        }
+        .footer{
+            background-color: rgba(128, 128, 128, 0.239);
+            height: 50px;
+            width: 100%;
+            /* margin-top: 350px; */
+            position: absolute;
+            bottom: 0;
+            color: rgb(78, 78, 78);
+            /* text-align: center; */
+
+        }
+        .footer  li{
+            padding: 0px 16px;
+
+        }
+        .fmid{
+            text-align: center;
+        }
+        li ul:hover{
+            text-decoration: underline;
+        }
+        .fe:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <li>
+            <ul>
+                About
+            </ul>
+            <ul>
+                Store
+            </ul>
+        </li>
+        <li class="right">
+            <ul>
+                Gmail
+            </ul>
+            <ul>
+                Images
+            </ul>
+            <ul class="icon">
+            </ul>
+            <ul class="iconopro">
+            </ul>
+        </li>
+    </div>
+    </div>
+    <div class="space">
+
+    </div>
+    <div class="placeholder">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="" class="dis">
+    </div>
+    <div class="form1">
+        <form action="" class="form">
+            <input type="text">
+            <img src="https://img.icons8.com/material-rounded/24/000000/microphone.png" style="float: right; position: relative; top: -36px; right: 20px;" />
+        </form>
+    </div>
+    <div class="buttons" style="position: relative;">
+        <button>
+            Google Search
+        </button>
+        <button>
+            I'm Feeling Lucky
+        </button>
+    </div>
+    <div style="display: flex; justify-content: center; margin: 35px 0px;">
+        <span>Go <a href="">behind-the-scenes</a> of today's Doodle</span>
+    </div>
+    <div class="footer">
+        <ul style="float: left;">
+            <li class="fe">Advertising</li>
+            <li class="fe">Business</li>
+            <li class="fe">How Search Works</li>
+        </ul>
+        <ul style="position: relative; float: right;">
+            <li class="fe">Privacy</li>
+            <li class="fe">Terms</li>
+            <li class="fe">Settings</li>
+        </ul>
+    </div>
+</body>
+
+</html>
