@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+        .container>h1 {
+            text-align: center;
+            width: 100%;
+            margin: 1rem;
+            padding: 1rem;
+            font-size: 3rem;
+
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1rem;
+        }
+
+        .card>h2,
+        p {
+
+            text-align: center;
+            margin: 0;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+            width: 100%;
+        }
+
+        .card>img {
+            height: 140px;
+            width: 140px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            Why Student Prefer Us
+        </h1>
+        <div class="flex-container">
+            <div class="card">
+                <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon_price_tag.png" alt="">
+                <h2>Ridiculously Low Pricing</h2>
+                <p>We charge too low so that every student can afford it</p>
+            </div>
+            <div class="card">
+                <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon_we_care.png" alt="">
+                <h2>We Care</h2>
+                <p>We push student to learn and guide them if they loose focus</p>
+            </div>
+            <div class="card">
+                <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon_mentor_learning.png" alt="">
+                <h2>Doubts Support</h2>
+                <p>Stuck in project our mentors are there to guide you</p>
+            </div>
+            <div class="card">
+                <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon_curated.png" alt="">
+                <h2>Curated Content</h2>
+                <p>Only relevant skills tought carefully curated content by expert</p>
+            </div>
+            <div class="card">
+                <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon_job.png" alt="">
+                <h2>Relevant to Career</h2>
+                <p>Skills tought by us will help you land jobs/internships in top companies</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
