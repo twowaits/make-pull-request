@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Google fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Why_tathastu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Mulish', sans-serif;
+        }
+
+
+        .main {
+            max-width: 100vw;
+            background: white;
+            text-align: center;
+            padding: 1rem 3rem;
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .why-container {
+            width: 70%;
+            background: white;
+            margin-top: 40px;
+        }
+
+        .why-container h1{
+            font-size: 2.5rem;
+            color: #3f4347;
+            margin-bottom: 80px;
+        }
+        
+
+        p {
+            font-size: 15px;
+            font-weight: 400;
+            color: #323538;
+        }
+
+        .img-container {
+            margin-top: 5%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .img-div h1 {
+            font-size: 30px;
+            font-weight: 400;
+            color: #343A40;
+        }
+
+        .img-div {
+            flex-basis: 33%;
+            margin-bottom: 50px;
+            padding: 10px 10px;
+
+        }
+
+        .img-div h1 {
+            text-align: center;
+            font-weight: 700;
+            margin: 10px 5px;
+            color: #343A40;
+            font-size: 24px;
+        }
+        .highlight {
+            font-size: 25px;
+            color: #47494b;
+            text-align: center;
+            margin: 50px 0px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+
+        .highlight:hover {
+            text-decoration: underline #F59D2A;
+
+        }
+
+
+        @media(max-width: 900px) {
+
+            .main {
+                padding: 1rem 2rem;
+
+            }
+            .img-container{
+                flex-direction: column;
+            }
+
+
+            .highlight {
+                font-size: 17px;
+                margin: -15px 0px;
+
+            }
+            .why-container >h1{
+                font-size: 2rem;
+            }
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="why-container">
+            <h1>Why Students Prefer Us</h1>
+            <div class="img-container">
+                <div class="img-div">
+                    <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon_price_tag.png" alt="image" width="100px">
+                    <div>
+                        <h1>Ridiculously Low Pricing</h1>
+                        <p>We charge too low so that every student can afford it</p>
+                    </div>
+                </div>
+                <div class="img-div">
+                    <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon_we_care.png" alt="image" width="100px">
+                    <h1>We Care</h1>
+                    <p>We push students to learn and guide them if they loose focus</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon_mentor_learning.png" alt="image" width="100px">
+                    <h1>Doubts Support</h1>
+                    <p>Stuck in project, our mentors are there to guide you</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon_curated.png" alt="image" width="100px">
+                    <h1>Curated Content</h1>
+                    <p>Only relevant skills taught, carefully curated content by experts</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon_job.png" alt="image" width="100px">
+                    <h1>Relevant to Career</h1>
+                    <p>Skills taught by us will help you land jobs/internships in top companies</p>
+                </div>
+            </div>
+            <div class="highlight-div">
+                <p class="highlight">Read about our Mission and Vision here!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
