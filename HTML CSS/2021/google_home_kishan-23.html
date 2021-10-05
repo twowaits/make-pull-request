@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Google</title>
+	<style type="text/css">
+		body{
+			margin: 0px;
+			padding: 0px;
+		}
+		nav, footer{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			height: 40px;
+			width: 100%;
+			/* background: rebeccapurple; */
+		}
+		nav{
+			margin-top: 10px;
+		}
+		footer{
+			position: fixed;
+			bottom: 0px;
+			background-color: #f2f2f2;
+		}
+
+		a{
+			padding: 8px;
+			text-decoration: none;
+			font-family: Arial, Helvetica, sans-serif;
+			color:black;
+			font-size: 14px;
+		}
+
+		.left, .right {
+			display: flex;
+			margin: 0px 20px;
+			padding: 2px 5px;
+			align-items: center;
+			justify-content: center;
+		}
+
+		#profile{
+			/* display: inline; */
+			height: 32px;
+			width: 32px;
+			margin-left: 15px;
+			background:url("https://miro.medium.com/max/3150/1*ftrm2Tult9iwzQWnoFAuBw.jpeg");
+			background-size: contain;
+			border-radius: 50%;
+		}
+
+		#apps-menu{
+			height: 17px;
+			width: 17px;
+			margin-left: 15px;
+			background: url("data:image/png;base64,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");
+			background-size: contain;
+			border-radius: 0px;
+		}
+
+		.container{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 500px;
+		}
+		.search {
+			display: flex;
+			width: 600px;
+			height: 40px;
+			align-items: center;
+			justify-content: space-between;
+			margin: 10px;
+			/* background-color: aquamarine; */
+			border: solid rgb(220, 216, 216) 0.5px;
+			border-radius: 20px;
+		}
+
+		#search-icon{
+			height: 20px;
+			width: 20px;
+			background: url("https://cdn.icon-icons.com/icons2/2551/PNG/512/search_icon_152764.png");
+			background-size: contain;
+			margin-left: 10px;
+		}
+		.search:hover{
+			box-shadow: 0.5px 0.5px 5px rgba(138, 138, 155, 0.8);
+		}
+		.search input{
+			border: none;
+			width: 500px;
+			height: 35px;
+			font-size: 15px;
+		}
+		.search input:focus{
+			outline: none;
+			border: none;
+			/* background-color: aqua; */
+		}
+
+		#mic-icon{
+			height: 20px;
+			width: 15px;
+			background: url("https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg");
+			background-size: contain;
+			margin-right: 10px;
+		}
+
+		.buttons{
+			display: flex;
+			align-content: center;
+			justify-content: space-between;
+			width: 285px;
+			height: 45px;
+			margin: 8px;
+			/* background-color: bisque; */
+		}
+		.btn{
+			text-align: center;
+			width: 140px;
+			height: 36px;
+			background-color: #f8f9fa;
+			border: none;
+		}
+		.btn:hover{
+			box-shadow: 0.2px 0.2px 3px rgba(138, 138, 155, 0.8);
+			border-radius: 2px;
+		}
+
+		#doodle{
+			width: 300px;
+			height: 35px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 13px;
+			text-align: center;
+			/* background-color: rgb(158, 199, 145); */
+		}
+		#doodle a{
+			text-decoration: none;
+			color: blue;
+			padding: 0px;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="left">
+			<a href="#">About</a>
+			<a href="#">Store</a>
+		</div>
+		<div class="right">
+			<a href="#">Gmail</a>
+			<a href="#">Images</a>
+			<div id="apps-menu">
+				<a href=""></a>
+			</div>
+			<div id="profile">
+				<a href="#"></a>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google" width="272px">
+		<div class="search">
+			<div id="search-icon"></div>
+			<input type="text" id="seach-query">
+			<div id="mic-icon"></div>
+		</div>
+		<div class="buttons">
+			<button class="btn"><a href="https://www.google.com">Google Search</a></button>
+			<button class="btn">I'm Feeling Lucky</button>
+		</div>
+		<div id="doodle">
+			<p>Go <a href="#">behind-the-scenes</a> of today's Doodle.</p>
+		</div>
+		<footer>
+			<div class="left">
+				<a href="#">Advertising</a>
+				<a href="#">Business</a>
+				<a href="#">How Search Works</a>
+			</div>
+			<p style="margin-right: 130px;">Carbon neutral since 2007</p>
+			<div class="right">
+				<a href="#">Privacy</a>
+				<a href="#">Terms</a>
+				<a href="#">Settings</a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

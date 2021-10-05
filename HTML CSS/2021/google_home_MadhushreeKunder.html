@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            margin: 1rem;
+        }
+
+        .nav_list {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .nav_item {
+            margin: 0rem 0.5rem;
+            font-size: 0.75rem;
+            cursor: pointer;
+        }
+
+        .nav_item--push-right {
+            margin-left: auto;
+        }
+
+        .logo {
+            height: 5rem;
+        }
+
+        .user_icon {
+            border-radius: 100%;
+            height: 30px;
+            width: 30px;
+        }
+
+        .search-input {
+            border-radius: 2rem;
+            border: 2px solid lightgray;
+            width: 30rem;
+            padding: 0.5rem 1.75rem;
+            margin-top: 0.5rem;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .search-input:focus {
+            outline: none;
+        }
+
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            margin-top: 6rem;
+            text-align: center;
+        }
+
+        .voice {
+            height: 20px;
+            position: relative;
+            top: 3px;
+            left: -40px;
+        }
+
+        .search-icon {
+            height: 20px;
+            position: relative;
+            top: 3px;
+            left: 40px;
+
+        }
+
+        a {
+            list-style: none;
+
+        }
+
+        button {
+            padding: 0.5rem;
+            margin: 2rem 0.5rem;
+            border: none;
+            color: rgb(73, 73, 73);
+            background-color: rgb(240, 240, 240);
+            cursor: pointer;
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(240, 240, 240);
+            color: dimgray;
+
+        }
+
+        .footer-links {
+            list-style: none;
+            display: inline-flex;
+        }
+
+        .footer-links-right {
+            float: right;
+        }
+
+        .footer-links>li {
+            margin-right: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul class="nav_list">
+            <li class="nav_item">About</li>
+            <li class="nav_item">Store</li>
+            <li class="nav_item nav_item--push-right">Gmail</li>
+            <li class="nav_item">Images</li>
+            <li class="nav_item">
+                <img src="https://img.icons8.com/material/30/000000/squared-menu--v1.png" />
+            </li>
+            <li class="nav_item"> <img class="user_icon"
+                    src="https://miro.medium.com/max/3150/1*ftrm2Tult9iwzQWnoFAuBw.jpeg" alt=""></li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <img class="logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1920px-Google_2015_logo.svg.png"
+            alt="">
+        <div class="searchbar">
+            <a href="#">
+                <img class="search-icon" src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png" /> </a>
+
+            <input type="text" class="search-input">
+
+            <a href="#"> <img class="voice"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png"
+                    title="Search by Voice"> </a>
+        </div>
+
+        <div>
+            <button> Google Search</button>
+            <button>I'm feeling Lucky</button>
+        </div>
+
+        <small>Go behind the scenes of today's doodle</small>
+    </div>
+
+    <footer>
+        <ul class="footer-links">
+            <li>Advertising</li>
+            <li>Business</li>
+            <li>How Search works</li>
+        </ul>
+        <ul class="footer-links footer-links-right">
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Settings</li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

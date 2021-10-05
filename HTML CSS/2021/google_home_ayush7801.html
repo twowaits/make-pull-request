@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google_home</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: space-between;
+        }
+        .head{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .leftMenu, .rightMenu{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+            align-items: center;
+        }
+        li{
+            margin: 10px;
+            cursor: pointer;
+        }
+        #image{
+            border-radius: 50%;
+            max-width: 40px;
+            max-height: 30px;
+        }
+
+        .main{
+            margin: 3rem 0 7rem 0;
+            display: flex;
+            flex-direction: column;
+            max-height: 100%;
+            min-width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .GIcon img{
+            max-height: 12rem;
+            max-width: 90rem;
+        }
+        .searchBar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: solid 1px rgb(233, 230, 230);
+            border-radius: 20px;
+            padding: 2px 15px;
+            box-shadow: 0 0 1px #000;
+        }
+        .searchBar input{
+            padding-left: 10px;
+            border: none;
+            width: 33rem;
+            height: 2rem;
+            outline: none;
+        }
+        .search{
+            max-width: 20px;
+            max-height: 40px;
+            cursor: pointer;
+            color: #b1b3b6;
+        }
+        .mic{
+            max-width: 30px;
+            max-height: 40px;
+            cursor: pointer;
+        }
+        .tags{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 2rem 0 1.5rem 0;
+            min-width: 21rem;
+            cursor: pointer;
+        }
+        .tag{
+            background-color: #eef3f8f3;
+            padding: 10px 25px;
+        }
+        footer{
+            display: flex;
+            min-width: 100%;
+            height: 3rem;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f2f2f2;
+        }
+        .leftList, .rightList, .footerCenter{
+            display: flex;
+            list-style-type: none;
+            color: #71767a;
+        }
+        .footerCenter{
+            margin-right: 8rem;
+        }
+        #leaf{
+            width: 10px;
+            height: 20px;
+            margin: 0 7px ;
+            border-radius: 179%;
+            background: linear-gradient(to right,#157433 53%, #82cc54 47%);
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <ul class="leftMenu">
+            <li>About</li>
+            <li>Store</li>
+        </ul>
+        <ul class="rightMenu">
+            <li>Gmail</li>
+            <li>Images</li>
+            <li><img id="menu" src="https://img.icons8.com/material-outlined/24/000000/circled-menu.png"/></li>
+            <li><img id="image" src="https://avatars.githubusercontent.com/u/30311965?v=4"></li>
+        </ul>
+    </header>
+    <div class="main">
+        <div class="GIcon">
+            <img src="https://1000logos.net/wp-content/uploads/2016/11/google_logo.png" alt="Google Icon">
+        </div>
+        <div class="searchBar">
+            <img class="search" src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png"/>
+            <input type="search" placeholder="Search Google or type URL">
+            
+            <script>
+                const body = document.querySelector('body');
+                const input = document.querySelector('input');
+                function togglePlaceholder(){
+                    if(input.placeholder === ""){
+                        input.placeholder = "Search Google or type URL";
+                    }else{
+                        input.placeholder = "";
+                    };
+                }
+                body.addEventListener('click', togglePlaceholder);
+            </script>
+            
+            <img class="mic"src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png">
+        </div>
+        <div class="tags">
+            <div class="tag" id="tag1">Google Search</div>
+            <div class="tag" id="tag2">I'm feeling Lucky</div>
+        </div>
+        <div class="comment">Go <a href="#" style="text-decoration: none;">behind-the-scenes</a> of today's Doodle</div>
+    </div>
+    <footer>
+        <ul class="leftList">
+            <li>Advertising</li>
+            <li>Bussiness</li>
+            <li>How Search works</li>
+        </ul>
+        <div class="footerCenter">
+            <div id="leaf"></div>
+            <div>Carbon neutral since 2007</div>
+        </div>
+        <ul class="rightList">
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Settings</li>
+        </ul>
+    </footer>
+</body>
+</html>

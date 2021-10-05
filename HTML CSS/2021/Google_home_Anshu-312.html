@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google_Home: Anshu</title>
+    <style>
+        body {
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-color: rgb(255, 255, 255);
+            background-image: none;
+            background-origin: padding-box;
+            background-size: auto;
+            color: rgb(34, 34, 34);
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 639px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            width: 100%;
+        }
+
+        .viewport {
+            color: rgb(34, 34, 34);
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 639px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            min-height: 100%;
+            min-width: 980px;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+        }
+
+        .searchform {
+            color: rgb(34, 34, 34);
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 87px;
+            margin-top: 0px;
+            min-width: 980px;
+            position: absolute;
+            top: 310px;
+            width: 100%;
+            z-index: 103;
+        }
+
+        .header {
+            color: rgb(34, 34, 34);
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 30px;
+            position: absolute;
+            right: 0px;
+            top: -295px;
+            width: 100%;
+        }
+
+        .links {
+            align-items: center;
+            color: rgb(34, 34, 34);
+            display: flex;
+            flex-basis: auto;
+            flex-grow: 1;
+            flex-shrink: 1;
+            float: right;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 30px;
+            justify-content: flex-end;
+            margin-left: 0px;
+            margin-right: 0px;
+            min-width: 223px;
+            order: 1;
+            padding-left: 30px;
+            padding-right: 30px;
+            position: relative;
+            text-align: right;
+            white-space: nowrap;
+            width: 223px;
+            z-index: 987;
+        }
+
+        .gmail-images {
+            color: rgb(34, 34, 34);
+            display: flex;
+            flex-basis: auto;
+            flex-grow: 0;
+            flex-shrink: 1;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 24px;
+            line-height: normal;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-right: 15px;
+            text-align: right;
+            white-space: nowrap;
+            width: 92px;
+        }
+
+        .gmail {
+            color: rgb(34, 34, 34);
+            display: block;
+            flex-basis: auto;
+            flex-grow: 0;
+            flex-shrink: 0;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 24px;
+            line-height: normal;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-left: 0px;
+            text-align: right;
+            vertical-align: middle;
+            white-space: nowrap;
+            width: 34px;
+        }
+
+        .images {
+            color: rgb(34, 34, 34);
+            display: block;
+            flex-basis: auto;
+            flex-grow: 0;
+            flex-shrink: 0;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 24px;
+            line-height: normal;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-left: 15px;
+            text-align: right;
+            vertical-align: middle;
+            white-space: nowrap;
+            width: 43px;
+        }
+
+        .simple-link {
+            color: rgb(64, 64, 64);
+            cursor: auto;
+            display: inline-block;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 24px;
+            line-height: 24px;
+            outline-color: rgb(64, 64, 64);
+            outline-style: none;
+            outline-width: 0px;
+            text-align: right;
+            text-decoration: none;
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+
+        .apps-signin {
+            color: rgb(34, 34, 34);
+            display: flex;
+            flex-basis: auto;
+            flex-grow: 0;
+            flex-shrink: 1;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 30px;
+            line-height: normal;
+            margin-left: 0px;
+            margin-right: 0px;
+            min-width: 116px;
+            position: relative;
+            text-align: left;
+            white-space: nowrap;
+            width: 116px;
+        }
+
+        .apps {
+            color: rgb(34, 34, 34);
+            display: block;
+            flex-basis: auto;
+            flex-grow: 0;
+            flex-shrink: 0;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 30px;
+            line-height: normal;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            text-align: left;
+            vertical-align: middle;
+            white-space: nowrap;
+            width: 30px;
+        }
+
+        .apps-link {
+            background-image: url(https://ssl.gstatic.com/gb/images/i1_71651352.png);
+            background-position: -326px -52px;
+            background-size: 356px 144px;
+            border-radius: 2px;
+            box-sizing: border-box;
+            color: #404040;
+            cursor: default;
+            display: inline-block;
+            height: 30px;
+            line-height: normal;
+            opacity: .55;
+            outline: none;
+            text-decoration: none;
+            vertical-align: middle;
+            white-space: nowrap;
+            width: 30px;
+        }
+
+        .apps-link:hover {
+            opacity: .85;
+        }
+
+        .signin {
+            color: rgb(34, 34, 34);
+            display: block;
+            flex-basis: auto;
+            flex-grow: 0;
+            flex-shrink: 0;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 30px;
+            line-height: normal;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-bottom: 0px;
+            padding-left: 15px;
+            padding-right: 0px;
+            padding-top: 0px;
+            position: relative;
+            text-align: left;
+            vertical-align: middle;
+            white-space: nowrap;
+            width: 71px;
+        }
+
+        .signin-link {
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-color: rgba(0, 0, 0, 0);
+            background-image: -webkit-linear-gradient(top, rgb(67, 135, 253), rgb(70, 131, 234));
+            background-origin: padding-box;
+            background-size: auto;
+            border-bottom-color: rgb(66, 133, 244);
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 2px;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-image-outset: 0px;
+            border-image-repeat: stretch;
+            border-image-slice: 100%;
+            border-image-source: none;
+            border-image-width: 1;
+            border-left-color: rgb(66, 133, 244);
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-right-color: rgb(66, 133, 244);
+            border-right-style: solid;
+            border-right-width: 1px;
+            border-top-color: rgb(66, 133, 244);
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+            border-top-style: solid;
+            border-top-width: 1px;
+            color: rgb(255, 255, 255);
+            cursor: default;
+            display: inline-block;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+            height: 28px;
+            line-height: 28px;
+            outline-color: rgb(255, 255, 255);
+            outline-style: none;
+            outline-width: 0px;
+            padding-bottom: 0px;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-top: 0px;
+            text-align: left;
+            text-decoration: none;
+            white-space: nowrap;
+            width: 45px;
+        }
+
+        .search {
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-color: rgba(0, 0, 0, 0);
+            background-image: none;
+            background-origin: padding-box;
+            background-size: auto;
+            color: rgb(34, 34, 34);
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 88px;
+            margin-bottom: 0px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 0px;
+            max-width: none;
+            overflow-x: visible;
+            overflow-y: visible;
+            width: 80%;
+        }
+
+        .searchbox-buttonbox {
+            color: rgb(34, 34, 34);
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 88px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: -1px;
+            padding-left: 20%;
+            padding-right: 20%;
+            position: relative;
+            width: 60%;
+        }
+
+        .searchbox1 {
+            color: rgb(34, 34, 34);
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 30px;
+            padding-bottom: 2px;
+            padding-top: 3px;
+            width: 571px;
+        }
+
+        .searchbox2 {
+            position: relative;
+        }
+
+        .searchbox3 {
+            line-height: 0px;
+            max-width: 650px;
+            overflow-x: visible;
+            overflow-y: visible;
+            white-space: nowrap;
+        }
+
+        .searchbox4 {
+            background-color: rgb(255, 255, 255);
+            border-bottom-color: rgb(217, 217, 217);
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-image-outset: 0px;
+            border-image-repeat: stretch;
+            border-image-slice: 100%;
+            border-image-source: none;
+            border-image-width: 1;
+            border-left-color: rgb(217, 217, 217);
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-right-color: rgb(217, 217, 217);
+            border-right-style: solid;
+            border-right-width: 1px;
+            border-top-color: rgb(192, 192, 192);
+            border-top-style: solid;
+            border-top-width: 1px;
+            height: 28px;
+            max-width: 568px;
+            vertical-align: top;
+            width: 568px;
+        }
+
+        .searchbox5 {
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-color: rgb(255, 255, 255);
+            background-image: none;
+            background-origin: padding-box;
+            background-size: auto;
+            box-sizing: border-box;
+            color: rgb(34, 34, 34);
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 28px;
+            line-height: 0px;
+            vertical-align: top;
+            white-space: nowrap;
+            width: 568px;
+        }
+
+        .search-microphone {
+            -webkit-user-select: none;
+            color: rgb(34, 34, 34);
+            direction: ltr;
+            display: block;
+            float: right;
+            font-family: arial, sans-serif;
+            font-size: 16px;
+            height: 28px;
+            line-height: 28px;
+            padding-bottom: 0px;
+            padding-left: 2px;
+            padding-right: 2px;
+            padding-top: 0px;
+            position: relative;
+            unicode-bidi: -webkit-isolate;
+            vertical-align: top;
+            white-space: nowrap;
+            width: 25px;
+        }
+
+        .microphone-link {
+            -webkit-user-select: none;
+            color: rgb(17, 34, 204);
+            cursor: pointer;
+            display: inline-block;
+            font-family: arial, sans-serif;
+            font-size: 16px;
+            height: 28px;
+            line-height: 28px;
+            padding-bottom: 0px;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-top: 0px;
+            text-decoration: none;
+            white-space: nowrap;
+            width: 17px;
+        }
+
+        .microphone-image {
+            -webkit-user-select: none;
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-color: rgba(0, 0, 0, 0);
+            background-image: url(https://raw.githubusercontent.com/ngehani/htmlcss/master/googlelogo/icon.gif);
+            background-origin: padding-box;
+            background-repeat: no-repeat;
+            background-size: 14px 19px;
+            color: rgb(17, 34, 204);
+            cursor: pointer;
+            display: inline-block;
+            font-family: arial, sans-serif;
+            font-size: 16px;
+            height: 23px;
+            line-height: 28px;
+            opacity: 0.600000023841858;
+            vertical-align: middle;
+            white-space: nowrap;
+            width: 17px;
+        }
+
+        .search-textbox {
+            box-sizing: border-box;
+            color: rgb(34, 34, 34);
+            direction: ltr;
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 28px;
+            line-height: 0px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            padding-bottom: 0px;
+            padding-left: 9px;
+            padding-right: 9px;
+            padding-top: 5px;
+            unicode-bidi: -webkit-isolate;
+            white-space: nowrap;
+            width: 539px;
+        }
+
+        .inv-box {
+            color: rgb(34, 34, 34);
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 0px;
+            line-height: 0px;
+            position: relative;
+            white-space: nowrap;
+            width: 521px;
+        }
+
+        .textbox {
+            -webkit-appearance: none;
+            -webkit-rtl-ordering: logical;
+            -webkit-user-select: text;
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-color: rgba(0, 0, 0, 0);
+            background-image: url(data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D);
+            background-origin: padding-box;
+            background-size: auto;
+            border-bottom-color: rgb(0, 0, 0);
+            border-bottom-style: none;
+            border-bottom-width: 0px;
+            border-image-outset: 0px;
+            border-image-repeat: stretch;
+            border-image-slice: 100%;
+            border-image-source: none;
+            border-image-width: 1;
+            border-left-color: rgb(0, 0, 0);
+            border-left-style: none;
+            border-left-width: 0px;
+            border-right-color: rgb(0, 0, 0);
+            border-right-style: none;
+            border-right-width: 0px;
+            border-top-color: rgb(0, 0, 0);
+            border-top-style: none;
+            border-top-width: 0px;
+            color: rgb(0, 0, 0);
+            cursor: auto;
+            direction: ltr;
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 16px;
+            font-stretch: normal;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+            height: 19.1875px;
+            left: 0px;
+            letter-spacing: normal;
+            line-height: 19.2000007629395px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            outline-color: rgb(0, 0, 0);
+            outline-style: none;
+            outline-width: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            position: absolute;
+            text-align: start;
+            text-indent: 0px;
+            text-rendering: auto;
+            text-shadow: none;
+            text-transform: none;
+            unicode-bidi: -webkit-isolate;
+            white-space: nowrap;
+            width: 521px;
+            word-spacing: 0px;
+            writing-mode: lr-tb;
+            -webkit-writing-mode: horizontal-tb;
+            z-index: 6;
+        }
+
+        .buttonbox {
+            color: rgb(34, 34, 34);
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 51px;
+            padding-top: 2px;
+            width: 571px;
+        }
+
+        .buttonbox input[type=submit] {
+            -webkit-appearance: none;
+            -webkit-rtl-ordering: logical;
+            -webkit-user-select: none;
+            background-color: rgb(245, 245, 245);
+            background-image: -webkit-linear-gradient(top, rgb(245, 245, 245), rgb(241, 241, 241));
+            border-bottom-color: rgba(0, 0, 0, 0.0980392);
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 2px;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-image-outset: 0px;
+            border-image-repeat: stretch;
+            border-image-slice: 100%;
+            border-image-source: none;
+            border-image-width: 1;
+            border-left-color: rgba(0, 0, 0, 0.0980392);
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-right-color: rgba(0, 0, 0, 0.0980392);
+            border-right-style: solid;
+            border-right-width: 1px;
+            border-top-color: rgba(0, 0, 0, 0.0980392);
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+            border-top-style: solid;
+            border-top-width: 1px;
+            color: rgb(68, 68, 68);
+            cursor: default;
+            display: inline-block;
+            font-family: arial, sans-serif;
+            font-size: 11px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: bold;
+            height: 29px;
+            letter-spacing: normal;
+            line-height: 27px;
+            margin-bottom: 11px;
+            margin-left: 8px;
+            margin-right: 8px;
+            margin-top: 11px;
+            min-width: 54px;
+            padding-bottom: 0px;
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-top: 0px;
+            text-align: center;
+            text-indent: 0px;
+            text-rendering: auto;
+            text-shadow: none;
+            text-transform: none;
+            word-spacing: 0px;
+            writing-mode: lr-tb;
+            -webkit-writing-mode: horizontal-tb;
+        }
+
+        .content {
+            color: rgb(34, 34, 34);
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 345px;
+            padding-bottom: 35px;
+            width: 100%;
+        }
+
+        .body {
+            color: rgb(34, 34, 34);
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 333px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            min-width: 980px;
+            width: 100%;
+        }
+
+        .logobox {
+            color: rgb(34, 34, 34);
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 231px;
+            margin-top: 80px;
+            text-align: -webkit-center;
+            width: 100%;
+        }
+
+        #logo {
+            color: rgb(34, 34, 34);
+            display: inline;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 95px;
+            padding-top: 112px;
+            text-align: -webkit-center;
+            width: 269px;
+        }
+
+        .footer {
+            bottom: 0px;
+            color: rgb(34, 34, 34);
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 13.3333330154419px;
+            height: 35px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            min-width: 680px;
+            position: absolute;
+            width: 100%;
+        }
+
+        .footerbox1 {
+            color: rgb(34, 34, 34);
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 13.3333330154419px;
+            height: 0px;
+            width: 100%;
+        }
+
+        .footerbox2 {
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-color: rgb(242, 242, 242);
+            background-image: none;
+            background-origin: padding-box;
+            background-size: auto;
+            border-top-color: rgb(228, 228, 228);
+            border-top-style: solid;
+            border-top-width: 1px;
+            bottom: 0px;
+            color: rgb(34, 34, 34);
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 13.3333330154419px;
+            height: 40px;
+            left: 0px;
+            line-height: 40px;
+            position: absolute;
+            right: 0px;
+            width: 100%;
+        }
+
+        .footerbox3 {
+            color: rgb(34, 34, 34);
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 40px;
+            line-height: 40px;
+            margin-left: -27px;
+            width: 100%;
+        }
+
+        .right-foot {
+            color: rgb(34, 34, 34);
+            display: block;
+            float: right;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 40px;
+            line-height: 40px;
+            margin-right: 30px;
+            white-space: nowrap;
+            width: 218px;
+        }
+
+        .foot-links {
+            color: rgb(102, 102, 102);
+            cursor: auto;
+            display: inline-block;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: 40px;
+            line-height: 40px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            padding-left: 27px;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .left-foot {
+            color: rgb(34, 34, 34);
+            display: inline;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            height: auto;
+            line-height: 40px;
+            margin-left: 30px;
+            white-space: nowrap;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="viewport">
+        <div class="searchform">
+            <div class="header">
+                <div class="links">
+                    <div class="gmail-images">
+                        <div class="gmail">
+                            <a class="simple-link" href="https://mail.google.com">Gmail</a>
+                        </div>
+                        <div class="images">
+                            <a class="simple-link" href="https://www.google.com/imghp?hl=en&tab=wi">Images</a>
+                        </div>
+                    </div>
+                    <div class="apps-signin">
+                        <div class="apps">
+                            <a class="apps-link" href="http://www.google.com/intl/en/options" title="Google Apps"></a>
+                        </div>
+                        <div class="signin">
+                            <a class="signin-link"
+                                href="https://accounts.google.com/ServiceLogin?hl=en&continue=https://www.google.com">Sign
+                                in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="search" action="/search" style="overflow:visible" method="GET" name="form" role="search">
+                <div class="searchbox-buttonbox">
+                    <div class="searchbox1">
+                        <div class="searchbox2">
+                            <div class="searchbox3">
+                                <div class="searchbox4">
+                                    <div class="searchbox5">
+                                        <div class="search-microphone">
+                                            <a class="microphone-link" href="#">
+                                                <span class="microphone-image"></span>
+                                            </a>
+                                        </div>
+                                        <div class="search-textbox">
+                                            <div class="inv-box">
+                                                <input class="textbox" id="textbox" maxlength="2048" name="query"
+                                                    autocomplete="off" title="Search" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttonbox">
+                        <center>
+                            <input value="Google Search" name="search" type="submit">
+                            <input value="I'm Feeling Lucky" id="lucky" name="lucky" type="submit">
+                        </center>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="content">
+            <span class="body">
+                <center>
+                    <div class="logobox">
+                        <img alt="Google" height="95" id="logo" src="http://www.google.com/images/srpr/logo11w.png"
+                            width="269">
+                    </div>
+                </center>
+            </span>
+            <div class="footer">
+                <div class="footerbox1">
+                    <div class="footerbox2">
+                        <div class="footerbox3">
+                            <span class="right-foot">
+                                <a class="foot-links"
+                                    href="https://www.google.com/intl/en/policies/privacy/?fg=1">Privacy</a>
+                                <a class="foot-links"
+                                    href="https://www.google.com/intl/en/policies/terms/?fg=1">Terms</a>
+                                <span style="display:inline-block;position:relative">
+                                    <a class="foot-links" href="https://www.google.com/preferences?hl=en">Settings</a>
+                                </span>
+                            </span>
+                            <span class="left-foot">
+                                <a class="foot-links" href="https://www.google.com/intl/en/ads/?fg=1">Advertising</a>
+                                <a class="foot-links" href="https://www.google.com/services/?fg=1">Business</a>
+                                <a class="foot-links" href="https://www.google.com/intl/en/about.html?fg=1">About</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

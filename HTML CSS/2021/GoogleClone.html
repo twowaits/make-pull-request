@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
+    <script src="https://kit.fontawesome.com/461f1304b1.js" crossorigin="anonymous"></script>
+
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            width: 100wh;
+            height: 100vh;
+
+        }
+
+        .menu-cont {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .sub-menu {
+            height: 80px;
+            width: 20%;
+            display: flex;
+            padding: 0px 10px;
+        }
+
+        .sub-menu a {
+            text-decoration: none;
+            padding: 31px 13px;
+        }
+
+        .logo-and-search-cont {
+            width: 100%;
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .google-img-cont {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .google-img-cont img {
+            height: 93px;
+            width: 281px;
+            outline: 1px;
+        }
+
+        .search-box-cont {
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .search-box-cont input {
+            width: 556px;
+            height: 36px;
+            border-radius: 13px;
+
+            margin-bottom: 15px;
+        }
+
+        .search-btn {
+            height: 33px;
+            width: 120px;
+            margin-right: 10px;
+            margin-top: 13px;
+            border-radius: 8px;
+            background-color: #f8f9fa;
+            border: none;
+            color: #6f7275;
+        }
+
+    
+
+        .lucky-btn {
+            color: #6f7275;
+            margin-top: 13px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            height: 33px;
+            border: none;
+            width: 120px;
+        }
+
+        .lang-cont {
+
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lang-cont a {
+            padding: 0px 5px;
+            margin-right: -2px;
+            text-decoration: none;
+        }
+
+        .dots {
+            position: relative;
+        }
+
+        .dots img {
+            height: 37px;
+            width: 37px;
+            position: absolute;
+            bottom: 21px;
+        }
+
+        .admin {
+            position: relative;
+        }
+
+        .admin img {
+            position: absolute;
+            bottom: 20px;
+            left: 47px;
+            border-radius: 34px;
+            height: 37px;
+            width: 37px;
+        }
+
+        .google-offer {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #848788;
+        }
+
+        .search-box{
+            position: absolute;
+            left: 19px;
+            top: 11px;
+            color: #bcc0c4;
+        }
+        .mic-box{
+            position: absolute;
+            right: 22px;
+            top: 11px;
+            color: #bcc0c4; 
+  
+            height: 15px;
+            width: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="menu-cont">
+            <div class="sub-menu">
+                <a href="">Gmail</a>
+                <a href="">Images</a>
+                <a href="#" class="dots"> <img src="https://i.ibb.co/Q8rNn7g/dots.png" alt=""></a>
+                <a href="#" class="admin"><img src="https://i.ibb.co/2y9PBd5/logo.jpg" alt=""></a>
+
+            </div>
+        </div>
+        <div class="logo-and-search-cont">
+            <div class="google-img-cont">
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="">
+            </div>
+            <div class="search-box-cont">
+                <i class=" search-box fas fa-search"></i>
+                <input type="search" name="" id="" placeholder="">
+                <i class="mic-box fas fa-microphone-alt"></i>
+            </div>
+
+            <div class="google-search-btn">
+                <button class="search-btn">Google search</button>
+                <button class="lucky-btn">I'm Feeling Lucky</button>
+            </div>
+        </div>
+        <div class="lang-cont">
+            <p class="google-offer">Google offered in: </p>
+            <a href="#">हिन्दी</a>
+            <a href="#">বাংলা</a>
+            <a href="#">తెలుగు</a>
+            <a href="#">मराठी</a>
+            <a href="#">தமிழ்</a>
+            <a href="#">ગુજરાતી</a>
+            <a href="#">ಕನ್ನಡ</a>
+            <a href="#">മലയാളം</a>
+            <a href="#">ਪੰਜਾਬੀ</a>
+        </div>
+
+
+    </header>
+</body>
+
+</html>
