@@ -1,3 +1,4 @@
+import math
 def gcd(a,b):
     if (b == 0):
         return a
@@ -9,4 +10,4 @@ def gcd(a,b):
         return gcd(a-b, b)
     return gcd(a, b-a)
 ans=gcd(5,10)
-print(ans)
+print(math.factorial(ans))
