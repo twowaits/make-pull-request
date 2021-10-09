@@ -1,15 +1,16 @@
 //JAVA program to find GCD of factorials.
 
+import java.util.Scanner;
 public class FactorialGCD{
 	
-static int factorial(int x)
+static int factorial(int num)
 {
-	if (x <= 1)
+	if (num <= 1)
 		return 1;
-	int res = 2;
-	for (int i = 3; i <= x; i++)
-		res = res * i;
-	return res;
+	int fac = 2;
+	for (int i = 3; i <= num; i++)
+		fac = fac * i;
+	return fac;
 }
 
 static int gcdOfFactorial(int m, int n)
@@ -21,8 +22,12 @@ static int gcdOfFactorial(int m, int n)
 	 
 	public static void main (String[] args)
 	{
-		int m = 5, n =120;
+	    Scanner sc=new Scanner(System.in);
+	    int h=sc.nextInt();
+	    int j=sc.nextInt();
+
 		
-		System.out.println(gcdOfFactorial(m, n));
+
+		System.out.println(gcdOfFactorial(h, j));
 	}
 }
