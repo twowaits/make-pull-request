@@ -12,7 +12,7 @@ static int factorial(int num)
 		fac = fac * i;
 	return fac;
 }
-
+//Function for finding G.C.D
 static int gcdOfFactorial(int m, int n)
 {
 	int min = m < n ? m : n;
@@ -23,6 +23,7 @@ static int gcdOfFactorial(int m, int n)
 	public static void main (String[] args)
 	{
 	    Scanner sc=new Scanner(System.in);
+		//taking input from the user
 	    int h=sc.nextInt();
 	    int j=sc.nextInt();
 
