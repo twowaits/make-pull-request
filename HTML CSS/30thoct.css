@@ -3,7 +3,6 @@
     padding: 0;
     font-family: sans-serif;
 }
-
 .main{
     width: 100%;
     height: 100vh;
@@ -11,7 +10,6 @@
     overflow: hidden;
     background: linear-gradient(to right, #9c27b0, #8ecdff);
 }
-
 nav{
     width: 80%;
     position: sticky;
@@ -20,7 +18,6 @@ nav{
     display: flex;
     align-items: center;
 }
-
 .logo{
     flex-basis: 20%;
 }
