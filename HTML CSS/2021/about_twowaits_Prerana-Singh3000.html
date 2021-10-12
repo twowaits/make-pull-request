@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twowaits</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
+    <style>
+      * {
+        font-family: 'Merriweather', serif;
+        margin: 0;
+      }
+      header , footer{
+        background-image: url("https://image.freepik.com/free-photo/back-school-education-banner-background_8087-1192.jpg");
+        font-family: 'Domine', serif;
+        color: white;
+        background-size: cover;
+        height: 150px;
+        padding: 10px;
+      }
+      header h1 {
+        font-size: 70px;
+        margin-left: 150px;
+      }
+      header h4 {
+        font-size: 40px;
+        margin-left: 150px;
+      }
+      header img {
+        float: left;
+        padding: 10px;
+        width: 110px;
+        height: 110px;
+      }
+      .container{
+        background-color: rgb(223, 223, 223);
+        overflow: hidden;
+        background-image: url("https://th.bing.com/th/id/R.584f7ed9727de421d422911f8b1c3a54?rik=gmZvSDYr%2ftmDcA&riu=http%3a%2f%2fwww.photos-public-domain.com%2fwp-content%2fuploads%2f2012%2f05%2fpastel-green-paper-texture.jpg&ehk=%2b8eI2yuplDDAQER5wy0lML0wi8N1LY0o2cuqmm2h%2b2o%3d&risl=&pid=ImgRaw&r=0");
+      }
+      .sliding-background{
+          background-image: url("https://i.pinimg.com/originals/64/5a/2f/645a2f4f9db92272b48fd8bf5fd8d981.jpg");
+          background-repeat: repeat-x;
+          height: 420px;
+          width: 5076px;
+          animation: slide 30s linear infinite;
+      }
+      .sliding-background .text {
+          position: static;
+      }
+      .intro {
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-style: unset;
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        margin: auto;
+      }
+      .interaction{
+          background-color: rgb(221, 255, 145);
+      }
+      .learning{
+          margin: auto;
+          padding: 30px;
+      }
+      .curr{
+        background-color: white;
+          padding: 50px;
+          width: 75%;
+          margin: auto;
+      }
+      .skill{
+        background-color: white;
+          padding: 50px;
+          width: 75%;
+          margin: auto;
+      }
+      .discription{
+          background-color: rgb(221, 255, 145);
+          padding: 15px;
+      }
+
+    @keyframes slide {
+        0%{
+            transform: translate3d(0, 0, 0);
+        }
+        25%{
+            transform: translate3d(-420px, 0, 0);
+        }
+        75%{
+            transform: translate3d(420px, 0, 0);
+        }
+        100%{
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    </style>
+  </head>
+  <body>
+      <!-- Header Section-->
+
+    <header>
+      <img
+        src="https://th.bing.com/th/id/OIP.Kh7Fk2go_ayzbFnCcLb4WQAAAA?pid=ImgDet&rs=1" alt="twowaits_logo" />
+      <h1>Twowaits</h1>
+      <h4>Where Learning Happens</h4>
+    </header>
+    
+    <div class="container">
+
+    <!-- Introduction section -->
+
+      <section class="intro">
+          <div class="sliding-background">
+              <div class="text">
+        <h4>
+          <br>A digital learning platform to enable learning, the missing part
+          of Indian Education System. <br><br>
+          Ask queries, discuss post class. Share and learn with your peers.
+          <br><br>
+          Access digital library and give tests to measure your performance
+          <br><br>
+        </h4>
+    </div>
+    </div>
+      </section>
+
+
+      <!-- Short interation -->
+
+      <section class="interaction">
+          <h1 style="text-align: center; font-size: 30px;">Want to acquire relevant skills ?</h1>
+          <br>
+          <h2 style="text-align: center;">You're at the right place!!!</h2>
+          <br>
+      </section>
+
+      <!-- About twowaits platforms -->
+
+      <section class="learning">
+
+          <!-- Curriculum learning section -->
+
+          <div class="curr">
+              <h1 style="font-size: 30px;">Curriculum Based Learning</h1><br>
+              <div class="discription">
+              <p style="font-size: 15px;">Our App - <strong> Twowaits - AKTU Notes, Lecture </strong><br><br>
+                TwoWaits is AKTU’s most loved learning app with 40,000+ downloads. We are on a mission for enable learning, the missing part of Indian education system.
+                <br><br>            
+                TwoWaits offers following features :
+                <br><br>       
+                -👨🏻‍🎓 Read notes and watch lectures of different colleges and professors to ensure that you may get every topic cleared.
+                <br><br>       
+                -📚 Access curriculum books prescribed in your syllabus from top authors.
+                <br><br>     
+                -📑 Previous year question papers for the subjects of every branch, year, and courses.
+                <br><br>    
+                -🔎 Ask doubts from faculties, peers and increase pace of learning.
+                <br><br>   
+                -📌 Get all the updates by AKTU related to examination, schedule and others.
+               <br><br>  
+                - 💯 Ask GATE related queries, useful for GATE aspirants.
+                <br><br> 
+                -📑Share your well-written notes and become 🌟 star of your community. </p>
+            </div>
+          </div>
+          <br><br>
+          <!-- Skill Learning section -->
+
+          <div class="skill">
+            <h1 style="font-size: 30px;">Skill</h1><br>
+              <div class="discription">
+                <p style="font-size: 15px;"><strong> Tathastu</strong> -by Twowaits<br><br>
+                    Learn skills and succeed in career <br><br>
+                    Tathastu is a program that offers you to acquire skills, that too in an affordable and practical way
+                    <br><br>
+                    Tathastu offers following features :
+                <br><br>  
+                   - 👨🏻‍💻 Tathastu, a one of a kind skill program for various technical and soft skills courses.
+                    <br><br> 
+                  -🗣️ Interact with your peers and seniors, see what they are unto in their careers.
+                  <br><br> 
+                  -👨🏻‍🎓 Apply to top internships and accelerate your careers.
+                  <br><br> 
+                  -👨🏻‍🏫 Attend regular online webinars and interact with top professionals.
+                  <br><br> 
+                  -📅 Stay updated about various webinars and inter-college events organized by top colleges.
+                  <br><br> 
+                  - 📧 CMI program, to improve soft skills and give corporate exposures to best minds.
+                  <br><br> 
+                  </p>
+              </div>
+          </div>
+      </section>
+    </div>
+
+    <footer>
+
+    </footer>
+
+  </body>
+</html>
