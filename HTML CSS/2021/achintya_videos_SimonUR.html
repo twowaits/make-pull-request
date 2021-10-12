@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="webpage for hacktoberfest" />
+  <meta charset="utf-8">
+  <title>Videos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Me">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+<style>
+.title__container, .playbutton__container {
+    display: inline-block;
+}
+ .playbutton {
+     display: inline-block;
+}
+svg{
+            height: 25px;
+            width: 25px;
+            fill:gray;
+        }
+h1 {
+    margin-left: 10px;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+}
+h2 {
+    margin: 0;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    color: #0645AD ;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+h3 {
+    margin: 0;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; 
+    margin-left: 20px;
+}
+.video img {
+    border-radius: 7%;
+}
+.videolength {
+    background-color: rgba(0,0,0,.54);
+    border-radius: 8px;
+    color: #fff;
+    font-family: arial,sans-serif-medium,sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 1px 8px;
+    text-align: center;
+    display: inline;
+    position: absolute;
+    top: 140px;
+    left: 13px;
+}
+.playbuttonVideo {
+    display: flex;
+    position: absolute;
+    top: 110px;
+    left: 52px;
+}
+
+.video__container {
+    border-top: lightgray 1px solid;
+}
+.videoBox {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.video__info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+span.date {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+span.channel {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+footer{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            height: 30px;
+        }
+        footer hr{
+            width: 100%;
+        }
+        .view-all{
+            width: 350px;
+            height: 40px;
+            border: 1px solid #ebebeb;
+            border-radius: 25px;
+            position: absolute;
+            z-index: 100;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .view-all > a{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        .view-all > svg{
+            fill: #0645AD ;
+            padding-left: 5px;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            left: 5px;
+        }
+        .feedback{
+            font-family: 'Roboto', sans-serif;
+            position: absolute;
+            top: -25px;
+            right: 0;
+        }
+</style>
+
+</head>
+
+<body>
+  
+<div class="container">
+
+    <div class="title__container">
+        <div class="playbutton__container">
+            <span class="playbutton" style="height:20px;width:20px">
+                <svg focusable="false" viewBox="0 0 24 24">
+                    <path d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5">
+                    </path>
+                </svg>
+            </span>
+        </div>
+        <h1>Videos</h1>
+        <svg style="margin-left: 15px;"focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+    </div>
+
+<div class="video__container">
+    <div class="videoBox">
+        <img src="data:image/jpeg;base64,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"/>
+        <div class="playbuttonVideo">
+            <span style="height:35px;line-height:35px;width:35px" class="z1asCe UIgqBe"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"></path></svg></span>
+        </div>
+        <div class="videolength">
+            21:20
+        </div>
+    </div>
+    <div class="video__info">
+        <h2>How to Get An Internship by Achintya Gaumat</h2>
+        <h3>YouTube</h3>  · 
+        <span class="channel">Twowaits</span>
+        <span class="date">3 Weeks ago</span>
+    </div>
+    
+</div>
+
+<div class="video__container">
+    <div class="videoBox">
+        <img src="data:image/jpeg;base64,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"/>
+        <div style="top: 210px" class="playbuttonVideo">
+            <span style="height:35px;line-height:35px;width:35px" class="z1asCe UIgqBe"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"></path></svg></span>
+        </div>
+        <div style="top: 235px" class="videolength">
+            20:05
+        </div>
+    </div>
+    <div class="video__info">
+        <h2>How to Get An Internship by Achintya Gaumat</h2>
+        <h3>YouTube</h3>  · 
+        <span class="channel">Twowaits</span>
+        <span class="date">May 15, 2021</span>
+    </div>
+    
+</div>
+
+<div class="video__container">
+    <div class="videoBox">
+        <img width="124px" height="70px" src="data:image/jpeg;base64,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"/>
+        <div style="top: 305px" class="playbuttonVideo">
+            <span style="height:35px;line-height:35px;width:35px" class="z1asCe UIgqBe"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"></path></svg></span>
+        </div>
+        <div style="top: 330px" class="videolength">
+            1:01:11
+        </div>
+    </div>
+    <div class="video__info">
+        <h2>Make a Pro LinkedIn Profile with Achintya Gaumat | Get your ...</h2>
+        <h3>YouTube</h3>  · 
+        <span class="channel">Twowaits</span>
+        <span class="date">Jun 27, 2021</span>
+    </div>
+    
+</div>
+
+<div class="video__container">
+    <div class="videoBox">
+        <img src="https://i.ytimg.com/vi/CGf2lACTJjg/default.jpg?sqp=-oaymwEECHQQQQ&rs=AMzJL3l2mM3ku1-fqvPBPqr_OEb1J4UZaA" width="124px" height="70px"/>
+        <div style="top: 400px" class="playbuttonVideo">
+            <span style="height:35px;line-height:35px;width:35px" class="z1asCe UIgqBe"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"></path></svg></span>
+        </div>
+        <div style="top: 425px" class="videolength">
+            23:59
+        </div>
+    </div>
+    <div class="video__info">
+        <h2>Task 2 Discussion with Achintya Gaumat | Tathastu Scholar ...</h2>
+        <h3>YouTube</h3>  · 
+        <span class="channel">Twowaits</span>
+        <span class="date">Jul 13, 2021</span>
+    </div>
+    
+</div>
+
+  
+</div>
+<footer>
+    <hr color="#ebebeb">
+    <div class="view-all">
+        <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="ArrowForwardIcon"><path d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg>
+        <a href="#">View all</a>
+    </div>
+    <p class="feedback subtext">Feedback</p>
+</footer>
+
+<script>
+</script>
+
+</body>
+</html>

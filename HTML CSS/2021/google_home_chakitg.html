@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+    <title>Google</title>
+    <style>
+      header {
+        position: absolute;
+        top: 12px;
+        right: 30px;
+      }
+
+      header a:link,
+      a:visited,
+      a:active {
+        color: #2a2a2a;
+        font-family: arial, sans-serif;
+        font-size: 12px;
+        text-decoration: none;
+        margin-right: 5px;
+        margin-left: 5px;
+        position: relative;
+        top: -10px;
+      }
+
+      header a:hover {
+        text-decoration: underline;
+      }
+
+      div {
+        display: block;
+        margin: auto;
+        text-align: center;
+        padding-top: 14%;
+      }
+
+      div img {
+        width: 270px;
+        height: 95px;
+        margin: 5px;
+      }
+
+      .search {
+        width: 570px;
+        height: 28px;
+        border-top: 1px solid #bdbdbd;
+        border-bottom: 1px solid #d3d3d3;
+        border-right: 1px solid #d3d3d3;
+        border-left: 1px solid #d3d3d3;
+        padding-right: 30px;
+        font: 16px arial, sans-serif;
+        text-indent: 5px;
+        background: url("data:image/gif;base64,R0lGODlhHAAmAKIHAKqqqsvLy0hISObm5vf394uLiwAAAP///yH5BAEAAAcALAAAAAAcACYAAAO9eLpMIMYIQJi9DcYtKv6KtnHgB4yoAZSXKAyDy1rjoAzjzOQLrx8+4OanCAZnxiExGSEKmz3lj2lwUq3SZ3WZPbKuXGgxu9t4tLYDTkpIRQILF0x2G4lWipM7gj/oJQUkcXsCDCIFATULBCIcZ2tvB3QLDxETFnR/BgU/gRt9jX0gnpYMkJZpFzEoqQqJKAIBaQOVKHAXr3t7txgBjboSvB8EpLoFZywOAo3LFE5lYs/QW9LT1TRk1V7S2xYJADs");
+        background-repeat: no-repeat;
+        background-position: 548px 4px;
+        background-size: 14px 19px;
+      }
+
+      .button {
+        border: 1px solid #d3d3d3;
+        background: #f3f3f3;
+        color: #696969;
+        margin-left: 4px;
+        margin-right: 4px;
+        margin-top: 15px;
+        font-family: arial, sans-serif;
+        font-size: 11px;
+        font-weight: bold;
+        padding: 7px;
+        border-radius: 2px;
+      }
+
+      .button:hover {
+        color: #2a2a2a;
+        border: 1px solid #bdbdbd;
+      }
+
+      .search:hover {
+        border: 1px solid #aaaaaa;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background: #f3f3f3;
+        padding-top: 22px;
+        border-top: 1px solid #e9e9e9;
+      }
+
+      footer a:link,
+      a:visited,
+      a:active {
+        color: #696969;
+        font-family: arial, sans-serif;
+        font-size: 12px;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      .leftlinks {
+        position: relative;
+        bottom: 12px;
+        left: 18px;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+
+      .rightlinks {
+        position: relative;
+        bottom: 9px;
+        float: right;
+        right: 18px;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+
+      input[type="search"]::-webkit-search-decoration,
+      input[type="search"]::-webkit-search-cancel-button,
+      input[type="search"]::-webkit-search-results-button,
+      input[type="search"]::-webkit-search-results-decoration {
+        display: none;
+      }
+      input[type="text"]::-ms-clear {
+        display: none;
+        width: 0;
+        height: 0;
+      }
+      input[type="text"]::-ms-reveal {
+        display: none;
+        width: 0;
+        height: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="https://mail.google.com">Gmail</a>
+      <a
+        href="https://www.google.com/imghp?hl=en&tab=wi&ei=Ox1NVMXuJYO3yATCjoFA&ved=0CAQQqi4oAg"
+        >Images</a
+      >
+      <img
+        id="lara"
+        class="headerpics"
+        src="http://lh3.googleusercontent.com/-zkPWifjxy1M/AAAAAAAAAAI/AAAAAAAAAAA/7pAALFnncq4/s32-c/photo.jpg"
+      />
+    </header>
+    <div>
+      <img src="https://www.google.com/images/srpr/logo11w.png" />
+      <form name="google" action="#" method="POST">
+        <br />
+        <input type="search" class="search" /><br />
+        <input
+          type="submit"
+          class="button"
+          name="submit"
+          value="Google Search"
+        />
+        <input
+          type="submit"
+          class="button"
+          name="lucky"
+          value="I'm Feeling Lucky"
+        />
+      </form>
+    </div>
+    <footer>
+      <a class="leftlinks" href="">Advertising</a>
+      <a class="leftlinks" href="">Business</a>
+      <a class="leftlinks" href="">About</a>
+      <a class="rightlinks" href="">Settings</a>
+      <a class="rightlinks" href="">Privacy & Terms</a>
+    </footer>
+  </body>
+</html>

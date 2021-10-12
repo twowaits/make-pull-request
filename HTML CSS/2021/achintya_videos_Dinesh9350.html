@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      div.container {
+        width: 50rem;
+      }
+      .content a {
+        text-decoration: none;
+        color: black;
+      }
+      .yt {
+        color: red;
+      }
+      .thumbImg {
+        width: 10rem;
+        border-radius: 0.3rem;
+        margin: 0 1.5rem;
+      }
+      .view_all {
+        border: 1px solid black;
+        border-radius: 1rem;
+        padding: 0.4rem 6rem;
+      }
+      .mobile {
+        display: none;
+      }
+
+      @media only screen and (max-width: 600px) {
+        div.container {
+          width: 30rem;
+        }
+        .mobile {
+          display: none;
+        }
+        h5 {
+          font-size: 1rem;
+        }
+      }
+    </style>
+
+    <title>JS Mastery</title>
+  </head>
+  <body>
+    <section class="my-3">
+      <div class="container">
+        <h2>
+          <i class="fa fa-youtube-play mr-2 yt" aria-hidden="true"></i> Videos
+        </h2>
+        <hr />
+        <div class="video_container d-flex">
+          <div class="thumb">
+            <img class="thumbImg" src="../../Images/mern1.jpg" alt="mern1" />
+          </div>
+          <div class="content">
+            <a
+              href="https://www.youtube.com/watch?v=ngc9gnGgUdA&list=PL6QREj8te1P7VSwhrMf3D3Xt4V6_SRkhu"
+            >
+              <h5>
+                Full Stack MERN Project - Build and Deploy an App | React +
+                Redux, Node, Express, MongoDB [Part 1/2]
+              </h5>
+              <h5 class="mobile">Full Stack MERN Project [Part 1/2]</h5>
+            </a>
+            <a
+              class="yt_channel"
+              href="https://www.youtube.com/c/JavaScriptMastery"
+              >JavaScript Mastery</a
+            >
+          </div>
+        </div>
+        <hr />
+        <div class="video_container d-flex">
+          <div class="thumb">
+            <img class="thumbImg" src="../../Images/mern2.jpg" alt="mern2" />
+          </div>
+          <div class="content">
+            <a href="https://www.youtube.com/watch?v=9DDX3US3kss">
+              <h5>
+                Build and Deploy a React Cryptocurrency App and Master Redux
+                Toolkit in One Video
+              </h5>
+              <h5 class="mobile">
+                Build and Deploy a React Cryptocurrency App
+              </h5>
+            </a>
+            <a
+              href="https://www.youtube.com/c/JavaScriptMastery"
+              class="yt_channel"
+              ><p>JavaScript Mastery</p></a
+            >
+          </div>
+        </div>
+        <hr />
+        <div class="video_container d-flex">
+          <div class="thumb">
+            <img class="thumbImg" src="../../Images/mern3.jpg" alt="mern3" />
+          </div>
+          <div class="content">
+            <a href="https://www.youtube.com/watch?v=Xoz31I1FuiY">
+              <h5>
+                Learn Material UI in One Hour - React Material UI Project
+                Tutorial [2021]
+              </h5>
+              <h5 class="mobile">Learn Material UI in One Hour</h5>
+            </a>
+            <a
+              href="https://www.youtube.com/c/JavaScriptMastery"
+              class="yt_channel"
+              ><p>JavaScript Mastery</p></a
+            >
+          </div>
+        </div>
+        <hr />
+        <div class="video_container d-flex">
+          <div class="thumb">
+            <img class="thumbImg" src="../../Images/mern4.jpg" alt="mern1" />
+          </div>
+          <div class="content">
+            <a
+              href="https://www.youtube.com/watch?v=Ey_90l9GaAw&list=PL6QREj8te1P6wX9m5KnicnDVEucbOPsqR&index=14"
+            >
+              <h5>The Best Way to Host & Deploy a React Application</h5></a
+            >
+            <a
+              href="https://www.youtube.com/c/JavaScriptMastery"
+              class="yt_channel"
+              ><p>JavaScript Mastery</p></a
+            >
+          </div>
+        </div>
+        <div class="text-center my-3">
+          <a
+            class="view_all d-inline-block"
+            href="https://www.youtube.com/playlist?list=PL6QREj8te1P6wX9m5KnicnDVEucbOPsqR"
+            >View All</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+      function addDarkmodeWidget() {
+        new Darkmode().showWidget();
+      }
+      window.addEventListener("load", addDarkmodeWidget);
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

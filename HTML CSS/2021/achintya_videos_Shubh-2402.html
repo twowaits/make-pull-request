@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+
+        *{
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none;
+        }
+        body{
+            
+            
+            margin: 0 75px;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            margin: 10px 0px;
+        }
+
+        h1{
+            margin-right: 35px;
+            margin-left: 15px;
+        }
+        svg{
+            height: 25px;
+            width: 25px;
+            fill:gray;
+        }
+
+        .video{
+            display: flex;
+            border-top: 1px solid #ebebeb;
+            padding: 15px 0px;
+            position: relative;
+        }
+        .thumbnail{
+            height: 100%;
+            width: 125px;
+            position: relative;
+        }
+
+        .video-thumbnail > .thumbnail > img{
+            height: 100%;
+            width: 125px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .preview-container{
+            width: 125px;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .preview-container svg{
+            fill: white;
+            position: absolute;
+        }
+
+        .preview-container > .time{
+            font-size: 10px;
+            position: absolute;
+            bottom: 4px;
+            left: 5px;
+            background-color:black;
+            border-radius: 10px;
+            padding: 1px 5px;
+           
+            opacity: 0.9;
+        }
+
+        .preview-container > .preview{
+            font-size: 10px;
+            position: absolute;
+            right: 10px;
+            bottom: 5px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .video-info{
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .video-info > a{
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: 500;
+        }
+        .video-info > div > p{
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .subtext{
+            color: gray;
+        }
+
+        footer{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            height: 30px;
+        }
+        footer hr{
+            width: 100%;
+        }
+        .view-all{
+            width: 350px;
+            height: 50px;
+            border: 1px solid #ebebeb;
+            border-radius: 25px;
+            position: absolute;
+            z-index: 100;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .view-all > a{
+            font-weight: 500;
+        }
+        .view-all > svg{
+            fill: -webkit-link;
+            padding-left: 5px;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            left: 5px;
+        }
+        .feedback{
+            position: absolute;
+            top: -25px;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <svg focusable="false" viewBox="0 0 24 24"><path d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5"></path></svg>
+        <h1>Videos</h1>
+        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+    </header>
+
+    <div class="videos-container">
+        
+        <div class="video">
+            <div class="video-thumbnail">
+                <div class="thumbnail">
+                    <div class="preview-container">
+                        <svg  focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="PlayCircleIcon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"></path></svg>
+                        <p class="time">21:20</p>
+                        <p class="preview">PREVIEW</p>
+                    </div>
+                    <img src="https://img.youtube.com/vi/jI04zypQB0E/maxresdefault.jpg" alt="">
+                </div>
+            </div>
+            <div class="video-info">
+                <a href="https://www.youtube.com/watch?v=jI04zypQB0E">How to Get an internship by Achintya Gaumat</a>
+                <div>
+                    <p>YouTube<span class="subtext">. Twowaits</span></p>
+                    <p class="subtext">3 weeks ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video">
+            <div class="video-thumbnail">
+                <div class="thumbnail">
+                    <div class="preview-container">
+                        <svg  focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="PlayCircleIcon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"></path></svg>
+                        <p class="time">20:05</p>
+                        <p class="preview">PREVIEW</p>
+                    </div>
+                    <img src="https://img.youtube.com/vi/jI04zypQB0E/maxresdefault.jpg" alt="">
+                </div>
+            </div>
+            <div class="video-info">
+                <a href="https://www.youtube.com/watch?v=jI04zypQB0E">How to Get an internship by Achintya Gaumat</a>
+                <div>
+                    <p>YouTube<span class="subtext">. Twowaits</span></p>
+                    <p class="subtext">May 15, 2021</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video">
+            <div class="video-thumbnail">
+                <div class="thumbnail">
+                    <div class="preview-container">
+                        <svg  focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="PlayCircleIcon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"></path></svg>
+                        <p class="time">1:10:11</p>
+                        <p class="preview">PREVIEW</p>
+                    </div>
+                    <img src="https://img.youtube.com/vi/rtQIdx5vwNE/maxresdefault.jpg" alt="">
+                </div>
+            </div>
+            <div class="video-info">
+                <a href="https://www.youtube.com/watch?v=rtQIdx5vwNE">Make a Pro LinkedIn Profile with Achintya Gaumat | Get your ...</a>
+                <div>
+                    <p>YouTube<span class="subtext">. Twowaits</span></p>
+                    <p class="subtext">Jun 27, 2021</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video">
+            <div class="video-thumbnail">
+                <div class="thumbnail">
+                    <div class="preview-container">
+                        <svg  focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="PlayCircleIcon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"></path></svg>
+                        <p class="time">23:59</p>
+                        <p class="preview">PREVIEW</p>
+                    </div>
+                    <img src="https://img.youtube.com/vi/CGf2lACTJjg/maxresdefault.jpg" alt="">
+                </div>
+            </div>
+            <div class="video-info">
+                <a href="https://www.youtube.com/watch?v=AEvvUmvp56M">Task 2 Discussion with Achintya Gaumat | Tathastu Scholar ...</a>
+                <div>
+                    <p>YouTube<span class="subtext">. Twowaits</span></p>
+                    <p class="subtext">Jul 13, 2021</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer>
+        <hr color="#ebebeb">
+        <div class="view-all">
+            <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="ArrowForwardIcon"><path d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg>
+            <a href="#">View all</a>
+        </div>
+        <p class="feedback subtext">Feedback</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="30thoct.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="../Images/logo.png" alt="">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Phone</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="../Images/mobile.png" class="mobile">
+            <div id="circle">
+
+                <div class="feature one">
+                    <img src="../Images/camera.png" alt="">
+                    <div>
+                        <h1>Camera</h1>
+                        <p>Useless and overpriced</p>
+                    </div>
+                </div>
+
+                <div class="feature two">
+                    <img src="../Images/processor.png" alt="">
+                    <div>
+                        <h1>Processor</h1>
+                        <p>very fast one, atleast faster than you</p>
+                    </div>
+                </div>
+
+                <div class="feature three">
+                    <img src="../Images/display.png" alt="">
+                    <div>
+                        <h1>Display</h1>
+                        <p>very clear, you can't handle it</p>
+                    </div>
+                </div>
+
+                <div class="feature four">
+                    <img src="../Images/battery.png" alt="">
+                    <div>
+                        <h1>Battery</h1>
+                        <p>lasts longer than you could possibly imagine !</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="controls">
+            <img src="../Images/arrow.png" id="upBtn">
+            <h3>Features</h3>
+            <img src="../Images/arrow.png" id="downBtn">
+        </div>
+
+    </div>
+
+    <script>
+        var circle = document.getElementById("circle");
+        var upBtn = document.getElementById("upBtn");
+        var downBtn = document.getElementById("downBtn");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upBtn.onclick = function(){
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        };
+        downBtn.onclick = function(){
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+</body>
+</html>
