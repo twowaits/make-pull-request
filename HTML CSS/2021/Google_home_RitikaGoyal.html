@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        
+        @font-face {
+            font-family: 'Product Sans';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+        }
+
+        body {
+            margin: 0;
+            font-family: arial, sans-serif;
+            font-size: 0.9em;  
+        }
+
+        a {
+            margin: 5px 5px;
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        nav {
+            display: flex;  
+            justify-content: space-between;
+        }
+
+        #menu-left {
+            display: flex;
+            justify-content: flex-start;    
+            padding-left: 20px; 
+            align-items: center;
+        }
+
+        #menu-right {
+            display: flex;
+            justify-content: flex-end;  
+            margin-right: 20px;
+            align-items: right 
+        }
+        #my-apps{
+            height: 30px;
+            width: 30px
+        }
+        .me {
+            height:40px;
+            width: 80px;
+            background-color: rgba(240, 248, 255, 0.884);
+            
+        }
+        .me:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        ul > a, ul > img {
+            padding: 0 8px;
+        }
+
+        #my-apps:hover, #my-profile:hover {
+            border-radius: 200px;
+            box-shadow: 0 0 10px gainsboro;
+        }
+
+        section {
+            display: flex;
+            align-items: center;    
+            flex-direction: column;
+            margin-top: 5vh;   
+        }
+
+        h1 {
+            font-family: Product Sans;
+            font-size: 5.5em;
+        }
+
+        #my-input-container {
+            display: flex;
+            flex-direction: row;    
+            justify-content: space-between;  
+            width: 600px;
+            height: 38px;
+            border: 2px solid gainsboro;
+            border-radius: 20px;
+        }
+
+        #my-input-container:hover {
+            box-shadow: 0 0 10px gainsboro;
+        }
+
+        #my-input-container > input {
+            flex-grow: 8; 
+            border: none;
+            outline: none; 
+        } 
+
+        img:hover {
+            cursor: pointer;
+        }
+        .image{
+            height: 26px;
+            width: 20px;
+            margin-right: 10px;
+            padding: 2px;
+        }
+        .search-image{
+            height: 40px;
+            width: 30px;
+        }
+
+        #my-buttons-container {
+            display: flex;
+            flex-direction: row;    
+            padding-top: 53px;
+        }
+
+        button {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: none;
+            min-width: 54px;
+            height: 36px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+
+        button:hover {
+            cursor: pointer;
+            box-shadow: 0 0 10px gainsboro;
+            
+        }
+
+
+
+        /* Media Queries */
+
+        @media (max-width: 630px) {
+
+            #footer-nav {
+                flex-direction: column;
+            }
+
+            #footer-left {
+                justify-content: center;
+            }
+
+            #footer-right {
+                justify-content: center;
+            }
+
+            #my-input-container {
+                width: 95vw;
+            }
+
+
+        }
+
+        @media (max-height: 522px) {
+
+            body {
+                overflow-x: hidden;
+            }
+            section {
+                margin-bottom: 20px;
+
+            }
+            footer {
+                position: relative;
+            }
+        }
+
+        @media (max-height: 570px) and (max-width: 630px) {
+
+            body {
+                overflow-x: hidden;
+            }
+            section {
+                margin-bottom: 13px;
+
+            }
+            footer {
+                position: relative;
+            }
+            
+        }
+    </style>
+    <link rel="icon" href="https://img.favpng.com/22/17/2/google-logo-g-suite-google-guava-png-favpng-9UYx7Tub6HPd8t6SEJ65iMHzL.jpg">
+    
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul id="menu-left">
+                <a href="#">About</a>
+                <a href="#">Store</a>
+            </ul>
+            <ul id="menu-right">
+                <a href="#">Gmail</a>
+                <a href="#">Images</a>
+                <img id="my-apps" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_apps_48px-512.png">
+                
+                <button class="me">sign in</button>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>
+            <span style="color: #4285F4;">G</span><span style="color: #DB4437;">o</span><span style="color: #F4B400;">o</span><span style="color: #4285F4">g</span><span style="color: #0F9D58;">l</span><span style="color: #DB4437;">e</span>
+        </h1>
+        <div id="my-input-container">
+            <img class="search-image" src="https://cdn.dribbble.com/users/1677939/screenshots/8817404/google_icon_-_dribbble.jpg" alt="glass">
+            <input type="text">
+            <img class="image" src="https://www.google.com/permissions/images/logo/google-mic-icon.png" alt="mic">
+        </div>
+        <div id="my-buttons-container">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+    </section>
+
+    
+    
+</body>
+</html>
