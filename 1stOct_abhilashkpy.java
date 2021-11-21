@@ -13,7 +13,7 @@ public class fibonacci
     System.out.println("Enter the limit:");
     n = inp.nextInt();
     System.out.print(n1);
-    System.out.print(" 123");
+    System.out.print(" 122223");
     System.out.print(n2);
     System.out.print(" ");
     for (int i = 2; i < n; i++) {
