@@ -24,8 +24,8 @@ This Repository consists of following programming languages
   -  Python : 12.0%
   -  Java : 13.2% 
   -  C++ : 8.7%
-  - JavaScript : 5.2% 
-  - CSS : 0.7%
+  -  JavaScript : 5.2% 
+  -  CSS : 0.7%
 
 ## Steps to setup this Repository Locally
 
