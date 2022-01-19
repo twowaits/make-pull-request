@@ -7,11 +7,11 @@ public class fibonacci
 {
     public static void main(String args[])
     {
-        Scanner inp = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
     int n, sum, n1 = 1, n2 = 1, marker;
     System.out.println("Enter the limit:");
-    n = inp.nextInt();
+    n = sc.nextInt();
     System.out.print(n1);
     System.out.print(" ");
     System.out.print(n2);
