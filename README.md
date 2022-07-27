@@ -1,4 +1,5 @@
-![Issues](https://img.shields.io/github/issues/twowaits/make-pull-request)
+![Issues](https://img.shields.io/github/issues/twowaits/make-pull-reque
+st)
 ![Stars GitHub](https://img.shields.io/github/stars/twowaits/make-pull-request)
 ![Forks](https://img.shields.io/github/forks/twowaits/make-pull-request)
 [![project chat](https://img.shields.io/badge/telegram-join--chat-brightgreen)](https://t.me/joinchat/AAAAAFbbJqzUyF18Okx94A)
@@ -65,4 +66,4 @@ This Repository consists of following programming languages
 
  7. That's it. You have opened a PR. Wait for it to get merged.
 
-## Thank You for your Amazing Contribution!!
+## Thank You for your Amazing Contribution, you guys are so amazing, thanks for everything!!
