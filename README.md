@@ -65,4 +65,4 @@ This Repository consists of following programming languages
 
  7. That's it. You have opened a PR. Wait for it to get merged.
 
-## Thank You for your Amazing Contribution!!
+## Thank You for your Amazing Contribution, you guys are so amazing!!
