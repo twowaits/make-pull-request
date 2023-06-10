@@ -4,4 +4,5 @@ def rev(s):
 		str=i+str
 	return str
 s=input("enter")
-print(rev(s))
+answer = rev(s)
+print(answer)
