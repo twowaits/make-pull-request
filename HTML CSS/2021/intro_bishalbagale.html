@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet" />
+    <title>Tathastu by Twowaits</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Mulish", sans-serif;
+            text-decoration: none;
+        }
+        
+        .main {
+            background-color: #154854;
+            padding: 2rem;
+        }
+        
+        .navigation {
+            position: absolute;
+            background-color: #222831;
+            right: 0%;
+            top: 0%;
+            color: #f5992b;
+            padding: 2px 40px;
+            width: 50%;
+            border-bottom-left-radius: 26px;
+        }
+        
+        .navigation a {
+            color: inherit;
+        }
+        
+        .navItems {
+            display: inline-block;
+            padding: 1.1rem 0;
+            margin: 0 1rem;
+        }
+        
+        .content {
+            display: flex;
+            padding: 2rem;
+            margin-top: 2rem;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .text {
+            font-weight: bold;
+            color: white;
+            padding: 3rem;
+        }
+        
+        .text h2 {
+            font-size: 2.5rem;
+            margin-top: 1rem;
+            font-weight: normal;
+            margin-left: 20px;
+        }
+        
+        .text h3 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            font-weight: normal;
+            margin-left: 20px;
+        }
+        
+        .image {
+            margin-right: 3rem;
+            margin-top: 2rem;
+        }
+        
+        .cardWrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .card {
+            background: #222831;
+            display: flex;
+            padding: 3rem;
+            color: white;
+            justify-content: space-evenly;
+            width: 85%;
+            border-radius: 1rem;
+            margin: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .card h2 {
+            font-weight: bold;
+            font-size: 2.5rem;
+        }
+        
+        .card h6 {
+            font-weight: lighter;
+            font-size: 1rem;
+            margin-left: -20%;
+            margin-top: 7px;
+        }
+        
+        .navItems {
+            position: relative;
+        }
+        
+        .navItems::after {
+            content: "";
+            background: #f5992b;
+            height: 3px;
+            position: absolute;
+            bottom: 5px;
+            transition: 0.16s all 0.025s;
+        }
+        
+        .navItems::after {
+            left: 0;
+            right: 100%;
+        }
+        
+        .navItems:hover~a::after {
+            left: 100%;
+            right: 0;
+        }
+        
+        .navItems:hover::after {
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <nav class="navigation">
+            <span class="navItems"> <a href="#courses"> Courses </a></span
+        ><span class="navItems"> <a href="#ytChannel"> YouTube Channel</a></span
+        ><span class="navItems"> <a href="#mediumBlog"> Medium Blog </a></span
+        ><span class="navItems"> <a href="#login"> Login</a></span>
+        </nav>
+        <div class="container">
+            <div class="content">
+                <div class="text">
+                    <img src="http://tathastu.twowaits.in/images/tathastu_logo.png" alt="/images/tathastu_logo.png" width="400px" />
+                    <h2>To all your dreams for your career.</h2>
+                    <p style="opacity: 0.8; font-size: 22px; margin: 20px">
+                        Pick a course relevant to your skillset and ambition.
+                    </p>
+                    <p style="opacity: 0.4; font-size: 18px; margin: 20px">
+                        CP, DSA, Python all courses you will ever need.
+                    </p>
+                    <h3>Those too at ridiculously low prices!</h3>
+                </div>
+                <div class="image">
+                    <img src="https://notestwowaits.s3.us-east-1.amazonaws.com/notes/icon.png" alt="/notes/icon.png" height="250" />
+                    <p style="
+                font-style: italic;
+                font-size: 30px;
+                color: white;
+                margin: 1rem 1rem 0 0;
+              ">
+                        <span style="opacity: 0.6">enabled by</span> Twowaits
+                    </p>
+                </div>
+            </div>
+            <div class="cardWrapper">
+                <div class="card">
+                    <span class="cardContents">
+              <h2>500+</h2>
+              <h6>Students Empowered</h6></span
+            >
+            <span class="cardContents"
+              ><h2>15+</h2>
+              <h6>Unique Courses</h6></span
+            >
+            <span class="cardContents"
+              ><h2>50+</h2>
+              <h6>Colleges Impacted</h6></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
