@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-  cout<<"enter a number";
+  cout<<"Enter A Number";
   int decimal,number;
   cin>>number;
   
@@ -10,9 +10,11 @@ int main()
   int remainder,temporary;
   for(int j=1;j<=number;j++)
   {
+    
     decimal=j;
     i=0;
   while(decimal>0)
+    
   {
   remainder=decimal%2;
   binary[i]=remainder;
